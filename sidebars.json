@@ -1,0 +1,79 @@
+{
+  "Introduction": {
+    "First Steps": [
+      "first-steps/getting-started"
+    ],
+    "Changelog": [
+      "changelog"
+    ]
+  },
+  "Modules": {
+    "stix-gates": [
+      "modules/stix-gates/gates-about",
+      "modules/stix-gates/gates-setup",
+      "modules/stix-gates/gates-usage",
+      "modules/stix-gates/gates-helpers"
+    ],
+    "stix-wetland": [
+      "modules/stix-wetland/wetland-about",
+      "modules/stix-wetland/wetland-setup",
+      "modules/stix-wetland/wetland-decorators",
+      "modules/stix-wetland/wetland-db-route"
+    ]
+  },
+  "API": {
+    "API": [
+      "api"
+    ],
+    "Classes": [
+      "api/classes/abstractactioncontroller",
+      "api/classes/abstractpluginmanager",
+      "api/classes/application",
+      "api/classes/clienterrorresponse",
+      "api/classes/config",
+      "api/classes/controllermanager",
+      "api/classes/event",
+      "api/classes/eventmanager",
+      "api/classes/informationalresponse",
+      "api/classes/invalidactionresulterror",
+      "api/classes/loggerservice",
+      "api/classes/modulemanager",
+      "api/classes/notfounderror",
+      "api/classes/redirectionresponse",
+      "api/classes/response",
+      "api/classes/responseservice",
+      "api/classes/route",
+      "api/classes/routerservice",
+      "api/classes/servererrorresponse",
+      "api/classes/serverservice",
+      "api/classes/servicemanager",
+      "api/classes/sharedeventmanager",
+      "api/classes/successfulresponse"
+    ],
+    "Enums": [
+      "api/enums/applicationevents",
+      "api/enums/httpstatuscodes",
+      "api/enums/modulemanagerevents",
+      "api/enums/requestmethods",
+      "api/enums/responsetypes"
+    ],
+    "Interfaces": [
+      "api/interfaces/configdata",
+      "api/interfaces/contextinterface",
+      "api/interfaces/factoryinterface",
+      "api/interfaces/loggerconfiginterface",
+      "api/interfaces/moduleclassinterface",
+      "api/interfaces/moduleinterface",
+      "api/interfaces/modulemanagerconfiginterface",
+      "api/interfaces/registeredrouteinterface",
+      "api/interfaces/responseargumentsinterface",
+      "api/interfaces/responseconfiginterface",
+      "api/interfaces/routeinterface",
+      "api/interfaces/routerconfiginterface",
+      "api/interfaces/selfdestructingcallbackinterface",
+      "api/interfaces/serverconfiginterface",
+      "api/interfaces/servicefactorytype",
+      "api/interfaces/servicemanagerinterface"
+    ]
+  }
+}
