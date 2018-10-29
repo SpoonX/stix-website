@@ -1,0 +1,95 @@
+{
+  "Introduction": {
+    "First Steps": [
+      "first-steps/getting-started"
+    ],
+    "Changelog": [
+      "changelog"
+    ]
+  },
+  "Modules": {
+    "stix-gates": [
+      "modules/stix-gates/gates-about",
+      "modules/stix-gates/gates-setup",
+      "modules/stix-gates/gates-usage",
+      "modules/stix-gates/gates-helpers"
+    ],
+    "stix-wetland": [
+      "modules/stix-wetland/wetland-about",
+      "modules/stix-wetland/wetland-setup",
+      "modules/stix-wetland/wetland-decorators",
+      "modules/stix-wetland/wetland-db-route"
+    ]
+  },
+  "API": {
+    "API": [
+      "api"
+    ],
+    "Classes": [
+  "api/classes/abstractactioncontroller",
+  "api/classes/abstractcommand",
+  "api/classes/abstractfilebasedpluginmanager",
+  "api/classes/abstractmiddleware",
+  "api/classes/abstractpluginmanager",
+  "api/classes/abstractresponsehelper",
+  "api/classes/application",
+  "api/classes/cli",
+  "api/classes/clienterrorresponse",
+  "api/classes/cliservice",
+  "api/classes/commandmanager",
+  "api/classes/config",
+  "api/classes/controllermanager",
+  "api/classes/dispatchmiddleware",
+  "api/classes/event",
+  "api/classes/eventmanager",
+  "api/classes/helpcommand",
+  "api/classes/informationalresponse",
+  "api/classes/invalidactionresulterror",
+  "api/classes/invalidargumenterror",
+  "api/classes/loggerservice",
+  "api/classes/modulemanager",
+  "api/classes/notfounderror",
+  "api/classes/output",
+  "api/classes/redirectionresponse",
+  "api/classes/requestmiddleware",
+  "api/classes/response",
+  "api/classes/responseservice",
+  "api/classes/route",
+  "api/classes/routermiddleware",
+  "api/classes/routerservice",
+  "api/classes/servererrorresponse",
+  "api/classes/serverservice",
+  "api/classes/servicemanager",
+  "api/classes/sharedeventmanager",
+  "api/classes/successfulresponse"
+],
+    "Enums": [
+  "api/enums/applicationevents",
+  "api/enums/applicationmodes",
+  "api/enums/httpstatuscodes",
+  "api/enums/modulemanagerevents",
+  "api/enums/requestmethods",
+  "api/enums/responsestrategies",
+  "api/enums/responsetypes"
+],
+    "Interfaces": [
+  "api/interfaces/configdata",
+  "api/interfaces/contextinterface",
+  "api/interfaces/factoryinterface",
+  "api/interfaces/loggerconfiginterface",
+  "api/interfaces/middlewareinterface",
+  "api/interfaces/moduleclassinterface",
+  "api/interfaces/moduleinterface",
+  "api/interfaces/modulemanagerconfiginterface",
+  "api/interfaces/registeredrouteinterface",
+  "api/interfaces/responseargumentsinterface",
+  "api/interfaces/responseconfiginterface",
+  "api/interfaces/routeinterface",
+  "api/interfaces/routerconfiginterface",
+  "api/interfaces/selfdestructingcallbackinterface",
+  "api/interfaces/serverconfiginterface",
+  "api/interfaces/servicefactorytype",
+  "api/interfaces/servicemanagerinterface"
+]
+  }
+}

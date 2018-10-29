@@ -1,0 +1,22 @@
+{
+  "scripts": {
+    "examples": "docusaurus-examples",
+    "start": "docusaurus-start",
+    "build": "node scripts/build.js && docusaurus-build",
+    "publish-gh-pages": "docusaurus-publish",
+    "write-translations": "docusaurus-write-translations",
+    "version": "docusaurus-version",
+    "rename-version": "docusaurus-rename-version",
+    "create-sidebar": "node createSidebar.js",
+    "build-api": "typedoc --theme markdown --name stix --tsconfig ../stix/tsconfig.json --target es2017 --module commonjs --excludeExternals --out ../docs/api ../stix/src"
+  },
+  "devDependencies": {
+    "docusaurus": "^1.5.0",
+    "patch-package": "^5.1.1",
+    "postinstall-prepare": "^1.0.1",
+    "tape-roller": "^2.0.0",
+    "typedoc": "^0.13.0",
+    "typedoc-plugin-markdown": "^1.1.18"
+  },
+  "version": "v0.0.1"
+}
