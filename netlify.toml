@@ -2,5 +2,5 @@
 ID = "ed1829ec-e635-4f62-86ec-2791017db9f1"
 [build]
   base = "website/"
-  publish = "website/build/"
+  publish = "website/build/stix"
   command = "yarn build"
