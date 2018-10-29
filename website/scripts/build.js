@@ -30,5 +30,7 @@ const path                                       = require('path');
     console.log('Done!');
   } catch (error) {
     console.log(error);
+    await File.remove(path.resolve(process.cwd(), '..', 'stix'), true);
+    await File.remove(path.resolve(process.cwd(), '..', 'docs', 'api', 'modules'), true);
   }
 })();
