@@ -1,6 +1,5 @@
 const { Git, Package, BaseCommandManager, File } = require('tape-roller');
 const path                                       = require('path');
-const { spawn }                                  = require('child_process');
 
 (async () => {
   try {
@@ -33,33 +32,3 @@ const { spawn }                                  = require('child_process');
     console.log(error);
   }
 })();
-
-async function cloneStix () {
-
-}
-
-async function generateVersionedDocs () {
-  const task = spawn('git', ['tag', '-l'], { cwd: path.resolve(process.cwd(), 'stix') });
-
-  return new Promise((resolve, reject) => {
-    task.on('error', reject);
-
-    task.on('close', (status) => {
-      if (status !== 0) {
-        return reject(new Error(`Generate docs failed (${status}).\nGot error: ${task.stderr}`));
-      }
-    });
-
-    task.on('data', async data => {
-      const versions = data.toString().split('\n');
-      const stixPath = path.resolve(process.cwd(), 'stix');
-      versions.pop(); // last item is empty
-
-      for (let i = 0; i < versions.length; i++) {
-        await BaseCommandManager.runCommand('git', ['checkout', versions[i]], { cwd: stixPath });
-        await BaseCommandManager.runCommand('yarn', ['build-api'], { cwd: process.cwd() });
-        await BaseCommandManager.runCommand('yarn', ['version', versions[i]], { cwd: process.cwd() });
-      }
-    });
-  });
-}
