@@ -1,33 +1,33 @@
 ---
-title: AbstractActionController
+title: AbstractResponseHelper
 ---
 
-# `Class` AbstractActionController
+# `Class` AbstractResponseHelper
 
 ## Hierarchy
 
- [AbstractResponseHelper](abstractresponsehelper)
+**AbstractResponseHelper**
 
-**↳ AbstractActionController**
+↳  [AbstractActionController](abstractactioncontroller)
 
 ## Index
 
 ### Properties
 
-* [responseService](abstractactioncontroller#responseservice)
+* [responseService](abstractresponsehelper#responseservice)
 
 ### Methods
 
-* [badRequestResponse](abstractactioncontroller#badrequestresponse)
-* [createdResponse](abstractactioncontroller#createdresponse)
-* [forbiddenResponse](abstractactioncontroller#forbiddenresponse)
-* [getResponseService](abstractactioncontroller#getresponseservice)
-* [internalServerErrorResponse](abstractactioncontroller#internalservererrorresponse)
-* [notFoundResponse](abstractactioncontroller#notfoundresponse)
-* [okResponse](abstractactioncontroller#okresponse)
-* [permanentRedirectResponse](abstractactioncontroller#permanentredirectresponse)
-* [requestTimeoutResponse](abstractactioncontroller#requesttimeoutresponse)
-* [unauthorizedResponse](abstractactioncontroller#unauthorizedresponse)
+* [badRequestResponse](abstractresponsehelper#badrequestresponse)
+* [createdResponse](abstractresponsehelper#createdresponse)
+* [forbiddenResponse](abstractresponsehelper#forbiddenresponse)
+* [getResponseService](abstractresponsehelper#getresponseservice)
+* [internalServerErrorResponse](abstractresponsehelper#internalservererrorresponse)
+* [notFoundResponse](abstractresponsehelper#notfoundresponse)
+* [okResponse](abstractresponsehelper#okresponse)
+* [permanentRedirectResponse](abstractresponsehelper#permanentredirectresponse)
+* [requestTimeoutResponse](abstractresponsehelper#requesttimeoutresponse)
+* [unauthorizedResponse](abstractresponsehelper#unauthorizedresponse)
 
 ---
 
@@ -38,8 +38,6 @@ title: AbstractActionController
 ### `Protected` responseService
 
 **responseService**: *[ResponseService](responseservice)*
-
-*Inherited from [AbstractResponseHelper](abstractresponsehelper).[responseService](abstractresponsehelper#responseservice)*
 
 *Defined in [Library/Response/AbstractResponseHelper.ts:10](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/AbstractResponseHelper.ts#L10)*
 
@@ -52,8 +50,6 @@ ___
 ### `Protected` badRequestResponse
 
 **badRequestResponse**(message?: *`string`*, data?: *`any`*, meta?: *`Object`*): [ClientErrorResponse](clienterrorresponse)
-
-*Inherited from [AbstractResponseHelper](abstractresponsehelper).[badRequestResponse](abstractresponsehelper#badrequestresponse)*
 
 *Defined in [Library/Response/AbstractResponseHelper.ts:36](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/AbstractResponseHelper.ts#L36)*
 
@@ -74,8 +70,6 @@ ___
 
 **createdResponse**(data?: *`any`*, meta?: *`any`*): [SuccessfulResponse](successfulresponse)
 
-*Inherited from [AbstractResponseHelper](abstractresponsehelper).[createdResponse](abstractresponsehelper#createdresponse)*
-
 *Defined in [Library/Response/AbstractResponseHelper.ts:20](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/AbstractResponseHelper.ts#L20)*
 
 **Parameters:**
@@ -93,8 +87,6 @@ ___
 ### `Protected` forbiddenResponse
 
 **forbiddenResponse**(message?: *`string`*, data?: *`any`*, meta?: *`any`*): [ClientErrorResponse](clienterrorresponse)
-
-*Inherited from [AbstractResponseHelper](abstractresponsehelper).[forbiddenResponse](abstractresponsehelper#forbiddenresponse)*
 
 *Defined in [Library/Response/AbstractResponseHelper.ts:32](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/AbstractResponseHelper.ts#L32)*
 
@@ -115,8 +107,6 @@ ___
 
 **getResponseService**(): [ResponseService](responseservice)
 
-*Inherited from [AbstractResponseHelper](abstractresponsehelper).[getResponseService](abstractresponsehelper#getresponseservice)*
-
 *Defined in [Library/Response/AbstractResponseHelper.ts:12](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/AbstractResponseHelper.ts#L12)*
 
 **Returns:** [ResponseService](responseservice)
@@ -127,8 +117,6 @@ ___
 ### `Protected` internalServerErrorResponse
 
 **internalServerErrorResponse**(message?: *`string`*, data?: *`any`*, meta?: *`Object`*): [ServerErrorResponse](servererrorresponse)
-
-*Inherited from [AbstractResponseHelper](abstractresponsehelper).[internalServerErrorResponse](abstractresponsehelper#internalservererrorresponse)*
 
 *Defined in [Library/Response/AbstractResponseHelper.ts:44](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/AbstractResponseHelper.ts#L44)*
 
@@ -149,8 +137,6 @@ ___
 
 **notFoundResponse**(message?: *`string`*, data?: *`any`*, meta?: *`any`*): [ClientErrorResponse](clienterrorresponse)
 
-*Inherited from [AbstractResponseHelper](abstractresponsehelper).[notFoundResponse](abstractresponsehelper#notfoundresponse)*
-
 *Defined in [Library/Response/AbstractResponseHelper.ts:24](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/AbstractResponseHelper.ts#L24)*
 
 **Parameters:**
@@ -170,8 +156,6 @@ ___
 
 **okResponse**(data?: *`any`*, meta?: *`any`*): [SuccessfulResponse](successfulresponse)
 
-*Inherited from [AbstractResponseHelper](abstractresponsehelper).[okResponse](abstractresponsehelper#okresponse)*
-
 *Defined in [Library/Response/AbstractResponseHelper.ts:16](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/AbstractResponseHelper.ts#L16)*
 
 **Parameters:**
@@ -189,8 +173,6 @@ ___
 ### `Protected` permanentRedirectResponse
 
 **permanentRedirectResponse**(location: *`string`*, alt?: *`string`*, meta?: *`any`*): [RedirectionResponse](redirectionresponse)
-
-*Inherited from [AbstractResponseHelper](abstractresponsehelper).[permanentRedirectResponse](abstractresponsehelper#permanentredirectresponse)*
 
 *Defined in [Library/Response/AbstractResponseHelper.ts:48](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/AbstractResponseHelper.ts#L48)*
 
@@ -211,8 +193,6 @@ ___
 
 **requestTimeoutResponse**(message?: *`string`*, data?: *`any`*, meta?: *`any`*): [ClientErrorResponse](clienterrorresponse)
 
-*Inherited from [AbstractResponseHelper](abstractresponsehelper).[requestTimeoutResponse](abstractresponsehelper#requesttimeoutresponse)*
-
 *Defined in [Library/Response/AbstractResponseHelper.ts:28](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/AbstractResponseHelper.ts#L28)*
 
 **Parameters:**
@@ -231,8 +211,6 @@ ___
 ### `Protected` unauthorizedResponse
 
 **unauthorizedResponse**(message?: *`string`*, data?: *`any`*, meta?: *`Object`*): [ClientErrorResponse](clienterrorresponse)
-
-*Inherited from [AbstractResponseHelper](abstractresponsehelper).[unauthorizedResponse](abstractresponsehelper#unauthorizedresponse)*
 
 *Defined in [Library/Response/AbstractResponseHelper.ts:40](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/AbstractResponseHelper.ts#L40)*
 

@@ -27,7 +27,7 @@ title: RouteInterface
 
 **action**: *`string`*
 
-*Defined in [Library/Router/RouteInterface.ts:8](https://github.com/Rawphs/stix/blob/f097835/src/Library/Router/RouteInterface.ts#L8)*
+*Defined in [Library/Router/RouteInterface.ts:8](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Router/RouteInterface.ts#L8)*
 
 ___
 <a id="controller"></a>
@@ -36,7 +36,7 @@ ___
 
 **controller**: *[AbstractActionController](../classes/abstractactioncontroller)*
 
-*Defined in [Library/Router/RouteInterface.ts:7](https://github.com/Rawphs/stix/blob/f097835/src/Library/Router/RouteInterface.ts#L7)*
+*Defined in [Library/Router/RouteInterface.ts:7](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Router/RouteInterface.ts#L7)*
 
 ___
 <a id="method"></a>
@@ -45,7 +45,7 @@ ___
 
 **method**: *[RequestMethods](../enums/requestmethods)*
 
-*Defined in [Library/Router/RouteInterface.ts:5](https://github.com/Rawphs/stix/blob/f097835/src/Library/Router/RouteInterface.ts#L5)*
+*Defined in [Library/Router/RouteInterface.ts:5](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Router/RouteInterface.ts#L5)*
 
 ___
 <a id="route"></a>
@@ -54,7 +54,7 @@ ___
 
 **route**: *`string`*
 
-*Defined in [Library/Router/RouteInterface.ts:6](https://github.com/Rawphs/stix/blob/f097835/src/Library/Router/RouteInterface.ts#L6)*
+*Defined in [Library/Router/RouteInterface.ts:6](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Router/RouteInterface.ts#L6)*
 
 ___
 

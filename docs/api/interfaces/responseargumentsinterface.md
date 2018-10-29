@@ -27,7 +27,7 @@ title: ResponseArgumentsInterface
 
 **data**: *`any`*
 
-*Defined in [Library/Response/Response.ts:86](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/Response.ts#L86)*
+*Defined in [Library/Response/Response.ts:154](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L154)*
 
 ___
 <a id="message"></a>
@@ -36,7 +36,7 @@ ___
 
 **message**: *`string`*
 
-*Defined in [Library/Response/Response.ts:85](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/Response.ts#L85)*
+*Defined in [Library/Response/Response.ts:153](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L153)*
 
 ___
 <a id="meta"></a>
@@ -45,7 +45,7 @@ ___
 
 **meta**: *`any`*
 
-*Defined in [Library/Response/Response.ts:87](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/Response.ts#L87)*
+*Defined in [Library/Response/Response.ts:155](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L155)*
 
 ___
 <a id="statuscode"></a>
@@ -54,7 +54,7 @@ ___
 
 **statusCode**: *[HttpStatusCodes](../enums/httpstatuscodes)*
 
-*Defined in [Library/Response/Response.ts:84](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/Response.ts#L84)*
+*Defined in [Library/Response/Response.ts:152](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L152)*
 
 ___
 

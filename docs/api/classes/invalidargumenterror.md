@@ -1,27 +1,27 @@
 ---
-title: NotFoundError
+title: InvalidArgumentError
 ---
 
-# `Class` NotFoundError
+# `Class` InvalidArgumentError
 
 ## Hierarchy
 
  `Error`
 
-**↳ NotFoundError**
+**↳ InvalidArgumentError**
 
 ## Index
 
 ### Constructors
 
-* [constructor](notfounderror#constructor)
+* [constructor](invalidargumenterror#constructor)
 
 ### Properties
 
-* [message](notfounderror#message)
-* [name](notfounderror#name)
-* [stack](notfounderror#stack)
-* [Error](notfounderror#error)
+* [message](invalidargumenterror#message)
+* [name](invalidargumenterror#name)
+* [stack](invalidargumenterror#stack)
+* [Error](invalidargumenterror#error)
 
 ---
 
@@ -31,9 +31,9 @@ title: NotFoundError
 
 ###  constructor
 
-**new NotFoundError**(error: *`string`*): [NotFoundError](notfounderror)
+**new InvalidArgumentError**(error: *`string`*): [InvalidArgumentError](invalidargumenterror)
 
-*Defined in [Library/Error/NotFoundError.ts:1](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Error/NotFoundError.ts#L1)*
+*Defined in [Library/Error/InvalidArgumentError.ts:1](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Error/InvalidArgumentError.ts#L1)*
 
 **Parameters:**
 
@@ -41,7 +41,7 @@ title: NotFoundError
 | ------ | ------ |
 | error | `string` |
 
-**Returns:** [NotFoundError](notfounderror)
+**Returns:** [InvalidArgumentError](invalidargumenterror)
 
 ___
 

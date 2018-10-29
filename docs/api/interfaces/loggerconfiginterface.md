@@ -4,8 +4,6 @@ title: LoggerConfigInterface
 
 # `Interface` LoggerConfigInterface
 
-The Logger config interface extends the logger options from winston. That way, if you choose to extend the Logger class, you can also have access to the correct types without having to import them from another module.
-
 ## Hierarchy
 
  `LoggerOptions`
@@ -36,7 +34,7 @@ The Logger config interface extends the logger options from winston. That way, i
 
 *Inherited from LoggerOptions.exceptionHandlers*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/winston/index.d.ts:80*
+**
 
 ___
 <a id="exitonerror"></a>
@@ -48,7 +46,7 @@ ___
 
 *Inherited from LoggerOptions.exitOnError*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/winston/index.d.ts:78*
+**
 
 ___
 <a id="format"></a>
@@ -59,7 +57,7 @@ ___
 
 *Inherited from LoggerOptions.format*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/winston/index.d.ts:76*
+**
 
 ___
 <a id="level"></a>
@@ -70,7 +68,7 @@ ___
 
 *Inherited from LoggerOptions.level*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/winston/index.d.ts:77*
+**
 
 ___
 <a id="levels"></a>
@@ -81,7 +79,7 @@ ___
 
 *Inherited from LoggerOptions.levels*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/winston/index.d.ts:74*
+**
 
 ___
 <a id="silent"></a>
@@ -92,7 +90,7 @@ ___
 
 *Inherited from LoggerOptions.silent*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/winston/index.d.ts:75*
+**
 
 ___
 <a id="transports"></a>
@@ -104,7 +102,7 @@ ___
 
 *Inherited from LoggerOptions.transports*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/winston/index.d.ts:79*
+**
 
 ___
 

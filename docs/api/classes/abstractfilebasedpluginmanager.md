@@ -1,16 +1,18 @@
 ---
-title: AbstractPluginManager
+title: AbstractFileBasedPluginManager
 ---
 
-# `Class` AbstractPluginManager
+# `Class` AbstractFileBasedPluginManager
 
 ## Hierarchy
 
- [ServiceManager](servicemanager)
+↳  [AbstractPluginManager](abstractpluginmanager)
 
-**↳ AbstractPluginManager**
+**↳ AbstractFileBasedPluginManager**
 
-↳  [AbstractFileBasedPluginManager](abstractfilebasedpluginmanager)
+↳  [ControllerManager](controllermanager)
+
+↳  [CommandManager](commandmanager)
 
 ## Implements
 
@@ -20,23 +22,29 @@ title: AbstractPluginManager
 
 ### Constructors
 
-* [constructor](abstractpluginmanager#constructor)
+* [constructor](abstractfilebasedpluginmanager#constructor)
 
 ### Properties
 
-* [creationContext](abstractpluginmanager#creationcontext)
+* [creationContext](abstractfilebasedpluginmanager#creationcontext)
 
 ### Methods
 
-* [configure](abstractpluginmanager#configure)
-* [get](abstractpluginmanager#get)
-* [has](abstractpluginmanager#has)
-* [registerAlias](abstractpluginmanager#registeralias)
-* [registerAliases](abstractpluginmanager#registeraliases)
-* [registerFactories](abstractpluginmanager#registerfactories)
-* [registerFactory](abstractpluginmanager#registerfactory)
-* [registerInvokable](abstractpluginmanager#registerinvokable)
-* [registerService](abstractpluginmanager#registerservice)
+* [configure](abstractfilebasedpluginmanager#configure)
+* [get](abstractfilebasedpluginmanager#get)
+* [getPlugin](abstractfilebasedpluginmanager#getplugin)
+* [has](abstractfilebasedpluginmanager#has)
+* [loadDirectory](abstractfilebasedpluginmanager#loaddirectory)
+* [loadFromLocations](abstractfilebasedpluginmanager#loadfromlocations)
+* [registerAlias](abstractfilebasedpluginmanager#registeralias)
+* [registerAliases](abstractfilebasedpluginmanager#registeraliases)
+* [registerFactories](abstractfilebasedpluginmanager#registerfactories)
+* [registerFactory](abstractfilebasedpluginmanager#registerfactory)
+* [registerInvokable](abstractfilebasedpluginmanager#registerinvokable)
+* [registerPlugin](abstractfilebasedpluginmanager#registerplugin)
+* [registerPlugins](abstractfilebasedpluginmanager#registerplugins)
+* [registerService](abstractfilebasedpluginmanager#registerservice)
+* [getPluginName](abstractfilebasedpluginmanager#getpluginname)
 
 ---
 
@@ -46,20 +54,21 @@ title: AbstractPluginManager
 
 ###  constructor
 
-**new AbstractPluginManager**(creationContext: *[ServiceManager](servicemanager)*, config?: *[ServiceManagerConfigType](../modules/servicemanagerconfiginterface#servicemanagerconfigtype)*): [AbstractPluginManager](abstractpluginmanager)
+**new AbstractFileBasedPluginManager**(creationContext: *[ServiceManager](servicemanager)*, locations: *`string`[]*, config: *[ServiceManagerConfigType](../modules/servicemanagerconfiginterface#servicemanagerconfigtype)*): [AbstractFileBasedPluginManager](abstractfilebasedpluginmanager)
 
-*Overrides [ServiceManager](servicemanager).[constructor](servicemanager#constructor)*
+*Overrides [AbstractPluginManager](abstractpluginmanager).[constructor](abstractpluginmanager#constructor)*
 
-*Defined in [Library/ServiceManager/AbstractPluginManager.ts:5](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/AbstractPluginManager.ts#L5)*
+*Defined in [Library/ServiceManager/AbstractFileBasedPluginManager.ts:7](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/AbstractFileBasedPluginManager.ts#L7)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
 | creationContext | [ServiceManager](servicemanager) |
-| `Optional` config | [ServiceManagerConfigType](../modules/servicemanagerconfiginterface#servicemanagerconfigtype) |
+| locations | `string`[] |
+| config | [ServiceManagerConfigType](../modules/servicemanagerconfiginterface#servicemanagerconfigtype) |
 
-**Returns:** [AbstractPluginManager](abstractpluginmanager)
+**Returns:** [AbstractFileBasedPluginManager](abstractfilebasedpluginmanager)
 
 ___
 
@@ -70,6 +79,8 @@ ___
 ### `Protected` creationContext
 
 **creationContext**: *[ServiceManager](servicemanager)*
+
+*Inherited from [AbstractPluginManager](abstractpluginmanager).[creationContext](abstractpluginmanager#creationcontext)*
 
 *Overrides [ServiceManager](servicemanager).[creationContext](servicemanager#creationcontext)*
 
@@ -121,6 +132,23 @@ ___
 **Returns:** `T`
 
 ___
+<a id="getplugin"></a>
+
+###  getPlugin
+
+**getPlugin**(plugin: *[Instantiable](../modules/types#instantiable)<`Object`>*): `Object`
+
+*Defined in [Library/ServiceManager/AbstractFileBasedPluginManager.ts:57](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/AbstractFileBasedPluginManager.ts#L57)*
+
+**Parameters:**
+
+| Name | Type |
+| ------ | ------ |
+| plugin | [Instantiable](../modules/types#instantiable)<`Object`> |
+
+**Returns:** `Object`
+
+___
 <a id="has"></a>
 
 ###  has
@@ -141,6 +169,40 @@ ___
 | Service | [ServiceKeyType](../modules/servicemanagerconfiginterface#servicekeytype)<`T`> |
 
 **Returns:** `boolean`
+
+___
+<a id="loaddirectory"></a>
+
+###  loadDirectory
+
+**loadDirectory**(pluginDirectory: *`string`*): `void`
+
+*Defined in [Library/ServiceManager/AbstractFileBasedPluginManager.ts:32](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/AbstractFileBasedPluginManager.ts#L32)*
+
+**Parameters:**
+
+| Name | Type |
+| ------ | ------ |
+| pluginDirectory | `string` |
+
+**Returns:** `void`
+
+___
+<a id="loadfromlocations"></a>
+
+###  loadFromLocations
+
+**loadFromLocations**(pluginDirectories?: *`string`[]*): `this`
+
+*Defined in [Library/ServiceManager/AbstractFileBasedPluginManager.ts:24](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/AbstractFileBasedPluginManager.ts#L24)*
+
+**Parameters:**
+
+| Name | Type |
+| ------ | ------ |
+| `Optional` pluginDirectories | `string`[] |
+
+**Returns:** `this`
 
 ___
 <a id="registeralias"></a>
@@ -241,6 +303,40 @@ ___
 **Returns:** `void`
 
 ___
+<a id="registerplugin"></a>
+
+### `Protected` registerPlugin
+
+**registerPlugin**(Plugin: *[Instantiable](../modules/types#instantiable)<`Object`>*): `this`
+
+*Defined in [Library/ServiceManager/AbstractFileBasedPluginManager.ts:67](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/AbstractFileBasedPluginManager.ts#L67)*
+
+**Parameters:**
+
+| Name | Type |
+| ------ | ------ |
+| Plugin | [Instantiable](../modules/types#instantiable)<`Object`> |
+
+**Returns:** `this`
+
+___
+<a id="registerplugins"></a>
+
+### `Protected` registerPlugins
+
+**registerPlugins**(plugins: *`Array`<[Instantiable](../modules/types#instantiable)<`Object`>>*): `this`
+
+*Defined in [Library/ServiceManager/AbstractFileBasedPluginManager.ts:61](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/AbstractFileBasedPluginManager.ts#L61)*
+
+**Parameters:**
+
+| Name | Type |
+| ------ | ------ |
+| plugins | `Array`<[Instantiable](../modules/types#instantiable)<`Object`>> |
+
+**Returns:** `this`
+
+___
 <a id="registerservice"></a>
 
 ###  registerService
@@ -259,6 +355,23 @@ ___
 | service | `Object` |
 
 **Returns:** `this`
+
+___
+<a id="getpluginname"></a>
+
+### `Static` getPluginName
+
+**getPluginName**(plugin: *[FileBasedPluginType](../modules/filebasedplugintype#filebasedplugintype)*): `string`
+
+*Defined in [Library/ServiceManager/AbstractFileBasedPluginManager.ts:16](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/AbstractFileBasedPluginManager.ts#L16)*
+
+**Parameters:**
+
+| Name | Type |
+| ------ | ------ |
+| plugin | [FileBasedPluginType](../modules/filebasedplugintype#filebasedplugintype) |
+
+**Returns:** `string`
 
 ___
 

@@ -3,6 +3,132 @@ title: Changelog
 id: changelog
 ---
 
+<a name="4.2.0"></a>
+# [4.2.0](https://github.com/SpoonX/stix/compare/v4.1.7...v4.2.0) (2018-10-07)
+
+
+### Bug Fixes
+
+* **Response:** set response type for html ([445c008](https://github.com/SpoonX/stix/commit/445c008))
+
+
+### Features
+
+* **Application:** add environment helper method ([ba59e3e](https://github.com/SpoonX/stix/commit/ba59e3e))
+* **RequestMiddleware:** make patchContext async ([1f1c4a2](https://github.com/SpoonX/stix/commit/1f1c4a2))
+* **Response:** add file and html responses ([682c7af](https://github.com/SpoonX/stix/commit/682c7af))
+* **ServerService:** add SSL support and url helper ([ce80b56](https://github.com/SpoonX/stix/commit/ce80b56))
+
+
+
+<a name="4.1.7"></a>
+## [4.1.7](https://github.com/SpoonX/stix/compare/v4.1.6...v4.1.7) (2018-10-06)
+
+
+
+<a name="4.1.6"></a>
+## [4.1.6](https://github.com/SpoonX/stix/compare/v4.1.5...v4.1.6) (2018-10-06)
+
+
+### Features
+
+* **Output:** add multiple pieces of data at once ([2163981](https://github.com/SpoonX/stix/commit/2163981))
+
+
+
+<a name="4.1.5"></a>
+## [4.1.5](https://github.com/SpoonX/stix/compare/v4.1.4...v4.1.5) (2018-10-04)
+
+
+### Bug Fixes
+
+* **CliService:** properly parse arguments ([cfc7aaa](https://github.com/SpoonX/stix/commit/cfc7aaa))
+
+
+
+<a name="4.1.4"></a>
+## [4.1.4](https://github.com/SpoonX/stix/compare/v4.1.3...v4.1.4) (2018-10-04)
+
+
+### Bug Fixes
+
+* **AbstractFileBasedPluginManager:** fix regex to also match files not ending in a d ([8299d65](https://github.com/SpoonX/stix/commit/8299d65))
+
+
+
+<a name="4.1.3"></a>
+## [4.1.3](https://github.com/SpoonX/stix/compare/v4.1.2...v4.1.3) (2018-10-04)
+
+
+### Bug Fixes
+
+* **AbstractFileBasedPluginManager:** fix regex to also match files ending in a d ([b62028c](https://github.com/SpoonX/stix/commit/b62028c))
+* **Application:** actually set application mode ([cf5cc97](https://github.com/SpoonX/stix/commit/cf5cc97))
+* **CommandManager:** fix typings for getCommand ([a32ae6d](https://github.com/SpoonX/stix/commit/a32ae6d))
+* **Output:** call toString on all tables for output ([dc7a509](https://github.com/SpoonX/stix/commit/dc7a509))
+* **Output:** call toString on table for output ([65866ea](https://github.com/SpoonX/stix/commit/65866ea))
+
+
+### Features
+
+* **CliService:** validate and pass options ([33fafcc](https://github.com/SpoonX/stix/commit/33fafcc))
+
+
+
+<a name="4.1.2"></a>
+## [4.1.2](https://github.com/SpoonX/stix/compare/v4.1.1...v4.1.2) (2018-09-30)
+
+
+### Bug Fixes
+
+* **Middleware:** fix typings for middleware ([e19a606](https://github.com/SpoonX/stix/commit/e19a606))
+
+
+
+<a name="4.1.1"></a>
+## [4.1.1](https://github.com/SpoonX/stix/compare/v4.1.0...v4.1.1) (2018-09-30)
+
+
+
+<a name="4.1.0"></a>
+# [4.1.0](https://github.com/SpoonX/stix/compare/v4.0.1...v4.1.0) (2018-09-30)
+
+
+### Features
+
+* **project:** add AbstractResponseHelper ([bea2b59](https://github.com/SpoonX/stix/commit/bea2b59))
+
+
+
+<a name="4.0.1"></a>
+## [4.0.1](https://github.com/SpoonX/stix/compare/v4.0.0...v4.0.1) (2018-09-30)
+
+
+### Bug Fixes
+
+* **typings:** add [@types](https://github.com/types) to typeRoots ([7f8fd13](https://github.com/SpoonX/stix/commit/7f8fd13))
+
+
+
+<a name="4.0.0"></a>
+# [4.0.0](https://github.com/SpoonX/stix/compare/v3.0.1...v4.0.0) (2018-09-30)
+
+
+### Features
+
+* **Application:** allow application to be booted without starting ([47fb705](https://github.com/SpoonX/stix/commit/47fb705))
+* **Config:** deduping of arrays in patch ([7bbef0c](https://github.com/SpoonX/stix/commit/7bbef0c))
+* **Error:** add InvalidArgumentError ([14f9421](https://github.com/SpoonX/stix/commit/14f9421))
+* **Output:** add Output class for commands ([36526f4](https://github.com/SpoonX/stix/commit/36526f4))
+* **project:** add CLI support ([13fb231](https://github.com/SpoonX/stix/commit/13fb231))
+* **project:** add commands for CLI ([eb555ae](https://github.com/SpoonX/stix/commit/eb555ae))
+* **project:** add default command config with invokable command ([47a2c9a](https://github.com/SpoonX/stix/commit/47a2c9a))
+* **project:** add default help command for cli ([29bb39e](https://github.com/SpoonX/stix/commit/29bb39e))
+* **project:** add middleware classes ([c25d6e0](https://github.com/SpoonX/stix/commit/c25d6e0))
+* **ServiceManager:** and and implement file based plugin manager ([5e5d5ed](https://github.com/SpoonX/stix/commit/5e5d5ed))
+
+
+
 <a name="3.0.1"></a>
 ## [3.0.1](https://github.com/SpoonX/stix/compare/v3.0.0...v3.0.1) (2018-09-25)
 

@@ -4,8 +4,6 @@ title: Config
 
 # `Class` Config
 
-The Config class is responsible for managing the configuration of the entire application. Stix default configuration can be overriden by modules and by you. In other hand, you can override the configuration of both modules and Stix itself. **You total control over the configuration of stix and other installed modules.**
-
 ## Hierarchy
 
 **Config**
@@ -40,15 +38,13 @@ The Config class is responsible for managing the configuration of the entire app
 
 **new Config**(...data: *`Array`<[ConfigData](../interfaces/configdata)>*): [Config](config)
 
-*Defined in [Library/Config/Config.ts:15](https://github.com/Rawphs/stix/blob/f097835/src/Library/Config/Config.ts#L15)*
-
-Merges any config passed to the constructor. Modules can override the stix's configuration and you can override them both.
+*Defined in [Library/Config/Config.ts:4](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Config/Config.ts#L4)*
 
 **Parameters:**
 
-| Param | Type | Description |
-| ------ | ------ | ------ |
-| `Rest` data | `Array`<[ConfigData](../interfaces/configdata)> |   |
+| Name | Type |
+| ------ | ------ |
+| `Rest` data | `Array`<[ConfigData](../interfaces/configdata)> |
 
 **Returns:** [Config](config)
 
@@ -62,9 +58,7 @@ ___
 
 **data**: *[ConfigData](../interfaces/configdata)*
 
-*Defined in [Library/Config/Config.ts:15](https://github.com/Rawphs/stix/blob/f097835/src/Library/Config/Config.ts#L15)*
-
-*__type__*: ConfigData
+*Defined in [Library/Config/Config.ts:4](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Config/Config.ts#L4)*
 
 ___
 
@@ -76,9 +70,7 @@ ___
 
 **all**(): [ConfigData](../interfaces/configdata)
 
-*Defined in [Library/Config/Config.ts:44](https://github.com/Rawphs/stix/blob/f097835/src/Library/Config/Config.ts#L44)*
-
-Gets the merged config for the entire application.
+*Defined in [Library/Config/Config.ts:14](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Config/Config.ts#L14)*
 
 **Returns:** [ConfigData](../interfaces/configdata)
 
@@ -89,15 +81,13 @@ ___
 
 **merge**(...toMerge: *`Array`< `Map`<`any`, `any`> &#124; [ConfigData](../interfaces/configdata)>*): `void`
 
-*Defined in [Library/Config/Config.ts:53](https://github.com/Rawphs/stix/blob/f097835/src/Library/Config/Config.ts#L53)*
-
-Merges any config passed as arguments to the already registered configuration.
+*Defined in [Library/Config/Config.ts:18](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Config/Config.ts#L18)*
 
 **Parameters:**
 
-| Param | Type | Description |
-| ------ | ------ | ------ |
-| `Rest` toMerge | `Array`< `Map`<`any`, `any`> &#124; [ConfigData](../interfaces/configdata)> |   |
+| Name | Type |
+| ------ | ------ |
+| `Rest` toMerge | `Array`< `Map`<`any`, `any`> &#124; [ConfigData](../interfaces/configdata)> |
 
 **Returns:** `void`
 
@@ -108,19 +98,16 @@ ___
 
 **of**<`T`>(section: *`string`*): `T`
 
-*Defined in [Library/Config/Config.ts:35](https://github.com/Rawphs/stix/blob/f097835/src/Library/Config/Config.ts#L35)*
-
-Gets the config of given section name. Example: 'router'.
-*__template__*: T
+*Defined in [Library/Config/Config.ts:10](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Config/Config.ts#L10)*
 
 **Type parameters:**
 
 #### T 
 **Parameters:**
 
-| Param | Type | Description |
-| ------ | ------ | ------ |
-| section | `string` |  - |
+| Name | Type |
+| ------ | ------ |
+| section | `string` |
 
 **Returns:** `T`
 
@@ -131,15 +118,13 @@ ___
 
 **merge**(...toMerge: *`Array`< `Map`<`any`, `any`> &#124; [ConfigData](../interfaces/configdata)>*): `void`
 
-*Defined in [Library/Config/Config.ts:62](https://github.com/Rawphs/stix/blob/f097835/src/Library/Config/Config.ts#L62)*
-
-Static method that merges all config that was given to it.
+*Defined in [Library/Config/Config.ts:22](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Config/Config.ts#L22)*
 
 **Parameters:**
 
-| Param | Type | Description |
-| ------ | ------ | ------ |
-| `Rest` toMerge | `Array`< `Map`<`any`, `any`> &#124; [ConfigData](../interfaces/configdata)> |   |
+| Name | Type |
+| ------ | ------ |
+| `Rest` toMerge | `Array`< `Map`<`any`, `any`> &#124; [ConfigData](../interfaces/configdata)> |
 
 **Returns:** `void`
 
@@ -150,16 +135,14 @@ ___
 
 **mergeMap**(target: *`Map`<`any`, `any`>*, other: *`Map`<`any`, `any`>*): `Map`<`any`, `any`>
 
-*Defined in [Library/Config/Config.ts:91](https://github.com/Rawphs/stix/blob/f097835/src/Library/Config/Config.ts#L91)*
-
-Static method that specifically merges instances of Map.
+*Defined in [Library/Config/Config.ts:38](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Config/Config.ts#L38)*
 
 **Parameters:**
 
-| Param | Type | Description |
-| ------ | ------ | ------ |
-| target | `Map`<`any`, `any`> |  - |
-| other | `Map`<`any`, `any`> |  - |
+| Name | Type |
+| ------ | ------ |
+| target | `Map`<`any`, `any`> |
+| other | `Map`<`any`, `any`> |
 
 **Returns:** `Map`<`any`, `any`>
 
@@ -170,16 +153,14 @@ ___
 
 **mergeObject**(target: *[ConfigData](../interfaces/configdata)*, other: *[ConfigData](../interfaces/configdata)*): [ConfigData](../interfaces/configdata)
 
-*Defined in [Library/Config/Config.ts:74](https://github.com/Rawphs/stix/blob/f097835/src/Library/Config/Config.ts#L74)*
-
-Static method that merges config that are objects.
+*Defined in [Library/Config/Config.ts:28](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Config/Config.ts#L28)*
 
 **Parameters:**
 
-| Param | Type | Description |
-| ------ | ------ | ------ |
-| target | [ConfigData](../interfaces/configdata) |  - |
-| other | [ConfigData](../interfaces/configdata) |  - |
+| Name | Type |
+| ------ | ------ |
+| target | [ConfigData](../interfaces/configdata) |
+| other | [ConfigData](../interfaces/configdata) |
 
 **Returns:** [ConfigData](../interfaces/configdata)
 
@@ -190,16 +171,14 @@ ___
 
 **patch**(base: *`any`*, value: *`any`*): `any`
 
-*Defined in [Library/Config/Config.ts:107](https://github.com/Rawphs/stix/blob/f097835/src/Library/Config/Config.ts#L107)*
-
-Static method that merges two configs, a base and a value, that are either arrays, objects or maps. If the types don't match, it returns the value without merging.
+*Defined in [Library/Config/Config.ts:46](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Config/Config.ts#L46)*
 
 **Parameters:**
 
-| Param | Type | Description |
-| ------ | ------ | ------ |
-| base | `any` |  - |
-| value | `any` |  - |
+| Name | Type |
+| ------ | ------ |
+| base | `any` |
+| value | `any` |
 
 **Returns:** `any`
 

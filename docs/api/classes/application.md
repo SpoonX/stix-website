@@ -4,16 +4,6 @@ title: Application
 
 # `Class` Application
 
-This class is Stix's heart.
-
-It is responsible for:
-
-*   Pass in the provided configuration to be handled by the Config class
-*   Instantiating the Service Manager with vital services and factories registered
-*   Bootstrapping the application
-*   Starting the server
-*   Providing convenient getters to stix's services
-
 ## Hierarchy
 
 **Application**
@@ -26,29 +16,25 @@ It is responsible for:
 
 ### Properties
 
+* [applicationConfigs](application#applicationconfigs)
 * [config](application#config)
-* [controllerManager](application#controllermanager)
-* [logger](application#logger)
+* [environment](application#environment)
+* [mode](application#mode)
 * [moduleManager](application#modulemanager)
-* [responseService](application#responseservice)
-* [router](application#router)
-* [server](application#server)
 * [serviceManager](application#servicemanager)
 * [sharedEventManager](application#sharedeventmanager)
 
 ### Methods
 
 * [bootstrap](application#bootstrap)
-* [getConfig](application#getconfig)
-* [getConfigOf](application#getconfigof)
-* [getControllerManager](application#getcontrollermanager)
-* [getLogger](application#getlogger)
-* [getModuleManager](application#getmodulemanager)
-* [getResponseService](application#getresponseservice)
-* [getRouter](application#getrouter)
-* [getServer](application#getserver)
+* [bootstrapCli](application#bootstrapcli)
+* [bootstrapServer](application#bootstrapserver)
+* [getEnvironment](application#getenvironment)
+* [getMode](application#getmode)
 * [getServiceManager](application#getservicemanager)
+* [isProduction](application#isproduction)
 * [launch](application#launch)
+* [start](application#start)
 
 ---
 
@@ -58,17 +44,15 @@ It is responsible for:
 
 ###  constructor
 
-**new Application**(appConfig: *[ConfigType](../#configtype)*): [Application](application)
+**new Application**(...appConfigs: *[ConfigType](../modules/configinterface#configtype)[]*): [Application](application)
 
-*Defined in [Library/Application/Application.ts:74](https://github.com/Rawphs/stix/blob/f097835/src/Library/Application/Application.ts#L74)*
-
-The constructor creates new instances of [Config](config.md) and [ServiceManager](servicemanager.md). In the [Config constructor](config.md#constructor), the provided config will be merged to the defaultConfig. The config provided by you can contain routes, controllers, references to installed modules and/or settings to override defaults, for example. The [Service Manager constructor](servicemanager.md#constructor) will be responsible for setting core services and factories.
+*Defined in [Library/Application/Application.ts:28](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Application/Application.ts#L28)*
 
 **Parameters:**
 
-| Param | Type | Description |
-| ------ | ------ | ------ |
-| appConfig | [ConfigType](../#configtype) |  An object of configs from your application |
+| Name | Type |
+| ------ | ------ |
+| `Rest` appConfigs | [ConfigType](../modules/configinterface#configtype)[] |
 
 **Returns:** [Application](application)
 
@@ -76,37 +60,40 @@ ___
 
 ## Properties
 
+<a id="applicationconfigs"></a>
+
+### `Private` applicationConfigs
+
+**applicationConfigs**: *[ConfigType](../modules/configinterface#configtype)[]*
+
+*Defined in [Library/Application/Application.ts:24](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Application/Application.ts#L24)*
+
+___
 <a id="config"></a>
 
 ### `Private` config
 
 **config**: *[Config](config)*
 
-*Defined in [Library/Application/Application.ts:34](https://github.com/Rawphs/stix/blob/f097835/src/Library/Application/Application.ts#L34)*
-
-*__type__*: Config
+*Defined in [Library/Application/Application.ts:20](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Application/Application.ts#L20)*
 
 ___
-<a id="controllermanager"></a>
+<a id="environment"></a>
 
-### `Private` controllerManager
+### `Private` environment
 
-**controllerManager**: *[ControllerManager](controllermanager)*
+**environment**: *`string`* =  process.env.NODE_ENV || 'development'
 
-*Defined in [Library/Application/Application.ts:59](https://github.com/Rawphs/stix/blob/f097835/src/Library/Application/Application.ts#L59)*
-
-*__type__*: ControllerManager
+*Defined in [Library/Application/Application.ts:18](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Application/Application.ts#L18)*
 
 ___
-<a id="logger"></a>
+<a id="mode"></a>
 
-### `Private` logger
+### `Private` mode
 
-**logger**: *[LoggerService](loggerservice)*
+**mode**: *[ApplicationModes](../enums/applicationmodes)*
 
-*Defined in [Library/Application/Application.ts:44](https://github.com/Rawphs/stix/blob/f097835/src/Library/Application/Application.ts#L44)*
-
-*__type__*: LoggerService
+*Defined in [Library/Application/Application.ts:16](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Application/Application.ts#L16)*
 
 ___
 <a id="modulemanager"></a>
@@ -115,42 +102,7 @@ ___
 
 **moduleManager**: *[ModuleManager](modulemanager)*
 
-*Defined in [Library/Application/Application.ts:69](https://github.com/Rawphs/stix/blob/f097835/src/Library/Application/Application.ts#L69)*
-
-*__type__*: ModuleManager
-
-___
-<a id="responseservice"></a>
-
-### `Private` responseService
-
-**responseService**: *[ResponseService](responseservice)*
-
-*Defined in [Library/Application/Application.ts:64](https://github.com/Rawphs/stix/blob/f097835/src/Library/Application/Application.ts#L64)*
-
-*__type__*: ResponseService
-
-___
-<a id="router"></a>
-
-### `Private` router
-
-**router**: *[RouterService](routerservice)*
-
-*Defined in [Library/Application/Application.ts:49](https://github.com/Rawphs/stix/blob/f097835/src/Library/Application/Application.ts#L49)*
-
-*__type__*: RouterService
-
-___
-<a id="server"></a>
-
-### `Private` server
-
-**server**: *[ServerService](serverservice)*
-
-*Defined in [Library/Application/Application.ts:54](https://github.com/Rawphs/stix/blob/f097835/src/Library/Application/Application.ts#L54)*
-
-*__type__*: ServerService
+*Defined in [Library/Application/Application.ts:26](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Application/Application.ts#L26)*
 
 ___
 <a id="servicemanager"></a>
@@ -159,9 +111,7 @@ ___
 
 **serviceManager**: *[ServiceManager](servicemanager)*
 
-*Defined in [Library/Application/Application.ts:39](https://github.com/Rawphs/stix/blob/f097835/src/Library/Application/Application.ts#L39)*
-
-*__type__*: ServiceManager
+*Defined in [Library/Application/Application.ts:22](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Application/Application.ts#L22)*
 
 ___
 <a id="sharedeventmanager"></a>
@@ -170,9 +120,7 @@ ___
 
 **sharedEventManager**: *[SharedEventManager](sharedeventmanager)*
 
-*Defined in [Library/Application/Application.ts:74](https://github.com/Rawphs/stix/blob/f097835/src/Library/Application/Application.ts#L74)*
-
-*__type__*: SharedEventManager
+*Defined in [Library/Application/Application.ts:28](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Application/Application.ts#L28)*
 
 ___
 
@@ -182,133 +130,62 @@ ___
 
 ### `Private` bootstrap
 
-**bootstrap**(): `Promise`<`this`>
+**bootstrap**(mode: *[ApplicationModes](../enums/applicationmodes)*, loadOnly?: *`boolean`*): `Promise`<`this`>
 
-*Defined in [Library/Application/Application.ts:116](https://github.com/Rawphs/stix/blob/f097835/src/Library/Application/Application.ts#L116)*
+*Defined in [Library/Application/Application.ts:60](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Application/Application.ts#L60)*
 
-This async method is responsible for loading modules and registering essential services. After all modules are loaded and the core's middleware are set, we bootstrap every registered module that we found in the config. After everything is done we emit a `'ready'` event, which allows the listeners to execute before the server starts.
+**Parameters:**
+
+| Name | Type | Default value |
+| ------ | ------ | ------ |
+| mode | [ApplicationModes](../enums/applicationmodes) | - |
+| `Default value` loadOnly | `boolean` | false |
 
 **Returns:** `Promise`<`this`>
 
 ___
-<a id="getconfig"></a>
+<a id="bootstrapcli"></a>
 
-###  getConfig
+### `Private` bootstrapCli
 
-**getConfig**(): [Config](config)
+**bootstrapCli**(): `Promise`<`void`>
 
-*Defined in [Library/Application/Application.ts:232](https://github.com/Rawphs/stix/blob/f097835/src/Library/Application/Application.ts#L232)*
+*Defined in [Library/Application/Application.ts:102](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Application/Application.ts#L102)*
 
-Gets the Config instance.
-
-**Returns:** [Config](config)
+**Returns:** `Promise`<`void`>
 
 ___
-<a id="getconfigof"></a>
+<a id="bootstrapserver"></a>
 
-###  getConfigOf
+### `Private` bootstrapServer
 
-**getConfigOf**<`T`>(section: *`string`*): `T`
+**bootstrapServer**(): `void`
 
-*Defined in [Library/Application/Application.ts:223](https://github.com/Rawphs/stix/blob/f097835/src/Library/Application/Application.ts#L223)*
+*Defined in [Library/Application/Application.ts:110](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Application/Application.ts#L110)*
 
-Convenience method to get the config of a specific section.
-
-Same results could be achieved using the [getConfig method](application.md#getconfig) as seen bellow:
-
-```
-app.getConfig().of('router');
-```
-*__template__*: T
-
-**Type parameters:**
-
-#### T 
-**Parameters:**
-
-| Param | Type | Description |
-| ------ | ------ | ------ |
-| section | `string` |  - |
-
-**Returns:** `T`
+**Returns:** `void`
 
 ___
-<a id="getcontrollermanager"></a>
+<a id="getenvironment"></a>
 
-###  getControllerManager
+###  getEnvironment
 
-**getControllerManager**(): [ControllerManager](controllermanager)
+**getEnvironment**(): `string`
 
-*Defined in [Library/Application/Application.ts:180](https://github.com/Rawphs/stix/blob/f097835/src/Library/Application/Application.ts#L180)*
+*Defined in [Library/Application/Application.ts:118](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Application/Application.ts#L118)*
 
-Gets the Controller Manager.
-
-**Returns:** [ControllerManager](controllermanager)
+**Returns:** `string`
 
 ___
-<a id="getlogger"></a>
+<a id="getmode"></a>
 
-###  getLogger
+###  getMode
 
-**getLogger**(): [LoggerService](loggerservice)
+**getMode**(): [ApplicationModes](../enums/applicationmodes)
 
-*Defined in [Library/Application/Application.ts:153](https://github.com/Rawphs/stix/blob/f097835/src/Library/Application/Application.ts#L153)*
+*Defined in [Library/Application/Application.ts:52](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Application/Application.ts#L52)*
 
-Gets the Logger Service.
-
-**Returns:** [LoggerService](loggerservice)
-
-___
-<a id="getmodulemanager"></a>
-
-###  getModuleManager
-
-**getModuleManager**(): [ModuleManager](modulemanager)
-
-*Defined in [Library/Application/Application.ts:189](https://github.com/Rawphs/stix/blob/f097835/src/Library/Application/Application.ts#L189)*
-
-Gets the Module Manager.
-
-**Returns:** [ModuleManager](modulemanager)
-
-___
-<a id="getresponseservice"></a>
-
-###  getResponseService
-
-**getResponseService**(): [ResponseService](responseservice)
-
-*Defined in [Library/Application/Application.ts:198](https://github.com/Rawphs/stix/blob/f097835/src/Library/Application/Application.ts#L198)*
-
-Gets the Response Service.
-
-**Returns:** [ResponseService](responseservice)
-
-___
-<a id="getrouter"></a>
-
-###  getRouter
-
-**getRouter**(): [RouterService](routerservice)
-
-*Defined in [Library/Application/Application.ts:162](https://github.com/Rawphs/stix/blob/f097835/src/Library/Application/Application.ts#L162)*
-
-Gets the Router Service.
-
-**Returns:** [RouterService](routerservice)
-
-___
-<a id="getserver"></a>
-
-###  getServer
-
-**getServer**(): [ServerService](serverservice)
-
-*Defined in [Library/Application/Application.ts:171](https://github.com/Rawphs/stix/blob/f097835/src/Library/Application/Application.ts#L171)*
-
-Gets the Server Service.
-
-**Returns:** [ServerService](serverservice)
+**Returns:** [ApplicationModes](../enums/applicationmodes)
 
 ___
 <a id="getservicemanager"></a>
@@ -317,24 +194,47 @@ ___
 
 **getServiceManager**(): [ServiceManager](servicemanager)
 
-*Defined in [Library/Application/Application.ts:207](https://github.com/Rawphs/stix/blob/f097835/src/Library/Application/Application.ts#L207)*
-
-Gets the Service Manager.
+*Defined in [Library/Application/Application.ts:56](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Application/Application.ts#L56)*
 
 **Returns:** [ServiceManager](servicemanager)
+
+___
+<a id="isproduction"></a>
+
+###  isProduction
+
+**isProduction**(): `boolean`
+
+*Defined in [Library/Application/Application.ts:122](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Application/Application.ts#L122)*
+
+**Returns:** `boolean`
 
 ___
 <a id="launch"></a>
 
 ###  launch
 
-**launch**(): `Promise`<`this`>
+**launch**(mode?: *[ApplicationModes](../enums/applicationmodes)*, loadOnly?: *`boolean`*): `Promise`<`this`>
 
-*Defined in [Library/Application/Application.ts:243](https://github.com/Rawphs/stix/blob/f097835/src/Library/Application/Application.ts#L243)*
+*Defined in [Library/Application/Application.ts:126](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Application/Application.ts#L126)*
 
-Asynchronously launches the application.
+**Parameters:**
 
-This method first calls bootstrap and, when that is done, starts the server.
+| Name | Type | Default value |
+| ------ | ------ | ------ |
+| `Default value` mode | [ApplicationModes](../enums/applicationmodes) |  ApplicationModes.Server |
+| `Default value` loadOnly | `boolean` | false |
+
+**Returns:** `Promise`<`this`>
+
+___
+<a id="start"></a>
+
+###  start
+
+**start**(): `Promise`<`this`>
+
+*Defined in [Library/Application/Application.ts:92](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Application/Application.ts#L92)*
 
 **Returns:** `Promise`<`this`>
 

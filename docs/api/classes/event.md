@@ -4,8 +4,6 @@ title: Event
 
 # `Class` Event
 
-*__template__*: T
-
 ## Type parameters
 #### T 
 ## Hierarchy
@@ -20,7 +18,7 @@ title: Event
 
 ### Properties
 
-* [event](event#event-1)
+* [event](event#event)
 * [payload](event#payload)
 * [target](event#target)
 
@@ -40,17 +38,15 @@ title: Event
 
 **new Event**(event: *`string`*, target: *`any`*, payload: *`any`*): [Event](event)
 
-*Defined in [Library/EventManager/Event.ts:21](https://github.com/Rawphs/stix/blob/f097835/src/Library/EventManager/Event.ts#L21)*
-
-Creates an instance of Event.
+*Defined in [Library/EventManager/Event.ts:1](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/Event.ts#L1)*
 
 **Parameters:**
 
-| Param | Type | Description |
-| ------ | ------ | ------ |
-| event | `string` |  - |
-| target | `any` |  - |
-| payload | `any` |   |
+| Name | Type |
+| ------ | ------ |
+| event | `string` |
+| target | `any` |
+| payload | `any` |
 
 **Returns:** [Event](event)
 
@@ -58,15 +54,13 @@ ___
 
 ## Properties
 
-<a id="event-1"></a>
+<a id="event"></a>
 
 ### `Private` event
 
 **event**: *`string`*
 
-*Defined in [Library/EventManager/Event.ts:11](https://github.com/Rawphs/stix/blob/f097835/src/Library/EventManager/Event.ts#L11)*
-
-*__type__*: string
+*Defined in [Library/EventManager/Event.ts:2](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/Event.ts#L2)*
 
 ___
 <a id="payload"></a>
@@ -75,9 +69,7 @@ ___
 
 **payload**: *`any`*
 
-*Defined in [Library/EventManager/Event.ts:21](https://github.com/Rawphs/stix/blob/f097835/src/Library/EventManager/Event.ts#L21)*
-
-*__type__*: any
+*Defined in [Library/EventManager/Event.ts:2](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/Event.ts#L2)*
 
 ___
 <a id="target"></a>
@@ -86,9 +78,7 @@ ___
 
 **target**: *`any`*
 
-*Defined in [Library/EventManager/Event.ts:16](https://github.com/Rawphs/stix/blob/f097835/src/Library/EventManager/Event.ts#L16)*
-
-*__type__*: any
+*Defined in [Library/EventManager/Event.ts:2](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/Event.ts#L2)*
 
 ___
 
@@ -100,7 +90,7 @@ ___
 
 **getEvent**(): `string`
 
-*Defined in [Library/EventManager/Event.ts:41](https://github.com/Rawphs/stix/blob/f097835/src/Library/EventManager/Event.ts#L41)*
+*Defined in [Library/EventManager/Event.ts:4](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/Event.ts#L4)*
 
 **Returns:** `string`
 
@@ -111,7 +101,7 @@ ___
 
 **getPayload**(): `any`
 
-*Defined in [Library/EventManager/Event.ts:55](https://github.com/Rawphs/stix/blob/f097835/src/Library/EventManager/Event.ts#L55)*
+*Defined in [Library/EventManager/Event.ts:12](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/Event.ts#L12)*
 
 **Returns:** `any`
 
@@ -122,9 +112,7 @@ ___
 
 **getTarget**(): `T`
 
-*Defined in [Library/EventManager/Event.ts:51](https://github.com/Rawphs/stix/blob/f097835/src/Library/EventManager/Event.ts#L51)*
-
-*__memberof__*: Event
+*Defined in [Library/EventManager/Event.ts:8](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/Event.ts#L8)*
 
 **Returns:** `T`
 

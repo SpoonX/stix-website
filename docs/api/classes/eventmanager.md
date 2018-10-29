@@ -60,11 +60,11 @@ title: EventManager
 
 **new EventManager**(sharedEventManager?: *[EventManager](eventmanager)*): [EventManager](eventmanager)
 
-*Defined in [Library/EventManager/EventManager.ts:11](https://github.com/Rawphs/stix/blob/f097835/src/Library/EventManager/EventManager.ts#L11)*
+*Defined in [Library/EventManager/EventManager.ts:11](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/EventManager.ts#L11)*
 
 **Parameters:**
 
-| Param | Type | Default value |
+| Name | Type | Default value |
 | ------ | ------ | ------ |
 | `Default value` sharedEventManager | [EventManager](eventmanager) |  null |
 
@@ -80,7 +80,7 @@ ___
 
 **hooks**: *`object`*
 
-*Defined in [Library/EventManager/EventManager.ts:11](https://github.com/Rawphs/stix/blob/f097835/src/Library/EventManager/EventManager.ts#L11)*
+*Defined in [Library/EventManager/EventManager.ts:11](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/EventManager.ts#L11)*
 
 #### Type declaration
 
@@ -93,7 +93,7 @@ ___
 
 **sharedEventManager**: *[EventManager](eventmanager)*
 
-*Defined in [Library/EventManager/EventManager.ts:9](https://github.com/Rawphs/stix/blob/f097835/src/Library/EventManager/EventManager.ts#L9)*
+*Defined in [Library/EventManager/EventManager.ts:9](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/EventManager.ts#L9)*
 
 ___
 <a id="defaultmaxlisteners"></a>
@@ -104,7 +104,7 @@ ___
 
 *Inherited from EventEmitter.defaultMaxListeners*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/node/index.d.ts:1038*
+**
 
 ___
 
@@ -120,11 +120,11 @@ ___
 
 *Overrides EventEmitter.addListener*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/node/index.d.ts:1040*
+**
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | event |  `string` &#124; `symbol`|
 | listener | `function` |
@@ -138,11 +138,11 @@ ___
 
 **attach**(event: *`string`*, callback: *`Function`*, index?: *`number`*): `this`
 
-*Defined in [Library/EventManager/EventManager.ts:69](https://github.com/Rawphs/stix/blob/f097835/src/Library/EventManager/EventManager.ts#L69)*
+*Defined in [Library/EventManager/EventManager.ts:69](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/EventManager.ts#L69)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | event | `string` |
 | callback | `Function` |
@@ -157,11 +157,11 @@ ___
 
 **attachAt**(index: *`number`*, event: *`string`*, callback: *`Function`*): `this`
 
-*Defined in [Library/EventManager/EventManager.ts:81](https://github.com/Rawphs/stix/blob/f097835/src/Library/EventManager/EventManager.ts#L81)*
+*Defined in [Library/EventManager/EventManager.ts:81](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/EventManager.ts#L81)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | index | `number` |
 | event | `string` |
@@ -176,11 +176,11 @@ ___
 
 **attachOnce**(eventName: *`string`*, callback: *`Function`*, index?: *`number`*): `void`
 
-*Defined in [Library/EventManager/EventManager.ts:63](https://github.com/Rawphs/stix/blob/f097835/src/Library/EventManager/EventManager.ts#L63)*
+*Defined in [Library/EventManager/EventManager.ts:63](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/EventManager.ts#L63)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | eventName | `string` |
 | callback | `Function` |
@@ -195,11 +195,11 @@ ___
 
 **detach**(event: *`string`*, callback: *`Function`*): `this`
 
-*Defined in [Library/EventManager/EventManager.ts:85](https://github.com/Rawphs/stix/blob/f097835/src/Library/EventManager/EventManager.ts#L85)*
+*Defined in [Library/EventManager/EventManager.ts:85](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/EventManager.ts#L85)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | event | `string` |
 | callback | `Function` |
@@ -217,11 +217,11 @@ ___
 
 *Overrides EventEmitter.emit*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/node/index.d.ts:1052*
+**
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | event |  `string` &#124; `symbol`|
 | `Rest` args | `any`[] |
@@ -239,7 +239,7 @@ ___
 
 *Overrides EventEmitter.eventNames*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/node/index.d.ts:1053*
+**
 
 **Returns:** `Array`< `string` &#124; `symbol`>
 
@@ -254,7 +254,7 @@ ___
 
 *Overrides EventEmitter.getMaxListeners*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/node/index.d.ts:1049*
+**
 
 **Returns:** `number`
 
@@ -265,7 +265,7 @@ ___
 
 **getSharedEventManager**(): [EventManager](eventmanager)
 
-*Defined in [Library/EventManager/EventManager.ts:105](https://github.com/Rawphs/stix/blob/f097835/src/Library/EventManager/EventManager.ts#L105)*
+*Defined in [Library/EventManager/EventManager.ts:105](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/EventManager.ts#L105)*
 
 **Returns:** [EventManager](eventmanager)
 
@@ -276,11 +276,11 @@ ___
 
 **has**(event: *`string`*, callback: *`Function`*): `boolean`
 
-*Defined in [Library/EventManager/EventManager.ts:59](https://github.com/Rawphs/stix/blob/f097835/src/Library/EventManager/EventManager.ts#L59)*
+*Defined in [Library/EventManager/EventManager.ts:59](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/EventManager.ts#L59)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | event | `string` |
 | callback | `Function` |
@@ -298,11 +298,11 @@ ___
 
 *Overrides EventEmitter.listenerCount*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/node/index.d.ts:1054*
+**
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | type |  `string` &#124; `symbol`|
 
@@ -319,11 +319,11 @@ ___
 
 *Overrides EventEmitter.listeners*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/node/index.d.ts:1050*
+**
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | event |  `string` &#124; `symbol`|
 
@@ -340,11 +340,11 @@ ___
 
 *Overrides EventEmitter.off*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/node/index.d.ts:1046*
+**
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | event |  `string` &#124; `symbol`|
 | listener | `function` |
@@ -362,11 +362,11 @@ ___
 
 *Overrides EventEmitter.on*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/node/index.d.ts:1041*
+**
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | event |  `string` &#124; `symbol`|
 | listener | `function` |
@@ -384,11 +384,11 @@ ___
 
 *Overrides EventEmitter.once*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/node/index.d.ts:1042*
+**
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | event |  `string` &#124; `symbol`|
 | listener | `function` |
@@ -406,11 +406,11 @@ ___
 
 *Overrides EventEmitter.prependListener*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/node/index.d.ts:1043*
+**
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | event |  `string` &#124; `symbol`|
 | listener | `function` |
@@ -428,11 +428,11 @@ ___
 
 *Overrides EventEmitter.prependOnceListener*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/node/index.d.ts:1044*
+**
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | event |  `string` &#124; `symbol`|
 | listener | `function` |
@@ -450,11 +450,11 @@ ___
 
 *Overrides EventEmitter.rawListeners*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/node/index.d.ts:1051*
+**
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | event |  `string` &#124; `symbol`|
 
@@ -471,11 +471,11 @@ ___
 
 *Overrides EventEmitter.removeAllListeners*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/node/index.d.ts:1047*
+**
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | `Optional` event |  `string` &#124; `symbol`|
 
@@ -492,11 +492,11 @@ ___
 
 *Overrides EventEmitter.removeListener*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/node/index.d.ts:1045*
+**
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | event |  `string` &#124; `symbol`|
 | listener | `function` |
@@ -514,11 +514,11 @@ ___
 
 *Overrides EventEmitter.setMaxListeners*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/node/index.d.ts:1048*
+**
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | n | `number` |
 
@@ -531,11 +531,11 @@ ___
 
 **trigger**(eventName: *`string`*, target: *`any`*, payload?: *`any`*): `Promise`<`boolean`>
 
-*Defined in [Library/EventManager/EventManager.ts:19](https://github.com/Rawphs/stix/blob/f097835/src/Library/EventManager/EventManager.ts#L19)*
+*Defined in [Library/EventManager/EventManager.ts:19](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/EventManager.ts#L19)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | eventName | `string` |
 | target | `any` |
@@ -552,13 +552,13 @@ ___
 
 *Inherited from EventEmitter.listenerCount*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/node/index.d.ts:1037*
+**
 
 *__deprecated__*: since v4.0.0
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | emitter | `EventEmitter` |
 | event |  `string` &#124; `symbol`|
