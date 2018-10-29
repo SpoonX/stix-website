@@ -7,7 +7,7 @@
     "write-translations": "docusaurus-write-translations",
     "version": "docusaurus-version",
     "rename-version": "docusaurus-rename-version",
-    "create-sidebar": "node createSidebar.js",
+    "create-sidebar": "node scripts/createSidebar.js",
     "build-api": "typedoc --theme markdown --name stix --tsconfig ../stix/tsconfig.json --target es2017 --module commonjs --excludeExternals --out ../docs/api ../stix/src"
   },
   "devDependencies": {
