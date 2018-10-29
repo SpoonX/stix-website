@@ -1,13 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
 /* your custom css */
+
+h1, h2, h3, h4, h5, h6, p, a, span {
+  font-family: 'Roboto', sans-serif;
+}
+
+body, .fixedHeaderContainer {
+  background-color: $background;
+}
+
+
+
+.fixedHeaderContainer header h3,
+.navigationSlider .slidingNav ul {
+  color: $secondaryColor;
+}
+
+.navPusher {
+  z-index: unset;
+}
+
+
+.projectTitle {
+  font-size: 200%;
+  font-weight: 700;
+  color: $secondaryColor;
+  line-height: 50px;
+}
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (max-width: 774px) {
+  .halfCube {
+    display: none;
+  }
+}
 
+@media only screen and (min-width: 1024px) {
+  .navigationSlider .slidingNav ul li a {
+    color: $secondaryColor;
+    font-weight: 500;
+  }
+
+  .navigationSlider .slidingNav ul li a:focus,
+  .navigationSlider .slidingNav ul li a:hover,
+  .navigationSlider .slidingNav ul li.siteNavItemActive a,
+  .navigationSlider .slidingNav ul li.siteNavGroupActive a {
+    background: $background;
+    color: $primaryColor;
+  }
+
+  .halfCube {
+    position: absolute;
+    right: -135px;
+    top: 10px;
+    z-index: 99999;
+    height: 300px;
+  }
 }
 
 @media only screen and (max-width: 1023px) {
+  .navigationSlider .slidingNav ul li a,
+  .navigationSlider .slidingNav ul li a:focus,
+  .navigationSlider .slidingNav ul li a:hover,
+  .navigationSlider .slidingNav ul li.siteNavItemActive a,
+  .navigationSlider .slidingNav ul li.siteNavGroupActive a {
+    color: white;
+  }
+
+  .halfCube {
+    position: absolute;
+    right: -112px;
+    top: 110px;
+    z-index: 99999;
+    height: 250px;
+  }
 }
 
 @media only screen and (min-width: 1400px) {

@@ -54,10 +54,12 @@ const siteConfig = {
   footerIcon: 'img/logo.svg',
   favicon: 'img/logo.ico',
   disableHeaderTitle: true,
+  cube: 'img/cube.svg',
 
   /* Colors for website */
   colors: {
     white: '#ffffff',
+    background: '#E5E5E5',
     offWhite: '#f7f7f7',
     primaryColor: '#1DD882',
     secondaryColor: '#232345',

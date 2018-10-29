@@ -57,10 +57,13 @@ const Logo = props => (
   </div>
 );
 
+const HalfCube = () => (
+  <img src={siteConfig.cube} className="halfCube" />
+);
+
 const ProjectTitle = () => (
-  <h2 className="projectTitle" style={{color: siteConfig.colors.secondaryColor}}>
-    {siteConfig.title}
-    <small style={{color: siteConfig.colors.secondaryColor}}>{siteConfig.tagline}</small>
+  <h2 className="projectTitle">
+    A module-based,<br/>TypeScript-first Node.js® framework.
   </h2>
 );
 
@@ -78,7 +81,6 @@ class HomeSplash extends React.Component {
 
     return (
       <SplashContainer>
-        <Logo img_src={imgUrl('logo.svg')} />
         <div className="inner">
           <ProjectTitle />
           <PromoSection>
@@ -211,6 +213,7 @@ class Index extends React.Component {
 
     return (
       <div>
+        <HalfCube />
         <HomeSplash language={language} />
         <div className="mainContainer">
           <Features />
