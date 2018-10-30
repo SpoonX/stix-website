@@ -51,12 +51,6 @@ const SplashContainer = props => (
   </div>
 );
 
-const Logo = props => (
-  <div className="projectLogo">
-    <img src={props.img_src} alt="Project Logo" />
-  </div>
-);
-
 const HalfCube = () => (
   <img src={siteConfig.cube} className="halfCube" />
 );
@@ -83,11 +77,11 @@ class HomeSplash extends React.Component {
       <SplashContainer>
         <div className="inner">
           <ProjectTitle />
-          <PromoSection>
-            <Button href="#try">Try It Out</Button>
-            <Button href={docUrl('doc1.html', language)}>Example Link</Button>
-            <Button href={docUrl('doc2.html', language)}>Example Link 2</Button>
-          </PromoSection>
+          {/*<PromoSection>*/}
+            {/*<Button href="#try">Try It Out</Button>*/}
+            {/*<Button href={docUrl('doc1.html', language)}>Example Link</Button>*/}
+            {/*<Button href={docUrl('doc2.html', language)}>Example Link 2</Button>*/}
+          {/*</PromoSection>*/}
         </div>
       </SplashContainer>
     );
@@ -96,7 +90,7 @@ class HomeSplash extends React.Component {
 
 const Block = props => (
   <Container
-    padding={['bottom', 'top']}
+    padding={props.padding || ['bottom', 'top']}
     id={props.id}
     background={props.background}>
     <GridBlock align="center" contents={props.children} layout={props.layout} className={props.className} />
@@ -104,34 +98,31 @@ const Block = props => (
 );
 
 const Features = () => (
-  <Block layout="twoColumn" background="light">
-    {[
-      {
-        content: 'Easily split up and reuse parts of your domain. Simply plug in a module like user or shopping cart; configure it and get going. Creating and using modules is easy. They\'re just regular directories. No magic. No directory scanning, no prefixes, just your own code.',
-        // image: imgUrl('docusaurus.svg'),
-        imageAlign: 'top',
-        title: 'Module-based',
-      },
-      {
-        content: 'Stix is really, really fast. It makes no assumptions, doesn\'t do work it shouldn\'t and overall just runs only what is needed. It\'s an orchestrator that\'s kind to your resources.',
-        // image: imgUrl('docusaurus.svg'),
-        imageAlign: 'top',
-        title: 'Fast',
-      },
-      {
-        content: 'Written with and for TypeScript projects. Although it does work with flow and ES6 based projects, the focus is on TypeScript. Some of the reasons stix is so fast can also be attributed to its use of new features and lazy nature of service loading.',
-        // image: imgUrl('docusaurus.svg'),
-        imageAlign: 'top',
-        title: 'Modern',
-      },
-      {
-        content: 'Design patterns that have been proven to work and scale. This includes inversion of control, DI and injectors for controllers and commands making it easy to create highly reusable and configurable modules for your API and/or CLI.',
-        // image: imgUrl('docusaurus.svg'),
-        imageAlign: 'top',
-        title: 'Scalable',
-      },
-    ]}
-  </Block>
+ <React.Fragment>
+   <h3 className="sectionTitle">Why Stix?</h3>
+   <Block layout="threeColumn" padding={['bottom']}>
+     {[
+       {
+         content: 'Easily split up and reuse parts of your domain. Simply plug in a module like user or shopping cart; configure it and get going. Creating and using modules is easy. They\'re just regular directories. No magic. No directory scanning, no prefixes, just your own code.',
+         image: imgUrl('module.svg'),
+         imageAlign: 'top',
+         title: 'Module Based',
+       },
+       {
+         content: 'Written with and for TypeScript projects. Although it does work with flow and ES6 based projects, the focus is on TypeScript. Some of the reasons stix is so fast can also be attributed to its use of new features and lazy nature of service loading.',
+         image: imgUrl('fast.svg'),
+         imageAlign: 'top',
+         title: 'Modern',
+       },
+       {
+         content: 'Proven to work and scale. This includes inversion of control, service managers and injectors for controllers and commands making it easy to create highly reusable and configurable modules for your API, or the CLI.',
+         image: imgUrl('pattern.svg'),
+         imageAlign: 'top',
+         title: 'Design Patterns',
+       },
+     ]}
+   </Block>
+ </React.Fragment>
 );
 
 const FeatureCallout = () => (

@@ -9,7 +9,15 @@ body, .fixedHeaderContainer {
   background-color: $background;
 }
 
-
+.button {
+  border-radius: unset;
+  border: unset;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 20px;
+  letter-spacing: 1px;
+  text-transform: unset;
+}
 
 .fixedHeaderContainer header h3,
 .navigationSlider .slidingNav ul {
@@ -20,6 +28,12 @@ body, .fixedHeaderContainer {
   z-index: unset;
 }
 
+.sectionTitle {
+  font-weight: 700;
+  text-align: center;
+  margin: 50px 0;
+  text-transform: uppercase;
+}
 
 .projectTitle {
   font-size: 200%;
