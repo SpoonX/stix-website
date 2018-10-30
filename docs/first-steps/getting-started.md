@@ -20,12 +20,6 @@ that is essential to the application. This is where its modular nature comes int
 _**you**_ need, avoiding unnecessary modules. You can override the configuration for every single module
 (including the ones from stix itself), if needed. You have the power!
 
-To get you started quickly, we recommend the following modules:
-
-- [`stix-gates`](https://github.com/SpoonX/stix-gates): Allows you to setup enrichers, validators and infinitely more for actions.
-- [`stix-wetland`](https://github.com/SpoonX/stix-wetland ): Integrates your stix with [wetland](https://github.com/SpoonX/wetland), a delightful mapping-based ORM.
-It will make your life much easier, I promise.
-- [`stix-swagger`]():
 
 
 

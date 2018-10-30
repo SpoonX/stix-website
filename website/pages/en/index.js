@@ -99,13 +99,9 @@ const SplashContainer = props => (
   </div>
 );
 
-const HalfCube = () => (
-  <img src={siteConfig.cube} className="halfCube" />
-);
+const HalfCube = () => (<img src={siteConfig.cube} className="halfCube" />);
 
-const Cube = () => (
-  <img src={siteConfig.cube} className="cube" />
-);
+const Cube = () => (<img src={siteConfig.cube} className="cube" />);
 
 const ProjectTitle = () => (
   <h2 className="projectTitle">
@@ -129,11 +125,11 @@ class HomeSplash extends React.Component {
       <SplashContainer>
         <div className="inner">
           <ProjectTitle />
-          {/*<PromoSection>*/}
-          {/*<Button href="#try">Try It Out</Button>*/}
-          {/*<Button href={docUrl('doc1.html', language)}>Example Link</Button>*/}
-          {/*<Button href={docUrl('doc2.html', language)}>Example Link 2</Button>*/}
-          {/*</PromoSection>*/}
+          <PromoSection>
+          <Button href={docUrl('first-steps/getting-started.html', language)}>Try It Out</Button>
+          <Button href="#features">Features</Button>
+          <Button href="#modules">Core Modules</Button>
+          </PromoSection>
         </div>
       </SplashContainer>
     );
@@ -143,24 +139,23 @@ class HomeSplash extends React.Component {
 const Block = props => (
   <Container
     padding={props.padding || ['bottom', 'top']}
-    id={props.id}
     background={props.background}>
     <GridBlock align="center" contents={props.children} layout={props.layout} className={props.className} />
   </Container>
 );
 
 const Features = (props) => (
-  <React.Fragment>
-    <h3 className="sectionTitle">{props.title}</h3>
+  <div>
+    <h3 className="sectionTitle" id={props.id}>{props.title}</h3>
     <Block layout="threeColumn" padding={['bottom']}>
-      {props.content}
+      { props.content }
     </Block>
-  </React.Fragment>
+  </div>
 );
 
 const Card = (props) => (
   <div className="blockElement card alignCenter imageAlignTop twoByGridBlock" style={{ position: 'relative' }}>
-    {props.cube && <Cube />}
+    { props.cube && <Cube /> }
     <div key={props.title}>
       <img src={props.image} />
       <div className="blockContent">
@@ -175,41 +170,18 @@ const Card = (props) => (
 
 const Modules = (props) => (
   <Container
-    padding={['bottom', 'top']}
+    padding={['bottom']}
     id={props.id}>
     <h3 className="sectionTitle container paddingBottom">{props.title}</h3>
     <div className="gridBlock cardBlock">
-      {modules.map(({ title, content, image }, index) => {
-        return <Card cube={index === 0} title={title} content={content} image={image} />;
-      })}
+      {
+        modules.map(({ title, content, image }, index) => {
+          return <Card cube={index === 0} title={title} content={content} image={image} key={title} />;
+        })
+      }
     </div>
   </Container>
 );
-
-const Showcase = props => {
-  if ((siteConfig.users || []).length === 0) {
-    return null;
-  }
-
-  const showcase = siteConfig.users.filter(user => user.pinned).map(user => (
-    <a href={user.infoLink} key={user.infoLink}>
-      <img src={user.image} alt={user.caption} title={user.caption} />
-    </a>
-  ));
-
-  return (
-    <div className="productShowcaseSection paddingBottom">
-      <h2>Who is Using This?</h2>
-      <p>This project is used by all these people</p>
-      <div className="logos">{showcase}</div>
-      <div className="more-users">
-        <a className="button" href={pageUrl('users.html', props.language)}>
-          More {siteConfig.title} Users
-        </a>
-      </div>
-    </div>
-  );
-};
 
 class Index extends React.Component {
   render () {
@@ -220,14 +192,9 @@ class Index extends React.Component {
         <HalfCube />
         <HomeSplash language={language} />
         <div className="mainContainer">
-          <Features content={whyStix} title="Why Stix?" />
-          <Features content={stixContent} title="What does it contain?" />
-          <Modules content={modules} title="Core modules" />
-          {/*<FeatureCallout />*/}
-          {/*<StixCli />*/}
-          {/*<TryOut />*/}
-          {/*<Description />*/}
-          {/*<Showcase language={language} />*/}
+          <Features content={whyStix} title="Why Stix?" id="why" />
+          <Features content={stixContent} title="What does it contain?" id="features" />
+          <Modules content={modules} title="Core modules" id="modules" />
         </div>
       </div>
     );

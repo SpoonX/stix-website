@@ -42,6 +42,7 @@ const siteConfig = {
     {doc: 'modules/stix-gates/gates-about', label: 'Modules'},
     {doc: 'api', label: 'API'},
     {page: 'help', label: 'Help'},
+    // { search: true }
     // {page: 'api', label: 'API 2'},
     // {blog: true, label: 'Blog'},
   ],
@@ -58,11 +59,12 @@ const siteConfig = {
 
   /* Colors for website */
   colors: {
-    white: '#ffffff',
-    background: '#E5E5E5',
+    background: '#F3F3F3',
     offWhite: '#f7f7f7',
-    primaryColor: '#1DD882',
-    secondaryColor: '#232345',
+    green: '#1DD882',
+    navyBlue: '#232345',
+    title: '#474747',
+    text: '#646464'
   },
 
   /* Custom fonts for website */
@@ -88,7 +90,7 @@ const siteConfig = {
   },
 
   // Add custom scripts here that would be placed in <script> tags.
-  scripts: ['https://buttons.github.io/buttons.js'],
+  // scripts: ['https://buttons.github.io/buttons.js'],
 
   // On page navigation for the current documentation page.
   onPageNav: 'separate',
@@ -101,7 +103,14 @@ const siteConfig = {
 
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
-  // repoUrl: 'https://github.com/SpoonX/stix',
+  repoUrl: 'https://github.com/SpoonX/stix',
+  // algolia: {
+  //   apiKey: 'c0bb5f865609b0fa0ff4d99f27700b81',
+  //   indexName: 'stix',
+  //   algoliaOptions: {
+  //     facetFilters: [ "version:VERSION" ]
+  //   } // Optional, if provided by Algolia
+  // },
 };
 
 module.exports = siteConfig;
