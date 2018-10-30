@@ -8,12 +8,15 @@
     "version": "docusaurus-version",
     "rename-version": "docusaurus-rename-version",
     "create-sidebar": "node scripts/createSidebar.js",
+    "prepare": "patch-package",
     "build-api": "typedoc --theme markdown --name stix --tsconfig ../stix/tsconfig.json --target es2017 --module commonjs --excludeExternals --out ../docs/api ../stix/src"
+  },
+  "dependencies": {
+    "patch-package": "^5.1.1",
+    "postinstall-prepare": "^1.0.1"
   },
   "devDependencies": {
     "docusaurus": "^1.5.0",
-    "patch-package": "^5.1.1",
-    "postinstall-prepare": "^1.0.1",
     "tape-roller": "^2.0.0",
     "typedoc": "^0.13.0",
     "typedoc-plugin-markdown": "^1.1.18"
