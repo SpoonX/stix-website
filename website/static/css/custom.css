@@ -9,7 +9,11 @@ body, .fixedHeaderContainer {
   background-color: $background;
 }
 
-.button {
+.sideNavVisible {
+  background-color: white;
+}
+
+.homeButton {
   border-radius: unset;
   border: unset;
   font-size: 14px;
