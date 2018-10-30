@@ -44,7 +44,7 @@ title: CliService
 
 ###  constructor
 
-**new CliService**(commandManager: *[CommandManager](commandmanager)*, config?: *[CliConfigType](../modules/cliconfigtype#cliconfigtype)*): [CliService](cliservice)
+**new CliService**(commandManager: *[CommandManager](commandmanager)*, config?: *[CliConfigType]()*): [CliService](cliservice)
 
 *Defined in [Library/Cli/CliService.ts:23](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Cli/CliService.ts#L23)*
 
@@ -53,7 +53,7 @@ title: CliService
 | Name | Type | Default value |
 | ------ | ------ | ------ |
 | commandManager | [CommandManager](commandmanager) | - |
-| `Default value` config | [CliConfigType](../modules/cliconfigtype#cliconfigtype) |  {} |
+| `Default value` config | [CliConfigType]() |  {} |
 
 **Returns:** [CliService](cliservice)
 
@@ -82,14 +82,14 @@ Lookup index linking to commands in programs.
 
 #### Type declaration
 
-[token: `string`]: [CliCommandType](../modules/clitypes#clicommandtype)
+[token: `string`]: [CliCommandType]()
 
 ___
 <a id="config"></a>
 
 ### `Private` config
 
-**config**: *[CliConfigType](../modules/cliconfigtype#cliconfigtype)*
+**config**: *[CliConfigType]()*
 
 *Defined in [Library/Cli/CliService.ts:14](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Cli/CliService.ts#L14)*
 
@@ -104,7 +104,7 @@ ___
 
 #### Type declaration
 
-[program: `string`]: [ProcessedProgramType](../modules/clitypes#processedprogramtype)
+[program: `string`]: [ProcessedProgramType]()
 
 ___
 
@@ -150,7 +150,7 @@ ___
 
 ###  getCommand
 
-**getCommand**(command: *`string`*): [CliCommandType](../modules/clitypes#clicommandtype)
+**getCommand**(command: *`string`*): [CliCommandType]()
 
 *Defined in [Library/Cli/CliService.ts:129](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Cli/CliService.ts#L129)*
 
@@ -160,7 +160,7 @@ ___
 | ------ | ------ |
 | command | `string` |
 
-**Returns:** [CliCommandType](../modules/clitypes#clicommandtype)
+**Returns:** [CliCommandType]()
 
 ___
 <a id="getcommands"></a>
@@ -178,11 +178,11 @@ ___
 
 ###  getConfig
 
-**getConfig**(): [CliConfigType](../modules/cliconfigtype#cliconfigtype)
+**getConfig**(): [CliConfigType]()
 
 *Defined in [Library/Cli/CliService.ts:133](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Cli/CliService.ts#L133)*
 
-**Returns:** [CliConfigType](../modules/cliconfigtype#cliconfigtype)
+**Returns:** [CliConfigType]()
 
 ___
 <a id="getprograms"></a>
@@ -200,7 +200,7 @@ ___
 
 ### `Private` queParser
 
-**queParser**(commandLine: *`string`*): [ParsedCommandType](../modules/clitypes#parsedcommandtype)
+**queParser**(commandLine: *`string`*): [ParsedCommandType]()
 
 *Defined in [Library/Cli/CliService.ts:162](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Cli/CliService.ts#L162)*
 
@@ -210,7 +210,7 @@ ___
 | ------ | ------ |
 | commandLine | `string` |
 
-**Returns:** [ParsedCommandType](../modules/clitypes#parsedcommandtype)
+**Returns:** [ParsedCommandType]()
 
 ___
 <a id="registerprogram"></a>
@@ -239,7 +239,7 @@ ___
 
 ### `Private` registerPrograms
 
-**registerPrograms**(programs: *`Array`< [CliProgramType](../modules/clitypes#cliprogramtype) &#124; [CliCommandType](../modules/clitypes#clicommandtype)>*): `void`
+**registerPrograms**(programs: *`Array`< [CliProgramType]() &#124; [CliCommandType]()>*): `void`
 
 *Defined in [Library/Cli/CliService.ts:137](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Cli/CliService.ts#L137)*
 
@@ -247,7 +247,7 @@ ___
 
 | Name | Type |
 | ------ | ------ |
-| programs | `Array`< [CliProgramType](../modules/clitypes#cliprogramtype) &#124; [CliCommandType](../modules/clitypes#clicommandtype)> |
+| programs | `Array`< [CliProgramType]() &#124; [CliCommandType]()> |
 
 **Returns:** `void`
 
@@ -292,7 +292,7 @@ ___
 
 ### `Private` validate
 
-**validate**(argv: *`string`[]*, command: *[CliCommandType](../modules/clitypes#clicommandtype)*): `object`
+**validate**(argv: *`string`[]*, command: *[CliCommandType]()*): `object`
 
 *Defined in [Library/Cli/CliService.ts:74](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Cli/CliService.ts#L74)*
 
@@ -301,7 +301,7 @@ ___
 | Name | Type |
 | ------ | ------ |
 | argv | `string`[] |
-| command | [CliCommandType](../modules/clitypes#clicommandtype) |
+| command | [CliCommandType]() |
 
 **Returns:** `object`
 

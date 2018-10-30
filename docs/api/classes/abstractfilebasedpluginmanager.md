@@ -54,7 +54,7 @@ title: AbstractFileBasedPluginManager
 
 ###  constructor
 
-**new AbstractFileBasedPluginManager**(creationContext: *[ServiceManager](servicemanager)*, locations: *`string`[]*, config: *[ServiceManagerConfigType](../modules/servicemanagerconfiginterface#servicemanagerconfigtype)*): [AbstractFileBasedPluginManager](abstractfilebasedpluginmanager)
+**new AbstractFileBasedPluginManager**(creationContext: *[ServiceManager](servicemanager)*, locations: *`string`[]*, config: *[ServiceManagerConfigType]()*): [AbstractFileBasedPluginManager](abstractfilebasedpluginmanager)
 
 *Overrides [AbstractPluginManager](abstractpluginmanager).[constructor](abstractpluginmanager#constructor)*
 
@@ -66,7 +66,7 @@ title: AbstractFileBasedPluginManager
 | ------ | ------ |
 | creationContext | [ServiceManager](servicemanager) |
 | locations | `string`[] |
-| config | [ServiceManagerConfigType](../modules/servicemanagerconfiginterface#servicemanagerconfigtype) |
+| config | [ServiceManagerConfigType]() |
 
 **Returns:** [AbstractFileBasedPluginManager](abstractfilebasedpluginmanager)
 
@@ -94,7 +94,7 @@ ___
 
 ###  configure
 
-**configure**(config: *[ServiceManagerConfigType](../modules/servicemanagerconfiginterface#servicemanagerconfigtype)*): `this`
+**configure**(config: *[ServiceManagerConfigType]()*): `this`
 
 *Inherited from [ServiceManager](servicemanager).[configure](servicemanager#configure)*
 
@@ -104,7 +104,7 @@ ___
 
 | Name | Type |
 | ------ | ------ |
-| config | [ServiceManagerConfigType](../modules/servicemanagerconfiginterface#servicemanagerconfigtype) |
+| config | [ServiceManagerConfigType]() |
 
 **Returns:** `this`
 
@@ -113,7 +113,7 @@ ___
 
 ###  get
 
-**get**<`T`>(Service: *[ServiceKeyType](../modules/servicemanagerconfiginterface#servicekeytype)<`T`>*, forceTransient?: *`boolean`*): `T`
+**get**<`T`>(Service: *[ServiceKeyType]()<`T`>*, forceTransient?: *`boolean`*): `T`
 
 *Inherited from [ServiceManager](servicemanager).[get](servicemanager#get)*
 
@@ -126,7 +126,7 @@ ___
 
 | Name | Type | Default value |
 | ------ | ------ | ------ |
-| Service | [ServiceKeyType](../modules/servicemanagerconfiginterface#servicekeytype)<`T`> | - |
+| Service | [ServiceKeyType]()<`T`> | - |
 | `Default value` forceTransient | `boolean` | false |
 
 **Returns:** `T`
@@ -136,7 +136,7 @@ ___
 
 ###  getPlugin
 
-**getPlugin**(plugin: *[Instantiable](../modules/types#instantiable)<`Object`>*): `Object`
+**getPlugin**(plugin: *[Instantiable]()<`Object`>*): `Object`
 
 *Defined in [Library/ServiceManager/AbstractFileBasedPluginManager.ts:57](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/AbstractFileBasedPluginManager.ts#L57)*
 
@@ -144,7 +144,7 @@ ___
 
 | Name | Type |
 | ------ | ------ |
-| plugin | [Instantiable](../modules/types#instantiable)<`Object`> |
+| plugin | [Instantiable]()<`Object`> |
 
 **Returns:** `Object`
 
@@ -153,7 +153,7 @@ ___
 
 ###  has
 
-**has**<`T`>(Service: *[ServiceKeyType](../modules/servicemanagerconfiginterface#servicekeytype)<`T`>*): `boolean`
+**has**<`T`>(Service: *[ServiceKeyType]()<`T`>*): `boolean`
 
 *Inherited from [ServiceManager](servicemanager).[has](servicemanager#has)*
 
@@ -166,7 +166,7 @@ ___
 
 | Name | Type |
 | ------ | ------ |
-| Service | [ServiceKeyType](../modules/servicemanagerconfiginterface#servicekeytype)<`T`> |
+| Service | [ServiceKeyType]()<`T`> |
 
 **Returns:** `boolean`
 
@@ -229,7 +229,7 @@ ___
 
 ###  registerAliases
 
-**registerAliases**(aliases: *[AliasesType](../modules/servicemanagerconfiginterface#aliasestype)*): `this`
+**registerAliases**(aliases: *[AliasesType]()*): `this`
 
 *Inherited from [ServiceManager](servicemanager).[registerAliases](servicemanager#registeraliases)*
 
@@ -239,7 +239,7 @@ ___
 
 | Name | Type |
 | ------ | ------ |
-| aliases | [AliasesType](../modules/servicemanagerconfiginterface#aliasestype) |
+| aliases | [AliasesType]() |
 
 **Returns:** `this`
 
@@ -248,7 +248,7 @@ ___
 
 ###  registerFactories
 
-**registerFactories**(factories: *[FactoriesMapType](../modules/servicemanagerconfiginterface#factoriesmaptype)*): `this`
+**registerFactories**(factories: *[FactoriesMapType]()*): `this`
 
 *Inherited from [ServiceManager](servicemanager).[registerFactories](servicemanager#registerfactories)*
 
@@ -258,7 +258,7 @@ ___
 
 | Name | Type |
 | ------ | ------ |
-| factories | [FactoriesMapType](../modules/servicemanagerconfiginterface#factoriesmaptype) |
+| factories | [FactoriesMapType]() |
 
 **Returns:** `this`
 
@@ -287,7 +287,7 @@ ___
 
 ###  registerInvokable
 
-**registerInvokable**(key: *[ServiceKeyType](../modules/servicemanagerconfiginterface#servicekeytype)<`Object`>*, value: *[Instantiable](../modules/types#instantiable)<`Object`>*): `void`
+**registerInvokable**(key: *[ServiceKeyType]()<`Object`>*, value: *[Instantiable]()<`Object`>*): `void`
 
 *Inherited from [ServiceManager](servicemanager).[registerInvokable](servicemanager#registerinvokable)*
 
@@ -297,8 +297,8 @@ ___
 
 | Name | Type |
 | ------ | ------ |
-| key | [ServiceKeyType](../modules/servicemanagerconfiginterface#servicekeytype)<`Object`> |
-| value | [Instantiable](../modules/types#instantiable)<`Object`> |
+| key | [ServiceKeyType]()<`Object`> |
+| value | [Instantiable]()<`Object`> |
 
 **Returns:** `void`
 
@@ -307,7 +307,7 @@ ___
 
 ### `Protected` registerPlugin
 
-**registerPlugin**(Plugin: *[Instantiable](../modules/types#instantiable)<`Object`>*): `this`
+**registerPlugin**(Plugin: *[Instantiable]()<`Object`>*): `this`
 
 *Defined in [Library/ServiceManager/AbstractFileBasedPluginManager.ts:67](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/AbstractFileBasedPluginManager.ts#L67)*
 
@@ -315,7 +315,7 @@ ___
 
 | Name | Type |
 | ------ | ------ |
-| Plugin | [Instantiable](../modules/types#instantiable)<`Object`> |
+| Plugin | [Instantiable]()<`Object`> |
 
 **Returns:** `this`
 
@@ -324,7 +324,7 @@ ___
 
 ### `Protected` registerPlugins
 
-**registerPlugins**(plugins: *`Array`<[Instantiable](../modules/types#instantiable)<`Object`>>*): `this`
+**registerPlugins**(plugins: *`Array`<[Instantiable]()<`Object`>>*): `this`
 
 *Defined in [Library/ServiceManager/AbstractFileBasedPluginManager.ts:61](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/AbstractFileBasedPluginManager.ts#L61)*
 
@@ -332,7 +332,7 @@ ___
 
 | Name | Type |
 | ------ | ------ |
-| plugins | `Array`<[Instantiable](../modules/types#instantiable)<`Object`>> |
+| plugins | `Array`<[Instantiable]()<`Object`>> |
 
 **Returns:** `this`
 
@@ -361,7 +361,7 @@ ___
 
 ### `Static` getPluginName
 
-**getPluginName**(plugin: *[FileBasedPluginType](../modules/filebasedplugintype#filebasedplugintype)*): `string`
+**getPluginName**(plugin: *[FileBasedPluginType]()*): `string`
 
 *Defined in [Library/ServiceManager/AbstractFileBasedPluginManager.ts:16](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/AbstractFileBasedPluginManager.ts#L16)*
 
@@ -369,7 +369,7 @@ ___
 
 | Name | Type |
 | ------ | ------ |
-| plugin | [FileBasedPluginType](../modules/filebasedplugintype#filebasedplugintype) |
+| plugin | [FileBasedPluginType]() |
 
 **Returns:** `string`
 

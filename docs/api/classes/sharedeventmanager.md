@@ -18,7 +18,7 @@ title: SharedEventManager
 
 ### Properties
 
-* [sharedEventManager](sharedeventmanager#sharedeventmanager)
+* [sharedEventManager](sharedeventmanager#sharedeventmanager-1)
 * [defaultMaxListeners](sharedeventmanager#defaultmaxlisteners)
 
 ### Methods
@@ -73,7 +73,7 @@ ___
 
 ## Properties
 
-<a id="sharedeventmanager"></a>
+<a id="sharedeventmanager-1"></a>
 
 ### `Protected` sharedEventManager
 

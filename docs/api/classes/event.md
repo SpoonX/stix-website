@@ -18,7 +18,7 @@ title: Event
 
 ### Properties
 
-* [event](event#event)
+* [event](event#event-1)
 * [payload](event#payload)
 * [target](event#target)
 
@@ -54,7 +54,7 @@ ___
 
 ## Properties
 
-<a id="event"></a>
+<a id="event-1"></a>
 
 ### `Private` event
 

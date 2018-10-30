@@ -46,7 +46,7 @@ title: AbstractPluginManager
 
 ###  constructor
 
-**new AbstractPluginManager**(creationContext: *[ServiceManager](servicemanager)*, config?: *[ServiceManagerConfigType](../modules/servicemanagerconfiginterface#servicemanagerconfigtype)*): [AbstractPluginManager](abstractpluginmanager)
+**new AbstractPluginManager**(creationContext: *[ServiceManager](servicemanager)*, config?: *[ServiceManagerConfigType]()*): [AbstractPluginManager](abstractpluginmanager)
 
 *Overrides [ServiceManager](servicemanager).[constructor](servicemanager#constructor)*
 
@@ -57,7 +57,7 @@ title: AbstractPluginManager
 | Name | Type |
 | ------ | ------ |
 | creationContext | [ServiceManager](servicemanager) |
-| `Optional` config | [ServiceManagerConfigType](../modules/servicemanagerconfiginterface#servicemanagerconfigtype) |
+| `Optional` config | [ServiceManagerConfigType]() |
 
 **Returns:** [AbstractPluginManager](abstractpluginmanager)
 
@@ -83,7 +83,7 @@ ___
 
 ###  configure
 
-**configure**(config: *[ServiceManagerConfigType](../modules/servicemanagerconfiginterface#servicemanagerconfigtype)*): `this`
+**configure**(config: *[ServiceManagerConfigType]()*): `this`
 
 *Inherited from [ServiceManager](servicemanager).[configure](servicemanager#configure)*
 
@@ -93,7 +93,7 @@ ___
 
 | Name | Type |
 | ------ | ------ |
-| config | [ServiceManagerConfigType](../modules/servicemanagerconfiginterface#servicemanagerconfigtype) |
+| config | [ServiceManagerConfigType]() |
 
 **Returns:** `this`
 
@@ -102,7 +102,7 @@ ___
 
 ###  get
 
-**get**<`T`>(Service: *[ServiceKeyType](../modules/servicemanagerconfiginterface#servicekeytype)<`T`>*, forceTransient?: *`boolean`*): `T`
+**get**<`T`>(Service: *[ServiceKeyType]()<`T`>*, forceTransient?: *`boolean`*): `T`
 
 *Inherited from [ServiceManager](servicemanager).[get](servicemanager#get)*
 
@@ -115,7 +115,7 @@ ___
 
 | Name | Type | Default value |
 | ------ | ------ | ------ |
-| Service | [ServiceKeyType](../modules/servicemanagerconfiginterface#servicekeytype)<`T`> | - |
+| Service | [ServiceKeyType]()<`T`> | - |
 | `Default value` forceTransient | `boolean` | false |
 
 **Returns:** `T`
@@ -125,7 +125,7 @@ ___
 
 ###  has
 
-**has**<`T`>(Service: *[ServiceKeyType](../modules/servicemanagerconfiginterface#servicekeytype)<`T`>*): `boolean`
+**has**<`T`>(Service: *[ServiceKeyType]()<`T`>*): `boolean`
 
 *Inherited from [ServiceManager](servicemanager).[has](servicemanager#has)*
 
@@ -138,7 +138,7 @@ ___
 
 | Name | Type |
 | ------ | ------ |
-| Service | [ServiceKeyType](../modules/servicemanagerconfiginterface#servicekeytype)<`T`> |
+| Service | [ServiceKeyType]()<`T`> |
 
 **Returns:** `boolean`
 
@@ -167,7 +167,7 @@ ___
 
 ###  registerAliases
 
-**registerAliases**(aliases: *[AliasesType](../modules/servicemanagerconfiginterface#aliasestype)*): `this`
+**registerAliases**(aliases: *[AliasesType]()*): `this`
 
 *Inherited from [ServiceManager](servicemanager).[registerAliases](servicemanager#registeraliases)*
 
@@ -177,7 +177,7 @@ ___
 
 | Name | Type |
 | ------ | ------ |
-| aliases | [AliasesType](../modules/servicemanagerconfiginterface#aliasestype) |
+| aliases | [AliasesType]() |
 
 **Returns:** `this`
 
@@ -186,7 +186,7 @@ ___
 
 ###  registerFactories
 
-**registerFactories**(factories: *[FactoriesMapType](../modules/servicemanagerconfiginterface#factoriesmaptype)*): `this`
+**registerFactories**(factories: *[FactoriesMapType]()*): `this`
 
 *Inherited from [ServiceManager](servicemanager).[registerFactories](servicemanager#registerfactories)*
 
@@ -196,7 +196,7 @@ ___
 
 | Name | Type |
 | ------ | ------ |
-| factories | [FactoriesMapType](../modules/servicemanagerconfiginterface#factoriesmaptype) |
+| factories | [FactoriesMapType]() |
 
 **Returns:** `this`
 
@@ -225,7 +225,7 @@ ___
 
 ###  registerInvokable
 
-**registerInvokable**(key: *[ServiceKeyType](../modules/servicemanagerconfiginterface#servicekeytype)<`Object`>*, value: *[Instantiable](../modules/types#instantiable)<`Object`>*): `void`
+**registerInvokable**(key: *[ServiceKeyType]()<`Object`>*, value: *[Instantiable]()<`Object`>*): `void`
 
 *Inherited from [ServiceManager](servicemanager).[registerInvokable](servicemanager#registerinvokable)*
 
@@ -235,8 +235,8 @@ ___
 
 | Name | Type |
 | ------ | ------ |
-| key | [ServiceKeyType](../modules/servicemanagerconfiginterface#servicekeytype)<`Object`> |
-| value | [Instantiable](../modules/types#instantiable)<`Object`> |
+| key | [ServiceKeyType]()<`Object`> |
+| value | [Instantiable]()<`Object`> |
 
 **Returns:** `void`
 

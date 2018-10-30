@@ -102,7 +102,7 @@ ___
 
 ### `Private` renderOptions
 
-**renderOptions**(options: *[CliCommandOptionsType](../modules/clitypes#clicommandoptionstype)*): `object`
+**renderOptions**(options: *[CliCommandOptionsType]()*): `object`
 
 *Defined in [Library/Command/HelpCommand.ts:70](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Command/HelpCommand.ts#L70)*
 
@@ -110,7 +110,7 @@ ___
 
 | Name | Type |
 | ------ | ------ |
-| options | [CliCommandOptionsType](../modules/clitypes#clicommandoptionstype) |
+| options | [CliCommandOptionsType]() |
 
 **Returns:** `object`
 
@@ -119,7 +119,7 @@ ___
 
 ### `Private` renderUsage
 
-**renderUsage**(command: *[CliCommandType](../modules/clitypes#clicommandtype)*): `object`
+**renderUsage**(command: *[CliCommandType]()*): `object`
 
 *Defined in [Library/Command/HelpCommand.ts:51](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Command/HelpCommand.ts#L51)*
 
@@ -127,7 +127,7 @@ ___
 
 | Name | Type |
 | ------ | ------ |
-| command | [CliCommandType](../modules/clitypes#clicommandtype) |
+| command | [CliCommandType]() |
 
 **Returns:** `object`
 

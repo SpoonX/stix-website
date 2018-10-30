@@ -56,7 +56,7 @@ title: ServiceManager
 
 ###  constructor
 
-**new ServiceManager**(config?: *[ServiceManagerConfigType](../modules/servicemanagerconfiginterface#servicemanagerconfigtype)*): [ServiceManager](servicemanager)
+**new ServiceManager**(config?: *[ServiceManagerConfigType]()*): [ServiceManager](servicemanager)
 
 *Defined in [Library/ServiceManager/ServiceManager.ts:24](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/ServiceManager.ts#L24)*
 
@@ -64,7 +64,7 @@ title: ServiceManager
 
 | Name | Type |
 | ------ | ------ |
-| `Optional` config | [ServiceManagerConfigType](../modules/servicemanagerconfiginterface#servicemanagerconfigtype) |
+| `Optional` config | [ServiceManagerConfigType]() |
 
 **Returns:** [ServiceManager](servicemanager)
 
@@ -76,7 +76,7 @@ ___
 
 ### `Private` aliases
 
-**aliases**: *[AliasesType](../modules/servicemanagerconfiginterface#aliasestype)*
+**aliases**: *[AliasesType]()*
 
 *Defined in [Library/ServiceManager/ServiceManager.ts:18](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/ServiceManager.ts#L18)*
 
@@ -94,7 +94,7 @@ ___
 
 ### `Private` factories
 
-**factories**: *[FactoriesMapType](../modules/servicemanagerconfiginterface#factoriesmaptype)* =  new Map()
+**factories**: *[FactoriesMapType]()* =  new Map()
 
 *Defined in [Library/ServiceManager/ServiceManager.ts:16](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/ServiceManager.ts#L16)*
 
@@ -103,7 +103,7 @@ ___
 
 ### `Private` services
 
-**services**: *[ServicesMapType](../modules/servicemanagerconfiginterface#servicesmaptype)* =  new Map()
+**services**: *[ServicesMapType]()* =  new Map()
 
 *Defined in [Library/ServiceManager/ServiceManager.ts:14](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/ServiceManager.ts#L14)*
 
@@ -112,7 +112,7 @@ ___
 
 ### `Private` shared
 
-**shared**: *[SharedMapType](../modules/servicemanagerconfiginterface#sharedmaptype)* =  new Map()
+**shared**: *[SharedMapType]()* =  new Map()
 
 *Defined in [Library/ServiceManager/ServiceManager.ts:20](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/ServiceManager.ts#L20)*
 
@@ -133,7 +133,7 @@ ___
 
 ###  configure
 
-**configure**(config: *[ServiceManagerConfigType](../modules/servicemanagerconfiginterface#servicemanagerconfigtype)*): `this`
+**configure**(config: *[ServiceManagerConfigType]()*): `this`
 
 *Defined in [Library/ServiceManager/ServiceManager.ts:85](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/ServiceManager.ts#L85)*
 
@@ -141,7 +141,7 @@ ___
 
 | Name | Type |
 | ------ | ------ |
-| config | [ServiceManagerConfigType](../modules/servicemanagerconfiginterface#servicemanagerconfigtype) |
+| config | [ServiceManagerConfigType]() |
 
 **Returns:** `this`
 
@@ -150,7 +150,7 @@ ___
 
 ###  get
 
-**get**<`T`>(Service: *[ServiceKeyType](../modules/servicemanagerconfiginterface#servicekeytype)<`T`>*, forceTransient?: *`boolean`*): `T`
+**get**<`T`>(Service: *[ServiceKeyType]()<`T`>*, forceTransient?: *`boolean`*): `T`
 
 *Defined in [Library/ServiceManager/ServiceManager.ts:34](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/ServiceManager.ts#L34)*
 
@@ -161,7 +161,7 @@ ___
 
 | Name | Type | Default value |
 | ------ | ------ | ------ |
-| Service | [ServiceKeyType](../modules/servicemanagerconfiginterface#servicekeytype)<`T`> | - |
+| Service | [ServiceKeyType]()<`T`> | - |
 | `Default value` forceTransient | `boolean` | false |
 
 **Returns:** `T`
@@ -171,7 +171,7 @@ ___
 
 ###  has
 
-**has**<`T`>(Service: *[ServiceKeyType](../modules/servicemanagerconfiginterface#servicekeytype)<`T`>*): `boolean`
+**has**<`T`>(Service: *[ServiceKeyType]()<`T`>*): `boolean`
 
 *Defined in [Library/ServiceManager/ServiceManager.ts:59](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/ServiceManager.ts#L59)*
 
@@ -182,7 +182,7 @@ ___
 
 | Name | Type |
 | ------ | ------ |
-| Service | [ServiceKeyType](../modules/servicemanagerconfiginterface#servicekeytype)<`T`> |
+| Service | [ServiceKeyType]()<`T`> |
 
 **Returns:** `boolean`
 
@@ -209,7 +209,7 @@ ___
 
 ###  registerAliases
 
-**registerAliases**(aliases: *[AliasesType](../modules/servicemanagerconfiginterface#aliasestype)*): `this`
+**registerAliases**(aliases: *[AliasesType]()*): `this`
 
 *Defined in [Library/ServiceManager/ServiceManager.ts:119](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/ServiceManager.ts#L119)*
 
@@ -217,7 +217,7 @@ ___
 
 | Name | Type |
 | ------ | ------ |
-| aliases | [AliasesType](../modules/servicemanagerconfiginterface#aliasestype) |
+| aliases | [AliasesType]() |
 
 **Returns:** `this`
 
@@ -226,7 +226,7 @@ ___
 
 ###  registerFactories
 
-**registerFactories**(factories: *[FactoriesMapType](../modules/servicemanagerconfiginterface#factoriesmaptype)*): `this`
+**registerFactories**(factories: *[FactoriesMapType]()*): `this`
 
 *Defined in [Library/ServiceManager/ServiceManager.ts:71](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/ServiceManager.ts#L71)*
 
@@ -234,7 +234,7 @@ ___
 
 | Name | Type |
 | ------ | ------ |
-| factories | [FactoriesMapType](../modules/servicemanagerconfiginterface#factoriesmaptype) |
+| factories | [FactoriesMapType]() |
 
 **Returns:** `this`
 
@@ -261,7 +261,7 @@ ___
 
 ###  registerInvokable
 
-**registerInvokable**(key: *[ServiceKeyType](../modules/servicemanagerconfiginterface#servicekeytype)<`Object`>*, value: *[Instantiable](../modules/types#instantiable)<`Object`>*): `void`
+**registerInvokable**(key: *[ServiceKeyType]()<`Object`>*, value: *[Instantiable]()<`Object`>*): `void`
 
 *Defined in [Library/ServiceManager/ServiceManager.ts:115](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/ServiceManager.ts#L115)*
 
@@ -269,8 +269,8 @@ ___
 
 | Name | Type |
 | ------ | ------ |
-| key | [ServiceKeyType](../modules/servicemanagerconfiginterface#servicekeytype)<`Object`> |
-| value | [Instantiable](../modules/types#instantiable)<`Object`> |
+| key | [ServiceKeyType]()<`Object`> |
+| value | [Instantiable]()<`Object`> |
 
 **Returns:** `void`
 
@@ -297,7 +297,7 @@ ___
 
 ### `Private` resolveName
 
-**resolveName**<`T`>(name: *[ServiceKeyType](../modules/servicemanagerconfiginterface#servicekeytype)<`T`>*): [ServiceKeyType](../modules/servicemanagerconfiginterface#servicekeytype)<`T`>
+**resolveName**<`T`>(name: *[ServiceKeyType]()<`T`>*): [ServiceKeyType]()<`T`>
 
 *Defined in [Library/ServiceManager/ServiceManager.ts:131](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/ServiceManager.ts#L131)*
 
@@ -308,9 +308,9 @@ ___
 
 | Name | Type |
 | ------ | ------ |
-| name | [ServiceKeyType](../modules/servicemanagerconfiginterface#servicekeytype)<`T`> |
+| name | [ServiceKeyType]()<`T`> |
 
-**Returns:** [ServiceKeyType](../modules/servicemanagerconfiginterface#servicekeytype)<`T`>
+**Returns:** [ServiceKeyType]()<`T`>
 
 ___
 
