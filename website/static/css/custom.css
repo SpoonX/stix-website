@@ -13,6 +13,18 @@ body, .fixedHeaderContainer {
   background-color: white;
 }
 
+.card {
+  background-color: white;
+  padding: 50px;
+  margin: 20px 50px;
+}
+
+.cube {
+  position: absolute;
+  left: -49px;
+  top: -65px;
+}
+
 .homeButton {
   border-radius: unset;
   border: unset;
@@ -46,7 +58,22 @@ body, .fixedHeaderContainer {
   line-height: 50px;
 }
 
-@media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
+.paddingTop {
+  padding-top: 80px;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 736px) {
+  .card {
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .cube {
+    height: 61px;
+    position: absolute;
+    left: -24.5px;
+    top: -32.5px;
+  }
 }
 
 @media only screen and (max-width: 774px) {
@@ -93,6 +120,20 @@ body, .fixedHeaderContainer {
     top: 110px;
     z-index: 99999;
     height: 250px;
+  }
+}
+
+@media only screen and (min-width: 736px) and (max-width: 1220px) {
+  .cardBlock > * {
+    margin: 0 20px;
+  }
+
+  .cardBlock > *:first-child {
+    margin-left: 40px;
+  }
+
+  .cardBlock > *:last-child {
+    margin-right: 40px;
   }
 }
 
