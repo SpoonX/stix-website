@@ -61,8 +61,8 @@ const siteConfig = {
   colors: {
     background: '#F3F3F3',
     offWhite: '#f7f7f7',
-    green: '#1DD882',
-    navyBlue: '#232345',
+    primaryColor: '#1DD882',
+    secondaryColor: '#232345',
     title: '#474747',
     text: '#646464'
   },

@@ -7,7 +7,7 @@ h1, h2, h3, h4, h5, h6, p, a, span {
 
 body, .fixedHeaderContainer {
   background-color: $background;
-  color: $navyBlue;
+  color: $secondaryColor;
 }
 
 .sideNavVisible {
@@ -42,7 +42,7 @@ body, .fixedHeaderContainer {
 
 .fixedHeaderContainer header h3,
 .navigationSlider .slidingNav ul {
-  color: $navyBlue;
+  color: $secondaryColor;
 }
 
 .navPusher {
@@ -52,12 +52,12 @@ body, .fixedHeaderContainer {
 .nav-footer .sitemap a,
 .nav-footer .sitemap h5,
 .nav-footer .copyright {
-  color: $navyBlue;
+  color: $secondaryColor;
 }
 
 .nav-footer .sitemap a:hover,
 .nav-footer .sitemap a:focus {
-  color: $green;
+  color: $primaryColor;
 }
 
 .sectionTitle {
@@ -70,7 +70,7 @@ body, .fixedHeaderContainer {
 .projectTitle {
   font-size: 200%;
   font-weight: 700;
-  color: $navyBlue;
+  color: $secondaryColor;
   line-height: 50px;
 }
 
@@ -100,7 +100,7 @@ body, .fixedHeaderContainer {
 
 @media only screen and (min-width: 1024px) {
   .navigationSlider .slidingNav ul li a {
-    color: $navyBlue;
+    color: $secondaryColor;
     font-weight: 500;
   }
 
@@ -109,7 +109,7 @@ body, .fixedHeaderContainer {
   .navigationSlider .slidingNav ul li.siteNavItemActive a,
   .navigationSlider .slidingNav ul li.siteNavGroupActive a {
     background: $background;
-    color: $green;
+    color: $primaryColor;
   }
 
   .halfCube {
