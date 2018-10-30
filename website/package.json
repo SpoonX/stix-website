@@ -9,7 +9,7 @@
     "rename-version": "docusaurus-rename-version",
     "create-sidebar": "node scripts/createSidebar.js",
     "prepare": "patch-package",
-    "build-api": "typedoc --theme markdown --name stix --tsconfig ../stix/tsconfig.json --target es2017 --module commonjs --excludeExternals --out ../docs/api ../stix/src"
+    "build-api": "typedoc --theme markdown --name stix --tsconfig ../stix/tsconfig.json --mode file --target es2017 --module commonjs --excludeExternals --out ../docs/api ../stix/src"
   },
   "dependencies": {
     "patch-package": "^5.1.1",

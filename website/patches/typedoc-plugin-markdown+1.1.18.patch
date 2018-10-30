@@ -25,11 +25,14 @@ new file mode 100644
 new file mode 100644
 --- /dev/null
 +++ b/node_modules/typedoc-plugin-markdown/dist/theme/helpers/fixURL.js
-@@ -0,0 +1,6 @@
+@@ -0,0 +1,9 @@
 +"use strict";
 +Object.defineProperty(exports, "__esModule", { value: true });
 +function fixURL(url) {
-+    return url.replace(/\w+_\.?([a-z]+)_?\.md/, (match, name) => name);
++  if (url.startsWith('../#')) {
++    return '';
++  }
++  return url.replace(/(\w+)_?\.md/, (match, name) => name);
 +  }
 +exports.fixURL = fixURL;
 --- a/node_modules/typedoc-plugin-markdown/dist/theme/helpers/getSourceFile.js
