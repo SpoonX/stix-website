@@ -25,7 +25,6 @@ const path                                       = require('path');
 
     console.log('Cleaning up...');
     await File.remove(path.resolve(process.cwd(), '..', 'stix'), true);
-    await File.remove(path.resolve(process.cwd(), '..', 'docs', 'api', 'modules'), true);
 
     console.log('Done!');
   } catch (error) {
