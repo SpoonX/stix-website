@@ -10,6 +10,21 @@ body, .fixedHeaderContainer {
   color: $secondaryColor;
 }
 
+.blockContent h2 p,
+.nav-footer .copyright {
+  color: $title;
+}
+
+.nav-footer .copyright {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.blockContent p {
+  color: $text;
+}
+
 .sideNavVisible {
   background-color: white;
 }
@@ -50,8 +65,7 @@ body, .fixedHeaderContainer {
 }
 
 .nav-footer .sitemap a,
-.nav-footer .sitemap h5,
-.nav-footer .copyright {
+.nav-footer .sitemap h5 {
   color: $secondaryColor;
 }
 
