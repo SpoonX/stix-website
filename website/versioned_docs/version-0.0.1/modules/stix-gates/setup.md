@@ -7,7 +7,7 @@ original_id: gates-setup
 
 ## Setup
 If you initialized a new stix project using the [boards cli stix preset](https://github.com/SpoonX/boards-preset-stix),
-stix-gates will already be included in your project and you can move on to the [usage section](usage).
+stix-gates will already be included in your project and you can move on to the [usage section](gates-usage).
 If not, keep reading.
 
 1. In your stix project, simply run `yarn add stix-gates`.

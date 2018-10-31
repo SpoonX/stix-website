@@ -10,16 +10,18 @@ const React = require('react');
 class Footer extends React.Component {
   docUrl (doc, language) {
     const baseUrl = this.props.config.baseUrl;
-    return `${baseUrl}docs/${language ? `${language}/` : ''}${doc}`;
+
+    return `${baseUrl}docs/${doc}`;
   }
 
   pageUrl (doc, language) {
     const baseUrl = this.props.config.baseUrl;
+
     return baseUrl + (language ? `${language}/` : '') + doc;
   }
 
   render () {
-    const { config } = this.props;
+    const { config, language } = this.props;
 
     return (
       <footer className="nav-footer" style={{ backgroundColor: config.colors.background }} id="footer">
@@ -34,13 +36,13 @@ class Footer extends React.Component {
           </a>
           <div>
             <h5>Docs</h5>
-            <a href={this.docUrl('first-steps/getting-started.html', this.props.language)}>
+            <a href={this.docUrl('first-steps/getting-started.html', language)}>
               Getting Started
             </a>
-            <a href={this.docUrl('modules/stix-gates/gates-about.html', this.props.language)}>
+            <a href={this.docUrl('modules/stix-gates/gates-about.html', language)}>
               Core Modules
             </a>
-            <a href={this.docUrl('api', this.props.language)}>
+            <a href={this.docUrl('api', language)}>
               API Reference
             </a>
           </div>
@@ -72,19 +74,6 @@ class Footer extends React.Component {
             <a href="https://github.com/SpoonX/stix-cli">stix-cli</a>
           </div>
         </section>
-
-        {/*<a*/}
-        {/*href="https://code.facebook.com/projects/"*/}
-        {/*target="_blank"*/}
-        {/*rel="noreferrer noopener"*/}
-        {/*className="fbOpenSource">*/}
-        {/*<img*/}
-        {/*src={`${config.baseUrl}img/oss_logo.png`}*/}
-        {/*alt="Facebook Open Source"*/}
-        {/*width="170"*/}
-        {/*height="45"*/}
-        {/*/>*/}
-        {/*</a>*/}
         <section className="copyright">{config.copyright}</section>
       </footer>
     );
