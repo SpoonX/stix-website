@@ -27,13 +27,13 @@ original_id: requestmiddleware
 
 ###  asCallback
 
-**asCallback**(): [MiddlewareType](../modules/middlewaretypes#middlewaretype)
+**asCallback**(): [MiddlewareType]()
 
 *Inherited from [AbstractMiddleware](abstractmiddleware).[asCallback](abstractmiddleware#ascallback)*
 
 *Defined in [Library/Middleware/AbstractMiddleware.ts:7](https://github.com/SpoonX/stix/blob/00e7e6e/src/Library/Middleware/AbstractMiddleware.ts#L7)*
 
-**Returns:** [MiddlewareType](../modules/middlewaretypes#middlewaretype)
+**Returns:** [MiddlewareType]()
 
 ___
 <a id="pass"></a>

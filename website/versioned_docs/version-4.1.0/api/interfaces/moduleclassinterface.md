@@ -28,7 +28,7 @@ original_id: moduleclassinterface
 
 **new ModuleClassInterface**(...args: *`any`[]*): `T`
 
-*Inherited from [__type](../modules/types#instantiable.__type).[constructor](../modules/types#instantiable.__type.constructor)*
+*Inherited from [__type]().[constructor]()*
 
 *Defined in [Library/Core/Types.ts:1](https://github.com/SpoonX/stix/blob/00e7e6e/src/Library/Core/Types.ts#L1)*
 

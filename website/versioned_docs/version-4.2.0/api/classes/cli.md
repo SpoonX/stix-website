@@ -25,7 +25,7 @@ original_id: cli
 
 ### `Static` command
 
-**command**(commandLine: *`string`*, Command: *[AbstractCommand](abstractcommand)*, action: *`string`*, config?: *[CliCommandConfigType](../modules/clitypes#clicommandconfigtype)*): [CliCommandType](../modules/clitypes#clicommandtype)
+**command**(commandLine: *`string`*, Command: *[AbstractCommand](abstractcommand)*, action: *`string`*, config?: *[CliCommandConfigType]()*): [CliCommandType]()
 
 *Defined in [Library/Cli/Cli.ts:27](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Cli/Cli.ts#L27)*
 
@@ -48,16 +48,16 @@ Legend:
 | commandLine | `string` |  \- |
 | Command | [AbstractCommand](abstractcommand) |  \- |
 | action | `string` |  \- |
-| `Optional` config | [CliCommandConfigType](../modules/clitypes#clicommandconfigtype) |   |
+| `Optional` config | [CliCommandConfigType]() |   |
 
-**Returns:** [CliCommandType](../modules/clitypes#clicommandtype)
+**Returns:** [CliCommandType]()
 
 ___
 <a id="program"></a>
 
 ### `Static` program
 
-**program**(program: *`string`*, config?: *[CliProgramConfigType](../modules/clitypes#cliprogramconfigtype)*): [CliProgramType](../modules/clitypes#cliprogramtype)
+**program**(program: *`string`*, config?: *[CliProgramConfigType]()*): [CliProgramType]()
 
 *Defined in [Library/Cli/Cli.ts:31](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Cli/Cli.ts#L31)*
 
@@ -66,9 +66,9 @@ ___
 | Name | Type |
 | ------ | ------ |
 | program | `string` |
-| `Optional` config | [CliProgramConfigType](../modules/clitypes#cliprogramconfigtype) |
+| `Optional` config | [CliProgramConfigType]() |
 
-**Returns:** [CliProgramType](../modules/clitypes#cliprogramtype)
+**Returns:** [CliProgramType]()
 
 ___
 

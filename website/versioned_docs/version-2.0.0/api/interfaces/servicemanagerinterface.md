@@ -30,7 +30,7 @@ original_id: servicemanagerinterface
 
 ###  get
 
-**get**<`T`>(Service: *[ServiceKeyType](../modules/servicemanagerconfiginterface#servicekeytype)<`T`>*): `T`
+**get**<`T`>(Service: *[ServiceKeyType]()<`T`>*): `T`
 
 *Defined in [Library/ServiceManager/ServiceManagerInterface.ts:4](https://github.com/SpoonX/stix/blob/e9313e4/src/Library/ServiceManager/ServiceManagerInterface.ts#L4)*
 
@@ -41,7 +41,7 @@ original_id: servicemanagerinterface
 
 | Name | Type |
 | ------ | ------ |
-| Service | [ServiceKeyType](../modules/servicemanagerconfiginterface#servicekeytype)<`T`> |
+| Service | [ServiceKeyType]()<`T`> |
 
 **Returns:** `T`
 

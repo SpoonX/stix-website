@@ -63,7 +63,7 @@ ___
 
 ### `Private` middleware
 
-**middleware**: *[MiddlewareType](../modules/middlewaretypes#middlewaretype)[]* =  []
+**middleware**: *[MiddlewareType]()[]* =  []
 
 *Defined in [Library/Server/ServerService.ts:11](https://github.com/SpoonX/stix/blob/6863ef8/src/Library/Server/ServerService.ts#L11)*
 

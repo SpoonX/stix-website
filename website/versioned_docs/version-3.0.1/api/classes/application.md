@@ -50,7 +50,7 @@ original_id: application
 
 ###  constructor
 
-**new Application**(appConfig: *[ConfigType](../modules/configinterface#configtype)*): [Application](application)
+**new Application**(appConfig: *[ConfigType]()*): [Application](application)
 
 *Defined in [Library/Application/Application.ts:38](https://github.com/SpoonX/stix/blob/f097835/src/Library/Application/Application.ts#L38)*
 
@@ -58,7 +58,7 @@ original_id: application
 
 | Name | Type |
 | ------ | ------ |
-| appConfig | [ConfigType](../modules/configinterface#configtype) |
+| appConfig | [ConfigType]() |
 
 **Returns:** [Application](application)
 

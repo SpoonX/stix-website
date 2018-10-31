@@ -64,7 +64,7 @@ ___
 
 ### `Private` middleware
 
-**middleware**: *`Array`< [MiddlewareType](../modules/middlewaretypes#middlewaretype) &#124; [RegisteredMiddlewareType](../modules/middlewaretypes#registeredmiddlewaretype)>* =  []
+**middleware**: *`Array`< [MiddlewareType]() &#124; [RegisteredMiddlewareType]()>* =  []
 
 *Defined in [Library/Server/ServerService.ts:11](https://github.com/SpoonX/stix/blob/64b0f60/src/Library/Server/ServerService.ts#L11)*
 
@@ -94,7 +94,7 @@ ___
 
 ### `Private` asCallback
 
-**asCallback**(middleware: *[MiddlewareType](../modules/middlewaretypes#middlewaretype)*): `Middleware`
+**asCallback**(middleware: *[MiddlewareType]()*): `Middleware`
 
 *Defined in [Library/Server/ServerService.ts:82](https://github.com/SpoonX/stix/blob/64b0f60/src/Library/Server/ServerService.ts#L82)*
 
@@ -102,7 +102,7 @@ ___
 
 | Name | Type |
 | ------ | ------ |
-| middleware | [MiddlewareType](../modules/middlewaretypes#middlewaretype) |
+| middleware | [MiddlewareType]() |
 
 **Returns:** `Middleware`
 
@@ -122,7 +122,7 @@ ___
 
 ###  indexOfMiddleware
 
-**indexOfMiddleware**(middleware: *[MiddlewareLookupType](../modules/middlewaretypes#middlewarelookuptype)*): `number`
+**indexOfMiddleware**(middleware: *[MiddlewareLookupType]()*): `number`
 
 *Defined in [Library/Server/ServerService.ts:50](https://github.com/SpoonX/stix/blob/64b0f60/src/Library/Server/ServerService.ts#L50)*
 
@@ -130,7 +130,7 @@ ___
 
 | Name | Type |
 | ------ | ------ |
-| middleware | [MiddlewareLookupType](../modules/middlewaretypes#middlewarelookuptype) |
+| middleware | [MiddlewareLookupType]() |
 
 **Returns:** `number`
 
@@ -139,7 +139,7 @@ ___
 
 ###  replace
 
-**replace**(middleware: *[MiddlewareLookupType](../modules/middlewaretypes#middlewarelookuptype)*, ...middlewares: *`Array`<[MiddlewareType](../modules/middlewaretypes#middlewaretype)>*): `this`
+**replace**(middleware: *[MiddlewareLookupType]()*, ...middlewares: *`Array`<[MiddlewareType]()>*): `this`
 
 *Defined in [Library/Server/ServerService.ts:40](https://github.com/SpoonX/stix/blob/64b0f60/src/Library/Server/ServerService.ts#L40)*
 
@@ -147,8 +147,8 @@ ___
 
 | Name | Type |
 | ------ | ------ |
-| middleware | [MiddlewareLookupType](../modules/middlewaretypes#middlewarelookuptype) |
-| `Rest` middlewares | `Array`<[MiddlewareType](../modules/middlewaretypes#middlewaretype)> |
+| middleware | [MiddlewareLookupType]() |
+| `Rest` middlewares | `Array`<[MiddlewareType]()> |
 
 **Returns:** `this`
 
@@ -168,7 +168,7 @@ ___
 
 ###  updateMiddleware
 
-**updateMiddleware**(at: *`number`*, remove: *`number`*, ...middlewares: *`Array`<[MiddlewareType](../modules/middlewaretypes#middlewaretype)>*): `this`
+**updateMiddleware**(at: *`number`*, remove: *`number`*, ...middlewares: *`Array`<[MiddlewareType]()>*): `this`
 
 *Defined in [Library/Server/ServerService.ts:44](https://github.com/SpoonX/stix/blob/64b0f60/src/Library/Server/ServerService.ts#L44)*
 
@@ -178,7 +178,7 @@ ___
 | ------ | ------ |
 | at | `number` |
 | remove | `number` |
-| `Rest` middlewares | `Array`<[MiddlewareType](../modules/middlewaretypes#middlewaretype)> |
+| `Rest` middlewares | `Array`<[MiddlewareType]()> |
 
 **Returns:** `this`
 
@@ -204,7 +204,7 @@ ___
 
 ###  useAfter
 
-**useAfter**(middleware: *[MiddlewareLookupType](../modules/middlewaretypes#middlewarelookuptype)*, ...middlewares: *`Array`<[MiddlewareType](../modules/middlewaretypes#middlewaretype)>*): `this`
+**useAfter**(middleware: *[MiddlewareLookupType]()*, ...middlewares: *`Array`<[MiddlewareType]()>*): `this`
 
 *Defined in [Library/Server/ServerService.ts:36](https://github.com/SpoonX/stix/blob/64b0f60/src/Library/Server/ServerService.ts#L36)*
 
@@ -212,8 +212,8 @@ ___
 
 | Name | Type |
 | ------ | ------ |
-| middleware | [MiddlewareLookupType](../modules/middlewaretypes#middlewarelookuptype) |
-| `Rest` middlewares | `Array`<[MiddlewareType](../modules/middlewaretypes#middlewaretype)> |
+| middleware | [MiddlewareLookupType]() |
+| `Rest` middlewares | `Array`<[MiddlewareType]()> |
 
 **Returns:** `this`
 
@@ -222,7 +222,7 @@ ___
 
 ###  useBefore
 
-**useBefore**(middleware: *[MiddlewareLookupType](../modules/middlewaretypes#middlewarelookuptype)*, ...middlewares: *`Array`<[MiddlewareType](../modules/middlewaretypes#middlewaretype)>*): `this`
+**useBefore**(middleware: *[MiddlewareLookupType]()*, ...middlewares: *`Array`<[MiddlewareType]()>*): `this`
 
 *Defined in [Library/Server/ServerService.ts:32](https://github.com/SpoonX/stix/blob/64b0f60/src/Library/Server/ServerService.ts#L32)*
 
@@ -230,8 +230,8 @@ ___
 
 | Name | Type |
 | ------ | ------ |
-| middleware | [MiddlewareLookupType](../modules/middlewaretypes#middlewarelookuptype) |
-| `Rest` middlewares | `Array`<[MiddlewareType](../modules/middlewaretypes#middlewaretype)> |
+| middleware | [MiddlewareLookupType]() |
+| `Rest` middlewares | `Array`<[MiddlewareType]()> |
 
 **Returns:** `this`
 

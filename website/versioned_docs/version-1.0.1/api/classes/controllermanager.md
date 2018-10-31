@@ -48,7 +48,7 @@ original_id: controllermanager
 
 ###  constructor
 
-**new ControllerManager**(creationContext: *[ServiceManager](servicemanager)*, config: *[ControllerManagerConfigType](../modules/controllermanagerconfigtype#controllermanagerconfigtype)*): [ControllerManager](controllermanager)
+**new ControllerManager**(creationContext: *[ServiceManager](servicemanager)*, config: *[ControllerManagerConfigType]()*): [ControllerManager](controllermanager)
 
 *Overrides [AbstractPluginManager](abstractpluginmanager).[constructor](abstractpluginmanager#constructor)*
 
@@ -59,7 +59,7 @@ original_id: controllermanager
 | Name | Type |
 | ------ | ------ |
 | creationContext | [ServiceManager](servicemanager) |
-| config | [ControllerManagerConfigType](../modules/controllermanagerconfigtype#controllermanagerconfigtype) |
+| config | [ControllerManagerConfigType]() |
 
 **Returns:** [ControllerManager](controllermanager)
 
@@ -87,7 +87,7 @@ ___
 
 ###  configure
 
-**configure**(config: *[ServiceManagerConfigType](../modules/servicemanagerconfiginterface#servicemanagerconfigtype)*): `this`
+**configure**(config: *[ServiceManagerConfigType]()*): `this`
 
 *Inherited from [ServiceManager](servicemanager).[configure](servicemanager#configure)*
 
@@ -97,7 +97,7 @@ ___
 
 | Name | Type |
 | ------ | ------ |
-| config | [ServiceManagerConfigType](../modules/servicemanagerconfiginterface#servicemanagerconfigtype) |
+| config | [ServiceManagerConfigType]() |
 
 **Returns:** `this`
 
@@ -106,7 +106,7 @@ ___
 
 ###  get
 
-**get**<`T`>(Service: *[ServiceKeyType](../modules/servicemanagerconfiginterface#servicekeytype)<`T`>*, forceTransient?: *`boolean`*): `T`
+**get**<`T`>(Service: *[ServiceKeyType]()<`T`>*, forceTransient?: *`boolean`*): `T`
 
 *Inherited from [ServiceManager](servicemanager).[get](servicemanager#get)*
 
@@ -119,7 +119,7 @@ ___
 
 | Name | Type | Default value |
 | ------ | ------ | ------ |
-| Service | [ServiceKeyType](../modules/servicemanagerconfiginterface#servicekeytype)<`T`> | - |
+| Service | [ServiceKeyType]()<`T`> | - |
 | `Default value` forceTransient | `boolean` | false |
 
 **Returns:** `T`
@@ -129,7 +129,7 @@ ___
 
 ###  getController
 
-**getController**(controller: *[ControllerType](../modules/controllertypes#controllertype)*): `Object`
+**getController**(controller: *[ControllerType]()*): `Object`
 
 *Defined in [Library/Controller/ControllerManager.ts:52](https://github.com/SpoonX/stix/blob/573086e/src/Library/Controller/ControllerManager.ts#L52)*
 
@@ -137,7 +137,7 @@ ___
 
 | Name | Type |
 | ------ | ------ |
-| controller | [ControllerType](../modules/controllertypes#controllertype) |
+| controller | [ControllerType]() |
 
 **Returns:** `Object`
 
@@ -146,7 +146,7 @@ ___
 
 ###  has
 
-**has**<`T`>(Service: *[ServiceKeyType](../modules/servicemanagerconfiginterface#servicekeytype)<`T`>*): `boolean`
+**has**<`T`>(Service: *[ServiceKeyType]()<`T`>*): `boolean`
 
 *Inherited from [ServiceManager](servicemanager).[has](servicemanager#has)*
 
@@ -159,7 +159,7 @@ ___
 
 | Name | Type |
 | ------ | ------ |
-| Service | [ServiceKeyType](../modules/servicemanagerconfiginterface#servicekeytype)<`T`> |
+| Service | [ServiceKeyType]()<`T`> |
 
 **Returns:** `boolean`
 
@@ -219,7 +219,7 @@ ___
 
 ###  registerFactories
 
-**registerFactories**(factories: *[FactoriesMapType](../modules/servicemanagerconfiginterface#factoriesmaptype)*): `this`
+**registerFactories**(factories: *[FactoriesMapType]()*): `this`
 
 *Inherited from [ServiceManager](servicemanager).[registerFactories](servicemanager#registerfactories)*
 
@@ -229,7 +229,7 @@ ___
 
 | Name | Type |
 | ------ | ------ |
-| factories | [FactoriesMapType](../modules/servicemanagerconfiginterface#factoriesmaptype) |
+| factories | [FactoriesMapType]() |
 
 **Returns:** `this`
 
@@ -278,7 +278,7 @@ ___
 
 ### `Static` getControllerName
 
-**getControllerName**(controller: *[ControllerType](../modules/controllertypes#controllertype)*): `string`
+**getControllerName**(controller: *[ControllerType]()*): `string`
 
 *Defined in [Library/Controller/ControllerManager.ts:19](https://github.com/SpoonX/stix/blob/573086e/src/Library/Controller/ControllerManager.ts#L19)*
 
@@ -286,7 +286,7 @@ ___
 
 | Name | Type |
 | ------ | ------ |
-| controller | [ControllerType](../modules/controllertypes#controllertype) |
+| controller | [ControllerType]() |
 
 **Returns:** `string`
 

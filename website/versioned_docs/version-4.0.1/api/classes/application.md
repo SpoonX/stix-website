@@ -43,7 +43,7 @@ original_id: application
 
 ###  constructor
 
-**new Application**(...appConfigs: *[ConfigType](../modules/configinterface#configtype)[]*): [Application](application)
+**new Application**(...appConfigs: *[ConfigType]()[]*): [Application](application)
 
 *Defined in [Library/Application/Application.ts:26](https://github.com/SpoonX/stix/blob/2a3d611/src/Library/Application/Application.ts#L26)*
 
@@ -51,7 +51,7 @@ original_id: application
 
 | Name | Type |
 | ------ | ------ |
-| `Rest` appConfigs | [ConfigType](../modules/configinterface#configtype)[] |
+| `Rest` appConfigs | [ConfigType]()[] |
 
 **Returns:** [Application](application)
 
@@ -63,7 +63,7 @@ ___
 
 ### `Private` applicationConfigs
 
-**applicationConfigs**: *[ConfigType](../modules/configinterface#configtype)[]*
+**applicationConfigs**: *[ConfigType]()[]*
 
 *Defined in [Library/Application/Application.ts:22](https://github.com/SpoonX/stix/blob/2a3d611/src/Library/Application/Application.ts#L22)*
 

@@ -82,7 +82,7 @@ ___
 
 ###  getController
 
-**getController**(controller: *[ControllerType](../modules/controllertypes#controllertype)*): `Object`
+**getController**(controller: *[ControllerType]()*): `Object`
 
 *Defined in [Library/Controller/ControllerManager.ts:50](https://github.com/SpoonX/stix/blob/f075739/src/Library/Controller/ControllerManager.ts#L50)*
 
@@ -90,7 +90,7 @@ ___
 
 | Name | Type |
 | ------ | ------ |
-| controller | [ControllerType](../modules/controllertypes#controllertype) |
+| controller | [ControllerType]() |
 
 **Returns:** `Object`
 
@@ -150,7 +150,7 @@ ___
 
 ### `Static` getControllerName
 
-**getControllerName**(controller: *[ControllerType](../modules/controllertypes#controllertype)*): `string`
+**getControllerName**(controller: *[ControllerType]()*): `string`
 
 *Defined in [Library/Controller/ControllerManager.ts:11](https://github.com/SpoonX/stix/blob/f075739/src/Library/Controller/ControllerManager.ts#L11)*
 
@@ -158,7 +158,7 @@ ___
 
 | Name | Type |
 | ------ | ------ |
-| controller | [ControllerType](../modules/controllertypes#controllertype) |
+| controller | [ControllerType]() |
 
 **Returns:** `string`
 
