@@ -4,8 +4,6 @@ title: RouterConfigInterface
 
 # `Interface` RouterConfigInterface
 
-The Router Config ensures that the routes are configured as an array of [Route interfaces](routeinterface.md).
-
 ## Hierarchy
 
 **RouterConfigInterface**
@@ -26,7 +24,7 @@ The Router Config ensures that the routes are configured as an array of [Route i
 
 **routes**: *`Array`<[RouteInterface](routeinterface)>*
 
-*Defined in [Library/Config/RouterConfigInterface.ts:7](https://github.com/Rawphs/stix/blob/f097835/src/Library/Config/RouterConfigInterface.ts#L7)*
+*Defined in [Library/Config/RouterConfigInterface.ts:4](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Config/RouterConfigInterface.ts#L4)*
 
 ___
 

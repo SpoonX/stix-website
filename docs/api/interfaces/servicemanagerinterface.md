@@ -10,7 +10,9 @@ title: ServiceManagerInterface
 
 ## Implemented by
 
+* [AbstractFileBasedPluginManager](../classes/abstractfilebasedpluginmanager)
 * [AbstractPluginManager](../classes/abstractpluginmanager)
+* [CommandManager](../classes/commandmanager)
 * [ControllerManager](../classes/controllermanager)
 * [ServiceManager](../classes/servicemanager)
 
@@ -28,18 +30,18 @@ title: ServiceManagerInterface
 
 ###  get
 
-**get**<`T`>(Service: *[ServiceKeyType](../#servicekeytype)<`T`>*): `T`
+**get**<`T`>(Service: *[ServiceKeyType]()<`T`>*): `T`
 
-*Defined in [Library/ServiceManager/ServiceManagerInterface.ts:4](https://github.com/Rawphs/stix/blob/f097835/src/Library/ServiceManager/ServiceManagerInterface.ts#L4)*
+*Defined in [Library/ServiceManager/ServiceManagerInterface.ts:4](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/ServiceManagerInterface.ts#L4)*
 
 **Type parameters:**
 
 #### T 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
-| Service | [ServiceKeyType](../#servicekeytype)<`T`> |
+| Service | [ServiceKeyType]()<`T`> |
 
 **Returns:** `T`
 

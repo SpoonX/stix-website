@@ -56,15 +56,15 @@ title: ServiceManager
 
 ###  constructor
 
-**new ServiceManager**(config?: *[ServiceManagerConfigType](../#servicemanagerconfigtype)*): [ServiceManager](servicemanager)
+**new ServiceManager**(config?: *[ServiceManagerConfigType]()*): [ServiceManager](servicemanager)
 
-*Defined in [Library/ServiceManager/ServiceManager.ts:24](https://github.com/Rawphs/stix/blob/f097835/src/Library/ServiceManager/ServiceManager.ts#L24)*
+*Defined in [Library/ServiceManager/ServiceManager.ts:24](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/ServiceManager.ts#L24)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
-| `Optional` config | [ServiceManagerConfigType](../#servicemanagerconfigtype) |
+| `Optional` config | [ServiceManagerConfigType]() |
 
 **Returns:** [ServiceManager](servicemanager)
 
@@ -76,9 +76,9 @@ ___
 
 ### `Private` aliases
 
-**aliases**: *[AliasesType](../#aliasestype)*
+**aliases**: *[AliasesType]()*
 
-*Defined in [Library/ServiceManager/ServiceManager.ts:18](https://github.com/Rawphs/stix/blob/f097835/src/Library/ServiceManager/ServiceManager.ts#L18)*
+*Defined in [Library/ServiceManager/ServiceManager.ts:18](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/ServiceManager.ts#L18)*
 
 ___
 <a id="creationcontext"></a>
@@ -87,34 +87,34 @@ ___
 
 **creationContext**: *[ServiceManager](servicemanager)*
 
-*Defined in [Library/ServiceManager/ServiceManager.ts:24](https://github.com/Rawphs/stix/blob/f097835/src/Library/ServiceManager/ServiceManager.ts#L24)*
+*Defined in [Library/ServiceManager/ServiceManager.ts:24](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/ServiceManager.ts#L24)*
 
 ___
 <a id="factories"></a>
 
 ### `Private` factories
 
-**factories**: *[FactoriesMapType](../#factoriesmaptype)* =  new Map()
+**factories**: *[FactoriesMapType]()* =  new Map()
 
-*Defined in [Library/ServiceManager/ServiceManager.ts:16](https://github.com/Rawphs/stix/blob/f097835/src/Library/ServiceManager/ServiceManager.ts#L16)*
+*Defined in [Library/ServiceManager/ServiceManager.ts:16](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/ServiceManager.ts#L16)*
 
 ___
 <a id="services"></a>
 
 ### `Private` services
 
-**services**: *[ServicesMapType](../#servicesmaptype)* =  new Map()
+**services**: *[ServicesMapType]()* =  new Map()
 
-*Defined in [Library/ServiceManager/ServiceManager.ts:14](https://github.com/Rawphs/stix/blob/f097835/src/Library/ServiceManager/ServiceManager.ts#L14)*
+*Defined in [Library/ServiceManager/ServiceManager.ts:14](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/ServiceManager.ts#L14)*
 
 ___
 <a id="shared"></a>
 
 ### `Private` shared
 
-**shared**: *[SharedMapType](../#sharedmaptype)* =  new Map()
+**shared**: *[SharedMapType]()* =  new Map()
 
-*Defined in [Library/ServiceManager/ServiceManager.ts:20](https://github.com/Rawphs/stix/blob/f097835/src/Library/ServiceManager/ServiceManager.ts#L20)*
+*Defined in [Library/ServiceManager/ServiceManager.ts:20](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/ServiceManager.ts#L20)*
 
 ___
 <a id="sharedbydefault"></a>
@@ -123,7 +123,7 @@ ___
 
 **sharedByDefault**: *`boolean`* = true
 
-*Defined in [Library/ServiceManager/ServiceManager.ts:22](https://github.com/Rawphs/stix/blob/f097835/src/Library/ServiceManager/ServiceManager.ts#L22)*
+*Defined in [Library/ServiceManager/ServiceManager.ts:22](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/ServiceManager.ts#L22)*
 
 ___
 
@@ -133,15 +133,15 @@ ___
 
 ###  configure
 
-**configure**(config: *[ServiceManagerConfigType](../#servicemanagerconfigtype)*): `this`
+**configure**(config: *[ServiceManagerConfigType]()*): `this`
 
-*Defined in [Library/ServiceManager/ServiceManager.ts:85](https://github.com/Rawphs/stix/blob/f097835/src/Library/ServiceManager/ServiceManager.ts#L85)*
+*Defined in [Library/ServiceManager/ServiceManager.ts:85](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/ServiceManager.ts#L85)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
-| config | [ServiceManagerConfigType](../#servicemanagerconfigtype) |
+| config | [ServiceManagerConfigType]() |
 
 **Returns:** `this`
 
@@ -150,18 +150,18 @@ ___
 
 ###  get
 
-**get**<`T`>(Service: *[ServiceKeyType](../#servicekeytype)<`T`>*, forceTransient?: *`boolean`*): `T`
+**get**<`T`>(Service: *[ServiceKeyType]()<`T`>*, forceTransient?: *`boolean`*): `T`
 
-*Defined in [Library/ServiceManager/ServiceManager.ts:34](https://github.com/Rawphs/stix/blob/f097835/src/Library/ServiceManager/ServiceManager.ts#L34)*
+*Defined in [Library/ServiceManager/ServiceManager.ts:34](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/ServiceManager.ts#L34)*
 
 **Type parameters:**
 
 #### T 
 **Parameters:**
 
-| Param | Type | Default value |
+| Name | Type | Default value |
 | ------ | ------ | ------ |
-| Service | [ServiceKeyType](../#servicekeytype)<`T`> | - |
+| Service | [ServiceKeyType]()<`T`> | - |
 | `Default value` forceTransient | `boolean` | false |
 
 **Returns:** `T`
@@ -171,18 +171,18 @@ ___
 
 ###  has
 
-**has**<`T`>(Service: *[ServiceKeyType](../#servicekeytype)<`T`>*): `boolean`
+**has**<`T`>(Service: *[ServiceKeyType]()<`T`>*): `boolean`
 
-*Defined in [Library/ServiceManager/ServiceManager.ts:59](https://github.com/Rawphs/stix/blob/f097835/src/Library/ServiceManager/ServiceManager.ts#L59)*
+*Defined in [Library/ServiceManager/ServiceManager.ts:59](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/ServiceManager.ts#L59)*
 
 **Type parameters:**
 
 #### T 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
-| Service | [ServiceKeyType](../#servicekeytype)<`T`> |
+| Service | [ServiceKeyType]()<`T`> |
 
 **Returns:** `boolean`
 
@@ -193,11 +193,11 @@ ___
 
 **registerAlias**(alias: *`string`*, to: * `string` &#124; `Function`*): `this`
 
-*Defined in [Library/ServiceManager/ServiceManager.ts:125](https://github.com/Rawphs/stix/blob/f097835/src/Library/ServiceManager/ServiceManager.ts#L125)*
+*Defined in [Library/ServiceManager/ServiceManager.ts:125](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/ServiceManager.ts#L125)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | alias | `string` |
 | to |  `string` &#124; `Function`|
@@ -209,15 +209,15 @@ ___
 
 ###  registerAliases
 
-**registerAliases**(aliases: *[AliasesType](../#aliasestype)*): `this`
+**registerAliases**(aliases: *[AliasesType]()*): `this`
 
-*Defined in [Library/ServiceManager/ServiceManager.ts:119](https://github.com/Rawphs/stix/blob/f097835/src/Library/ServiceManager/ServiceManager.ts#L119)*
+*Defined in [Library/ServiceManager/ServiceManager.ts:119](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/ServiceManager.ts#L119)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
-| aliases | [AliasesType](../#aliasestype) |
+| aliases | [AliasesType]() |
 
 **Returns:** `this`
 
@@ -226,15 +226,15 @@ ___
 
 ###  registerFactories
 
-**registerFactories**(factories: *[FactoriesMapType](../#factoriesmaptype)*): `this`
+**registerFactories**(factories: *[FactoriesMapType]()*): `this`
 
-*Defined in [Library/ServiceManager/ServiceManager.ts:71](https://github.com/Rawphs/stix/blob/f097835/src/Library/ServiceManager/ServiceManager.ts#L71)*
+*Defined in [Library/ServiceManager/ServiceManager.ts:71](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/ServiceManager.ts#L71)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
-| factories | [FactoriesMapType](../#factoriesmaptype) |
+| factories | [FactoriesMapType]() |
 
 **Returns:** `this`
 
@@ -245,11 +245,11 @@ ___
 
 **registerFactory**(key: * `Function` &#124; `string`*, value: *[ServiceFactoryType](../interfaces/servicefactorytype)<`Object`>*): `this`
 
-*Defined in [Library/ServiceManager/ServiceManager.ts:65](https://github.com/Rawphs/stix/blob/f097835/src/Library/ServiceManager/ServiceManager.ts#L65)*
+*Defined in [Library/ServiceManager/ServiceManager.ts:65](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/ServiceManager.ts#L65)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | key |  `Function` &#124; `string`|
 | value | [ServiceFactoryType](../interfaces/servicefactorytype)<`Object`> |
@@ -261,16 +261,16 @@ ___
 
 ###  registerInvokable
 
-**registerInvokable**(key: *[ServiceKeyType](../#servicekeytype)<`Object`>*, value: *[Instantiable](../#instantiable)<`Object`>*): `void`
+**registerInvokable**(key: *[ServiceKeyType]()<`Object`>*, value: *[Instantiable]()<`Object`>*): `void`
 
-*Defined in [Library/ServiceManager/ServiceManager.ts:115](https://github.com/Rawphs/stix/blob/f097835/src/Library/ServiceManager/ServiceManager.ts#L115)*
+*Defined in [Library/ServiceManager/ServiceManager.ts:115](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/ServiceManager.ts#L115)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
-| key | [ServiceKeyType](../#servicekeytype)<`Object`> |
-| value | [Instantiable](../#instantiable)<`Object`> |
+| key | [ServiceKeyType]()<`Object`> |
+| value | [Instantiable]()<`Object`> |
 
 **Returns:** `void`
 
@@ -281,11 +281,11 @@ ___
 
 **registerService**(key: * `Function` &#124; `string`*, service: *`Object`*): `this`
 
-*Defined in [Library/ServiceManager/ServiceManager.ts:79](https://github.com/Rawphs/stix/blob/f097835/src/Library/ServiceManager/ServiceManager.ts#L79)*
+*Defined in [Library/ServiceManager/ServiceManager.ts:79](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/ServiceManager.ts#L79)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | key |  `Function` &#124; `string`|
 | service | `Object` |
@@ -297,20 +297,20 @@ ___
 
 ### `Private` resolveName
 
-**resolveName**<`T`>(name: *[ServiceKeyType](../#servicekeytype)<`T`>*): [ServiceKeyType](../#servicekeytype)<`T`>
+**resolveName**<`T`>(name: *[ServiceKeyType]()<`T`>*): [ServiceKeyType]()<`T`>
 
-*Defined in [Library/ServiceManager/ServiceManager.ts:131](https://github.com/Rawphs/stix/blob/f097835/src/Library/ServiceManager/ServiceManager.ts#L131)*
+*Defined in [Library/ServiceManager/ServiceManager.ts:131](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/ServiceManager.ts#L131)*
 
 **Type parameters:**
 
 #### T 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
-| name | [ServiceKeyType](../#servicekeytype)<`T`> |
+| name | [ServiceKeyType]()<`T`> |
 
-**Returns:** [ServiceKeyType](../#servicekeytype)<`T`>
+**Returns:** [ServiceKeyType]()<`T`>
 
 ___
 

@@ -1,0 +1,169 @@
+patch-package
+--- a/node_modules/typedoc-plugin-markdown/dist/plugin.js
++++ b/node_modules/typedoc-plugin-markdown/dist/plugin.js
+@@ -54,6 +54,7 @@ var MarkdownPlugin = (function (_super) {
+         }
+     };
+     MarkdownPlugin.prototype.onPageEnd = function (page) {
++        page.filename = page.filename.replace(/\w+_\.?([a-z]+)_?\.md/, (match, name) => `${name}.md`);
+         page.contents = page.contents.replace(/\n{3,}/g, '\n\n');
+     };
+     MarkdownPlugin.prototype.getThemeDirectory = function () {
+new file mode 100644
+--- /dev/null
++++ b/node_modules/typedoc-plugin-markdown/dist/theme/helpers/chain.js
+@@ -0,0 +1,9 @@
++"use strict";
++Object.defineProperty(exports, "__esModule", { value: true });
++function chain(relativeUrl, url) {
++  
++    return url.replace('.md', '')
++      const relative = relativeUrl(url);
++    return relative.replace('.md', '');
++  }
++exports.chain = chain;
+new file mode 100644
+--- /dev/null
++++ b/node_modules/typedoc-plugin-markdown/dist/theme/helpers/fixURL.js
+@@ -0,0 +1,9 @@
++"use strict";
++Object.defineProperty(exports, "__esModule", { value: true });
++function fixURL(url) {
++  if (url.startsWith('../#')) {
++    return '';
++  }
++  return url.replace(/(\w+)_?\.md/, (match, name) => name);
++  }
++exports.fixURL = fixURL;
+--- a/node_modules/typedoc-plugin-markdown/dist/theme/helpers/getSourceFile.js
++++ b/node_modules/typedoc-plugin-markdown/dist/theme/helpers/getSourceFile.js
+@@ -3,6 +3,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
+ var props_1 = require("../props");
+ var utils_1 = require("../utils");
+ function getSourceFile(fileName, line, url) {
++    if (fileName.includes('node_modules')) {
++        return;
++    }
+     var options = props_1.getOptions();
+     var md = 'Defined in ';
+     if (utils_1.getMarkdownEngine() === 'bitbucket' && options.mdSourceRepo) {
+--- a/node_modules/typedoc-plugin-markdown/dist/theme/partials/header.hbs
++++ b/node_modules/typedoc-plugin-markdown/dist/theme/partials/header.hbs
+@@ -1,9 +1,4 @@
+-{{!-- {{ breadcrumbs }} --}}
+-{{#ifDisplayBreadcrumbs}}{{#unless model.isIndex}}[{{project.name}}](../README.md){{~#with model~}}{{> breadcrumb}}{{/with}}{{getNewLine}}{{/unless}}{{/ifDisplayBreadcrumbs}}
+-{{!-- {{ title }} --}}
+-{{~#ifDisplayMainTitle this ~}}
+-# {{#unless model.isIndex }}{{model.kindString }}:{{/unless}} {{{ model.name }}}
+-{{/ifDisplayMainTitle}}
++# {{#unless model.isIndex }}`{{model.kindString }}`{{/unless}} {{{ model.name }}}
+ {{#compact}}
+ {{~#with model~}}
+ {{~#unless displayIndexTitle~}}
+--- a/node_modules/typedoc-plugin-markdown/dist/theme/partials/index.hbs
++++ b/node_modules/typedoc-plugin-markdown/dist/theme/partials/index.hbs
+@@ -7,7 +7,7 @@
+ 
+ {{#each children}}
+ {{#ifDisplayIndexItem this }}
+-* [{{{name}}}]({{relativeURL url}})
++* [{{{name}}}]({{fixURL (relativeURL url)}})
+ {{/ifDisplayIndexItem}}
+ {{/each}}
+ {{getNewLine}}
+--- a/node_modules/typedoc-plugin-markdown/dist/theme/partials/member.declaration.hbs
++++ b/node_modules/typedoc-plugin-markdown/dist/theme/partials/member.declaration.hbs
+@@ -1,4 +1,4 @@
+-**{{getMemberSymbol this.kindString}}{{ name }}**: {{#if isOptional}}?{{/if}}{{#if type}}*{{#with type}}{{>type}}{{/with}}*{{/if}}{{#if defaultValue}} = {{{ defaultValue}}}{{/if}}
++**{{ name }}**: {{#if isOptional}}?{{/if}}{{#if type}}*{{#with type}}{{>type}}{{/with}}*{{/if}}{{#if defaultValue}} = {{{ defaultValue}}}{{/if}}
+ 
+ {{ compileSources this}}
+ 
+--- a/node_modules/typedoc-plugin-markdown/dist/theme/partials/member.hbs
++++ b/node_modules/typedoc-plugin-markdown/dist/theme/partials/member.hbs
+@@ -1,7 +1,7 @@
+ {{{getAnchor anchor}}}
+ 
+ {{#if name}}
+-{{#getMemberHeadingLevel this}}{{/getMemberHeadingLevel}} {{#each flags}}`<{{this}}>`{{/each}} {{name}}
++{{#getMemberHeadingLevel this}}{{/getMemberHeadingLevel}} {{#each flags}}`{{this}}`{{/each}} {{name}}
+ {{/if}}
+ 
+ {{#if signatures}}
+--- a/node_modules/typedoc-plugin-markdown/dist/theme/partials/member.signature.title.hbs
++++ b/node_modules/typedoc-plugin-markdown/dist/theme/partials/member.signature.title.hbs
+@@ -1,5 +1,5 @@
+ {{#compact}}
+-{{getMemberSymbol kindString}}{{#unless hideName}}**{{{name}}}**{{/unless}}
++{{#unless hideName}}**{{{name}}}**{{/unless}}
+ {{#if typeParameters}}
+ <
+ {{#each typeParameters}}
+--- a/node_modules/typedoc-plugin-markdown/dist/theme/partials/navigation.hbs
++++ b/node_modules/typedoc-plugin-markdown/dist/theme/partials/navigation.hbs
+@@ -2,10 +2,10 @@
+ * {{{title}}}
+ {{else}}
+ {{#unless isGlobals}}
+-* [{{title}}]({{relativeURL url}})
++* [{{title}}]({{fixURL (relativeURL url)}})
+ {{#if dedicatedUrls}}
+ {{#each dedicatedUrls}}
+-  * [{{title}}]({{relativeURL url}})
++  * [{{title}}]({{fixURL (relativeURL url)}})
+ {{/each}}
+ {{/if}}
+ {{#if isInPath}}
+--- a/node_modules/typedoc-plugin-markdown/dist/theme/partials/type.hbs
++++ b/node_modules/typedoc-plugin-markdown/dist/theme/partials/type.hbs
+@@ -1,7 +1,7 @@
+ {{#if this}}
+ {{#if reflection}}
+ {{#compact}}
+-[{{reflection.name}}]({{relativeURL reflection.url}})
++[{{reflection.name}}]({{fixURL (relativeURL reflection.url)}})
+ {{#if typeArguments}}
+ <{{#each typeArguments}}{{#if @index}}, {{/if}}{{> type}}{{/each}}>
+ {{/if}}
+--- a/node_modules/typedoc-plugin-markdown/dist/theme/partials/typeAndParent.hbs
++++ b/node_modules/typedoc-plugin-markdown/dist/theme/partials/typeAndParent.hbs
+@@ -9,25 +9,25 @@
+ {{#if reflection}}
+ {{#ifSignature reflection}}
+ {{#if reflection.parent.parent.url}}
+-[{{reflection.parent.parent.name}}]({{relativeURL reflection.parent.parent.url}})
++[{{reflection.parent.parent.name}}]({{fixURL (relativeURL reflection.parent.parent.url)}})
+ {{else}}
+ {{reflection.parent.parent.name}}
+ {{/if}}
+ .
+ {{#if reflection.parent.url}}
+-[{{reflection.parent.name}}]({{relativeURL reflection.parent.url}})
++[{{reflection.parent.name}}]({{fixURL (relativeURL reflection.parent.url)}})
+ {{else}}
+ {{reflection.parent.name}}
+ {{/if}}
+ {{else}}
+ {{#if reflection.parent.url}}
+-[{{reflection.parent.name}}]({{relativeURL reflection.parent.url}})
++[{{reflection.parent.name}}]({{fixURL (relativeURL reflection.parent.url)}})
+ {{else}}
+ {{reflection.parent.name}}
+ {{/if}}
+ .
+ {{#if reflection.url}}
+-[{{reflection.name}}]({{relativeURL reflection.url}})
++[{{reflection.name}}]({{fixURL (relativeURL reflection.url)}})
+ {{else}}
+ {{reflection.name}}
+ {{/if}}
+--- a/node_modules/typedoc-plugin-markdown/dist/theme/templates/reflection.hbs
++++ b/node_modules/typedoc-plugin-markdown/dist/theme/templates/reflection.hbs
+@@ -1,3 +1,7 @@
++---
++title: {{ model.name }}
++---
++
+ {{> header}}
+ {{~#if model.displayReadme ~}}
+ {{#getMarkdownFromHtml}}{{#markdown}}{{{model.readme}}}{{/markdown}}{{/getMarkdownFromHtml}}

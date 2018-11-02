@@ -4,21 +4,11 @@ title: AbstractActionController
 
 # `Class` AbstractActionController
 
-The AbstractActionController is an abstract class (Who would have guessed?) that, being extended by a controller, injects the ResponseService along with some convenient methods for the most used response types. If your desired response is not among these helpers, you can access the ResponseService itself to access all available responses:
-
-```ts
-export class MyController extends AbstractActionController {
-  find(ctx) {
-     // you do your magic
-
-     return this.getResponseService().clientError().iAmATeapot('Make your own coffee');
-  }
-}
-```
-
 ## Hierarchy
 
-**AbstractActionController**
+ [AbstractResponseHelper](abstractresponsehelper)
+
+**↳ AbstractActionController**
 
 ## Index
 
@@ -49,11 +39,9 @@ export class MyController extends AbstractActionController {
 
 **responseService**: *[ResponseService](responseservice)*
 
-*Defined in [Library/Controller/AbstractActionController.ts:29](https://github.com/Rawphs/stix/blob/f097835/src/Library/Controller/AbstractActionController.ts#L29)*
+*Inherited from [AbstractResponseHelper](abstractresponsehelper).[responseService](abstractresponsehelper#responseservice)*
 
-*__decorator__*: [inject](../#inject)
-
-*__type__*: ResponseService
+*Defined in [Library/Response/AbstractResponseHelper.ts:10](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/AbstractResponseHelper.ts#L10)*
 
 ___
 
@@ -65,13 +53,13 @@ ___
 
 **badRequestResponse**(message?: *`string`*, data?: *`any`*, meta?: *`Object`*): [ClientErrorResponse](clienterrorresponse)
 
-*Defined in [Library/Controller/AbstractActionController.ts:102](https://github.com/Rawphs/stix/blob/f097835/src/Library/Controller/AbstractActionController.ts#L102)*
+*Inherited from [AbstractResponseHelper](abstractresponsehelper).[badRequestResponse](abstractresponsehelper#badrequestresponse)*
 
-Convenience method to respond with a 400 status code.
+*Defined in [Library/Response/AbstractResponseHelper.ts:36](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/AbstractResponseHelper.ts#L36)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | `Optional` message | `string` |
 | `Optional` data | `any` |
@@ -86,13 +74,13 @@ ___
 
 **createdResponse**(data?: *`any`*, meta?: *`any`*): [SuccessfulResponse](successfulresponse)
 
-*Defined in [Library/Controller/AbstractActionController.ts:53](https://github.com/Rawphs/stix/blob/f097835/src/Library/Controller/AbstractActionController.ts#L53)*
+*Inherited from [AbstractResponseHelper](abstractresponsehelper).[createdResponse](abstractresponsehelper#createdresponse)*
 
-Convenience method to respond with a 201 status code.
+*Defined in [Library/Response/AbstractResponseHelper.ts:20](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/AbstractResponseHelper.ts#L20)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | `Optional` data | `any` |
 | `Optional` meta | `any` |
@@ -106,13 +94,13 @@ ___
 
 **forbiddenResponse**(message?: *`string`*, data?: *`any`*, meta?: *`any`*): [ClientErrorResponse](clienterrorresponse)
 
-*Defined in [Library/Controller/AbstractActionController.ts:90](https://github.com/Rawphs/stix/blob/f097835/src/Library/Controller/AbstractActionController.ts#L90)*
+*Inherited from [AbstractResponseHelper](abstractresponsehelper).[forbiddenResponse](abstractresponsehelper#forbiddenresponse)*
 
-Convenience method to respond with a 403 status code.
+*Defined in [Library/Response/AbstractResponseHelper.ts:32](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/AbstractResponseHelper.ts#L32)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | `Optional` message | `string` |
 | `Optional` data | `any` |
@@ -127,7 +115,9 @@ ___
 
 **getResponseService**(): [ResponseService](responseservice)
 
-*Defined in [Library/Controller/AbstractActionController.ts:31](https://github.com/Rawphs/stix/blob/f097835/src/Library/Controller/AbstractActionController.ts#L31)*
+*Inherited from [AbstractResponseHelper](abstractresponsehelper).[getResponseService](abstractresponsehelper#getresponseservice)*
+
+*Defined in [Library/Response/AbstractResponseHelper.ts:12](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/AbstractResponseHelper.ts#L12)*
 
 **Returns:** [ResponseService](responseservice)
 
@@ -138,13 +128,13 @@ ___
 
 **internalServerErrorResponse**(message?: *`string`*, data?: *`any`*, meta?: *`Object`*): [ServerErrorResponse](servererrorresponse)
 
-*Defined in [Library/Controller/AbstractActionController.ts:126](https://github.com/Rawphs/stix/blob/f097835/src/Library/Controller/AbstractActionController.ts#L126)*
+*Inherited from [AbstractResponseHelper](abstractresponsehelper).[internalServerErrorResponse](abstractresponsehelper#internalservererrorresponse)*
 
-Convenience method to respond with a 500 status code.
+*Defined in [Library/Response/AbstractResponseHelper.ts:44](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/AbstractResponseHelper.ts#L44)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | `Optional` message | `string` |
 | `Optional` data | `any` |
@@ -159,13 +149,13 @@ ___
 
 **notFoundResponse**(message?: *`string`*, data?: *`any`*, meta?: *`any`*): [ClientErrorResponse](clienterrorresponse)
 
-*Defined in [Library/Controller/AbstractActionController.ts:65](https://github.com/Rawphs/stix/blob/f097835/src/Library/Controller/AbstractActionController.ts#L65)*
+*Inherited from [AbstractResponseHelper](abstractresponsehelper).[notFoundResponse](abstractresponsehelper#notfoundresponse)*
 
-Convenience method to respond with a 404 status code.
+*Defined in [Library/Response/AbstractResponseHelper.ts:24](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/AbstractResponseHelper.ts#L24)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | `Optional` message | `string` |
 | `Optional` data | `any` |
@@ -180,13 +170,13 @@ ___
 
 **okResponse**(data?: *`any`*, meta?: *`any`*): [SuccessfulResponse](successfulresponse)
 
-*Defined in [Library/Controller/AbstractActionController.ts:42](https://github.com/Rawphs/stix/blob/f097835/src/Library/Controller/AbstractActionController.ts#L42)*
+*Inherited from [AbstractResponseHelper](abstractresponsehelper).[okResponse](abstractresponsehelper#okresponse)*
 
-Convenience method to respond with a 200 status code.
+*Defined in [Library/Response/AbstractResponseHelper.ts:16](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/AbstractResponseHelper.ts#L16)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | `Optional` data | `any` |
 | `Optional` meta | `any` |
@@ -200,15 +190,15 @@ ___
 
 **permanentRedirectResponse**(location: *`string`*, alt?: *`string`*, meta?: *`any`*): [RedirectionResponse](redirectionresponse)
 
-*Defined in [Library/Controller/AbstractActionController.ts:139](https://github.com/Rawphs/stix/blob/f097835/src/Library/Controller/AbstractActionController.ts#L139)*
+*Inherited from [AbstractResponseHelper](abstractresponsehelper).[permanentRedirectResponse](abstractresponsehelper#permanentredirectresponse)*
 
-Convenience method to respond with a 308 status code.
+*Defined in [Library/Response/AbstractResponseHelper.ts:48](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/AbstractResponseHelper.ts#L48)*
 
 **Parameters:**
 
-| Param | Type | Description |
-| ------ | ------ | ------ |
-| location | `string` |  - |
+| Name | Type |
+| ------ | ------ |
+| location | `string` |
 | `Optional` alt | `string` |
 | `Optional` meta | `any` |
 
@@ -221,13 +211,13 @@ ___
 
 **requestTimeoutResponse**(message?: *`string`*, data?: *`any`*, meta?: *`any`*): [ClientErrorResponse](clienterrorresponse)
 
-*Defined in [Library/Controller/AbstractActionController.ts:77](https://github.com/Rawphs/stix/blob/f097835/src/Library/Controller/AbstractActionController.ts#L77)*
+*Inherited from [AbstractResponseHelper](abstractresponsehelper).[requestTimeoutResponse](abstractresponsehelper#requesttimeoutresponse)*
 
-Convenience method to respond with a 408 status code.
+*Defined in [Library/Response/AbstractResponseHelper.ts:28](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/AbstractResponseHelper.ts#L28)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | `Optional` message | `string` |
 | `Optional` data | `any` |
@@ -242,13 +232,13 @@ ___
 
 **unauthorizedResponse**(message?: *`string`*, data?: *`any`*, meta?: *`Object`*): [ClientErrorResponse](clienterrorresponse)
 
-*Defined in [Library/Controller/AbstractActionController.ts:114](https://github.com/Rawphs/stix/blob/f097835/src/Library/Controller/AbstractActionController.ts#L114)*
+*Inherited from [AbstractResponseHelper](abstractresponsehelper).[unauthorizedResponse](abstractresponsehelper#unauthorizedresponse)*
 
-Convenience method to respond with a 401 status code.
+*Defined in [Library/Response/AbstractResponseHelper.ts:40](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/AbstractResponseHelper.ts#L40)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | `Optional` message | `string` |
 | `Optional` data | `any` |

@@ -12,7 +12,6 @@ title: Route
 
 ### Methods
 
-* [crud](route#crud)
 * [delete](route#delete)
 * [get](route#get)
 * [method](route#method)
@@ -24,35 +23,17 @@ title: Route
 
 ## Methods
 
-<a id="crud"></a>
-
-### `Static` crud
-
-**crud**(route: *`string`*, controller: * `string` &#124; `object`*): `__type`
-
-*Defined in [Library/Router/Route.ts:28](https://github.com/Rawphs/stix/blob/f097835/src/Library/Router/Route.ts#L28)*
-
-**Parameters:**
-
-| Param | Type |
-| ------ | ------ |
-| route | `string` |
-| controller |  `string` &#124; `object`|
-
-**Returns:** `__type`
-
-___
 <a id="delete"></a>
 
 ### `Static` delete
 
 **delete**(route: *`string`*, controller: * `string` &#124; `object`*, action: *`string`*): `__type`
 
-*Defined in [Library/Router/Route.ts:24](https://github.com/Rawphs/stix/blob/f097835/src/Library/Router/Route.ts#L24)*
+*Defined in [Library/Router/Route.ts:24](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Router/Route.ts#L24)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | route | `string` |
 | controller |  `string` &#124; `object`|
@@ -67,11 +48,11 @@ ___
 
 **get**(route: *`string`*, controller: * `string` &#124; `object`*, action: *`string`*): `__type`
 
-*Defined in [Library/Router/Route.ts:8](https://github.com/Rawphs/stix/blob/f097835/src/Library/Router/Route.ts#L8)*
+*Defined in [Library/Router/Route.ts:8](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Router/Route.ts#L8)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | route | `string` |
 | controller |  `string` &#124; `object`|
@@ -86,11 +67,11 @@ ___
 
 **method**(method: *`string`*, route: *`string`*, controller: * `string` &#124; `object`*, action: *`string`*): `__type`
 
-*Defined in [Library/Router/Route.ts:4](https://github.com/Rawphs/stix/blob/f097835/src/Library/Router/Route.ts#L4)*
+*Defined in [Library/Router/Route.ts:4](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Router/Route.ts#L4)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | method | `string` |
 | route | `string` |
@@ -106,11 +87,11 @@ ___
 
 **patch**(route: *`string`*, controller: * `string` &#124; `object`*, action: *`string`*): `__type`
 
-*Defined in [Library/Router/Route.ts:20](https://github.com/Rawphs/stix/blob/f097835/src/Library/Router/Route.ts#L20)*
+*Defined in [Library/Router/Route.ts:20](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Router/Route.ts#L20)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | route | `string` |
 | controller |  `string` &#124; `object`|
@@ -125,11 +106,11 @@ ___
 
 **post**(route: *`string`*, controller: * `string` &#124; `object`*, action: *`string`*): `__type`
 
-*Defined in [Library/Router/Route.ts:12](https://github.com/Rawphs/stix/blob/f097835/src/Library/Router/Route.ts#L12)*
+*Defined in [Library/Router/Route.ts:12](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Router/Route.ts#L12)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | route | `string` |
 | controller |  `string` &#124; `object`|
@@ -144,11 +125,11 @@ ___
 
 **put**(route: *`string`*, controller: * `string` &#124; `object`*, action: *`string`*): `__type`
 
-*Defined in [Library/Router/Route.ts:16](https://github.com/Rawphs/stix/blob/f097835/src/Library/Router/Route.ts#L16)*
+*Defined in [Library/Router/Route.ts:16](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Router/Route.ts#L16)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | route | `string` |
 | controller |  `string` &#124; `object`|

@@ -33,11 +33,11 @@ title: NotFoundError
 
 **new NotFoundError**(error: *`string`*): [NotFoundError](notfounderror)
 
-*Defined in [Library/Error/NotFoundError.ts:1](https://github.com/Rawphs/stix/blob/f097835/src/Library/Error/NotFoundError.ts#L1)*
+*Defined in [Library/Error/NotFoundError.ts:1](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Error/NotFoundError.ts#L1)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | error | `string` |
 
@@ -55,7 +55,7 @@ ___
 
 *Inherited from Error.message*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/typescript/lib/lib.es5.d.ts:904*
+**
 
 ___
 <a id="name"></a>
@@ -66,7 +66,7 @@ ___
 
 *Inherited from Error.name*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/typescript/lib/lib.es5.d.ts:903*
+**
 
 ___
 <a id="stack"></a>
@@ -79,7 +79,7 @@ ___
 
 *Overrides Error.stack*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/typescript/lib/lib.es5.d.ts:905*
+**
 
 ___
 <a id="error"></a>
@@ -88,7 +88,7 @@ ___
 
 **Error**: *`ErrorConstructor`*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/typescript/lib/lib.es5.d.ts:914*
+**
 
 ___
 

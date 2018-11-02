@@ -8,15 +8,15 @@ title: Response
 
 **Response**
 
-↳  [ServerErrorResponse](servererrorresponse)
-
-↳  [SuccessfulResponse](successfulresponse)
-
-↳  [ClientErrorResponse](clienterrorresponse)
-
 ↳  [InformationalResponse](informationalresponse)
 
 ↳  [RedirectionResponse](redirectionresponse)
+
+↳  [ServerErrorResponse](servererrorresponse)
+
+↳  [ClientErrorResponse](clienterrorresponse)
+
+↳  [SuccessfulResponse](successfulresponse)
 
 ## Index
 
@@ -32,17 +32,24 @@ title: Response
 * [message](response#message)
 * [meta](response#meta)
 * [statusCode](response#statuscode)
+* [strategy](response#strategy)
 
 ### Methods
 
 * [addHeaders](response#addheaders)
 * [appendHeader](response#appendheader)
 * [apply](response#apply)
+* [applyBody](response#applybody)
 * [applyHeaders](response#applyheaders)
+* [applyStatusCode](response#applystatuscode)
+* [file](response#file)
+* [format](response#format)
 * [getStatusCode](response#getstatuscode)
+* [html](response#html)
+* [json](response#json)
 * [patchContext](response#patchcontext)
 * [removeHeader](response#removeheader)
-* [setBody](response#setbody)
+* [sendFile](response#sendfile)
 * [setHeader](response#setheader)
 * [setHeaders](response#setheaders)
 * [setStatusCode](response#setstatuscode)
@@ -57,13 +64,18 @@ title: Response
 
 **new Response**(__namedParameters: *`object`*): [Response](response)
 
-*Defined in [Library/Response/Response.ts:17](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/Response.ts#L17)*
+*Defined in [Library/Response/Response.ts:20](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L20)*
 
 **Parameters:**
 
-| Param | Type |
+**__namedParameters: `object`**
+
+| Name | Type |
 | ------ | ------ |
-| __namedParameters | `object` |
+| data | `any` |
+| message | `string` |
+| meta | `any` |
+| statusCode | [HttpStatusCodes](../enums/httpstatuscodes) |
 
 **Returns:** [Response](response)
 
@@ -77,7 +89,7 @@ ___
 
 **ctx**: *[ContextInterface](../interfaces/contextinterface)*
 
-*Defined in [Library/Response/Response.ts:7](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/Response.ts#L7)*
+*Defined in [Library/Response/Response.ts:8](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L8)*
 
 ___
 <a id="data"></a>
@@ -86,7 +98,7 @@ ___
 
 **data**: *`any`*
 
-*Defined in [Library/Response/Response.ts:15](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/Response.ts#L15)*
+*Defined in [Library/Response/Response.ts:18](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L18)*
 
 ___
 <a id="headers"></a>
@@ -95,7 +107,7 @@ ___
 
 **headers**: *`object`*
 
-*Defined in [Library/Response/Response.ts:9](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/Response.ts#L9)*
+*Defined in [Library/Response/Response.ts:10](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L10)*
 
 #### Type declaration
 
@@ -108,7 +120,7 @@ ___
 
 **message**: *`string`*
 
-*Defined in [Library/Response/Response.ts:17](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/Response.ts#L17)*
+*Defined in [Library/Response/Response.ts:20](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L20)*
 
 ___
 <a id="meta"></a>
@@ -117,7 +129,7 @@ ___
 
 **meta**: *`any`*
 
-*Defined in [Library/Response/Response.ts:13](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/Response.ts#L13)*
+*Defined in [Library/Response/Response.ts:16](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L16)*
 
 ___
 <a id="statuscode"></a>
@@ -126,7 +138,16 @@ ___
 
 **statusCode**: *[HttpStatusCodes](../enums/httpstatuscodes)*
 
-*Defined in [Library/Response/Response.ts:11](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/Response.ts#L11)*
+*Defined in [Library/Response/Response.ts:14](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L14)*
+
+___
+<a id="strategy"></a>
+
+### `Protected` strategy
+
+**strategy**: *`string`* =  ResponseStrategies.Json
+
+*Defined in [Library/Response/Response.ts:12](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L12)*
 
 ___
 
@@ -138,11 +159,11 @@ ___
 
 **addHeaders**(headers: *`object`*): `this`
 
-*Defined in [Library/Response/Response.ts:54](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/Response.ts#L54)*
+*Defined in [Library/Response/Response.ts:93](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L93)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | headers | `object` |
 
@@ -155,11 +176,11 @@ ___
 
 **appendHeader**(header: *`string`*, value: * `string` &#124; `Array`<`string`>*): `void`
 
-*Defined in [Library/Response/Response.ts:66](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/Response.ts#L66)*
+*Defined in [Library/Response/Response.ts:105](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L105)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | header | `string` |
 | value |  `string` &#124; `Array`<`string`>|
@@ -169,13 +190,30 @@ ___
 ___
 <a id="apply"></a>
 
-### `Abstract` apply
+### `Protected` apply
 
 **apply**(): `void`
 
-*Defined in [Library/Response/Response.ts:5](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/Response.ts#L5)*
+*Defined in [Library/Response/Response.ts:142](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L142)*
 
 **Returns:** `void`
+
+___
+<a id="applybody"></a>
+
+### `Protected` applyBody
+
+**applyBody**(body: *`any`*): `this`
+
+*Defined in [Library/Response/Response.ts:79](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L79)*
+
+**Parameters:**
+
+| Name | Type |
+| ------ | ------ |
+| body | `any` |
+
+**Returns:** `this`
 
 ___
 <a id="applyheaders"></a>
@@ -184,9 +222,55 @@ ___
 
 **applyHeaders**(): `this`
 
-*Defined in [Library/Response/Response.ts:76](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/Response.ts#L76)*
+*Defined in [Library/Response/Response.ts:115](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L115)*
 
 **Returns:** `this`
+
+___
+<a id="applystatuscode"></a>
+
+###  applyStatusCode
+
+**applyStatusCode**(statusCode: *[HttpStatusCodes](../enums/httpstatuscodes)*): `this`
+
+*Defined in [Library/Response/Response.ts:63](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L63)*
+
+**Parameters:**
+
+| Name | Type |
+| ------ | ------ |
+| statusCode | [HttpStatusCodes](../enums/httpstatuscodes) |
+
+**Returns:** `this`
+
+___
+<a id="file"></a>
+
+###  file
+
+**file**(location: *`string`*, options?: *`SendOptions`*): `this`
+
+*Defined in [Library/Response/Response.ts:121](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L121)*
+
+**Parameters:**
+
+| Name | Type |
+| ------ | ------ |
+| location | `string` |
+| `Optional` options | `SendOptions` |
+
+**Returns:** `this`
+
+___
+<a id="format"></a>
+
+### `Protected` format
+
+**format**(): `any`
+
+*Defined in [Library/Response/Response.ts:146](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L146)*
+
+**Returns:** `any`
 
 ___
 <a id="getstatuscode"></a>
@@ -195,26 +279,60 @@ ___
 
 **getStatusCode**(): [HttpStatusCodes](../enums/httpstatuscodes)
 
-*Defined in [Library/Response/Response.ts:38](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/Response.ts#L38)*
+*Defined in [Library/Response/Response.ts:75](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L75)*
 
 **Returns:** [HttpStatusCodes](../enums/httpstatuscodes)
+
+___
+<a id="html"></a>
+
+###  html
+
+**html**(data: *`any`*): `this`
+
+*Defined in [Library/Response/Response.ts:135](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L135)*
+
+**Parameters:**
+
+| Name | Type |
+| ------ | ------ |
+| data | `any` |
+
+**Returns:** `this`
+
+___
+<a id="json"></a>
+
+###  json
+
+**json**(data: *`any`*): `this`
+
+*Defined in [Library/Response/Response.ts:128](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L128)*
+
+**Parameters:**
+
+| Name | Type |
+| ------ | ------ |
+| data | `any` |
+
+**Returns:** `this`
 
 ___
 <a id="patchcontext"></a>
 
 ###  patchContext
 
-**patchContext**(ctx: *[ContextInterface](../interfaces/contextinterface)*): `void`
+**patchContext**(ctx: *[ContextInterface](../interfaces/contextinterface)*): `Promise`<`void`>
 
-*Defined in [Library/Response/Response.ts:26](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/Response.ts#L26)*
+*Defined in [Library/Response/Response.ts:29](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L29)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | ctx | [ContextInterface](../interfaces/contextinterface) |
 
-**Returns:** `void`
+**Returns:** `Promise`<`void`>
 
 ___
 <a id="removeheader"></a>
@@ -223,32 +341,26 @@ ___
 
 **removeHeader**(header: *`string`*): `this`
 
-*Defined in [Library/Response/Response.ts:70](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/Response.ts#L70)*
+*Defined in [Library/Response/Response.ts:109](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L109)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | header | `string` |
 
 **Returns:** `this`
 
 ___
-<a id="setbody"></a>
+<a id="sendfile"></a>
 
-###  setBody
+### `Protected` sendFile
 
-**setBody**(body: *`any`*): `this`
+**sendFile**(): `Promise`<`string`>
 
-*Defined in [Library/Response/Response.ts:42](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/Response.ts#L42)*
+*Defined in [Library/Response/Response.ts:52](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L52)*
 
-**Parameters:**
-
-| Param | Type |
-| ------ | ------ |
-| body | `any` |
-
-**Returns:** `this`
+**Returns:** `Promise`<`string`>
 
 ___
 <a id="setheader"></a>
@@ -257,11 +369,11 @@ ___
 
 **setHeader**(header: *`string`*, value: * `string` &#124; `Array`<`string`>*): `this`
 
-*Defined in [Library/Response/Response.ts:60](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/Response.ts#L60)*
+*Defined in [Library/Response/Response.ts:99](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L99)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | header | `string` |
 | value |  `string` &#124; `Array`<`string`>|
@@ -275,11 +387,11 @@ ___
 
 **setHeaders**(headers: *`object`*): `this`
 
-*Defined in [Library/Response/Response.ts:48](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/Response.ts#L48)*
+*Defined in [Library/Response/Response.ts:87](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L87)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | headers | `object` |
 
@@ -292,11 +404,11 @@ ___
 
 **setStatusCode**(statusCode: *[HttpStatusCodes](../enums/httpstatuscodes)*): `this`
 
-*Defined in [Library/Response/Response.ts:32](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/Response.ts#L32)*
+*Defined in [Library/Response/Response.ts:69](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L69)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | statusCode | [HttpStatusCodes](../enums/httpstatuscodes) |
 

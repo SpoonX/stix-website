@@ -24,17 +24,24 @@ title: RedirectionResponse
 * [message](redirectionresponse#message)
 * [meta](redirectionresponse#meta)
 * [statusCode](redirectionresponse#statuscode)
+* [strategy](redirectionresponse#strategy)
 
 ### Methods
 
 * [addHeaders](redirectionresponse#addheaders)
 * [appendHeader](redirectionresponse#appendheader)
 * [apply](redirectionresponse#apply)
+* [applyBody](redirectionresponse#applybody)
 * [applyHeaders](redirectionresponse#applyheaders)
+* [applyStatusCode](redirectionresponse#applystatuscode)
+* [file](redirectionresponse#file)
+* [format](redirectionresponse#format)
 * [getStatusCode](redirectionresponse#getstatuscode)
+* [html](redirectionresponse#html)
+* [json](redirectionresponse#json)
 * [patchContext](redirectionresponse#patchcontext)
 * [removeHeader](redirectionresponse#removeheader)
-* [setBody](redirectionresponse#setbody)
+* [sendFile](redirectionresponse#sendfile)
 * [setHeader](redirectionresponse#setheader)
 * [setHeaders](redirectionresponse#setheaders)
 * [setStatusCode](redirectionresponse#setstatuscode)
@@ -61,13 +68,18 @@ title: RedirectionResponse
 
 *Inherited from [Response](response).[constructor](response#constructor)*
 
-*Defined in [Library/Response/Response.ts:17](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/Response.ts#L17)*
+*Defined in [Library/Response/Response.ts:20](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L20)*
 
 **Parameters:**
 
-| Param | Type |
+**__namedParameters: `object`**
+
+| Name | Type |
 | ------ | ------ |
-| __namedParameters | `object` |
+| data | `any` |
+| message | `string` |
+| meta | `any` |
+| statusCode | [HttpStatusCodes](../enums/httpstatuscodes) |
 
 **Returns:** [RedirectionResponse](redirectionresponse)
 
@@ -83,7 +95,7 @@ ___
 
 *Inherited from [Response](response).[ctx](response#ctx)*
 
-*Defined in [Library/Response/Response.ts:7](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/Response.ts#L7)*
+*Defined in [Library/Response/Response.ts:8](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L8)*
 
 ___
 <a id="data"></a>
@@ -94,7 +106,7 @@ ___
 
 *Inherited from [Response](response).[data](response#data)*
 
-*Defined in [Library/Response/Response.ts:15](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/Response.ts#L15)*
+*Defined in [Library/Response/Response.ts:18](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L18)*
 
 ___
 <a id="headers"></a>
@@ -105,7 +117,7 @@ ___
 
 *Inherited from [Response](response).[headers](response#headers)*
 
-*Defined in [Library/Response/Response.ts:9](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/Response.ts#L9)*
+*Defined in [Library/Response/Response.ts:10](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L10)*
 
 #### Type declaration
 
@@ -120,7 +132,7 @@ ___
 
 *Inherited from [Response](response).[message](response#message)*
 
-*Defined in [Library/Response/Response.ts:17](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/Response.ts#L17)*
+*Defined in [Library/Response/Response.ts:20](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L20)*
 
 ___
 <a id="meta"></a>
@@ -131,7 +143,7 @@ ___
 
 *Inherited from [Response](response).[meta](response#meta)*
 
-*Defined in [Library/Response/Response.ts:13](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/Response.ts#L13)*
+*Defined in [Library/Response/Response.ts:16](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L16)*
 
 ___
 <a id="statuscode"></a>
@@ -142,7 +154,18 @@ ___
 
 *Inherited from [Response](response).[statusCode](response#statuscode)*
 
-*Defined in [Library/Response/Response.ts:11](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/Response.ts#L11)*
+*Defined in [Library/Response/Response.ts:14](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L14)*
+
+___
+<a id="strategy"></a>
+
+### `Protected` strategy
+
+**strategy**: *`string`* =  ResponseStrategies.Json
+
+*Inherited from [Response](response).[strategy](response#strategy)*
+
+*Defined in [Library/Response/Response.ts:12](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L12)*
 
 ___
 
@@ -156,11 +179,11 @@ ___
 
 *Inherited from [Response](response).[addHeaders](response#addheaders)*
 
-*Defined in [Library/Response/Response.ts:54](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/Response.ts#L54)*
+*Defined in [Library/Response/Response.ts:93](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L93)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | headers | `object` |
 
@@ -175,11 +198,11 @@ ___
 
 *Inherited from [Response](response).[appendHeader](response#appendheader)*
 
-*Defined in [Library/Response/Response.ts:66](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/Response.ts#L66)*
+*Defined in [Library/Response/Response.ts:105](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L105)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | header | `string` |
 | value |  `string` &#124; `Array`<`string`>|
@@ -195,9 +218,28 @@ ___
 
 *Overrides [Response](response).[apply](response#apply)*
 
-*Defined in [Library/Response/RedirectionResponse.ts:45](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/RedirectionResponse.ts#L45)*
+*Defined in [Library/Response/RedirectionResponse.ts:45](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/RedirectionResponse.ts#L45)*
 
 **Returns:** `void`
+
+___
+<a id="applybody"></a>
+
+### `Protected` applyBody
+
+**applyBody**(body: *`any`*): `this`
+
+*Inherited from [Response](response).[applyBody](response#applybody)*
+
+*Defined in [Library/Response/Response.ts:79](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L79)*
+
+**Parameters:**
+
+| Name | Type |
+| ------ | ------ |
+| body | `any` |
+
+**Returns:** `this`
 
 ___
 <a id="applyheaders"></a>
@@ -208,9 +250,61 @@ ___
 
 *Inherited from [Response](response).[applyHeaders](response#applyheaders)*
 
-*Defined in [Library/Response/Response.ts:76](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/Response.ts#L76)*
+*Defined in [Library/Response/Response.ts:115](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L115)*
 
 **Returns:** `this`
+
+___
+<a id="applystatuscode"></a>
+
+###  applyStatusCode
+
+**applyStatusCode**(statusCode: *[HttpStatusCodes](../enums/httpstatuscodes)*): `this`
+
+*Inherited from [Response](response).[applyStatusCode](response#applystatuscode)*
+
+*Defined in [Library/Response/Response.ts:63](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L63)*
+
+**Parameters:**
+
+| Name | Type |
+| ------ | ------ |
+| statusCode | [HttpStatusCodes](../enums/httpstatuscodes) |
+
+**Returns:** `this`
+
+___
+<a id="file"></a>
+
+###  file
+
+**file**(location: *`string`*, options?: *`SendOptions`*): `this`
+
+*Inherited from [Response](response).[file](response#file)*
+
+*Defined in [Library/Response/Response.ts:121](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L121)*
+
+**Parameters:**
+
+| Name | Type |
+| ------ | ------ |
+| location | `string` |
+| `Optional` options | `SendOptions` |
+
+**Returns:** `this`
+
+___
+<a id="format"></a>
+
+### `Protected` format
+
+**format**(): `any`
+
+*Inherited from [Response](response).[format](response#format)*
+
+*Defined in [Library/Response/Response.ts:146](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L146)*
+
+**Returns:** `any`
 
 ___
 <a id="getstatuscode"></a>
@@ -221,28 +315,66 @@ ___
 
 *Inherited from [Response](response).[getStatusCode](response#getstatuscode)*
 
-*Defined in [Library/Response/Response.ts:38](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/Response.ts#L38)*
+*Defined in [Library/Response/Response.ts:75](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L75)*
 
 **Returns:** [HttpStatusCodes](../enums/httpstatuscodes)
+
+___
+<a id="html"></a>
+
+###  html
+
+**html**(data: *`any`*): `this`
+
+*Inherited from [Response](response).[html](response#html)*
+
+*Defined in [Library/Response/Response.ts:135](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L135)*
+
+**Parameters:**
+
+| Name | Type |
+| ------ | ------ |
+| data | `any` |
+
+**Returns:** `this`
+
+___
+<a id="json"></a>
+
+###  json
+
+**json**(data: *`any`*): `this`
+
+*Inherited from [Response](response).[json](response#json)*
+
+*Defined in [Library/Response/Response.ts:128](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L128)*
+
+**Parameters:**
+
+| Name | Type |
+| ------ | ------ |
+| data | `any` |
+
+**Returns:** `this`
 
 ___
 <a id="patchcontext"></a>
 
 ###  patchContext
 
-**patchContext**(ctx: *[ContextInterface](../interfaces/contextinterface)*): `void`
+**patchContext**(ctx: *[ContextInterface](../interfaces/contextinterface)*): `Promise`<`void`>
 
 *Inherited from [Response](response).[patchContext](response#patchcontext)*
 
-*Defined in [Library/Response/Response.ts:26](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/Response.ts#L26)*
+*Defined in [Library/Response/Response.ts:29](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L29)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | ctx | [ContextInterface](../interfaces/contextinterface) |
 
-**Returns:** `void`
+**Returns:** `Promise`<`void`>
 
 ___
 <a id="removeheader"></a>
@@ -253,34 +385,28 @@ ___
 
 *Inherited from [Response](response).[removeHeader](response#removeheader)*
 
-*Defined in [Library/Response/Response.ts:70](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/Response.ts#L70)*
+*Defined in [Library/Response/Response.ts:109](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L109)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | header | `string` |
 
 **Returns:** `this`
 
 ___
-<a id="setbody"></a>
+<a id="sendfile"></a>
 
-###  setBody
+### `Protected` sendFile
 
-**setBody**(body: *`any`*): `this`
+**sendFile**(): `Promise`<`string`>
 
-*Inherited from [Response](response).[setBody](response#setbody)*
+*Inherited from [Response](response).[sendFile](response#sendfile)*
 
-*Defined in [Library/Response/Response.ts:42](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/Response.ts#L42)*
+*Defined in [Library/Response/Response.ts:52](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L52)*
 
-**Parameters:**
-
-| Param | Type |
-| ------ | ------ |
-| body | `any` |
-
-**Returns:** `this`
+**Returns:** `Promise`<`string`>
 
 ___
 <a id="setheader"></a>
@@ -291,11 +417,11 @@ ___
 
 *Inherited from [Response](response).[setHeader](response#setheader)*
 
-*Defined in [Library/Response/Response.ts:60](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/Response.ts#L60)*
+*Defined in [Library/Response/Response.ts:99](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L99)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | header | `string` |
 | value |  `string` &#124; `Array`<`string`>|
@@ -311,11 +437,11 @@ ___
 
 *Inherited from [Response](response).[setHeaders](response#setheaders)*
 
-*Defined in [Library/Response/Response.ts:48](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/Response.ts#L48)*
+*Defined in [Library/Response/Response.ts:87](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L87)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | headers | `object` |
 
@@ -330,11 +456,11 @@ ___
 
 *Inherited from [Response](response).[setStatusCode](response#setstatuscode)*
 
-*Defined in [Library/Response/Response.ts:32](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/Response.ts#L32)*
+*Defined in [Library/Response/Response.ts:69](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L69)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | statusCode | [HttpStatusCodes](../enums/httpstatuscodes) |
 
@@ -347,11 +473,11 @@ ___
 
 **create**(statusCode: *[HttpStatusCodes](../enums/httpstatuscodes)*, location: *`string`*, alt?: *`string`*, meta?: *`any`*): [RedirectionResponse](redirectionresponse)
 
-*Defined in [Library/Response/RedirectionResponse.ts:5](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/RedirectionResponse.ts#L5)*
+*Defined in [Library/Response/RedirectionResponse.ts:5](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/RedirectionResponse.ts#L5)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | statusCode | [HttpStatusCodes](../enums/httpstatuscodes) |
 | location | `string` |
@@ -367,11 +493,11 @@ ___
 
 **found**(location: *`string`*, alt?: *`string`*, meta?: *`any`*): [RedirectionResponse](redirectionresponse)
 
-*Defined in [Library/Response/RedirectionResponse.ts:17](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/RedirectionResponse.ts#L17)*
+*Defined in [Library/Response/RedirectionResponse.ts:17](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/RedirectionResponse.ts#L17)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | location | `string` |
 | `Optional` alt | `string` |
@@ -386,11 +512,11 @@ ___
 
 **movedPermanently**(location: *`string`*, alt?: *`string`*, meta?: *`any`*): [RedirectionResponse](redirectionresponse)
 
-*Defined in [Library/Response/RedirectionResponse.ts:13](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/RedirectionResponse.ts#L13)*
+*Defined in [Library/Response/RedirectionResponse.ts:13](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/RedirectionResponse.ts#L13)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | location | `string` |
 | `Optional` alt | `string` |
@@ -405,11 +531,11 @@ ___
 
 **multipleChoices**(location: *`string`*, alt?: *`string`*, meta?: *`any`*): [RedirectionResponse](redirectionresponse)
 
-*Defined in [Library/Response/RedirectionResponse.ts:9](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/RedirectionResponse.ts#L9)*
+*Defined in [Library/Response/RedirectionResponse.ts:9](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/RedirectionResponse.ts#L9)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | location | `string` |
 | `Optional` alt | `string` |
@@ -424,11 +550,11 @@ ___
 
 **notModified**(location: *`string`*, alt?: *`string`*, meta?: *`any`*): [RedirectionResponse](redirectionresponse)
 
-*Defined in [Library/Response/RedirectionResponse.ts:25](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/RedirectionResponse.ts#L25)*
+*Defined in [Library/Response/RedirectionResponse.ts:25](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/RedirectionResponse.ts#L25)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | location | `string` |
 | `Optional` alt | `string` |
@@ -443,11 +569,11 @@ ___
 
 **permanentRedirect**(location: *`string`*, alt?: *`string`*, meta?: *`any`*): [RedirectionResponse](redirectionresponse)
 
-*Defined in [Library/Response/RedirectionResponse.ts:41](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/RedirectionResponse.ts#L41)*
+*Defined in [Library/Response/RedirectionResponse.ts:41](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/RedirectionResponse.ts#L41)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | location | `string` |
 | `Optional` alt | `string` |
@@ -462,11 +588,11 @@ ___
 
 **seeOther**(location: *`string`*, alt?: *`string`*, meta?: *`any`*): [RedirectionResponse](redirectionresponse)
 
-*Defined in [Library/Response/RedirectionResponse.ts:21](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/RedirectionResponse.ts#L21)*
+*Defined in [Library/Response/RedirectionResponse.ts:21](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/RedirectionResponse.ts#L21)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | location | `string` |
 | `Optional` alt | `string` |
@@ -481,11 +607,11 @@ ___
 
 **switchProxy**(location: *`string`*, alt?: *`string`*, meta?: *`any`*): [RedirectionResponse](redirectionresponse)
 
-*Defined in [Library/Response/RedirectionResponse.ts:33](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/RedirectionResponse.ts#L33)*
+*Defined in [Library/Response/RedirectionResponse.ts:33](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/RedirectionResponse.ts#L33)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | location | `string` |
 | `Optional` alt | `string` |
@@ -500,11 +626,11 @@ ___
 
 **temporaryRedirect**(location: *`string`*, alt?: *`string`*, meta?: *`any`*): [RedirectionResponse](redirectionresponse)
 
-*Defined in [Library/Response/RedirectionResponse.ts:37](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/RedirectionResponse.ts#L37)*
+*Defined in [Library/Response/RedirectionResponse.ts:37](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/RedirectionResponse.ts#L37)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | location | `string` |
 | `Optional` alt | `string` |
@@ -519,11 +645,11 @@ ___
 
 **useProxy**(location: *`string`*, alt?: *`string`*, meta?: *`any`*): [RedirectionResponse](redirectionresponse)
 
-*Defined in [Library/Response/RedirectionResponse.ts:29](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/RedirectionResponse.ts#L29)*
+*Defined in [Library/Response/RedirectionResponse.ts:29](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/RedirectionResponse.ts#L29)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | location | `string` |
 | `Optional` alt | `string` |

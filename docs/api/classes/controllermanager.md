@@ -6,7 +6,7 @@ title: ControllerManager
 
 ## Hierarchy
 
-↳  [AbstractPluginManager](abstractpluginmanager)
+↳  [AbstractFileBasedPluginManager](abstractfilebasedpluginmanager)
 
 **↳ ControllerManager**
 
@@ -29,18 +29,19 @@ title: ControllerManager
 * [configure](controllermanager#configure)
 * [get](controllermanager#get)
 * [getController](controllermanager#getcontroller)
+* [getPlugin](controllermanager#getplugin)
 * [has](controllermanager#has)
 * [loadDirectory](controllermanager#loaddirectory)
 * [loadFromLocations](controllermanager#loadfromlocations)
 * [registerAlias](controllermanager#registeralias)
 * [registerAliases](controllermanager#registeraliases)
-* [registerController](controllermanager#registercontroller)
-* [registerControllers](controllermanager#registercontrollers)
 * [registerFactories](controllermanager#registerfactories)
 * [registerFactory](controllermanager#registerfactory)
 * [registerInvokable](controllermanager#registerinvokable)
+* [registerPlugin](controllermanager#registerplugin)
+* [registerPlugins](controllermanager#registerplugins)
 * [registerService](controllermanager#registerservice)
-* [getControllerName](controllermanager#getcontrollername)
+* [getPluginName](controllermanager#getpluginname)
 
 ---
 
@@ -50,18 +51,18 @@ title: ControllerManager
 
 ###  constructor
 
-**new ControllerManager**(creationContext: *[ServiceManager](servicemanager)*, config: *[ControllerManagerConfigType](../#controllermanagerconfigtype)*): [ControllerManager](controllermanager)
+**new ControllerManager**(creationContext: *[ServiceManager](servicemanager)*, config: *[ControllerManagerConfigType]()*): [ControllerManager](controllermanager)
 
-*Overrides [AbstractPluginManager](abstractpluginmanager).[constructor](abstractpluginmanager#constructor)*
+*Overrides [AbstractFileBasedPluginManager](abstractfilebasedpluginmanager).[constructor](abstractfilebasedpluginmanager#constructor)*
 
-*Defined in [Library/Controller/ControllerManager.ts:8](https://github.com/Rawphs/stix/blob/f097835/src/Library/Controller/ControllerManager.ts#L8)*
+*Defined in [Library/Controller/ControllerManager.ts:5](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Controller/ControllerManager.ts#L5)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | creationContext | [ServiceManager](servicemanager) |
-| config | [ControllerManagerConfigType](../#controllermanagerconfigtype) |
+| config | [ControllerManagerConfigType]() |
 
 **Returns:** [ControllerManager](controllermanager)
 
@@ -79,7 +80,7 @@ ___
 
 *Overrides [ServiceManager](servicemanager).[creationContext](servicemanager#creationcontext)*
 
-*Defined in [Library/ServiceManager/AbstractPluginManager.ts:5](https://github.com/Rawphs/stix/blob/f097835/src/Library/ServiceManager/AbstractPluginManager.ts#L5)*
+*Defined in [Library/ServiceManager/AbstractPluginManager.ts:5](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/AbstractPluginManager.ts#L5)*
 
 ___
 
@@ -89,17 +90,17 @@ ___
 
 ###  configure
 
-**configure**(config: *[ServiceManagerConfigType](../#servicemanagerconfigtype)*): `this`
+**configure**(config: *[ServiceManagerConfigType]()*): `this`
 
 *Inherited from [ServiceManager](servicemanager).[configure](servicemanager#configure)*
 
-*Defined in [Library/ServiceManager/ServiceManager.ts:85](https://github.com/Rawphs/stix/blob/f097835/src/Library/ServiceManager/ServiceManager.ts#L85)*
+*Defined in [Library/ServiceManager/ServiceManager.ts:85](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/ServiceManager.ts#L85)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
-| config | [ServiceManagerConfigType](../#servicemanagerconfigtype) |
+| config | [ServiceManagerConfigType]() |
 
 **Returns:** `this`
 
@@ -108,20 +109,20 @@ ___
 
 ###  get
 
-**get**<`T`>(Service: *[ServiceKeyType](../#servicekeytype)<`T`>*, forceTransient?: *`boolean`*): `T`
+**get**<`T`>(Service: *[ServiceKeyType]()<`T`>*, forceTransient?: *`boolean`*): `T`
 
 *Inherited from [ServiceManager](servicemanager).[get](servicemanager#get)*
 
-*Defined in [Library/ServiceManager/ServiceManager.ts:34](https://github.com/Rawphs/stix/blob/f097835/src/Library/ServiceManager/ServiceManager.ts#L34)*
+*Defined in [Library/ServiceManager/ServiceManager.ts:34](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/ServiceManager.ts#L34)*
 
 **Type parameters:**
 
 #### T 
 **Parameters:**
 
-| Param | Type | Default value |
+| Name | Type | Default value |
 | ------ | ------ | ------ |
-| Service | [ServiceKeyType](../#servicekeytype)<`T`> | - |
+| Service | [ServiceKeyType]()<`T`> | - |
 | `Default value` forceTransient | `boolean` | false |
 
 **Returns:** `T`
@@ -131,15 +132,34 @@ ___
 
 ###  getController
 
-**getController**(controller: *[ControllerType](../#controllertype)*): `Object`
+**getController**(Controller: *[Instantiable]()<`Object`>*): `Object`
 
-*Defined in [Library/Controller/ControllerManager.ts:56](https://github.com/Rawphs/stix/blob/f097835/src/Library/Controller/ControllerManager.ts#L56)*
+*Defined in [Library/Controller/ControllerManager.ts:10](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Controller/ControllerManager.ts#L10)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
-| controller | [ControllerType](../#controllertype) |
+| Controller | [Instantiable]()<`Object`> |
+
+**Returns:** `Object`
+
+___
+<a id="getplugin"></a>
+
+###  getPlugin
+
+**getPlugin**(plugin: *[Instantiable]()<`Object`>*): `Object`
+
+*Inherited from [AbstractFileBasedPluginManager](abstractfilebasedpluginmanager).[getPlugin](abstractfilebasedpluginmanager#getplugin)*
+
+*Defined in [Library/ServiceManager/AbstractFileBasedPluginManager.ts:57](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/AbstractFileBasedPluginManager.ts#L57)*
+
+**Parameters:**
+
+| Name | Type |
+| ------ | ------ |
+| plugin | [Instantiable]()<`Object`> |
 
 **Returns:** `Object`
 
@@ -148,20 +168,20 @@ ___
 
 ###  has
 
-**has**<`T`>(Service: *[ServiceKeyType](../#servicekeytype)<`T`>*): `boolean`
+**has**<`T`>(Service: *[ServiceKeyType]()<`T`>*): `boolean`
 
 *Inherited from [ServiceManager](servicemanager).[has](servicemanager#has)*
 
-*Defined in [Library/ServiceManager/ServiceManager.ts:59](https://github.com/Rawphs/stix/blob/f097835/src/Library/ServiceManager/ServiceManager.ts#L59)*
+*Defined in [Library/ServiceManager/ServiceManager.ts:59](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/ServiceManager.ts#L59)*
 
 **Type parameters:**
 
 #### T 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
-| Service | [ServiceKeyType](../#servicekeytype)<`T`> |
+| Service | [ServiceKeyType]()<`T`> |
 
 **Returns:** `boolean`
 
@@ -170,15 +190,17 @@ ___
 
 ###  loadDirectory
 
-**loadDirectory**(controllerDirectory: *`string`*): `void`
+**loadDirectory**(pluginDirectory: *`string`*): `void`
 
-*Defined in [Library/Controller/ControllerManager.ts:31](https://github.com/Rawphs/stix/blob/f097835/src/Library/Controller/ControllerManager.ts#L31)*
+*Inherited from [AbstractFileBasedPluginManager](abstractfilebasedpluginmanager).[loadDirectory](abstractfilebasedpluginmanager#loaddirectory)*
+
+*Defined in [Library/ServiceManager/AbstractFileBasedPluginManager.ts:32](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/AbstractFileBasedPluginManager.ts#L32)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
-| controllerDirectory | `string` |
+| pluginDirectory | `string` |
 
 **Returns:** `void`
 
@@ -187,15 +209,17 @@ ___
 
 ###  loadFromLocations
 
-**loadFromLocations**(controllerDirectories: *`string`[]*): `this`
+**loadFromLocations**(pluginDirectories?: *`string`[]*): `this`
 
-*Defined in [Library/Controller/ControllerManager.ts:25](https://github.com/Rawphs/stix/blob/f097835/src/Library/Controller/ControllerManager.ts#L25)*
+*Inherited from [AbstractFileBasedPluginManager](abstractfilebasedpluginmanager).[loadFromLocations](abstractfilebasedpluginmanager#loadfromlocations)*
+
+*Defined in [Library/ServiceManager/AbstractFileBasedPluginManager.ts:24](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/AbstractFileBasedPluginManager.ts#L24)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
-| controllerDirectories | `string`[] |
+| `Optional` pluginDirectories | `string`[] |
 
 **Returns:** `this`
 
@@ -208,11 +232,11 @@ ___
 
 *Inherited from [ServiceManager](servicemanager).[registerAlias](servicemanager#registeralias)*
 
-*Defined in [Library/ServiceManager/ServiceManager.ts:125](https://github.com/Rawphs/stix/blob/f097835/src/Library/ServiceManager/ServiceManager.ts#L125)*
+*Defined in [Library/ServiceManager/ServiceManager.ts:125](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/ServiceManager.ts#L125)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | alias | `string` |
 | to |  `string` &#124; `Function`|
@@ -224,51 +248,17 @@ ___
 
 ###  registerAliases
 
-**registerAliases**(aliases: *[AliasesType](../#aliasestype)*): `this`
+**registerAliases**(aliases: *[AliasesType]()*): `this`
 
 *Inherited from [ServiceManager](servicemanager).[registerAliases](servicemanager#registeraliases)*
 
-*Defined in [Library/ServiceManager/ServiceManager.ts:119](https://github.com/Rawphs/stix/blob/f097835/src/Library/ServiceManager/ServiceManager.ts#L119)*
+*Defined in [Library/ServiceManager/ServiceManager.ts:119](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/ServiceManager.ts#L119)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
-| aliases | [AliasesType](../#aliasestype) |
-
-**Returns:** `this`
-
-___
-<a id="registercontroller"></a>
-
-### `Protected` registerController
-
-**registerController**(Controller: *[AbstractActionController](abstractactioncontroller)*): `this`
-
-*Defined in [Library/Controller/ControllerManager.ts:66](https://github.com/Rawphs/stix/blob/f097835/src/Library/Controller/ControllerManager.ts#L66)*
-
-**Parameters:**
-
-| Param | Type |
-| ------ | ------ |
-| Controller | [AbstractActionController](abstractactioncontroller) |
-
-**Returns:** `this`
-
-___
-<a id="registercontrollers"></a>
-
-### `Protected` registerControllers
-
-**registerControllers**(controllers: *`Array`<[AbstractActionController](abstractactioncontroller)>*): `this`
-
-*Defined in [Library/Controller/ControllerManager.ts:60](https://github.com/Rawphs/stix/blob/f097835/src/Library/Controller/ControllerManager.ts#L60)*
-
-**Parameters:**
-
-| Param | Type |
-| ------ | ------ |
-| controllers | `Array`<[AbstractActionController](abstractactioncontroller)> |
+| aliases | [AliasesType]() |
 
 **Returns:** `this`
 
@@ -277,17 +267,17 @@ ___
 
 ###  registerFactories
 
-**registerFactories**(factories: *[FactoriesMapType](../#factoriesmaptype)*): `this`
+**registerFactories**(factories: *[FactoriesMapType]()*): `this`
 
 *Inherited from [ServiceManager](servicemanager).[registerFactories](servicemanager#registerfactories)*
 
-*Defined in [Library/ServiceManager/ServiceManager.ts:71](https://github.com/Rawphs/stix/blob/f097835/src/Library/ServiceManager/ServiceManager.ts#L71)*
+*Defined in [Library/ServiceManager/ServiceManager.ts:71](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/ServiceManager.ts#L71)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
-| factories | [FactoriesMapType](../#factoriesmaptype) |
+| factories | [FactoriesMapType]() |
 
 **Returns:** `this`
 
@@ -300,11 +290,11 @@ ___
 
 *Inherited from [ServiceManager](servicemanager).[registerFactory](servicemanager#registerfactory)*
 
-*Defined in [Library/ServiceManager/ServiceManager.ts:65](https://github.com/Rawphs/stix/blob/f097835/src/Library/ServiceManager/ServiceManager.ts#L65)*
+*Defined in [Library/ServiceManager/ServiceManager.ts:65](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/ServiceManager.ts#L65)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | key |  `Function` &#124; `string`|
 | value | [ServiceFactoryType](../interfaces/servicefactorytype)<`Object`> |
@@ -316,20 +306,58 @@ ___
 
 ###  registerInvokable
 
-**registerInvokable**(key: *[ServiceKeyType](../#servicekeytype)<`Object`>*, value: *[Instantiable](../#instantiable)<`Object`>*): `void`
+**registerInvokable**(key: *[ServiceKeyType]()<`Object`>*, value: *[Instantiable]()<`Object`>*): `void`
 
 *Inherited from [ServiceManager](servicemanager).[registerInvokable](servicemanager#registerinvokable)*
 
-*Defined in [Library/ServiceManager/ServiceManager.ts:115](https://github.com/Rawphs/stix/blob/f097835/src/Library/ServiceManager/ServiceManager.ts#L115)*
+*Defined in [Library/ServiceManager/ServiceManager.ts:115](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/ServiceManager.ts#L115)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
-| key | [ServiceKeyType](../#servicekeytype)<`Object`> |
-| value | [Instantiable](../#instantiable)<`Object`> |
+| key | [ServiceKeyType]()<`Object`> |
+| value | [Instantiable]()<`Object`> |
 
 **Returns:** `void`
+
+___
+<a id="registerplugin"></a>
+
+### `Protected` registerPlugin
+
+**registerPlugin**(Plugin: *[Instantiable]()<`Object`>*): `this`
+
+*Inherited from [AbstractFileBasedPluginManager](abstractfilebasedpluginmanager).[registerPlugin](abstractfilebasedpluginmanager#registerplugin)*
+
+*Defined in [Library/ServiceManager/AbstractFileBasedPluginManager.ts:67](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/AbstractFileBasedPluginManager.ts#L67)*
+
+**Parameters:**
+
+| Name | Type |
+| ------ | ------ |
+| Plugin | [Instantiable]()<`Object`> |
+
+**Returns:** `this`
+
+___
+<a id="registerplugins"></a>
+
+### `Protected` registerPlugins
+
+**registerPlugins**(plugins: *`Array`<[Instantiable]()<`Object`>>*): `this`
+
+*Inherited from [AbstractFileBasedPluginManager](abstractfilebasedpluginmanager).[registerPlugins](abstractfilebasedpluginmanager#registerplugins)*
+
+*Defined in [Library/ServiceManager/AbstractFileBasedPluginManager.ts:61](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/AbstractFileBasedPluginManager.ts#L61)*
+
+**Parameters:**
+
+| Name | Type |
+| ------ | ------ |
+| plugins | `Array`<[Instantiable]()<`Object`>> |
+
+**Returns:** `this`
 
 ___
 <a id="registerservice"></a>
@@ -340,11 +368,11 @@ ___
 
 *Inherited from [ServiceManager](servicemanager).[registerService](servicemanager#registerservice)*
 
-*Defined in [Library/ServiceManager/ServiceManager.ts:79](https://github.com/Rawphs/stix/blob/f097835/src/Library/ServiceManager/ServiceManager.ts#L79)*
+*Defined in [Library/ServiceManager/ServiceManager.ts:79](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/ServiceManager.ts#L79)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | key |  `Function` &#124; `string`|
 | service | `Object` |
@@ -352,19 +380,21 @@ ___
 **Returns:** `this`
 
 ___
-<a id="getcontrollername"></a>
+<a id="getpluginname"></a>
 
-### `Static` getControllerName
+### `Static` getPluginName
 
-**getControllerName**(controller: *[ControllerType](../#controllertype)*): `string`
+**getPluginName**(plugin: *[FileBasedPluginType]()*): `string`
 
-*Defined in [Library/Controller/ControllerManager.ts:17](https://github.com/Rawphs/stix/blob/f097835/src/Library/Controller/ControllerManager.ts#L17)*
+*Inherited from [AbstractFileBasedPluginManager](abstractfilebasedpluginmanager).[getPluginName](abstractfilebasedpluginmanager#getpluginname)*
+
+*Defined in [Library/ServiceManager/AbstractFileBasedPluginManager.ts:16](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/AbstractFileBasedPluginManager.ts#L16)*
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
-| controller | [ControllerType](../#controllertype) |
+| plugin | [FileBasedPluginType]() |
 
 **Returns:** `string`
 

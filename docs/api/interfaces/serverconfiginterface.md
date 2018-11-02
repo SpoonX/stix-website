@@ -4,8 +4,6 @@ title: ServerConfigInterface
 
 # `Interface` ServerConfigInterface
 
-The Server Config interface acts as a guide for writting the server configuration. All fields are optional. Bear in mind that CORS is disabled by default.
-
 ## Hierarchy
 
 **ServerConfigInterface**
@@ -13,8 +11,6 @@ The Server Config interface acts as a guide for writting the server configuratio
 ## Indexable
 
 \[key: `string`\]:&nbsp;`any`
-The Server Config interface acts as a guide for writting the server configuration. All fields are optional. Bear in mind that CORS is disabled by default.
-
 ## Index
 
 ### Properties
@@ -22,6 +18,7 @@ The Server Config interface acts as a guide for writting the server configuratio
 * [bootstrap](serverconfiginterface#bootstrap)
 * [cors](serverconfiginterface#cors)
 * [port](serverconfiginterface#port)
+* [ssl](serverconfiginterface#ssl)
 
 ---
 
@@ -33,7 +30,7 @@ The Server Config interface acts as a guide for writting the server configuratio
 
 **bootstrap**: *`Function`*
 
-*Defined in [Library/Config/ServerConfigInterface.ts:8](https://github.com/Rawphs/stix/blob/f097835/src/Library/Config/ServerConfigInterface.ts#L8)*
+*Defined in [Library/Config/ServerConfigInterface.ts:5](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Config/ServerConfigInterface.ts#L5)*
 
 ___
 <a id="cors"></a>
@@ -42,7 +39,7 @@ ___
 
 **cors**: *`object`*
 
-*Defined in [Library/Config/ServerConfigInterface.ts:10](https://github.com/Rawphs/stix/blob/f097835/src/Library/Config/ServerConfigInterface.ts#L10)*
+*Defined in [Library/Config/ServerConfigInterface.ts:8](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Config/ServerConfigInterface.ts#L8)*
 
 #### Type declaration
 
@@ -57,7 +54,16 @@ ___
 
 **port**: *`number`*
 
-*Defined in [Library/Config/ServerConfigInterface.ts:9](https://github.com/Rawphs/stix/blob/f097835/src/Library/Config/ServerConfigInterface.ts#L9)*
+*Defined in [Library/Config/ServerConfigInterface.ts:7](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Config/ServerConfigInterface.ts#L7)*
+
+___
+<a id="ssl"></a>
+
+### `Optional` ssl
+
+**ssl**: *`ServerOptions`*
+
+*Defined in [Library/Config/ServerConfigInterface.ts:6](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Config/ServerConfigInterface.ts#L6)*
 
 ___
 

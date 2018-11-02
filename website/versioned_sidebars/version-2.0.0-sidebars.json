@@ -1,0 +1,79 @@
+{
+  "version-2.0.0-Introduction": {
+    "First Steps": [
+      "version-2.0.0-first-steps/getting-started"
+    ],
+    "Changelog": [
+      "version-2.0.0-changelog"
+    ]
+  },
+  "version-2.0.0-Modules": {
+    "stix-gates": [
+      "version-2.0.0-modules/stix-gates/gates-about",
+      "version-2.0.0-modules/stix-gates/gates-setup",
+      "version-2.0.0-modules/stix-gates/gates-usage",
+      "version-2.0.0-modules/stix-gates/gates-helpers"
+    ],
+    "stix-wetland": [
+      "version-2.0.0-modules/stix-wetland/wetland-about",
+      "version-2.0.0-modules/stix-wetland/wetland-setup",
+      "version-2.0.0-modules/stix-wetland/wetland-decorators",
+      "version-2.0.0-modules/stix-wetland/wetland-db-route"
+    ]
+  },
+  "version-2.0.0-API": {
+    "API": [
+      "version-2.0.0-api"
+    ],
+    "Classes": [
+      "version-2.0.0-api/classes/abstractactioncontroller",
+      "version-2.0.0-api/classes/abstractpluginmanager",
+      "version-2.0.0-api/classes/application",
+      "version-2.0.0-api/classes/clienterrorresponse",
+      "version-2.0.0-api/classes/config",
+      "version-2.0.0-api/classes/controllermanager",
+      "version-2.0.0-api/classes/event",
+      "version-2.0.0-api/classes/eventmanager",
+      "version-2.0.0-api/classes/informationalresponse",
+      "version-2.0.0-api/classes/invalidactionresulterror",
+      "version-2.0.0-api/classes/loggerservice",
+      "version-2.0.0-api/classes/modulemanager",
+      "version-2.0.0-api/classes/notfounderror",
+      "version-2.0.0-api/classes/redirectionresponse",
+      "version-2.0.0-api/classes/response",
+      "version-2.0.0-api/classes/responseservice",
+      "version-2.0.0-api/classes/route",
+      "version-2.0.0-api/classes/routerservice",
+      "version-2.0.0-api/classes/servererrorresponse",
+      "version-2.0.0-api/classes/serverservice",
+      "version-2.0.0-api/classes/servicemanager",
+      "version-2.0.0-api/classes/sharedeventmanager",
+      "version-2.0.0-api/classes/successfulresponse"
+    ],
+    "Enums": [
+      "version-2.0.0-api/enums/applicationevents",
+      "version-2.0.0-api/enums/httpstatuscodes",
+      "version-2.0.0-api/enums/modulemanagerevents",
+      "version-2.0.0-api/enums/requestmethods",
+      "version-2.0.0-api/enums/responsetypes"
+    ],
+    "Interfaces": [
+      "version-2.0.0-api/interfaces/configdata",
+      "version-2.0.0-api/interfaces/contextinterface",
+      "version-2.0.0-api/interfaces/factoryinterface",
+      "version-2.0.0-api/interfaces/loggerconfiginterface",
+      "version-2.0.0-api/interfaces/moduleclassinterface",
+      "version-2.0.0-api/interfaces/moduleinterface",
+      "version-2.0.0-api/interfaces/modulemanagerconfiginterface",
+      "version-2.0.0-api/interfaces/registeredrouteinterface",
+      "version-2.0.0-api/interfaces/responseargumentsinterface",
+      "version-2.0.0-api/interfaces/responseconfiginterface",
+      "version-2.0.0-api/interfaces/routeinterface",
+      "version-2.0.0-api/interfaces/routerconfiginterface",
+      "version-2.0.0-api/interfaces/selfdestructingcallbackinterface",
+      "version-2.0.0-api/interfaces/serverconfiginterface",
+      "version-2.0.0-api/interfaces/servicefactorytype",
+      "version-2.0.0-api/interfaces/servicemanagerinterface"
+    ]
+  }
+}

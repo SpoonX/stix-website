@@ -92,7 +92,7 @@ title: ContextInterface
 
 *Inherited from ContextDelegatedRequest.URL*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:105*
+**
 
 Get WHATWG parsed URL object.
 
@@ -105,7 +105,7 @@ ___
 
 *Inherited from Context.accept*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:691*
+**
 
 ___
 <a id="app"></a>
@@ -116,7 +116,7 @@ ___
 
 *Inherited from Context.app*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:684*
+**
 
 ___
 <a id="assert"></a>
@@ -127,7 +127,7 @@ ___
 
 *Inherited from BaseContext.assert*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:638*
+**
 
 Similar to .throw(), adds assertion.
 
@@ -144,7 +144,7 @@ ___
 
 *Inherited from ContextDelegatedResponse.body*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:312*
+**
 
 Get/Set response body.
 
@@ -157,7 +157,7 @@ ___
 
 *Inherited from Context.cookies*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:690*
+**
 
 ___
 <a id="etag"></a>
@@ -168,7 +168,7 @@ ___
 
 *Inherited from ContextDelegatedResponse.etag*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:388*
+**
 
 Get/Set the ETag of a response. This will normalize the quotes if necessary.
 
@@ -190,7 +190,7 @@ ___
 
 *Inherited from ContextDelegatedRequest.fresh*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:112*
+**
 
 Check if the request is fresh, aka Last-Modified and/or the ETag still match.
 
@@ -203,7 +203,7 @@ ___
 
 *Inherited from ContextDelegatedRequest.header*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:35*
+**
 
 Return request header.
 
@@ -216,7 +216,7 @@ ___
 
 *Inherited from ContextDelegatedResponse.headerSent*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:323*
+**
 
 Check if a header has been written to the socket.
 
@@ -229,7 +229,7 @@ ___
 
 *Inherited from ContextDelegatedRequest.headers*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:40*
+**
 
 Return request header, alias as request.header
 
@@ -242,7 +242,7 @@ ___
 
 *Inherited from ContextDelegatedRequest.host*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:93*
+**
 
 Parse the "Host" header field host and support X-Forwarded-Host when a proxy is enabled.
 
@@ -255,7 +255,7 @@ ___
 
 *Inherited from ContextDelegatedRequest.hostname*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:100*
+**
 
 Parse the "Host" header field hostname and support X-Forwarded-Host when a proxy is enabled.
 
@@ -268,7 +268,7 @@ ___
 
 *Inherited from ContextDelegatedRequest.href*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:55*
+**
 
 Get full request URL.
 
@@ -281,7 +281,7 @@ ___
 
 *Inherited from ContextDelegatedRequest.idempotent*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:124*
+**
 
 Check if the request is idempotent.
 
@@ -294,7 +294,7 @@ ___
 
 *Inherited from ContextDelegatedRequest.ip*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:151*
+**
 
 Request remote address. Supports X-Forwarded-For when app.proxy is true.
 
@@ -307,7 +307,7 @@ ___
 
 *Inherited from ContextDelegatedRequest.ips*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:161*
+**
 
 When `app.proxy` is `true`, parse the "X-Forwarded-For" ip address list.
 
@@ -322,7 +322,7 @@ ___
 
 *Inherited from ContextDelegatedResponse.lastModified*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:375*
+**
 
 Get the Last-Modified date in Date form, if it exists. Set the Last-Modified date using a string or a Date.
 
@@ -340,7 +340,7 @@ ___
 
 *Inherited from ContextDelegatedResponse.length*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:318*
+**
 
 Return parsed response Content-Length when present. Set Content-Length field to `n`.
 
@@ -353,7 +353,7 @@ ___
 
 *Inherited from ContextDelegatedResponse.message*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:307*
+**
 
 Get response status message
 
@@ -366,7 +366,7 @@ ___
 
 *Inherited from ContextDelegatedRequest.method*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:60*
+**
 
 Get/Set request method.
 
@@ -379,7 +379,7 @@ ___
 
 *Inherited from ContextDelegatedRequest.origin*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:50*
+**
 
 Get origin of URL.
 
@@ -392,7 +392,7 @@ ___
 
 *Inherited from Context.originalUrl*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:689*
+**
 
 ___
 <a id="path"></a>
@@ -403,7 +403,7 @@ ___
 
 *Inherited from ContextDelegatedRequest.path*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:66*
+**
 
 Get request pathname. Set pathname, retaining the query-string when present.
 
@@ -416,7 +416,7 @@ ___
 
 *Inherited from ContextDelegatedRequest.protocol*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:139*
+**
 
 Return the protocol string "http" or "https" when requested with TLS. When the proxy setting is enabled the "X-Forwarded-Proto" header field will be trusted. If you're running behind a reverse proxy that supplies https for you this may be enabled.
 
@@ -429,7 +429,7 @@ ___
 
 *Inherited from ContextDelegatedRequest.query*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:72*
+**
 
 Get parsed query-string. Set query-string as an object.
 
@@ -442,7 +442,7 @@ ___
 
 *Inherited from ContextDelegatedRequest.querystring*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:77*
+**
 
 Get/Set query string.
 
@@ -455,7 +455,7 @@ ___
 
 *Inherited from Context.req*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:687*
+**
 
 ___
 <a id="request"></a>
@@ -466,7 +466,7 @@ ___
 
 *Inherited from Context.request*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:685*
+**
 
 ___
 <a id="res"></a>
@@ -477,7 +477,7 @@ ___
 
 *Inherited from Context.res*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:688*
+**
 
 ___
 <a id="respond"></a>
@@ -488,7 +488,7 @@ ___
 
 *Inherited from Context.respond*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:696*
+**
 
 To bypass Koa's built-in response handling, you may explicitly set `ctx.respond = false;`
 
@@ -501,7 +501,7 @@ ___
 
 *Inherited from Context.response*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:686*
+**
 
 ___
 <a id="search"></a>
@@ -512,7 +512,7 @@ ___
 
 *Inherited from ContextDelegatedRequest.search*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:86*
+**
 
 Get the search string. Same as the querystring except it includes the leading ?.
 
@@ -527,7 +527,7 @@ ___
 
 *Inherited from ContextDelegatedRequest.secure*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:146*
+**
 
 Short-hand for:
 
@@ -542,7 +542,7 @@ ___
 
 *Inherited from ContextDelegatedRequest.socket*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:129*
+**
 
 Return the request socket.
 
@@ -555,7 +555,7 @@ ___
 
 *Inherited from ContextDelegatedRequest.stale*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:119*
+**
 
 Check if the request is stale, aka "Last-Modified" and / or the "ETag" for the resource has changed.
 
@@ -568,7 +568,7 @@ ___
 
 *Overrides Context.state*
 
-*Defined in [Library/Interface/ContextInterface.ts:6](https://github.com/Rawphs/stix/blob/f097835/src/Library/Interface/ContextInterface.ts#L6)*
+*Defined in [Library/Interface/ContextInterface.ts:6](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Interface/ContextInterface.ts#L6)*
 
 #### Type declaration
 
@@ -597,7 +597,7 @@ ___
 
 *Inherited from ContextDelegatedResponse.status*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:302*
+**
 
 Get/Set response status code.
 
@@ -610,7 +610,7 @@ ___
 
 *Inherited from ContextDelegatedRequest.subdomains*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:175*
+**
 
 Return subdomains as an array.
 
@@ -627,7 +627,7 @@ ___
 
 *Inherited from ContextDelegatedResponse.type*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:366*
+**
 
 Return the response mime type void of parameters such as "charset".
 
@@ -652,7 +652,7 @@ ___
 
 *Inherited from ContextDelegatedRequest.url*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:45*
+**
 
 Get/Set request URL.
 
@@ -665,7 +665,7 @@ ___
 
 *Inherited from ContextDelegatedResponse.writable*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:426*
+**
 
 Checks if the request is writable. Tests for the existence of the socket as node sometimes does not set it.
 
@@ -685,7 +685,7 @@ ___
 
 *Inherited from ContextDelegatedRequest.accepts*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:213*
+**
 
 Check if the given `type(s)` is acceptable, returning the best match when true, otherwise `undefined`, in which case you should respond with 406 "Not Acceptable".
 
@@ -723,11 +723,11 @@ this.accepts('html', 'json');
 
 *Inherited from ContextDelegatedRequest.accepts*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:214*
+**
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | `Rest` types | `string`[] |
 
@@ -735,11 +735,11 @@ this.accepts('html', 'json');
 
 *Inherited from ContextDelegatedRequest.accepts*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:215*
+**
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | types | `string`[] |
 
@@ -758,7 +758,7 @@ ___
 
 *Inherited from ContextDelegatedRequest.acceptsCharsets*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:237*
+**
 
 Return accepted charsets or best fit based on `charsets`.
 
@@ -772,11 +772,11 @@ Given `Accept-Charset: utf-8, iso-8859-1;q=0.2, utf-7;q=0.5` an array sorted by 
 
 *Inherited from ContextDelegatedRequest.acceptsCharsets*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:238*
+**
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | `Rest` charsets | `string`[] |
 
@@ -784,11 +784,11 @@ Given `Accept-Charset: utf-8, iso-8859-1;q=0.2, utf-7;q=0.5` an array sorted by 
 
 *Inherited from ContextDelegatedRequest.acceptsCharsets*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:239*
+**
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | charsets | `string`[] |
 
@@ -807,7 +807,7 @@ ___
 
 *Inherited from ContextDelegatedRequest.acceptsEncodings*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:225*
+**
 
 Return accepted encodings or best fit based on `encodings`.
 
@@ -821,11 +821,11 @@ Given `Accept-Encoding: gzip, deflate` an array sorted by quality is returned:
 
 *Inherited from ContextDelegatedRequest.acceptsEncodings*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:226*
+**
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | `Rest` encodings | `string`[] |
 
@@ -833,11 +833,11 @@ Given `Accept-Encoding: gzip, deflate` an array sorted by quality is returned:
 
 *Inherited from ContextDelegatedRequest.acceptsEncodings*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:227*
+**
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | encodings | `string`[] |
 
@@ -856,7 +856,7 @@ ___
 
 *Inherited from ContextDelegatedRequest.acceptsLanguages*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:249*
+**
 
 Return accepted languages or best fit based on `langs`.
 
@@ -870,11 +870,11 @@ Given `Accept-Language: en;q=0.8, es, pt` an array sorted by quality is returned
 
 *Inherited from ContextDelegatedRequest.acceptsLanguages*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:250*
+**
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | `Rest` langs | `string`[] |
 
@@ -882,11 +882,11 @@ Given `Accept-Language: en;q=0.8, es, pt` an array sorted by quality is returned
 
 *Inherited from ContextDelegatedRequest.acceptsLanguages*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:251*
+**
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | langs | `string`[] |
 
@@ -901,7 +901,7 @@ ___
 
 *Inherited from ContextDelegatedResponse.append*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:414*
+**
 
 Append additional header `field` with value `val`.
 
@@ -915,7 +915,7 @@ this.append('Warning', '199 Miscellaneous warning');
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | field | `string` |
 | val |  `string` &#124; `string`[]|
@@ -931,13 +931,13 @@ ___
 
 *Inherited from ContextDelegatedResponse.attachment*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:349*
+**
 
 Set Content-Disposition header to "attachment" with optional `filename`.
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | filename | `string` |
 
@@ -952,7 +952,7 @@ ___
 
 *Inherited from ContextDelegatedResponse.flushHeaders*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:431*
+**
 
 Flush any set headers, and begin the body
 
@@ -967,7 +967,7 @@ ___
 
 *Inherited from ContextDelegatedRequest.get*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:295*
+**
 
 Return request header.
 
@@ -988,7 +988,7 @@ this.get('Something');
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | field | `string` |
 
@@ -1003,7 +1003,7 @@ ___
 
 *Inherited from BaseContext.inspect*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:619*
+**
 
 util.inspect() implementation, which just returns the JSON output.
 
@@ -1020,7 +1020,7 @@ ___
 
 *Inherited from ContextDelegatedRequest.is*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:275*
+**
 
 Check if the incoming request contains the "Content-Type" header field, and it contains any of the give mime `type`s. If there is no request body, `null` is returned. If there is no content type, `false` is returned. Otherwise, it returns the first `type` that matches.
 
@@ -1042,7 +1042,7 @@ this.is('html'); // => false
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | `Rest` types | `string`[] |
 
@@ -1050,11 +1050,11 @@ this.is('html'); // => false
 
 *Inherited from ContextDelegatedRequest.is*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:276*
+**
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | types | `string`[] |
 
@@ -1069,13 +1069,13 @@ ___
 
 *Inherited from BaseContext.onerror*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:661*
+**
 
 Default error handling.
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | err | `Error` |
 
@@ -1090,7 +1090,7 @@ ___
 
 *Inherited from ContextDelegatedResponse.redirect*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:344*
+**
 
 Perform a 302 redirect to `url`.
 
@@ -1102,7 +1102,7 @@ this.redirect('back'); this.redirect('back', '/index.html'); this.redirect('/log
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | url | `string` |
 | `Optional` alt | `string` |
@@ -1118,13 +1118,13 @@ ___
 
 *Inherited from ContextDelegatedResponse.remove*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:419*
+**
 
 Remove header `field`.
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | field | `string` |
 
@@ -1141,7 +1141,7 @@ ___
 
 *Inherited from ContextDelegatedResponse.set*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:400*
+**
 
 Set header `field` to `val`, or pass an object of header fields.
 
@@ -1151,7 +1151,7 @@ this.set('Foo', \['bar', 'baz'\]); this.set('Accept', 'application/json'); this.
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | field | `object` |
 
@@ -1159,11 +1159,11 @@ this.set('Foo', \['bar', 'baz'\]); this.set('Accept', 'application/json'); this.
 
 *Inherited from ContextDelegatedResponse.set*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:401*
+**
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | field | `string` |
 | val |  `string` &#124; `string`[]|
@@ -1183,7 +1183,7 @@ ___
 
 *Inherited from BaseContext.throw*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:654*
+**
 
 Throw an error with `msg` and optional `status` defaulting to 500. Note that these are user-level errors, and the message may be exposed to the client.
 
@@ -1193,7 +1193,7 @@ See: [https://github.com/jshttp/http-errors](https://github.com/jshttp/http-erro
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | message | `string` |
 | `Optional` code | `number` |
@@ -1203,11 +1203,11 @@ See: [https://github.com/jshttp/http-errors](https://github.com/jshttp/http-erro
 
 *Inherited from BaseContext.throw*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:655*
+**
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | status | `number` |
 
@@ -1215,11 +1215,11 @@ See: [https://github.com/jshttp/http-errors](https://github.com/jshttp/http-erro
 
 *Inherited from BaseContext.throw*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:656*
+**
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | `Rest` properties | `Array`< `number` &#124; `string` &#124; `__type`> |
 
@@ -1234,7 +1234,7 @@ ___
 
 *Inherited from BaseContext.toJSON*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:629*
+**
 
 Return JSON representation.
 
@@ -1251,13 +1251,13 @@ ___
 
 *Inherited from ContextDelegatedResponse.vary*
 
-*Defined in /Users/rawphs/projects/typescript/stix/node_modules/@types/koa/index.d.ts:328*
+**
 
 Vary on `field`.
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | field | `string` |
 

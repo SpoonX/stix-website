@@ -12,7 +12,9 @@ title: ModuleInterface
 
 ### Properties
 
+* [getCliConfig](moduleinterface#getcliconfig)
 * [getConfig](moduleinterface#getconfig)
+* [getServerConfig](moduleinterface#getserverconfig)
 * [init](moduleinterface#init)
 * [onBootstrap](moduleinterface#onbootstrap)
 
@@ -20,13 +22,47 @@ title: ModuleInterface
 
 ## Properties
 
+<a id="getcliconfig"></a>
+
+### `Optional` getCliConfig
+
+**getCliConfig**: *`function`*
+
+*Defined in [Library/ModuleManager/ModuleInterface.ts:8](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ModuleManager/ModuleInterface.ts#L8)*
+
+#### Type declaration
+():  `object` &#124; `Promise`<`object`>
+
+**Returns:**  `object` &#124; `Promise`<`object`>
+
+___
 <a id="getconfig"></a>
 
 ### `Optional` getConfig
 
 **getConfig**: *`function`*
 
-*Defined in [Library/ModuleManager/ModuleInterface.ts:6](https://github.com/Rawphs/stix/blob/f097835/src/Library/ModuleManager/ModuleInterface.ts#L6)*
+*Defined in [Library/ModuleManager/ModuleInterface.ts:6](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ModuleManager/ModuleInterface.ts#L6)*
+
+#### Type declaration
+(mode?: *`string`*):  `object` &#124; `Promise`<`object`>
+
+**Parameters:**
+
+| Name | Type |
+| ------ | ------ |
+| `Optional` mode | `string` |
+
+**Returns:**  `object` &#124; `Promise`<`object`>
+
+___
+<a id="getserverconfig"></a>
+
+### `Optional` getServerConfig
+
+**getServerConfig**: *`function`*
+
+*Defined in [Library/ModuleManager/ModuleInterface.ts:7](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ModuleManager/ModuleInterface.ts#L7)*
 
 #### Type declaration
 ():  `object` &#124; `Promise`<`object`>
@@ -40,14 +76,14 @@ ___
 
 **init**: *`function`*
 
-*Defined in [Library/ModuleManager/ModuleInterface.ts:7](https://github.com/Rawphs/stix/blob/f097835/src/Library/ModuleManager/ModuleInterface.ts#L7)*
+*Defined in [Library/ModuleManager/ModuleInterface.ts:9](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ModuleManager/ModuleInterface.ts#L9)*
 
 #### Type declaration
 (moduleManager?: *[ModuleManager](../classes/modulemanager)*): `void`
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | `Optional` moduleManager | [ModuleManager](../classes/modulemanager) |
 
@@ -60,14 +96,14 @@ ___
 
 **onBootstrap**: *`function`*
 
-*Defined in [Library/ModuleManager/ModuleInterface.ts:5](https://github.com/Rawphs/stix/blob/f097835/src/Library/ModuleManager/ModuleInterface.ts#L5)*
+*Defined in [Library/ModuleManager/ModuleInterface.ts:5](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ModuleManager/ModuleInterface.ts#L5)*
 
 #### Type declaration
 (event?: *[Event](../classes/event)<`any`>*):  `void` &#124; `Promise`<`any`>
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | `Optional` event | [Event](../classes/event)<`any`> |
 

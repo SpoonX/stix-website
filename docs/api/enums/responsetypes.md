@@ -24,7 +24,7 @@ title: ResponseTypes
 
 **ClientError**:  = "ClientError"
 
-*Defined in [Library/Response/ResponseTypes.ts:5](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/ResponseTypes.ts#L5)*
+*Defined in [Library/Response/ResponseTypes.ts:5](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/ResponseTypes.ts#L5)*
 
 ___
 <a id="informational"></a>
@@ -33,7 +33,7 @@ ___
 
 **Informational**:  = "Informational"
 
-*Defined in [Library/Response/ResponseTypes.ts:2](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/ResponseTypes.ts#L2)*
+*Defined in [Library/Response/ResponseTypes.ts:2](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/ResponseTypes.ts#L2)*
 
 ___
 <a id="redirection"></a>
@@ -42,7 +42,7 @@ ___
 
 **Redirection**:  = "Redirection"
 
-*Defined in [Library/Response/ResponseTypes.ts:3](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/ResponseTypes.ts#L3)*
+*Defined in [Library/Response/ResponseTypes.ts:3](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/ResponseTypes.ts#L3)*
 
 ___
 <a id="servererror"></a>
@@ -51,7 +51,7 @@ ___
 
 **ServerError**:  = "ServerError"
 
-*Defined in [Library/Response/ResponseTypes.ts:4](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/ResponseTypes.ts#L4)*
+*Defined in [Library/Response/ResponseTypes.ts:4](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/ResponseTypes.ts#L4)*
 
 ___
 <a id="successful"></a>
@@ -60,7 +60,7 @@ ___
 
 **Successful**:  = "Successful"
 
-*Defined in [Library/Response/ResponseTypes.ts:6](https://github.com/Rawphs/stix/blob/f097835/src/Library/Response/ResponseTypes.ts#L6)*
+*Defined in [Library/Response/ResponseTypes.ts:6](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/ResponseTypes.ts#L6)*
 
 ___
 

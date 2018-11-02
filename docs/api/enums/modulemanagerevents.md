@@ -20,7 +20,7 @@ title: ModuleManagerEvents
 
 **OnBootstrap**:  = "ModuleManager.OnBootstrap"
 
-*Defined in [Library/ModuleManager/ModuleManagerEvents.ts:2](https://github.com/Rawphs/stix/blob/f097835/src/Library/ModuleManager/ModuleManagerEvents.ts#L2)*
+*Defined in [Library/ModuleManager/ModuleManagerEvents.ts:2](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ModuleManager/ModuleManagerEvents.ts#L2)*
 
 ___
 
