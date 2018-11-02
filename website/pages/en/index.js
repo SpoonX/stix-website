@@ -105,7 +105,7 @@ const Cube = () => (<img src={siteConfig.cube} className="cube" />);
 
 const ProjectTitle = () => (
   <h2 className="projectTitle">
-    A module-based,<br />TypeScript-first Node.js® framework.
+    A module-based,<br />TypeScript-first Node.js framework.
   </h2>
 );
 
@@ -126,9 +126,9 @@ class HomeSplash extends React.Component {
         <div className="inner">
           <ProjectTitle />
           <PromoSection>
-          <Button href={docUrl('first-steps/getting-started.html', language)}>Try It Out</Button>
-          <Button href="#features">Features</Button>
-          <Button href="#modules">Core Modules</Button>
+            <Button href={docUrl('first-steps/getting-started.html', language)}>Try It Out</Button>
+            <Button href="#features">Features</Button>
+            <Button href="#modules">Core Modules</Button>
           </PromoSection>
         </div>
       </SplashContainer>
@@ -146,7 +146,7 @@ const Block = props => (
 
 const Features = (props) => (
   <div>
-    <h3 className="sectionTitle" id={props.id}>{props.title}</h3>
+    <h2 className="sectionTitle" id={props.id}>{props.title}</h2>
     <Block layout="threeColumn" padding={['bottom']}>
       { props.content }
     </Block>
