@@ -17,7 +17,7 @@ const siteConfig = {
   projectName: 'stix',
   organizationName: 'SpoonX',
   headerLinks: [
-    {doc: 'first-steps/getting-started', label: 'Docs'},
+    {doc: 'the-basics/about-stix', label: 'Docs'},
     {doc: 'modules/stix-gates/gates-about', label: 'Modules'},
     {doc: 'api', label: 'API'},
     {page: 'help', label: 'Help'},
