@@ -19,6 +19,10 @@ body {
   margin: 0 auto;
 }
 
+.navigationSlider .slidingNav ul li a {
+  letter-spacing: 0.5px;
+}
+
 .blockContent h2 p,
 .nav-footer .copyright {
   color: $title;
@@ -32,6 +36,7 @@ body {
 
 .blockContent p {
   color: $text;
+  letter-spacing: 2px;
 }
 
 .sideNavVisible {
@@ -59,7 +64,7 @@ body {
   border: unset;
   font-size: 14px;
   font-weight: 500;
-  padding: 20px;
+  padding: 20px 30px;
   letter-spacing: 1px;
   text-transform: unset;
 }
@@ -75,6 +80,7 @@ body {
 .nav-footer .sitemap a,
 .nav-footer .sitemap h5 {
   color: $secondaryColor;
+  letter-spacing: 2px;
 }
 
 .nav-footer .sitemap a:hover,
@@ -87,13 +93,25 @@ body {
   text-align: center;
   padding: 50px 0;
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .projectTitle {
-  font-size: 200%;
+  font-size: 32px;
   font-weight: 700;
   color: $secondaryColor;
   line-height: 50px;
+  letter-spacing: 2px;
+}
+
+.blockContent h2 p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.blockContent p {
+  line-height: 35px;
+  font-size: 13px;
 }
 
 .paddingTop {
@@ -125,6 +143,10 @@ body {
     color: $title;
     font-weight: 500;
     margin: 0 10px;
+  }
+
+  .projectTitle {
+    font-size: 42px;
   }
 
   .homeWrapper {
