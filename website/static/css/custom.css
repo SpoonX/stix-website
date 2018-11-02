@@ -1,13 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
-/* your custom css */
-
 h1, h2, h3, h4, h5, h6, p, a, span {
   font-family: 'Roboto', sans-serif;
 }
 
-body, .fixedHeaderContainer {
+body {
   background-color: $background;
   color: $secondaryColor;
+}
+
+.fixedHeaderContainer {
+  background-color: white;
+}
+
+.sideNavVisible .fixedHeaderContainer {
+  background-color: $background;
+}
+
+.sideNavVisible .headerWrapper {
+  margin: 0 auto;
 }
 
 .blockContent h2 p,
@@ -55,8 +64,7 @@ body, .fixedHeaderContainer {
   text-transform: unset;
 }
 
-.fixedHeaderContainer header h3,
-.navigationSlider .slidingNav ul {
+.fixedHeaderContainer header h3 {
   color: $secondaryColor;
 }
 
@@ -114,24 +122,28 @@ body, .fixedHeaderContainer {
 
 @media only screen and (min-width: 1024px) {
   .navigationSlider .slidingNav ul li a {
-    color: $secondaryColor;
+    color: $title;
     font-weight: 500;
+    margin: 0 10px;
+  }
+
+  .homeWrapper {
+    margin-top: 50px;
   }
 
   .navigationSlider .slidingNav ul li a:focus,
   .navigationSlider .slidingNav ul li a:hover,
   .navigationSlider .slidingNav ul li.siteNavItemActive a,
   .navigationSlider .slidingNav ul li.siteNavGroupActive a {
-    background: $background;
+    background: transparent ;
     color: $primaryColor;
   }
 
   .halfCube {
     position: absolute;
-    right: -135px;
-    top: 10px;
-    z-index: 99999;
-    height: 300px;
+    right: 0;
+    top: 40px;
+    height: 400px;
   }
 }
 
@@ -146,9 +158,8 @@ body, .fixedHeaderContainer {
 
   .halfCube {
     position: absolute;
-    right: -112px;
+    right: 0;
     top: 110px;
-    z-index: 99999;
     height: 250px;
   }
 }

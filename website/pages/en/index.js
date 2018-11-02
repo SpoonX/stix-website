@@ -99,7 +99,7 @@ const SplashContainer = props => (
   </div>
 );
 
-const HalfCube = () => (<img src={siteConfig.cube} className="halfCube" />);
+const HalfCube = () => (<img src={siteConfig.halfCube} className="halfCube" />);
 
 const Cube = () => (<img src={siteConfig.cube} className="cube" />);
 
