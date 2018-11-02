@@ -8,7 +8,7 @@ body {
 }
 
 .fixedHeaderContainer {
-  background-color: white;
+  background-color: transparent;
 }
 
 .sideNavVisible .fixedHeaderContainer {
@@ -137,6 +137,10 @@ body {
   .navigationSlider .slidingNav ul li.siteNavGroupActive a {
     background: transparent ;
     color: $primaryColor;
+  }
+
+  .fixedHeaderContainer {
+    transition: background-color .3s;
   }
 
   .halfCube {

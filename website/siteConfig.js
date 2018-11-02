@@ -50,6 +50,7 @@ const siteConfig = {
   twitterImage: 'img/logo.png',
   repoUrl: 'https://github.com/SpoonX/stix',
   stylesheets: ['https://fonts.googleapis.com/css?family=Roboto:400,500,700'],
+  scripts: ['js/nav.js']
   // algolia: {
   //   apiKey: 'c0bb5f865609b0fa0ff4d99f27700b81',
   //   indexName: 'stix',
