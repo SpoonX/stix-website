@@ -40,7 +40,7 @@ original_id: routerservice
 
 **new RouterService**(config: *[RouterConfigInterface](../interfaces/routerconfiginterface)*): [RouterService](routerservice)
 
-*Defined in [Library/Router/RouterService.ts:11](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Router/RouterService.ts#L11)*
+*Defined in [Library/Router/RouterService.ts:11](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Router/RouterService.ts#L11)*
 
 **Parameters:**
 
@@ -60,7 +60,7 @@ ___
 
 **config**: *[RouterConfigInterface](../interfaces/routerconfiginterface)*
 
-*Defined in [Library/Router/RouterService.ts:11](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Router/RouterService.ts#L11)*
+*Defined in [Library/Router/RouterService.ts:11](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Router/RouterService.ts#L11)*
 
 ___
 <a id="routes"></a>
@@ -69,7 +69,7 @@ ___
 
 **routes**: *[RegisteredRouteInterface](../interfaces/registeredrouteinterface)[]* =  []
 
-*Defined in [Library/Router/RouterService.ts:9](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Router/RouterService.ts#L9)*
+*Defined in [Library/Router/RouterService.ts:9](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Router/RouterService.ts#L9)*
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 **buildParameters**(from: *`Array`<`Key`>*, result: *`RegExpExecArray`*): `__type`
 
-*Defined in [Library/Router/RouterService.ts:78](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Router/RouterService.ts#L78)*
+*Defined in [Library/Router/RouterService.ts:78](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Router/RouterService.ts#L78)*
 
 **Parameters:**
 
@@ -99,7 +99,7 @@ ___
 
 **getRegisteredRoutes**(): [RegisteredRouteInterface](../interfaces/registeredrouteinterface)[]
 
-*Defined in [Library/Router/RouterService.ts:74](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Router/RouterService.ts#L74)*
+*Defined in [Library/Router/RouterService.ts:74](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Router/RouterService.ts#L74)*
 
 **Returns:** [RegisteredRouteInterface](../interfaces/registeredrouteinterface)[]
 
@@ -110,7 +110,7 @@ ___
 
 **match**(target: *`string`*, route: *[RegisteredRouteInterface](../interfaces/registeredrouteinterface)*): `__type`
 
-*Defined in [Library/Router/RouterService.ts:37](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Router/RouterService.ts#L37)*
+*Defined in [Library/Router/RouterService.ts:37](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Router/RouterService.ts#L37)*
 
 **Parameters:**
 
@@ -128,7 +128,7 @@ ___
 
 **registerRoute**(method: *[RequestMethods](../enums/requestmethods)*, route: *`string`*, controller: *[AbstractActionController](abstractactioncontroller)*, action: *`string`*): `this`
 
-*Defined in [Library/Router/RouterService.ts:65](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Router/RouterService.ts#L65)*
+*Defined in [Library/Router/RouterService.ts:65](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Router/RouterService.ts#L65)*
 
 **Parameters:**
 
@@ -148,7 +148,7 @@ ___
 
 **registerRoutes**(routes: *`Array`< [RouteInterface](../interfaces/routeinterface) &#124; `Array`<[RouteInterface](../interfaces/routeinterface)>>*): `this`
 
-*Defined in [Library/Router/RouterService.ts:51](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Router/RouterService.ts#L51)*
+*Defined in [Library/Router/RouterService.ts:51](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Router/RouterService.ts#L51)*
 
 **Parameters:**
 
@@ -165,7 +165,7 @@ ___
 
 **resolve**(method: *[RequestMethods](../enums/requestmethods)*, target: *`string`*):  `object` &#124; `null`
 
-*Defined in [Library/Router/RouterService.ts:19](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Router/RouterService.ts#L19)*
+*Defined in [Library/Router/RouterService.ts:19](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Router/RouterService.ts#L19)*
 
 **Parameters:**
 

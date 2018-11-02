@@ -30,7 +30,7 @@ original_id: moduleinterface
 
 **getCliConfig**: *`function`*
 
-*Defined in [Library/ModuleManager/ModuleInterface.ts:8](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/ModuleManager/ModuleInterface.ts#L8)*
+*Defined in [Library/ModuleManager/ModuleInterface.ts:8](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ModuleManager/ModuleInterface.ts#L8)*
 
 #### Type declaration
 ():  `object` &#124; `Promise`<`object`>
@@ -44,7 +44,7 @@ ___
 
 **getConfig**: *`function`*
 
-*Defined in [Library/ModuleManager/ModuleInterface.ts:6](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/ModuleManager/ModuleInterface.ts#L6)*
+*Defined in [Library/ModuleManager/ModuleInterface.ts:6](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ModuleManager/ModuleInterface.ts#L6)*
 
 #### Type declaration
 (mode?: *`string`*):  `object` &#124; `Promise`<`object`>
@@ -64,7 +64,7 @@ ___
 
 **getServerConfig**: *`function`*
 
-*Defined in [Library/ModuleManager/ModuleInterface.ts:7](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/ModuleManager/ModuleInterface.ts#L7)*
+*Defined in [Library/ModuleManager/ModuleInterface.ts:7](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ModuleManager/ModuleInterface.ts#L7)*
 
 #### Type declaration
 ():  `object` &#124; `Promise`<`object`>
@@ -78,7 +78,7 @@ ___
 
 **init**: *`function`*
 
-*Defined in [Library/ModuleManager/ModuleInterface.ts:9](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/ModuleManager/ModuleInterface.ts#L9)*
+*Defined in [Library/ModuleManager/ModuleInterface.ts:9](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ModuleManager/ModuleInterface.ts#L9)*
 
 #### Type declaration
 (moduleManager?: *[ModuleManager](../classes/modulemanager)*): `void`
@@ -98,7 +98,7 @@ ___
 
 **onBootstrap**: *`function`*
 
-*Defined in [Library/ModuleManager/ModuleInterface.ts:5](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/ModuleManager/ModuleInterface.ts#L5)*
+*Defined in [Library/ModuleManager/ModuleInterface.ts:5](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ModuleManager/ModuleInterface.ts#L5)*
 
 #### Type declaration
 (event?: *[Event](../classes/event)<`any`>*):  `void` &#124; `Promise`<`any`>

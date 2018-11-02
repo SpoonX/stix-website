@@ -1,6 +1,7 @@
 ---
 title: Quick start
-id: quick-start
+id: version-4.2.0-quick-start
+original_id: quick-start
 ---
 
 ## Stix CLI

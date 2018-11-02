@@ -31,7 +31,7 @@ original_id: registeredrouteinterface
 
 **action**: *`string`*
 
-*Defined in [Library/Router/RegisteredRouteInterface.ts:9](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Router/RegisteredRouteInterface.ts#L9)*
+*Defined in [Library/Router/RegisteredRouteInterface.ts:9](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Router/RegisteredRouteInterface.ts#L9)*
 
 ___
 <a id="controller"></a>
@@ -40,7 +40,7 @@ ___
 
 **controller**: *[AbstractActionController](../classes/abstractactioncontroller)*
 
-*Defined in [Library/Router/RegisteredRouteInterface.ts:8](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Router/RegisteredRouteInterface.ts#L8)*
+*Defined in [Library/Router/RegisteredRouteInterface.ts:8](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Router/RegisteredRouteInterface.ts#L8)*
 
 ___
 <a id="keys"></a>
@@ -49,7 +49,7 @@ ___
 
 **keys**: *`Array`<`Key`>*
 
-*Defined in [Library/Router/RegisteredRouteInterface.ts:10](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Router/RegisteredRouteInterface.ts#L10)*
+*Defined in [Library/Router/RegisteredRouteInterface.ts:10](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Router/RegisteredRouteInterface.ts#L10)*
 
 ___
 <a id="method"></a>
@@ -58,7 +58,7 @@ ___
 
 **method**: *[RequestMethods](../enums/requestmethods)*
 
-*Defined in [Library/Router/RegisteredRouteInterface.ts:6](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Router/RegisteredRouteInterface.ts#L6)*
+*Defined in [Library/Router/RegisteredRouteInterface.ts:6](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Router/RegisteredRouteInterface.ts#L6)*
 
 ___
 <a id="regex"></a>
@@ -67,7 +67,7 @@ ___
 
 **regex**: *`RegExp`*
 
-*Defined in [Library/Router/RegisteredRouteInterface.ts:7](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Router/RegisteredRouteInterface.ts#L7)*
+*Defined in [Library/Router/RegisteredRouteInterface.ts:7](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Router/RegisteredRouteInterface.ts#L7)*
 
 ___
 <a id="route"></a>
@@ -76,7 +76,7 @@ ___
 
 **route**: *`string`*
 
-*Defined in [Library/Router/RegisteredRouteInterface.ts:11](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Router/RegisteredRouteInterface.ts#L11)*
+*Defined in [Library/Router/RegisteredRouteInterface.ts:11](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Router/RegisteredRouteInterface.ts#L11)*
 
 ___
 

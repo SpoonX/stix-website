@@ -1,7 +1,10 @@
 {
   "Introduction": {
-    "First Steps": [
-      "first-steps/getting-started"
+    "The basics": [
+      "the-basics/about-stix",
+      "the-basics/quick-start",
+      "the-basics/learn-the-basics",
+      "the-basics/modules"
     ],
     "Changelog": [
       "changelog"

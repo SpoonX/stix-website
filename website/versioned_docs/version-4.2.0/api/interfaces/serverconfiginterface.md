@@ -32,7 +32,7 @@ original_id: serverconfiginterface
 
 **bootstrap**: *`Function`*
 
-*Defined in [Library/Config/ServerConfigInterface.ts:5](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Config/ServerConfigInterface.ts#L5)*
+*Defined in [Library/Config/ServerConfigInterface.ts:5](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Config/ServerConfigInterface.ts#L5)*
 
 ___
 <a id="cors"></a>
@@ -41,7 +41,7 @@ ___
 
 **cors**: *`object`*
 
-*Defined in [Library/Config/ServerConfigInterface.ts:8](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Config/ServerConfigInterface.ts#L8)*
+*Defined in [Library/Config/ServerConfigInterface.ts:8](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Config/ServerConfigInterface.ts#L8)*
 
 #### Type declaration
 
@@ -56,7 +56,7 @@ ___
 
 **port**: *`number`*
 
-*Defined in [Library/Config/ServerConfigInterface.ts:7](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Config/ServerConfigInterface.ts#L7)*
+*Defined in [Library/Config/ServerConfigInterface.ts:7](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Config/ServerConfigInterface.ts#L7)*
 
 ___
 <a id="ssl"></a>
@@ -65,7 +65,7 @@ ___
 
 **ssl**: *`ServerOptions`*
 
-*Defined in [Library/Config/ServerConfigInterface.ts:6](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Config/ServerConfigInterface.ts#L6)*
+*Defined in [Library/Config/ServerConfigInterface.ts:6](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Config/ServerConfigInterface.ts#L6)*
 
 ___
 

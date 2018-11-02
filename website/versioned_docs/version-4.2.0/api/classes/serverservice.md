@@ -45,7 +45,7 @@ original_id: serverservice
 
 **new ServerService**(mode: *[ApplicationModes](../enums/applicationmodes)*, config: *[ServerConfigInterface](../interfaces/serverconfiginterface)*, middleware: *`Array`< `Middleware` &#124; [AbstractMiddleware](abstractmiddleware)>*): [ServerService](serverservice)
 
-*Defined in [Library/Server/ServerService.ts:13](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Server/ServerService.ts#L13)*
+*Defined in [Library/Server/ServerService.ts:13](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Server/ServerService.ts#L13)*
 
 **Parameters:**
 
@@ -67,7 +67,7 @@ ___
 
 **config**: *[ServerConfigInterface](../interfaces/serverconfiginterface)*
 
-*Defined in [Library/Server/ServerService.ts:11](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Server/ServerService.ts#L11)*
+*Defined in [Library/Server/ServerService.ts:11](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Server/ServerService.ts#L11)*
 
 ___
 <a id="middleware"></a>
@@ -76,7 +76,7 @@ ___
 
 **middleware**: *`Array`< [MiddlewareType]() &#124; [RegisteredMiddlewareType]()>* =  []
 
-*Defined in [Library/Server/ServerService.ts:13](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Server/ServerService.ts#L13)*
+*Defined in [Library/Server/ServerService.ts:13](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Server/ServerService.ts#L13)*
 
 ___
 <a id="server"></a>
@@ -85,7 +85,7 @@ ___
 
 **server**: *`Koa`*
 
-*Defined in [Library/Server/ServerService.ts:9](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Server/ServerService.ts#L9)*
+*Defined in [Library/Server/ServerService.ts:9](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Server/ServerService.ts#L9)*
 
 ___
 
@@ -97,7 +97,7 @@ ___
 
 **asCallback**(middleware: *[MiddlewareType]()*): `Middleware`
 
-*Defined in [Library/Server/ServerService.ts:94](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Server/ServerService.ts#L94)*
+*Defined in [Library/Server/ServerService.ts:94](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Server/ServerService.ts#L94)*
 
 **Parameters:**
 
@@ -114,7 +114,7 @@ ___
 
 **getServer**(): `Koa`
 
-*Defined in [Library/Server/ServerService.ts:74](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Server/ServerService.ts#L74)*
+*Defined in [Library/Server/ServerService.ts:74](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Server/ServerService.ts#L74)*
 
 **Returns:** `Koa`
 
@@ -125,7 +125,7 @@ ___
 
 **getURL**(): `string`
 
-*Defined in [Library/Server/ServerService.ts:78](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Server/ServerService.ts#L78)*
+*Defined in [Library/Server/ServerService.ts:78](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Server/ServerService.ts#L78)*
 
 **Returns:** `string`
 
@@ -136,7 +136,7 @@ ___
 
 **indexOfMiddleware**(middleware: *[MiddlewareLookupType]()*): `number`
 
-*Defined in [Library/Server/ServerService.ts:52](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Server/ServerService.ts#L52)*
+*Defined in [Library/Server/ServerService.ts:52](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Server/ServerService.ts#L52)*
 
 **Parameters:**
 
@@ -153,7 +153,7 @@ ___
 
 **replace**(middleware: *[MiddlewareLookupType]()*, ...middlewares: *`Array`<[MiddlewareType]()>*): `this`
 
-*Defined in [Library/Server/ServerService.ts:42](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Server/ServerService.ts#L42)*
+*Defined in [Library/Server/ServerService.ts:42](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Server/ServerService.ts#L42)*
 
 **Parameters:**
 
@@ -171,7 +171,7 @@ ___
 
 **start**(): `this`
 
-*Defined in [Library/Server/ServerService.ts:84](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Server/ServerService.ts#L84)*
+*Defined in [Library/Server/ServerService.ts:84](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Server/ServerService.ts#L84)*
 
 **Returns:** `this`
 
@@ -182,7 +182,7 @@ ___
 
 **updateMiddleware**(at: *`number`*, remove: *`number`*, ...middlewares: *`Array`<[MiddlewareType]()>*): `this`
 
-*Defined in [Library/Server/ServerService.ts:46](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Server/ServerService.ts#L46)*
+*Defined in [Library/Server/ServerService.ts:46](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Server/ServerService.ts#L46)*
 
 **Parameters:**
 
@@ -201,7 +201,7 @@ ___
 
 **use**(...middlewares: *`Array`< `Middleware` &#124; [AbstractMiddleware](abstractmiddleware)>*): `this`
 
-*Defined in [Library/Server/ServerService.ts:26](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Server/ServerService.ts#L26)*
+*Defined in [Library/Server/ServerService.ts:26](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Server/ServerService.ts#L26)*
 
 **Parameters:**
 
@@ -218,7 +218,7 @@ ___
 
 **useAfter**(middleware: *[MiddlewareLookupType]()*, ...middlewares: *`Array`<[MiddlewareType]()>*): `this`
 
-*Defined in [Library/Server/ServerService.ts:38](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Server/ServerService.ts#L38)*
+*Defined in [Library/Server/ServerService.ts:38](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Server/ServerService.ts#L38)*
 
 **Parameters:**
 
@@ -236,7 +236,7 @@ ___
 
 **useBefore**(middleware: *[MiddlewareLookupType]()*, ...middlewares: *`Array`<[MiddlewareType]()>*): `this`
 
-*Defined in [Library/Server/ServerService.ts:34](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Server/ServerService.ts#L34)*
+*Defined in [Library/Server/ServerService.ts:34](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Server/ServerService.ts#L34)*
 
 **Parameters:**
 

@@ -30,7 +30,7 @@ original_id: moduleclassinterface
 
 *Inherited from [__type]().[constructor]()*
 
-*Defined in [Library/Core/Types.ts:1](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Core/Types.ts#L1)*
+*Defined in [Library/Core/Types.ts:1](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Core/Types.ts#L1)*
 
 **Parameters:**
 

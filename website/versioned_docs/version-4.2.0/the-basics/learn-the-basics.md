@@ -1,6 +1,7 @@
 ---
 title: Learn the basics
-id: learn-the-basics
+id: version-4.2.0-learn-the-basics
+original_id: learn-the-basics
 ---
 
 What's in it. Init... As in, `stix init`? Get it? If you don't, that means you skipped the quick start.

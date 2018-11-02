@@ -43,7 +43,7 @@ original_id: abstractactioncontroller
 
 *Inherited from [AbstractResponseHelper](abstractresponsehelper).[responseService](abstractresponsehelper#responseservice)*
 
-*Defined in [Library/Response/AbstractResponseHelper.ts:10](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Response/AbstractResponseHelper.ts#L10)*
+*Defined in [Library/Response/AbstractResponseHelper.ts:10](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/AbstractResponseHelper.ts#L10)*
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 *Inherited from [AbstractResponseHelper](abstractresponsehelper).[badRequestResponse](abstractresponsehelper#badrequestresponse)*
 
-*Defined in [Library/Response/AbstractResponseHelper.ts:36](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Response/AbstractResponseHelper.ts#L36)*
+*Defined in [Library/Response/AbstractResponseHelper.ts:36](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/AbstractResponseHelper.ts#L36)*
 
 **Parameters:**
 
@@ -78,7 +78,7 @@ ___
 
 *Inherited from [AbstractResponseHelper](abstractresponsehelper).[createdResponse](abstractresponsehelper#createdresponse)*
 
-*Defined in [Library/Response/AbstractResponseHelper.ts:20](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Response/AbstractResponseHelper.ts#L20)*
+*Defined in [Library/Response/AbstractResponseHelper.ts:20](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/AbstractResponseHelper.ts#L20)*
 
 **Parameters:**
 
@@ -98,7 +98,7 @@ ___
 
 *Inherited from [AbstractResponseHelper](abstractresponsehelper).[forbiddenResponse](abstractresponsehelper#forbiddenresponse)*
 
-*Defined in [Library/Response/AbstractResponseHelper.ts:32](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Response/AbstractResponseHelper.ts#L32)*
+*Defined in [Library/Response/AbstractResponseHelper.ts:32](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/AbstractResponseHelper.ts#L32)*
 
 **Parameters:**
 
@@ -119,7 +119,7 @@ ___
 
 *Inherited from [AbstractResponseHelper](abstractresponsehelper).[getResponseService](abstractresponsehelper#getresponseservice)*
 
-*Defined in [Library/Response/AbstractResponseHelper.ts:12](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Response/AbstractResponseHelper.ts#L12)*
+*Defined in [Library/Response/AbstractResponseHelper.ts:12](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/AbstractResponseHelper.ts#L12)*
 
 **Returns:** [ResponseService](responseservice)
 
@@ -132,7 +132,7 @@ ___
 
 *Inherited from [AbstractResponseHelper](abstractresponsehelper).[internalServerErrorResponse](abstractresponsehelper#internalservererrorresponse)*
 
-*Defined in [Library/Response/AbstractResponseHelper.ts:44](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Response/AbstractResponseHelper.ts#L44)*
+*Defined in [Library/Response/AbstractResponseHelper.ts:44](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/AbstractResponseHelper.ts#L44)*
 
 **Parameters:**
 
@@ -153,7 +153,7 @@ ___
 
 *Inherited from [AbstractResponseHelper](abstractresponsehelper).[notFoundResponse](abstractresponsehelper#notfoundresponse)*
 
-*Defined in [Library/Response/AbstractResponseHelper.ts:24](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Response/AbstractResponseHelper.ts#L24)*
+*Defined in [Library/Response/AbstractResponseHelper.ts:24](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/AbstractResponseHelper.ts#L24)*
 
 **Parameters:**
 
@@ -174,7 +174,7 @@ ___
 
 *Inherited from [AbstractResponseHelper](abstractresponsehelper).[okResponse](abstractresponsehelper#okresponse)*
 
-*Defined in [Library/Response/AbstractResponseHelper.ts:16](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Response/AbstractResponseHelper.ts#L16)*
+*Defined in [Library/Response/AbstractResponseHelper.ts:16](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/AbstractResponseHelper.ts#L16)*
 
 **Parameters:**
 
@@ -194,7 +194,7 @@ ___
 
 *Inherited from [AbstractResponseHelper](abstractresponsehelper).[permanentRedirectResponse](abstractresponsehelper#permanentredirectresponse)*
 
-*Defined in [Library/Response/AbstractResponseHelper.ts:48](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Response/AbstractResponseHelper.ts#L48)*
+*Defined in [Library/Response/AbstractResponseHelper.ts:48](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/AbstractResponseHelper.ts#L48)*
 
 **Parameters:**
 
@@ -215,7 +215,7 @@ ___
 
 *Inherited from [AbstractResponseHelper](abstractresponsehelper).[requestTimeoutResponse](abstractresponsehelper#requesttimeoutresponse)*
 
-*Defined in [Library/Response/AbstractResponseHelper.ts:28](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Response/AbstractResponseHelper.ts#L28)*
+*Defined in [Library/Response/AbstractResponseHelper.ts:28](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/AbstractResponseHelper.ts#L28)*
 
 **Parameters:**
 
@@ -236,7 +236,7 @@ ___
 
 *Inherited from [AbstractResponseHelper](abstractresponsehelper).[unauthorizedResponse](abstractresponsehelper#unauthorizedresponse)*
 
-*Defined in [Library/Response/AbstractResponseHelper.ts:40](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Response/AbstractResponseHelper.ts#L40)*
+*Defined in [Library/Response/AbstractResponseHelper.ts:40](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/AbstractResponseHelper.ts#L40)*
 
 **Parameters:**
 

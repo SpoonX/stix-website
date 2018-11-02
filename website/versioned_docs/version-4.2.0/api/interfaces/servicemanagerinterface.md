@@ -34,7 +34,7 @@ original_id: servicemanagerinterface
 
 **get**<`T`>(Service: *[ServiceKeyType]()<`T`>*): `T`
 
-*Defined in [Library/ServiceManager/ServiceManagerInterface.ts:4](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/ServiceManager/ServiceManagerInterface.ts#L4)*
+*Defined in [Library/ServiceManager/ServiceManagerInterface.ts:4](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/ServiceManagerInterface.ts#L4)*
 
 **Type parameters:**
 

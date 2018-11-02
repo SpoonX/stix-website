@@ -1,6 +1,7 @@
 ---
 title: About stix
-id: about-stix
+id: version-4.2.0-about-stix
+original_id: about-stix
 ---
 
 Stix is a framework that helps you build well-structured APIs, applications and command line tools without making any assumptions.

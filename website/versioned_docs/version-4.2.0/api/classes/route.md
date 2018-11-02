@@ -31,7 +31,7 @@ original_id: route
 
 **delete**(route: *`string`*, controller: * `string` &#124; `object`*, action: *`string`*): `__type`
 
-*Defined in [Library/Router/Route.ts:24](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Router/Route.ts#L24)*
+*Defined in [Library/Router/Route.ts:24](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Router/Route.ts#L24)*
 
 **Parameters:**
 
@@ -50,7 +50,7 @@ ___
 
 **get**(route: *`string`*, controller: * `string` &#124; `object`*, action: *`string`*): `__type`
 
-*Defined in [Library/Router/Route.ts:8](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Router/Route.ts#L8)*
+*Defined in [Library/Router/Route.ts:8](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Router/Route.ts#L8)*
 
 **Parameters:**
 
@@ -69,7 +69,7 @@ ___
 
 **method**(method: *`string`*, route: *`string`*, controller: * `string` &#124; `object`*, action: *`string`*): `__type`
 
-*Defined in [Library/Router/Route.ts:4](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Router/Route.ts#L4)*
+*Defined in [Library/Router/Route.ts:4](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Router/Route.ts#L4)*
 
 **Parameters:**
 
@@ -89,7 +89,7 @@ ___
 
 **patch**(route: *`string`*, controller: * `string` &#124; `object`*, action: *`string`*): `__type`
 
-*Defined in [Library/Router/Route.ts:20](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Router/Route.ts#L20)*
+*Defined in [Library/Router/Route.ts:20](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Router/Route.ts#L20)*
 
 **Parameters:**
 
@@ -108,7 +108,7 @@ ___
 
 **post**(route: *`string`*, controller: * `string` &#124; `object`*, action: *`string`*): `__type`
 
-*Defined in [Library/Router/Route.ts:12](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Router/Route.ts#L12)*
+*Defined in [Library/Router/Route.ts:12](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Router/Route.ts#L12)*
 
 **Parameters:**
 
@@ -127,7 +127,7 @@ ___
 
 **put**(route: *`string`*, controller: * `string` &#124; `object`*, action: *`string`*): `__type`
 
-*Defined in [Library/Router/Route.ts:16](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Router/Route.ts#L16)*
+*Defined in [Library/Router/Route.ts:16](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Router/Route.ts#L16)*
 
 **Parameters:**
 

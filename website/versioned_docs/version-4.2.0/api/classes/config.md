@@ -40,7 +40,7 @@ original_id: config
 
 **new Config**(...data: *`Array`<[ConfigData](../interfaces/configdata)>*): [Config](config)
 
-*Defined in [Library/Config/Config.ts:4](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Config/Config.ts#L4)*
+*Defined in [Library/Config/Config.ts:4](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Config/Config.ts#L4)*
 
 **Parameters:**
 
@@ -60,7 +60,7 @@ ___
 
 **data**: *[ConfigData](../interfaces/configdata)*
 
-*Defined in [Library/Config/Config.ts:4](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Config/Config.ts#L4)*
+*Defined in [Library/Config/Config.ts:4](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Config/Config.ts#L4)*
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 **all**(): [ConfigData](../interfaces/configdata)
 
-*Defined in [Library/Config/Config.ts:14](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Config/Config.ts#L14)*
+*Defined in [Library/Config/Config.ts:14](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Config/Config.ts#L14)*
 
 **Returns:** [ConfigData](../interfaces/configdata)
 
@@ -83,7 +83,7 @@ ___
 
 **merge**(...toMerge: *`Array`< `Map`<`any`, `any`> &#124; [ConfigData](../interfaces/configdata)>*): `void`
 
-*Defined in [Library/Config/Config.ts:18](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Config/Config.ts#L18)*
+*Defined in [Library/Config/Config.ts:18](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Config/Config.ts#L18)*
 
 **Parameters:**
 
@@ -100,7 +100,7 @@ ___
 
 **of**<`T`>(section: *`string`*): `T`
 
-*Defined in [Library/Config/Config.ts:10](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Config/Config.ts#L10)*
+*Defined in [Library/Config/Config.ts:10](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Config/Config.ts#L10)*
 
 **Type parameters:**
 
@@ -120,7 +120,7 @@ ___
 
 **merge**(...toMerge: *`Array`< `Map`<`any`, `any`> &#124; [ConfigData](../interfaces/configdata)>*): `void`
 
-*Defined in [Library/Config/Config.ts:22](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Config/Config.ts#L22)*
+*Defined in [Library/Config/Config.ts:22](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Config/Config.ts#L22)*
 
 **Parameters:**
 
@@ -137,7 +137,7 @@ ___
 
 **mergeMap**(target: *`Map`<`any`, `any`>*, other: *`Map`<`any`, `any`>*): `Map`<`any`, `any`>
 
-*Defined in [Library/Config/Config.ts:38](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Config/Config.ts#L38)*
+*Defined in [Library/Config/Config.ts:38](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Config/Config.ts#L38)*
 
 **Parameters:**
 
@@ -155,7 +155,7 @@ ___
 
 **mergeObject**(target: *[ConfigData](../interfaces/configdata)*, other: *[ConfigData](../interfaces/configdata)*): [ConfigData](../interfaces/configdata)
 
-*Defined in [Library/Config/Config.ts:28](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Config/Config.ts#L28)*
+*Defined in [Library/Config/Config.ts:28](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Config/Config.ts#L28)*
 
 **Parameters:**
 
@@ -173,7 +173,7 @@ ___
 
 **patch**(base: *`any`*, value: *`any`*): `any`
 
-*Defined in [Library/Config/Config.ts:46](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Config/Config.ts#L46)*
+*Defined in [Library/Config/Config.ts:46](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Config/Config.ts#L46)*
 
 **Parameters:**
 

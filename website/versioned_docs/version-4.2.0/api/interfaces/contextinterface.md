@@ -570,7 +570,7 @@ ___
 
 *Overrides Context.state*
 
-*Defined in [Library/Interface/ContextInterface.ts:6](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Interface/ContextInterface.ts#L6)*
+*Defined in [Library/Interface/ContextInterface.ts:6](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Interface/ContextInterface.ts#L6)*
 
 #### Type declaration
 

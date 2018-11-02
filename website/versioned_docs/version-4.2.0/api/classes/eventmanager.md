@@ -62,7 +62,7 @@ original_id: eventmanager
 
 **new EventManager**(sharedEventManager?: *[EventManager](eventmanager)*): [EventManager](eventmanager)
 
-*Defined in [Library/EventManager/EventManager.ts:11](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/EventManager/EventManager.ts#L11)*
+*Defined in [Library/EventManager/EventManager.ts:11](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/EventManager.ts#L11)*
 
 **Parameters:**
 
@@ -82,7 +82,7 @@ ___
 
 **hooks**: *`object`*
 
-*Defined in [Library/EventManager/EventManager.ts:11](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/EventManager/EventManager.ts#L11)*
+*Defined in [Library/EventManager/EventManager.ts:11](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/EventManager.ts#L11)*
 
 #### Type declaration
 
@@ -95,7 +95,7 @@ ___
 
 **sharedEventManager**: *[EventManager](eventmanager)*
 
-*Defined in [Library/EventManager/EventManager.ts:9](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/EventManager/EventManager.ts#L9)*
+*Defined in [Library/EventManager/EventManager.ts:9](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/EventManager.ts#L9)*
 
 ___
 <a id="defaultmaxlisteners"></a>
@@ -140,7 +140,7 @@ ___
 
 **attach**(event: *`string`*, callback: *`Function`*, index?: *`number`*): `this`
 
-*Defined in [Library/EventManager/EventManager.ts:69](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/EventManager/EventManager.ts#L69)*
+*Defined in [Library/EventManager/EventManager.ts:69](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/EventManager.ts#L69)*
 
 **Parameters:**
 
@@ -159,7 +159,7 @@ ___
 
 **attachAt**(index: *`number`*, event: *`string`*, callback: *`Function`*): `this`
 
-*Defined in [Library/EventManager/EventManager.ts:81](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/EventManager/EventManager.ts#L81)*
+*Defined in [Library/EventManager/EventManager.ts:81](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/EventManager.ts#L81)*
 
 **Parameters:**
 
@@ -178,7 +178,7 @@ ___
 
 **attachOnce**(eventName: *`string`*, callback: *`Function`*, index?: *`number`*): `void`
 
-*Defined in [Library/EventManager/EventManager.ts:63](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/EventManager/EventManager.ts#L63)*
+*Defined in [Library/EventManager/EventManager.ts:63](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/EventManager.ts#L63)*
 
 **Parameters:**
 
@@ -197,7 +197,7 @@ ___
 
 **detach**(event: *`string`*, callback: *`Function`*): `this`
 
-*Defined in [Library/EventManager/EventManager.ts:85](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/EventManager/EventManager.ts#L85)*
+*Defined in [Library/EventManager/EventManager.ts:85](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/EventManager.ts#L85)*
 
 **Parameters:**
 
@@ -267,7 +267,7 @@ ___
 
 **getSharedEventManager**(): [EventManager](eventmanager)
 
-*Defined in [Library/EventManager/EventManager.ts:105](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/EventManager/EventManager.ts#L105)*
+*Defined in [Library/EventManager/EventManager.ts:105](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/EventManager.ts#L105)*
 
 **Returns:** [EventManager](eventmanager)
 
@@ -278,7 +278,7 @@ ___
 
 **has**(event: *`string`*, callback: *`Function`*): `boolean`
 
-*Defined in [Library/EventManager/EventManager.ts:59](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/EventManager/EventManager.ts#L59)*
+*Defined in [Library/EventManager/EventManager.ts:59](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/EventManager.ts#L59)*
 
 **Parameters:**
 
@@ -533,7 +533,7 @@ ___
 
 **trigger**(eventName: *`string`*, target: *`any`*, payload?: *`any`*): `Promise`<`boolean`>
 
-*Defined in [Library/EventManager/EventManager.ts:19](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/EventManager/EventManager.ts#L19)*
+*Defined in [Library/EventManager/EventManager.ts:19](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/EventManager.ts#L19)*
 
 **Parameters:**
 

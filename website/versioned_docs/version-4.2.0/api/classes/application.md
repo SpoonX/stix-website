@@ -48,7 +48,7 @@ original_id: application
 
 **new Application**(...appConfigs: *[ConfigType]()[]*): [Application](application)
 
-*Defined in [Library/Application/Application.ts:28](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Application/Application.ts#L28)*
+*Defined in [Library/Application/Application.ts:28](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Application/Application.ts#L28)*
 
 **Parameters:**
 
@@ -68,7 +68,7 @@ ___
 
 **applicationConfigs**: *[ConfigType]()[]*
 
-*Defined in [Library/Application/Application.ts:24](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Application/Application.ts#L24)*
+*Defined in [Library/Application/Application.ts:24](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Application/Application.ts#L24)*
 
 ___
 <a id="config"></a>
@@ -77,7 +77,7 @@ ___
 
 **config**: *[Config](config)*
 
-*Defined in [Library/Application/Application.ts:20](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Application/Application.ts#L20)*
+*Defined in [Library/Application/Application.ts:20](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Application/Application.ts#L20)*
 
 ___
 <a id="environment"></a>
@@ -86,7 +86,7 @@ ___
 
 **environment**: *`string`* =  process.env.NODE_ENV || 'development'
 
-*Defined in [Library/Application/Application.ts:18](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Application/Application.ts#L18)*
+*Defined in [Library/Application/Application.ts:18](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Application/Application.ts#L18)*
 
 ___
 <a id="mode"></a>
@@ -95,7 +95,7 @@ ___
 
 **mode**: *[ApplicationModes](../enums/applicationmodes)*
 
-*Defined in [Library/Application/Application.ts:16](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Application/Application.ts#L16)*
+*Defined in [Library/Application/Application.ts:16](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Application/Application.ts#L16)*
 
 ___
 <a id="modulemanager"></a>
@@ -104,7 +104,7 @@ ___
 
 **moduleManager**: *[ModuleManager](modulemanager)*
 
-*Defined in [Library/Application/Application.ts:26](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Application/Application.ts#L26)*
+*Defined in [Library/Application/Application.ts:26](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Application/Application.ts#L26)*
 
 ___
 <a id="servicemanager"></a>
@@ -113,7 +113,7 @@ ___
 
 **serviceManager**: *[ServiceManager](servicemanager)*
 
-*Defined in [Library/Application/Application.ts:22](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Application/Application.ts#L22)*
+*Defined in [Library/Application/Application.ts:22](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Application/Application.ts#L22)*
 
 ___
 <a id="sharedeventmanager"></a>
@@ -122,7 +122,7 @@ ___
 
 **sharedEventManager**: *[SharedEventManager](sharedeventmanager)*
 
-*Defined in [Library/Application/Application.ts:28](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Application/Application.ts#L28)*
+*Defined in [Library/Application/Application.ts:28](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Application/Application.ts#L28)*
 
 ___
 
@@ -134,7 +134,7 @@ ___
 
 **bootstrap**(mode: *[ApplicationModes](../enums/applicationmodes)*, loadOnly?: *`boolean`*): `Promise`<`this`>
 
-*Defined in [Library/Application/Application.ts:60](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Application/Application.ts#L60)*
+*Defined in [Library/Application/Application.ts:60](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Application/Application.ts#L60)*
 
 **Parameters:**
 
@@ -152,7 +152,7 @@ ___
 
 **bootstrapCli**(): `Promise`<`void`>
 
-*Defined in [Library/Application/Application.ts:102](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Application/Application.ts#L102)*
+*Defined in [Library/Application/Application.ts:102](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Application/Application.ts#L102)*
 
 **Returns:** `Promise`<`void`>
 
@@ -163,7 +163,7 @@ ___
 
 **bootstrapServer**(): `void`
 
-*Defined in [Library/Application/Application.ts:110](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Application/Application.ts#L110)*
+*Defined in [Library/Application/Application.ts:110](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Application/Application.ts#L110)*
 
 **Returns:** `void`
 
@@ -174,7 +174,7 @@ ___
 
 **getEnvironment**(): `string`
 
-*Defined in [Library/Application/Application.ts:118](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Application/Application.ts#L118)*
+*Defined in [Library/Application/Application.ts:118](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Application/Application.ts#L118)*
 
 **Returns:** `string`
 
@@ -185,7 +185,7 @@ ___
 
 **getMode**(): [ApplicationModes](../enums/applicationmodes)
 
-*Defined in [Library/Application/Application.ts:52](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Application/Application.ts#L52)*
+*Defined in [Library/Application/Application.ts:52](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Application/Application.ts#L52)*
 
 **Returns:** [ApplicationModes](../enums/applicationmodes)
 
@@ -196,7 +196,7 @@ ___
 
 **getServiceManager**(): [ServiceManager](servicemanager)
 
-*Defined in [Library/Application/Application.ts:56](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Application/Application.ts#L56)*
+*Defined in [Library/Application/Application.ts:56](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Application/Application.ts#L56)*
 
 **Returns:** [ServiceManager](servicemanager)
 
@@ -207,7 +207,7 @@ ___
 
 **isProduction**(): `boolean`
 
-*Defined in [Library/Application/Application.ts:122](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Application/Application.ts#L122)*
+*Defined in [Library/Application/Application.ts:122](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Application/Application.ts#L122)*
 
 **Returns:** `boolean`
 
@@ -218,7 +218,7 @@ ___
 
 **launch**(mode?: *[ApplicationModes](../enums/applicationmodes)*, loadOnly?: *`boolean`*): `Promise`<`this`>
 
-*Defined in [Library/Application/Application.ts:126](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Application/Application.ts#L126)*
+*Defined in [Library/Application/Application.ts:126](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Application/Application.ts#L126)*
 
 **Parameters:**
 
@@ -236,7 +236,7 @@ ___
 
 **start**(): `Promise`<`this`>
 
-*Defined in [Library/Application/Application.ts:92](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Application/Application.ts#L92)*
+*Defined in [Library/Application/Application.ts:92](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Application/Application.ts#L92)*
 
 **Returns:** `Promise`<`this`>
 

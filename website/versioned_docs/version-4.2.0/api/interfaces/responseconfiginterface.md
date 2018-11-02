@@ -26,7 +26,7 @@ original_id: responseconfiginterface
 
 **responses**: *`object`*
 
-*Defined in [Library/Config/ResponseConfigInterface.ts:4](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Config/ResponseConfigInterface.ts#L4)*
+*Defined in [Library/Config/ResponseConfigInterface.ts:4](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Config/ResponseConfigInterface.ts#L4)*
 
 #### Type declaration
 

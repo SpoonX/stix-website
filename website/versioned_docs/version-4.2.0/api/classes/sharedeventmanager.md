@@ -20,7 +20,7 @@ original_id: sharedeventmanager
 
 ### Properties
 
-* [sharedEventManager](sharedeventmanager#sharedeventmanager)
+* [sharedEventManager](sharedeventmanager#sharedeventmanager-1)
 * [defaultMaxListeners](sharedeventmanager#defaultmaxlisteners)
 
 ### Methods
@@ -61,7 +61,7 @@ original_id: sharedeventmanager
 
 *Inherited from [EventManager](eventmanager).[constructor](eventmanager#constructor)*
 
-*Defined in [Library/EventManager/EventManager.ts:11](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/EventManager/EventManager.ts#L11)*
+*Defined in [Library/EventManager/EventManager.ts:11](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/EventManager.ts#L11)*
 
 **Parameters:**
 
@@ -75,7 +75,7 @@ ___
 
 ## Properties
 
-<a id="sharedeventmanager"></a>
+<a id="sharedeventmanager-1"></a>
 
 ### `Protected` sharedEventManager
 
@@ -83,7 +83,7 @@ ___
 
 *Inherited from [EventManager](eventmanager).[sharedEventManager](eventmanager#sharedeventmanager)*
 
-*Defined in [Library/EventManager/EventManager.ts:9](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/EventManager/EventManager.ts#L9)*
+*Defined in [Library/EventManager/EventManager.ts:9](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/EventManager.ts#L9)*
 
 ___
 <a id="defaultmaxlisteners"></a>
@@ -130,7 +130,7 @@ ___
 
 *Inherited from [EventManager](eventmanager).[attach](eventmanager#attach)*
 
-*Defined in [Library/EventManager/EventManager.ts:69](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/EventManager/EventManager.ts#L69)*
+*Defined in [Library/EventManager/EventManager.ts:69](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/EventManager.ts#L69)*
 
 **Parameters:**
 
@@ -151,7 +151,7 @@ ___
 
 *Inherited from [EventManager](eventmanager).[attachAt](eventmanager#attachat)*
 
-*Defined in [Library/EventManager/EventManager.ts:81](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/EventManager/EventManager.ts#L81)*
+*Defined in [Library/EventManager/EventManager.ts:81](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/EventManager.ts#L81)*
 
 **Parameters:**
 
@@ -172,7 +172,7 @@ ___
 
 *Inherited from [EventManager](eventmanager).[attachOnce](eventmanager#attachonce)*
 
-*Defined in [Library/EventManager/EventManager.ts:63](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/EventManager/EventManager.ts#L63)*
+*Defined in [Library/EventManager/EventManager.ts:63](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/EventManager.ts#L63)*
 
 **Parameters:**
 
@@ -193,7 +193,7 @@ ___
 
 *Inherited from [EventManager](eventmanager).[detach](eventmanager#detach)*
 
-*Defined in [Library/EventManager/EventManager.ts:85](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/EventManager/EventManager.ts#L85)*
+*Defined in [Library/EventManager/EventManager.ts:85](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/EventManager.ts#L85)*
 
 **Parameters:**
 
@@ -265,7 +265,7 @@ ___
 
 *Inherited from [EventManager](eventmanager).[getSharedEventManager](eventmanager#getsharedeventmanager)*
 
-*Defined in [Library/EventManager/EventManager.ts:105](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/EventManager/EventManager.ts#L105)*
+*Defined in [Library/EventManager/EventManager.ts:105](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/EventManager.ts#L105)*
 
 **Returns:** [EventManager](eventmanager)
 
@@ -278,7 +278,7 @@ ___
 
 *Inherited from [EventManager](eventmanager).[has](eventmanager#has)*
 
-*Defined in [Library/EventManager/EventManager.ts:59](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/EventManager/EventManager.ts#L59)*
+*Defined in [Library/EventManager/EventManager.ts:59](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/EventManager.ts#L59)*
 
 **Parameters:**
 
@@ -535,7 +535,7 @@ ___
 
 *Inherited from [EventManager](eventmanager).[trigger](eventmanager#trigger)*
 
-*Defined in [Library/EventManager/EventManager.ts:19](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/EventManager/EventManager.ts#L19)*
+*Defined in [Library/EventManager/EventManager.ts:19](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/EventManager.ts#L19)*
 
 **Parameters:**
 

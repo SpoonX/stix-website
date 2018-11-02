@@ -22,7 +22,7 @@ original_id: applicationevents
 
 **Ready**:  = "Application.Ready"
 
-*Defined in [Library/Application/ApplicationEvents.ts:2](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Application/ApplicationEvents.ts#L2)*
+*Defined in [Library/Application/ApplicationEvents.ts:2](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Application/ApplicationEvents.ts#L2)*
 
 ___
 

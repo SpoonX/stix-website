@@ -35,7 +35,7 @@ original_id: invalidargumenterror
 
 **new InvalidArgumentError**(error: *`string`*): [InvalidArgumentError](invalidargumenterror)
 
-*Defined in [Library/Error/InvalidArgumentError.ts:1](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Error/InvalidArgumentError.ts#L1)*
+*Defined in [Library/Error/InvalidArgumentError.ts:1](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Error/InvalidArgumentError.ts#L1)*
 
 **Parameters:**
 

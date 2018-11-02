@@ -29,7 +29,7 @@ original_id: responseargumentsinterface
 
 **data**: *`any`*
 
-*Defined in [Library/Response/Response.ts:154](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Response/Response.ts#L154)*
+*Defined in [Library/Response/Response.ts:154](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L154)*
 
 ___
 <a id="message"></a>
@@ -38,7 +38,7 @@ ___
 
 **message**: *`string`*
 
-*Defined in [Library/Response/Response.ts:153](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Response/Response.ts#L153)*
+*Defined in [Library/Response/Response.ts:153](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L153)*
 
 ___
 <a id="meta"></a>
@@ -47,7 +47,7 @@ ___
 
 **meta**: *`any`*
 
-*Defined in [Library/Response/Response.ts:155](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Response/Response.ts#L155)*
+*Defined in [Library/Response/Response.ts:155](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L155)*
 
 ___
 <a id="statuscode"></a>
@@ -56,7 +56,7 @@ ___
 
 **statusCode**: *[HttpStatusCodes](../enums/httpstatuscodes)*
 
-*Defined in [Library/Response/Response.ts:152](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Response/Response.ts#L152)*
+*Defined in [Library/Response/Response.ts:152](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L152)*
 
 ___
 

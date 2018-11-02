@@ -198,6 +198,9 @@
       "first-steps/getting-started": {
         "title": "Getting started"
       },
+      "guides/services": {
+        "title": "Services"
+      },
       "modules/stix-gates/gates-about": {
         "title": "stix-gates",
         "sidebar_label": "About"
@@ -230,6 +233,18 @@
       },
       "README": {
         "title": "README"
+      },
+      "the-basics/about-stix": {
+        "title": "About stix"
+      },
+      "the-basics/learn-the-basics": {
+        "title": "Learn the basics"
+      },
+      "the-basics/modules": {
+        "title": "Modules"
+      },
+      "the-basics/quick-start": {
+        "title": "Quick start"
       },
       "version-0.0.1-api": {
         "title": "API",
@@ -372,6 +387,9 @@
       "version-0.0.1-wetland-setup": {
         "title": "stix-wetland",
         "sidebar_label": "Setup"
+      },
+      "version-0.0.1-about-stix": {
+        "title": "About stix"
       },
       "version-0.0.2-application": {
         "title": "Application"
@@ -3684,6 +3702,24 @@
       },
       "version-4.2.0-changelog": {
         "title": "Changelog"
+      },
+      "version-4.2.0-getting-started": {
+        "title": "Getting started"
+      },
+      "version-4.2.0-services": {
+        "title": "Services"
+      },
+      "version-4.2.0-about-stix": {
+        "title": "About stix"
+      },
+      "version-4.2.0-learn-the-basics": {
+        "title": "Learn the basics"
+      },
+      "version-4.2.0-modules": {
+        "title": "Modules"
+      },
+      "version-4.2.0-quick-start": {
+        "title": "Quick start"
       }
     },
     "links": {
@@ -3693,14 +3729,15 @@
       "Help": "Help"
     },
     "categories": {
-      "First Steps": "First Steps",
+      "The basics": "The basics",
       "Changelog": "Changelog",
       "stix-gates": "stix-gates",
       "stix-wetland": "stix-wetland",
       "API": "API",
       "Classes": "Classes",
       "Enums": "Enums",
-      "Interfaces": "Interfaces"
+      "Interfaces": "Interfaces",
+      "First Steps": "First Steps"
     }
   },
   "pages-strings": {

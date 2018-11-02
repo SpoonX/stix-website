@@ -1,6 +1,7 @@
 ---
 title: Modules
-id: modules
+id: version-4.2.0-modules
+original_id: modules
 ---
 
 Modules allow you to group you application's logic to maintain structure and encourage reusability. 

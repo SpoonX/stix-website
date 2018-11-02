@@ -15,7 +15,7 @@ original_id: selfdestructingcallbackinterface
 ## Callable
 **__call**(event: *[Event](../classes/event)<`any`>*): `Promise`<`void`>
 
-*Defined in [Library/EventManager/EventManagerTypes.ts:3](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/EventManager/EventManagerTypes.ts#L3)*
+*Defined in [Library/EventManager/EventManagerTypes.ts:3](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/EventManagerTypes.ts#L3)*
 
 **Parameters:**
 
@@ -64,7 +64,7 @@ ___
 
 **_isSelfDestructingCallback**: *`boolean`*
 
-*Defined in [Library/EventManager/EventManagerTypes.ts:5](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/EventManager/EventManagerTypes.ts#L5)*
+*Defined in [Library/EventManager/EventManagerTypes.ts:5](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/EventManagerTypes.ts#L5)*
 
 ___
 <a id="arguments"></a>

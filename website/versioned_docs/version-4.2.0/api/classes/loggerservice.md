@@ -51,7 +51,7 @@ original_id: loggerservice
 
 **new LoggerService**(config: *[LoggerConfigInterface](../interfaces/loggerconfiginterface)*): [LoggerService](loggerservice)
 
-*Defined in [Library/Logger/LoggerService.ts:6](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Logger/LoggerService.ts#L6)*
+*Defined in [Library/Logger/LoggerService.ts:6](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Logger/LoggerService.ts#L6)*
 
 **Parameters:**
 
@@ -71,7 +71,7 @@ ___
 
 **adapter**: *`WinstonLogger`*
 
-*Defined in [Library/Logger/LoggerService.ts:6](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Logger/LoggerService.ts#L6)*
+*Defined in [Library/Logger/LoggerService.ts:6](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Logger/LoggerService.ts#L6)*
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 **alert**(message: * `string` &#124; `any`*, ...logArguments: *`any`[]*): `this`
 
-*Defined in [Library/Logger/LoggerService.ts:70](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Logger/LoggerService.ts#L70)*
+*Defined in [Library/Logger/LoggerService.ts:70](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Logger/LoggerService.ts#L70)*
 
 **Parameters:**
 
@@ -101,7 +101,7 @@ ___
 
 **crit**(message: * `string` &#124; `any`*, ...logArguments: *`any`[]*): `this`
 
-*Defined in [Library/Logger/LoggerService.ts:74](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Logger/LoggerService.ts#L74)*
+*Defined in [Library/Logger/LoggerService.ts:74](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Logger/LoggerService.ts#L74)*
 
 **Parameters:**
 
@@ -119,7 +119,7 @@ ___
 
 **data**(message: * `string` &#124; `any`*, ...logArguments: *`any`[]*): `this`
 
-*Defined in [Library/Logger/LoggerService.ts:34](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Logger/LoggerService.ts#L34)*
+*Defined in [Library/Logger/LoggerService.ts:34](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Logger/LoggerService.ts#L34)*
 
 **Parameters:**
 
@@ -137,7 +137,7 @@ ___
 
 **debug**(message: * `string` &#124; `any`*, ...logArguments: *`any`[]*): `this`
 
-*Defined in [Library/Logger/LoggerService.ts:42](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Logger/LoggerService.ts#L42)*
+*Defined in [Library/Logger/LoggerService.ts:42](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Logger/LoggerService.ts#L42)*
 
 **Parameters:**
 
@@ -155,7 +155,7 @@ ___
 
 **emerg**(message: * `string` &#124; `any`*, ...logArguments: *`any`[]*): `this`
 
-*Defined in [Library/Logger/LoggerService.ts:66](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Logger/LoggerService.ts#L66)*
+*Defined in [Library/Logger/LoggerService.ts:66](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Logger/LoggerService.ts#L66)*
 
 **Parameters:**
 
@@ -173,7 +173,7 @@ ___
 
 **error**(message: * `string` &#124; `any`*, ...logArguments: *`any`[]*): `this`
 
-*Defined in [Library/Logger/LoggerService.ts:22](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Logger/LoggerService.ts#L22)*
+*Defined in [Library/Logger/LoggerService.ts:22](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Logger/LoggerService.ts#L22)*
 
 **Parameters:**
 
@@ -191,7 +191,7 @@ ___
 
 **getAdapter**(): `WinstonLogger`
 
-*Defined in [Library/Logger/LoggerService.ts:12](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Logger/LoggerService.ts#L12)*
+*Defined in [Library/Logger/LoggerService.ts:12](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Logger/LoggerService.ts#L12)*
 
 **Returns:** `WinstonLogger`
 
@@ -202,7 +202,7 @@ ___
 
 **help**(message: * `string` &#124; `any`*, ...logArguments: *`any`[]*): `this`
 
-*Defined in [Library/Logger/LoggerService.ts:30](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Logger/LoggerService.ts#L30)*
+*Defined in [Library/Logger/LoggerService.ts:30](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Logger/LoggerService.ts#L30)*
 
 **Parameters:**
 
@@ -220,7 +220,7 @@ ___
 
 **http**(message: * `string` &#124; `any`*, ...logArguments: *`any`[]*): `this`
 
-*Defined in [Library/Logger/LoggerService.ts:50](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Logger/LoggerService.ts#L50)*
+*Defined in [Library/Logger/LoggerService.ts:50](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Logger/LoggerService.ts#L50)*
 
 **Parameters:**
 
@@ -238,7 +238,7 @@ ___
 
 **info**(message: * `string` &#124; `any`*, ...logArguments: *`any`[]*): `this`
 
-*Defined in [Library/Logger/LoggerService.ts:38](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Logger/LoggerService.ts#L38)*
+*Defined in [Library/Logger/LoggerService.ts:38](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Logger/LoggerService.ts#L38)*
 
 **Parameters:**
 
@@ -256,7 +256,7 @@ ___
 
 **input**(message: * `string` &#124; `any`*, ...logArguments: *`any`[]*): `this`
 
-*Defined in [Library/Logger/LoggerService.ts:58](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Logger/LoggerService.ts#L58)*
+*Defined in [Library/Logger/LoggerService.ts:58](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Logger/LoggerService.ts#L58)*
 
 **Parameters:**
 
@@ -274,7 +274,7 @@ ___
 
 **log**(level: * `string` &#124; `any`*, message?: *`any`*, ...logArguments: *`any`[]*): `this`
 
-*Defined in [Library/Logger/LoggerService.ts:16](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Logger/LoggerService.ts#L16)*
+*Defined in [Library/Logger/LoggerService.ts:16](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Logger/LoggerService.ts#L16)*
 
 **Parameters:**
 
@@ -293,7 +293,7 @@ ___
 
 **notice**(message: * `string` &#124; `any`*, ...logArguments: *`any`[]*): `this`
 
-*Defined in [Library/Logger/LoggerService.ts:82](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Logger/LoggerService.ts#L82)*
+*Defined in [Library/Logger/LoggerService.ts:82](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Logger/LoggerService.ts#L82)*
 
 **Parameters:**
 
@@ -311,7 +311,7 @@ ___
 
 **prompt**(message: * `string` &#124; `any`*, ...logArguments: *`any`[]*): `this`
 
-*Defined in [Library/Logger/LoggerService.ts:46](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Logger/LoggerService.ts#L46)*
+*Defined in [Library/Logger/LoggerService.ts:46](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Logger/LoggerService.ts#L46)*
 
 **Parameters:**
 
@@ -329,7 +329,7 @@ ___
 
 **silly**(message: * `string` &#124; `any`*, ...logArguments: *`any`[]*): `this`
 
-*Defined in [Library/Logger/LoggerService.ts:62](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Logger/LoggerService.ts#L62)*
+*Defined in [Library/Logger/LoggerService.ts:62](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Logger/LoggerService.ts#L62)*
 
 **Parameters:**
 
@@ -347,7 +347,7 @@ ___
 
 **verbose**(message: * `string` &#124; `any`*, ...logArguments: *`any`[]*): `this`
 
-*Defined in [Library/Logger/LoggerService.ts:54](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Logger/LoggerService.ts#L54)*
+*Defined in [Library/Logger/LoggerService.ts:54](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Logger/LoggerService.ts#L54)*
 
 **Parameters:**
 
@@ -365,7 +365,7 @@ ___
 
 **warn**(message: * `string` &#124; `any`*, ...logArguments: *`any`[]*): `this`
 
-*Defined in [Library/Logger/LoggerService.ts:26](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Logger/LoggerService.ts#L26)*
+*Defined in [Library/Logger/LoggerService.ts:26](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Logger/LoggerService.ts#L26)*
 
 **Parameters:**
 
@@ -383,7 +383,7 @@ ___
 
 **warning**(message: * `string` &#124; `any`*, ...logArguments: *`any`[]*): `this`
 
-*Defined in [Library/Logger/LoggerService.ts:78](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/Logger/LoggerService.ts#L78)*
+*Defined in [Library/Logger/LoggerService.ts:78](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Logger/LoggerService.ts#L78)*
 
 **Parameters:**
 

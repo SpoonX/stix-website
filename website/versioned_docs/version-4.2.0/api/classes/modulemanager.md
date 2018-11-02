@@ -40,7 +40,7 @@ original_id: modulemanager
 
 **new ModuleManager**(application: *[Application](application)*, eventManager: *[EventManager](eventmanager)*, config: *[Config](config)*): [ModuleManager](modulemanager)
 
-*Defined in [Library/ModuleManager/ModuleManager.ts:15](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/ModuleManager/ModuleManager.ts#L15)*
+*Defined in [Library/ModuleManager/ModuleManager.ts:15](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ModuleManager/ModuleManager.ts#L15)*
 
 **Parameters:**
 
@@ -62,7 +62,7 @@ ___
 
 **application**: *[Application](application)*
 
-*Defined in [Library/ModuleManager/ModuleManager.ts:15](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/ModuleManager/ModuleManager.ts#L15)*
+*Defined in [Library/ModuleManager/ModuleManager.ts:15](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ModuleManager/ModuleManager.ts#L15)*
 
 ___
 <a id="config"></a>
@@ -71,7 +71,7 @@ ___
 
 **config**: *[Config](config)*
 
-*Defined in [Library/ModuleManager/ModuleManager.ts:11](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/ModuleManager/ModuleManager.ts#L11)*
+*Defined in [Library/ModuleManager/ModuleManager.ts:11](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ModuleManager/ModuleManager.ts#L11)*
 
 ___
 <a id="eventmanager"></a>
@@ -80,7 +80,7 @@ ___
 
 **eventManager**: *[EventManager](eventmanager)*
 
-*Defined in [Library/ModuleManager/ModuleManager.ts:13](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/ModuleManager/ModuleManager.ts#L13)*
+*Defined in [Library/ModuleManager/ModuleManager.ts:13](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ModuleManager/ModuleManager.ts#L13)*
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 **bootstrap**(): `Promise`<`boolean`>
 
-*Defined in [Library/ModuleManager/ModuleManager.ts:23](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/ModuleManager/ModuleManager.ts#L23)*
+*Defined in [Library/ModuleManager/ModuleManager.ts:23](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ModuleManager/ModuleManager.ts#L23)*
 
 **Returns:** `Promise`<`boolean`>
 
@@ -103,7 +103,7 @@ ___
 
 **getApplication**(): [Application](application)
 
-*Defined in [Library/ModuleManager/ModuleManager.ts:65](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/ModuleManager/ModuleManager.ts#L65)*
+*Defined in [Library/ModuleManager/ModuleManager.ts:65](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ModuleManager/ModuleManager.ts#L65)*
 
 **Returns:** [Application](application)
 
@@ -114,7 +114,7 @@ ___
 
 **getEventManager**(): [EventManager](eventmanager)
 
-*Defined in [Library/ModuleManager/ModuleManager.ts:61](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/ModuleManager/ModuleManager.ts#L61)*
+*Defined in [Library/ModuleManager/ModuleManager.ts:61](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ModuleManager/ModuleManager.ts#L61)*
 
 **Returns:** [EventManager](eventmanager)
 
@@ -125,7 +125,7 @@ ___
 
 **loadModule**(ModuleClass: *[ModuleClassInterface](../interfaces/moduleclassinterface)*): `Promise`<`this`>
 
-*Defined in [Library/ModuleManager/ModuleManager.ts:27](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/ModuleManager/ModuleManager.ts#L27)*
+*Defined in [Library/ModuleManager/ModuleManager.ts:27](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ModuleManager/ModuleManager.ts#L27)*
 
 **Parameters:**
 
@@ -142,7 +142,7 @@ ___
 
 **loadModules**(config: *[ModuleManagerConfigInterface](../interfaces/modulemanagerconfiginterface)*): `Promise`<`this`>
 
-*Defined in [Library/ModuleManager/ModuleManager.ts:69](https://github.com/SpoonX/stix/blob/5b30e82/src/Library/ModuleManager/ModuleManager.ts#L69)*
+*Defined in [Library/ModuleManager/ModuleManager.ts:69](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ModuleManager/ModuleManager.ts#L69)*
 
 **Parameters:**
 
