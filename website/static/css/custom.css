@@ -40,7 +40,7 @@ code, code span {
   letter-spacing: 2px;
 }
 
-.blockContent p {
+.blockContent p, .post p {
   color: $text;
   letter-spacing: 2px;
 }
@@ -84,7 +84,8 @@ code, code span {
 }
 
 .nav-footer .sitemap a,
-.nav-footer .sitemap h5 {
+.nav-footer .sitemap h5,
+.postHeader {
   color: $secondaryColor;
   letter-spacing: 2px;
 }

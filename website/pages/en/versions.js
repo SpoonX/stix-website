@@ -1,16 +1,12 @@
 const React       = require('react');
 const CompLibrary = require('../../core/CompLibrary');
-
 const Container = CompLibrary.Container;
-
 const CWD = process.cwd();
-
 const siteConfig = require(`${CWD}/siteConfig.js`);
 const versions   = require(`${CWD}/versions.json`);
 
 function Versions() {
   const latestVersion = versions[ 0 ];
-  const repoUrl       = `https://github.com/${siteConfig.organizationName}/${siteConfig.projectName}`;
 
   return (
     <div className="docMainWrapper wrapper">
@@ -72,10 +68,6 @@ function Versions() {
               )}
             </tbody>
           </table>
-          <p>
-            You can find past versions of this project on{' '}
-            <a href={repoUrl}>GitHub</a>.
-          </p>
         </div>
       </Container>
     </div>
