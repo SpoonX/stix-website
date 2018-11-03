@@ -62,7 +62,7 @@ function Versions() {
                     <tr key={version}>
                       <th>{version}</th>
                       <td>
-                        <a href={`docs/${version}/first-steps/getting-started`}>Documentation</a>
+                        <a href={`docs/${version}/the-basics/about-stix`}>Documentation</a>
                       </td>
                       <td>
                         <a href={`docs/${version}/changelog`}>Release Notes</a>

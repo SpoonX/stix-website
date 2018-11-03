@@ -1,6 +1,6 @@
 ---
 title: About stix
-id: version-0.0.1-about-stix
+id: version-2.0.0-about-stix
 original_id: about-stix
 ---
 

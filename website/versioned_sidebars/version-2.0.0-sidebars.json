@@ -1,7 +1,10 @@
 {
   "version-2.0.0-Introduction": {
-    "First Steps": [
-      "version-2.0.0-first-steps/getting-started"
+    "The basics": [
+      "version-2.0.0-the-basics/about-stix",
+      "version-2.0.0-the-basics/quick-start",
+      "version-2.0.0-the-basics/learn-the-basics",
+      "version-2.0.0-the-basics/modules"
     ],
     "Changelog": [
       "version-2.0.0-changelog"
