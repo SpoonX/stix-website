@@ -8,6 +8,10 @@ body {
   color: $secondaryColor;
 }
 
+code, code span {
+  font-family: 'Roboto Mono', monospace;
+}
+
 .fixedHeaderContainer {
   background-color: transparent;
 }

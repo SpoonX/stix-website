@@ -36,8 +36,8 @@ class Footer extends React.Component {
           </a>
           <div>
             <h5>Docs</h5>
-            <a href={this.docUrl('first-steps/getting-started.html', language)}>
-              Getting Started
+            <a href={this.docUrl('the-basics/about-stix.html', language)}>
+              The Basics
             </a>
             <a href={this.docUrl('modules/stix-gates/gates-about.html', language)}>
               Core Modules

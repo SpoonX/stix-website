@@ -195,9 +195,6 @@
       "changelog": {
         "title": "Changelog"
       },
-      "first-steps/getting-started": {
-        "title": "Getting started"
-      },
       "guides/services": {
         "title": "Services"
       },
@@ -390,6 +387,15 @@
       },
       "version-0.0.1-about-stix": {
         "title": "About stix"
+      },
+      "version-0.0.1-learn-the-basics": {
+        "title": "Learn the basics"
+      },
+      "version-0.0.1-modules": {
+        "title": "Modules"
+      },
+      "version-0.0.1-quick-start": {
+        "title": "Quick start"
       },
       "version-0.0.2-application": {
         "title": "Application"
@@ -1785,6 +1791,18 @@
       },
       "version-2.0.0-changelog": {
         "title": "Changelog"
+      },
+      "version-2.0.0-about-stix": {
+        "title": "About stix"
+      },
+      "version-2.0.0-learn-the-basics": {
+        "title": "Learn the basics"
+      },
+      "version-2.0.0-modules": {
+        "title": "Modules"
+      },
+      "version-2.0.0-quick-start": {
+        "title": "Quick start"
       },
       "version-3.0.0-abstractactioncontroller": {
         "title": "AbstractActionController"
@@ -3736,8 +3754,7 @@
       "API": "API",
       "Classes": "Classes",
       "Enums": "Enums",
-      "Interfaces": "Interfaces",
-      "First Steps": "First Steps"
+      "Interfaces": "Interfaces"
     }
   },
   "pages-strings": {
