@@ -1,6 +1,5 @@
 ---
 title: Modules
-id: modules
 ---
 
 Modules allow you to group you application's logic to maintain structure and encourage reusability. 
@@ -98,4 +97,61 @@ This method would be used basically the same as init(), except you'd use it when
 
 I'm sorry for that. But now that you understand the module file, you can get started making something yourself.
 
-[TBD: Move this part to the tutorial.]
+1. Create a new directory `module` with `MyModule` in it at `app/module/MyModule` (`mkdir -p app/module/MyModule`)
+2. Move `app/src` to your new module (`mv app/src app/module/MyModule`)
+3. Create a new config file `app/config/modules.ts` with the following contents:
+
+    ```ts
+    import MyModule from '../module/MyModule';
+
+    export const modules = [
+      MyModule,
+    ];
+    ```
+
+4. And add the export to `app/config/index.ts`
+
+    ```ts
+    export * from './modules';
+    ```
+
+5. Move your `controller.ts` and `routes.ts` to your new module (`mkdir app/module/MyModule/config && mv app/config/{router,controller}.ts $_`)
+6. Create a new file at `app/module/MyModule/config/index.ts`
+7. Open up `app/config/index.ts` and move the exports for `./controller` and `./routes` to `app/module/MyModule/config/index.ts`
+8. Create your main Module file at `app/module/MyModule/src/MyModule.ts` with the following contents:
+
+    ```ts
+    import * as config from '../config';
+    import { ModuleInterface } from 'stix';
+
+    export class MyModule implements ModuleInterface {
+      getConfig() {
+        return config;
+      }
+    }
+    ```
+
+9. Create a new file at `app/module/MyModule/index.ts` and export your module by default.
+
+    ```ts
+    import { MyModule } from './src/MyModule';
+
+    export default MyModule;
+    ```
+
+If you followed the steps properly you can now run `yarn dev` and visit [http://localhost:1991/](http://localhost:1991/) once more and see the same response:
+
+```json
+{"Hello":"world!"}
+```
+
+Party hard!
+
+## Conclusion
+
+As you can see, a module isn't that impressive but offers a lot of flexibility. Creating a module is easy.
+All we did was do what stix-cli already does for us. But at least now you know what's being generated and what it means.
+
+Now, assuming you have stix-generator added to your project _(which happens automatically when using `stix init`)_ you can safely let stix-generator take care of this for you:
+
+`stix generate:module my-module`
