@@ -290,7 +290,7 @@ export const router = {
 And of course don't forget to add the export to `app/config/index.ts`:
 
 ```ts
-export * from './server';
+export * from './router';
 ```
 
 Routes is simply an array of route objects, and `Route` is a helper to make formatting those easier.
