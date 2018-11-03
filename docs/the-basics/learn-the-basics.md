@@ -321,4 +321,4 @@ And there you have it, your very first endpoint.
 
 ## What's next?
 
-Play around with the skeleton a bit. 
+Play around with the skeleton a bit. When you're ready to move on, keep reading to learn about modules.
