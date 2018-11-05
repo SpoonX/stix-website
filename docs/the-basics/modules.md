@@ -97,6 +97,9 @@ This method would be used basically the same as init(), except you'd use it when
 
 I'm sorry for that. But now that you understand the module file, you can get started making something yourself.
 
+The rest of this document will be based on the work we did in [learn the basics](learn-the-basics.md).
+If you did not follow that first, do that now and return here afterwards.
+
 1. Create a new directory `module` with `MyModule` in it at `app/module/MyModule` (`mkdir -p app/module/MyModule`)
 2. Move `app/src` to your new module (`mv app/src app/module/MyModule`)
 3. Create a new config file `app/config/modules.ts` with the following contents:
@@ -155,3 +158,5 @@ All we did was do what stix-cli already does for us. But at least now you know w
 Now, assuming you have stix-generator added to your project _(which happens automatically when using `stix init`)_ you can safely let stix-generator take care of this for you:
 
 `stix generate:module my-module`
+
+Speaking of generators, the next section will cover them in more detail.
