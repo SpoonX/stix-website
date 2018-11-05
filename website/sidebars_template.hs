@@ -4,7 +4,11 @@
       "the-basics/about-stix",
       "the-basics/quick-start",
       "the-basics/learn-the-basics",
-      "the-basics/modules"
+      "the-basics/modules",
+      "the-basics/generators",
+      "the-basics/config",
+      "the-basics/controllers-and-actions",
+      "the-basics/responses"
     ],
     "Changelog": [
       "changelog"
