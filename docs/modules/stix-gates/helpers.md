@@ -10,7 +10,7 @@ stix-gates comes with a couple of helpers to make working with it even more fun.
 
 ### Gate.compose(controller, rules, baseRules?)
 
-This is a simple utility that helps you compose your gates. Using this allows you to keep the reference to the controllers and gates you use, making it easier to navigate through your IDE. On top of that, it allows you to define some baseRules, and it'll merge those in for every action.
+Because gates are indexed using Maps, and not everyone is comfortable with an array of arrays, we added the `Gate.compose()` helper method. The added advantage is that it allows you to define some baseRules, and it'll merge those in for every action defined.
 
 Code speaks. This example uses the `baseRules`:
 
@@ -18,11 +18,12 @@ Code speaks. This example uses the `baseRules`:
 compose(UserController, { profile: [ isNotGuest ] }, [ isAuthenticated ]);
 
 // Produces:
-{
-  UserController: {
+[
+  UserController,
+  {
     profile: [ isAuthenticated, isNotGuest ],
   },
-}
+]
 ```
 
 And here's a simple example using booleans:
@@ -32,12 +33,13 @@ And here's a simple example using booleans:
 compose(OpenController, { '*': true, secretAction: false });
 
 // Produces:
-{
-  OpenController: {
+[
+  OpenController,
+  {
     '*': true,
     secretAction: false,
   }
-}
+]
 ```
 
 This is especially useful if your rules repeat often.

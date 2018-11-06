@@ -15,26 +15,30 @@ Let's take a look at the `src/config/gates.ts` file.
 ```ts
 import { Gate } from 'stix-gates';
 import { SomeController } from '../api/controllers';
-import { isAuthenticated, isNotGuest } from '../api/gates';
+import { IsAuthenticated, IsNotGuest } from '../api/gates';
 
 const compose = Gate.compose;
 
-export const gates = {
-  // By default, allow no access to anything.
-  // This is also the stix-gates default when no gates were found.
-  '*': false,
+export const gate = {
+  locations: [ path.resolve(__dirname, '..', 'src', 'Gate') ], // Tell stix-gates where it can find your Gate classes
+  gates: {}, // Optional service-manager config
+  rules: new Map([
+    // By default, allow no access to anything.
+    // This is also the stix-gates default when no gates were found.
+    ['*', false],
 
-  // Compose some rules for the UserController.
-  // Produces: { UserController: { profile: [ isAuthenticated, isNotGuest ] } }
-  ...compose(UserController, { profile: [ isNotGuest ] }, [ isAuthenticated ]),
+    // Allow access to all actions, except one.
+    // Produces: { OpenController: { '*': true, secretAction: false } }
+    [ OpenController, { '*': true, secretAction: false } ],
 
-  // Allow access to all actions, except one.
-  // Produces: { OpenController: { '*': true, secretAction: false } }
-  ...compose(OpenController, { '*': true, secretAction: false }),
+    // Compose some rules for the UserController using the helper.
+    // Produces: { UserController: { profile: [ isAuthenticated, isNotGuest ] } }
+    compose(UserController, { profile: [ isNotGuest ] }, [ isAuthenticated ]),
+  ]),
 };
 ```
 
-As you can see, you can use the reference to your controller, and similarly to your gates. Strings also work, so using `Gate.compose()` is optional.
+As you can see, you can use the reference to your controller, and similarly to your gates. You can also just use arrays.
 
 ### Gate implementation
 
@@ -47,9 +51,11 @@ You can put your gates anywhere you like. They can even be imported from other m
 ```ts
 import { ContextInterface } from 'stix';
 
-export const isAuthenticated = async (ctx: ContextInterface) => {
-  return !!ctx.state.user;
-};
+export class IsAuthenticated extends AbstractGate {
+  public async passThrough (ctx: ContextInterface) {
+    return !!ctx.state.user;
+  }
+}
 ```
 
 - Gates can be async functions.
@@ -62,11 +68,13 @@ export const isAuthenticated = async (ctx: ContextInterface) => {
 ```ts
 import { ContextInterface } from 'stix';
 
-export const isAuthenticated = async (ctx: ContextInterface) => {
-  if (!ctx.state.user) {
-    return false;
+export class IsAuthenticated extends AbstractGate {
+  public passThrough (ctx: ContextInterface) {
+    if (!ctx.state.user) {
+      return false;
+    }
   }
-};
+}
 ```
 
 - Gates are not required to return a value.
@@ -77,15 +85,39 @@ export const isAuthenticated = async (ctx: ContextInterface) => {
 
 ```ts
 import { ContextInterface } from 'stix';
-import { ClientErrorResponse } from '../responses';
+import { AbstractGate } from 'stix-gates';
 
-export const isAuthenticated = async (ctx: ContextInterface) => {
-  if (!ctx.state.user) {
-    return ClientErrorResponse.unauthorized();
+export class IsAuthenticated extends AbstractGate {
+  public passThrough (ctx: ContextInterface) {
+    if (!ctx.state.user) {
+      return this.unauthorizedResponse();
+    }
   }
-};
+}
 ```
 
 - Returning `false` from a gate defaults to a `ClientErrorResponse.forbidden()` denying the request.
-- Returning **any other `Response` type will result in the request being denied** with your custom response.
-- This allows you to decide what type of response gets sent back.
+- Returning **any other `Response` type will _also_ result in the request being terminated** with your custom response.
+- This allows you to decide what type of response gets sent back early if needed.
+- Common responses are available on your gate when extending AbstractGate.
+
+<details>
+<summary><em><strong>More available response methods</strong></em></summary>
+<p>
+
+The AbstractGate extends the AbstractResponseHelper, giving you the following helper methods:
+
+- okResponse
+- createdResponse
+- notFoundResponse
+- requestTimeoutResponse
+- forbiddenResponse
+- badRequestResponse
+- unauthorizedResponse
+- internalServerErrorResponse
+- permanentRedirectResponse
+
+You can read more about responses in the  [API documentation](../api/classes/abstractresponsehelper).
+
+</p>
+</details>
