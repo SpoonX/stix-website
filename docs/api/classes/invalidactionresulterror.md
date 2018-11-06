@@ -33,7 +33,7 @@ title: InvalidActionResultError
 
 **new InvalidActionResultError**(error: *`string`*): [InvalidActionResultError](invalidactionresulterror)
 
-*Defined in [Library/Error/InvalidActionResultError.ts:1](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Error/InvalidActionResultError.ts#L1)*
+*Defined in [Library/Error/InvalidActionResultError.ts:1](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Error/InvalidActionResultError.ts#L1)*
 
 **Parameters:**
 

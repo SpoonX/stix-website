@@ -33,7 +33,7 @@ title: NotFoundError
 
 **new NotFoundError**(error: *`string`*): [NotFoundError](notfounderror)
 
-*Defined in [Library/Error/NotFoundError.ts:1](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Error/NotFoundError.ts#L1)*
+*Defined in [Library/Error/NotFoundError.ts:1](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Error/NotFoundError.ts#L1)*
 
 **Parameters:**
 

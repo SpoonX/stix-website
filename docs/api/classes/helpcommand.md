@@ -34,7 +34,7 @@ title: HelpCommand
 
 **cliService**: *[CliService](cliservice)*
 
-*Defined in [Library/Command/HelpCommand.ts:10](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Command/HelpCommand.ts#L10)*
+*Defined in [Library/Command/HelpCommand.ts:10](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Command/HelpCommand.ts#L10)*
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 **output**(output: *[Output](output)*, params: *`object`*): [Output](output)
 
-*Defined in [Library/Command/HelpCommand.ts:12](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Command/HelpCommand.ts#L12)*
+*Defined in [Library/Command/HelpCommand.ts:12](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Command/HelpCommand.ts#L12)*
 
 **Parameters:**
 
@@ -67,7 +67,7 @@ ___
 
 **renderCommand**(__namedParameters: *`object`*): `object`
 
-*Defined in [Library/Command/HelpCommand.ts:93](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Command/HelpCommand.ts#L93)*
+*Defined in [Library/Command/HelpCommand.ts:93](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Command/HelpCommand.ts#L93)*
 
 **Parameters:**
 
@@ -87,7 +87,7 @@ ___
 
 **renderExamples**(examples: *`string`[]*): `object`
 
-*Defined in [Library/Command/HelpCommand.ts:86](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Command/HelpCommand.ts#L86)*
+*Defined in [Library/Command/HelpCommand.ts:86](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Command/HelpCommand.ts#L86)*
 
 **Parameters:**
 
@@ -104,7 +104,7 @@ ___
 
 **renderOptions**(options: *[CliCommandOptionsType]()*): `object`
 
-*Defined in [Library/Command/HelpCommand.ts:70](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Command/HelpCommand.ts#L70)*
+*Defined in [Library/Command/HelpCommand.ts:70](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Command/HelpCommand.ts#L70)*
 
 **Parameters:**
 
@@ -121,7 +121,7 @@ ___
 
 **renderUsage**(command: *[CliCommandType]()*): `object`
 
-*Defined in [Library/Command/HelpCommand.ts:51](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Command/HelpCommand.ts#L51)*
+*Defined in [Library/Command/HelpCommand.ts:51](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Command/HelpCommand.ts#L51)*
 
 **Parameters:**
 

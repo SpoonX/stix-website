@@ -234,6 +234,18 @@
       "the-basics/about-stix": {
         "title": "About stix"
       },
+      "the-basics/config": {
+        "title": "Config"
+      },
+      "the-basics/controllers-and-actions": {
+        "title": "Controllers and actions"
+      },
+      "the-basics/database": {
+        "title": "Database"
+      },
+      "the-basics/generators": {
+        "title": "Generators"
+      },
       "the-basics/learn-the-basics": {
         "title": "Learn the basics"
       },
@@ -242,6 +254,9 @@
       },
       "the-basics/quick-start": {
         "title": "Quick start"
+      },
+      "the-basics/responses": {
+        "title": "Responses"
       },
       "version-0.0.1-api": {
         "title": "API",
@@ -3738,6 +3753,30 @@
       },
       "version-4.2.0-quick-start": {
         "title": "Quick start"
+      },
+      "version-4.2.2-wetland-db-route": {
+        "title": "DbRoute"
+      },
+      "version-4.2.2-config": {
+        "title": "Config"
+      },
+      "version-4.2.2-controllers-and-actions": {
+        "title": "Controllers and actions"
+      },
+      "version-4.2.2-database": {
+        "title": "Database"
+      },
+      "version-4.2.2-generators": {
+        "title": "Generators"
+      },
+      "version-4.2.2-learn-the-basics": {
+        "title": "Learn the basics"
+      },
+      "version-4.2.2-modules": {
+        "title": "Modules"
+      },
+      "version-4.2.2-responses": {
+        "title": "Responses"
       }
     },
     "links": {

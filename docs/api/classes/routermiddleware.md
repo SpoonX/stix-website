@@ -33,7 +33,7 @@ title: RouterMiddleware
 
 **controllerManager**: *[ControllerManager](controllermanager)*
 
-*Defined in [Library/Middleware/RouterMiddleware.ts:20](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Middleware/RouterMiddleware.ts#L20)*
+*Defined in [Library/Middleware/RouterMiddleware.ts:20](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Middleware/RouterMiddleware.ts#L20)*
 
 ___
 <a id="responseservice"></a>
@@ -42,7 +42,7 @@ ___
 
 **responseService**: *[ResponseService](responseservice)*
 
-*Defined in [Library/Middleware/RouterMiddleware.ts:17](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Middleware/RouterMiddleware.ts#L17)*
+*Defined in [Library/Middleware/RouterMiddleware.ts:17](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Middleware/RouterMiddleware.ts#L17)*
 
 ___
 <a id="routerservice"></a>
@@ -51,7 +51,7 @@ ___
 
 **routerService**: *[RouterService](routerservice)*
 
-*Defined in [Library/Middleware/RouterMiddleware.ts:14](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Middleware/RouterMiddleware.ts#L14)*
+*Defined in [Library/Middleware/RouterMiddleware.ts:14](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Middleware/RouterMiddleware.ts#L14)*
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 *Inherited from [AbstractMiddleware](abstractmiddleware).[asCallback](abstractmiddleware#ascallback)*
 
-*Defined in [Library/Middleware/AbstractMiddleware.ts:7](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Middleware/AbstractMiddleware.ts#L7)*
+*Defined in [Library/Middleware/AbstractMiddleware.ts:7](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Middleware/AbstractMiddleware.ts#L7)*
 
 **Returns:** [RegisteredMiddlewareType]()
 
@@ -78,7 +78,7 @@ ___
 
 *Overrides [AbstractMiddleware](abstractmiddleware).[pass](abstractmiddleware#pass)*
 
-*Defined in [Library/Middleware/RouterMiddleware.ts:22](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Middleware/RouterMiddleware.ts#L22)*
+*Defined in [Library/Middleware/RouterMiddleware.ts:22](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Middleware/RouterMiddleware.ts#L22)*
 
 **Parameters:**
 

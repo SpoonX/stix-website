@@ -31,7 +31,7 @@ title: AbstractMiddleware
 
 **asCallback**(): [RegisteredMiddlewareType]()
 
-*Defined in [Library/Middleware/AbstractMiddleware.ts:7](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Middleware/AbstractMiddleware.ts#L7)*
+*Defined in [Library/Middleware/AbstractMiddleware.ts:7](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Middleware/AbstractMiddleware.ts#L7)*
 
 **Returns:** [RegisteredMiddlewareType]()
 
@@ -42,7 +42,7 @@ ___
 
 **pass**(ctx?: *[ContextInterface](../interfaces/contextinterface)*, next?: *`Function`*): `any`
 
-*Defined in [Library/Middleware/AbstractMiddleware.ts:5](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Middleware/AbstractMiddleware.ts#L5)*
+*Defined in [Library/Middleware/AbstractMiddleware.ts:5](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Middleware/AbstractMiddleware.ts#L5)*
 
 **Parameters:**
 

@@ -24,7 +24,7 @@ title: RouterConfigInterface
 
 **routes**: *`Array`<[RouteInterface](routeinterface)>*
 
-*Defined in [Library/Config/RouterConfigInterface.ts:4](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Config/RouterConfigInterface.ts#L4)*
+*Defined in [Library/Config/RouterConfigInterface.ts:4](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Config/RouterConfigInterface.ts#L4)*
 
 ___
 

@@ -27,115 +27,115 @@ title: Route
 
 ### `Static` delete
 
-**delete**(route: *`string`*, controller: * `string` &#124; `object`*, action: *`string`*): `__type`
+**delete**(route: *`string`*, controller: * `string` &#124; [AbstractActionController](abstractactioncontroller)*, action: *`string`*): [RouteInterface](../interfaces/routeinterface)
 
-*Defined in [Library/Router/Route.ts:24](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Router/Route.ts#L24)*
+*Defined in [Library/Router/Route.ts:26](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Router/Route.ts#L26)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
 | route | `string` |
-| controller |  `string` &#124; `object`|
+| controller |  `string` &#124; [AbstractActionController](abstractactioncontroller)|
 | action | `string` |
 
-**Returns:** `__type`
+**Returns:** [RouteInterface](../interfaces/routeinterface)
 
 ___
 <a id="get"></a>
 
 ### `Static` get
 
-**get**(route: *`string`*, controller: * `string` &#124; `object`*, action: *`string`*): `__type`
+**get**(route: *`string`*, controller: * `string` &#124; [AbstractActionController](abstractactioncontroller)*, action: *`string`*): [RouteInterface](../interfaces/routeinterface)
 
-*Defined in [Library/Router/Route.ts:8](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Router/Route.ts#L8)*
+*Defined in [Library/Router/Route.ts:10](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Router/Route.ts#L10)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
 | route | `string` |
-| controller |  `string` &#124; `object`|
+| controller |  `string` &#124; [AbstractActionController](abstractactioncontroller)|
 | action | `string` |
 
-**Returns:** `__type`
+**Returns:** [RouteInterface](../interfaces/routeinterface)
 
 ___
 <a id="method"></a>
 
 ### `Static` method
 
-**method**(method: *`string`*, route: *`string`*, controller: * `string` &#124; `object`*, action: *`string`*): `__type`
+**method**(method: *[RequestMethods](../enums/requestmethods)*, route: *`string`*, controller: * `string` &#124; [AbstractActionController](abstractactioncontroller)*, action: *`string`*): [RouteInterface](../interfaces/routeinterface)
 
-*Defined in [Library/Router/Route.ts:4](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Router/Route.ts#L4)*
+*Defined in [Library/Router/Route.ts:6](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Router/Route.ts#L6)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
-| method | `string` |
+| method | [RequestMethods](../enums/requestmethods) |
 | route | `string` |
-| controller |  `string` &#124; `object`|
+| controller |  `string` &#124; [AbstractActionController](abstractactioncontroller)|
 | action | `string` |
 
-**Returns:** `__type`
+**Returns:** [RouteInterface](../interfaces/routeinterface)
 
 ___
 <a id="patch"></a>
 
 ### `Static` patch
 
-**patch**(route: *`string`*, controller: * `string` &#124; `object`*, action: *`string`*): `__type`
+**patch**(route: *`string`*, controller: * `string` &#124; [AbstractActionController](abstractactioncontroller)*, action: *`string`*): [RouteInterface](../interfaces/routeinterface)
 
-*Defined in [Library/Router/Route.ts:20](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Router/Route.ts#L20)*
+*Defined in [Library/Router/Route.ts:22](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Router/Route.ts#L22)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
 | route | `string` |
-| controller |  `string` &#124; `object`|
+| controller |  `string` &#124; [AbstractActionController](abstractactioncontroller)|
 | action | `string` |
 
-**Returns:** `__type`
+**Returns:** [RouteInterface](../interfaces/routeinterface)
 
 ___
 <a id="post"></a>
 
 ### `Static` post
 
-**post**(route: *`string`*, controller: * `string` &#124; `object`*, action: *`string`*): `__type`
+**post**(route: *`string`*, controller: * `string` &#124; [AbstractActionController](abstractactioncontroller)*, action: *`string`*): [RouteInterface](../interfaces/routeinterface)
 
-*Defined in [Library/Router/Route.ts:12](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Router/Route.ts#L12)*
+*Defined in [Library/Router/Route.ts:14](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Router/Route.ts#L14)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
 | route | `string` |
-| controller |  `string` &#124; `object`|
+| controller |  `string` &#124; [AbstractActionController](abstractactioncontroller)|
 | action | `string` |
 
-**Returns:** `__type`
+**Returns:** [RouteInterface](../interfaces/routeinterface)
 
 ___
 <a id="put"></a>
 
 ### `Static` put
 
-**put**(route: *`string`*, controller: * `string` &#124; `object`*, action: *`string`*): `__type`
+**put**(route: *`string`*, controller: * `string` &#124; [AbstractActionController](abstractactioncontroller)*, action: *`string`*): [RouteInterface](../interfaces/routeinterface)
 
-*Defined in [Library/Router/Route.ts:16](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Router/Route.ts#L16)*
+*Defined in [Library/Router/Route.ts:18](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Router/Route.ts#L18)*
 
 **Parameters:**
 
 | Name | Type |
 | ------ | ------ |
 | route | `string` |
-| controller |  `string` &#124; `object`|
+| controller |  `string` &#124; [AbstractActionController](abstractactioncontroller)|
 | action | `string` |
 
-**Returns:** `__type`
+**Returns:** [RouteInterface](../interfaces/routeinterface)
 
 ___
 

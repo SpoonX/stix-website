@@ -36,7 +36,7 @@ title: ResponseService
 
 **new ResponseService**(config: *[ResponseConfigInterface](../interfaces/responseconfiginterface)*): [ResponseService](responseservice)
 
-*Defined in [Library/Response/ResponseService.ts:9](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/ResponseService.ts#L9)*
+*Defined in [Library/Response/ResponseService.ts:9](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/ResponseService.ts#L9)*
 
 **Parameters:**
 
@@ -56,7 +56,7 @@ ___
 
 **config**: *[ResponseConfigInterface](../interfaces/responseconfiginterface)*
 
-*Defined in [Library/Response/ResponseService.ts:9](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/ResponseService.ts#L9)*
+*Defined in [Library/Response/ResponseService.ts:9](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/ResponseService.ts#L9)*
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 **clientError**(): [ClientErrorResponse](clienterrorresponse)
 
-*Defined in [Library/Response/ResponseService.ts:27](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/ResponseService.ts#L27)*
+*Defined in [Library/Response/ResponseService.ts:27](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/ResponseService.ts#L27)*
 
 **Returns:** [ClientErrorResponse](clienterrorresponse)
 
@@ -79,7 +79,7 @@ ___
 
 **informational**(): [InformationalResponse](informationalresponse)
 
-*Defined in [Library/Response/ResponseService.ts:15](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/ResponseService.ts#L15)*
+*Defined in [Library/Response/ResponseService.ts:15](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/ResponseService.ts#L15)*
 
 **Returns:** [InformationalResponse](informationalresponse)
 
@@ -90,7 +90,7 @@ ___
 
 **redirection**(): [RedirectionResponse](redirectionresponse)
 
-*Defined in [Library/Response/ResponseService.ts:19](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/ResponseService.ts#L19)*
+*Defined in [Library/Response/ResponseService.ts:19](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/ResponseService.ts#L19)*
 
 **Returns:** [RedirectionResponse](redirectionresponse)
 
@@ -101,7 +101,7 @@ ___
 
 **serverError**(): [ServerErrorResponse](servererrorresponse)
 
-*Defined in [Library/Response/ResponseService.ts:23](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/ResponseService.ts#L23)*
+*Defined in [Library/Response/ResponseService.ts:23](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/ResponseService.ts#L23)*
 
 **Returns:** [ServerErrorResponse](servererrorresponse)
 
@@ -112,7 +112,7 @@ ___
 
 **successful**(): [SuccessfulResponse](successfulresponse)
 
-*Defined in [Library/Response/ResponseService.ts:31](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/ResponseService.ts#L31)*
+*Defined in [Library/Response/ResponseService.ts:31](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/ResponseService.ts#L31)*
 
 **Returns:** [SuccessfulResponse](successfulresponse)
 

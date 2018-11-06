@@ -8,7 +8,8 @@
       "the-basics/generators",
       "the-basics/config",
       "the-basics/controllers-and-actions",
-      "the-basics/responses"
+      "the-basics/responses",
+      "the-basics/database"
     ],
     "Changelog": [
       "changelog"

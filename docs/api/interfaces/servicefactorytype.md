@@ -15,7 +15,7 @@ title: ServiceFactoryType
 ## Callable
 **__call**(sm?: *[ServiceManagerInterface](servicemanagerinterface)*): `T`
 
-*Defined in [Library/ServiceManager/ServiceManagerConfigInterface.ts:5](https://github.com/SpoonX/stix/blob/88d2215/src/Library/ServiceManager/ServiceManagerConfigInterface.ts#L5)*
+*Defined in [Library/ServiceManager/ServiceManagerConfigInterface.ts:5](https://github.com/SpoonX/stix/blob/55983b2/src/Library/ServiceManager/ServiceManagerConfigInterface.ts#L5)*
 
 **Parameters:**
 
