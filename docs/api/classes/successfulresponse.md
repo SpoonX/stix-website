@@ -69,7 +69,7 @@ title: SuccessfulResponse
 
 *Inherited from [Response](response).[constructor](response#constructor)*
 
-*Defined in [Library/Response/Response.ts:20](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L20)*
+*Defined in [Library/Response/Response.ts:20](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L20)*
 
 **Parameters:**
 
@@ -96,7 +96,7 @@ ___
 
 *Inherited from [Response](response).[ctx](response#ctx)*
 
-*Defined in [Library/Response/Response.ts:8](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L8)*
+*Defined in [Library/Response/Response.ts:8](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L8)*
 
 ___
 <a id="data"></a>
@@ -107,7 +107,7 @@ ___
 
 *Inherited from [Response](response).[data](response#data)*
 
-*Defined in [Library/Response/Response.ts:18](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L18)*
+*Defined in [Library/Response/Response.ts:18](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L18)*
 
 ___
 <a id="headers"></a>
@@ -118,7 +118,7 @@ ___
 
 *Inherited from [Response](response).[headers](response#headers)*
 
-*Defined in [Library/Response/Response.ts:10](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L10)*
+*Defined in [Library/Response/Response.ts:10](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L10)*
 
 #### Type declaration
 
@@ -133,7 +133,7 @@ ___
 
 *Inherited from [Response](response).[message](response#message)*
 
-*Defined in [Library/Response/Response.ts:20](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L20)*
+*Defined in [Library/Response/Response.ts:20](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L20)*
 
 ___
 <a id="meta"></a>
@@ -144,7 +144,7 @@ ___
 
 *Inherited from [Response](response).[meta](response#meta)*
 
-*Defined in [Library/Response/Response.ts:16](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L16)*
+*Defined in [Library/Response/Response.ts:16](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L16)*
 
 ___
 <a id="statuscode"></a>
@@ -155,7 +155,7 @@ ___
 
 *Inherited from [Response](response).[statusCode](response#statuscode)*
 
-*Defined in [Library/Response/Response.ts:14](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L14)*
+*Defined in [Library/Response/Response.ts:14](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L14)*
 
 ___
 <a id="strategy"></a>
@@ -166,7 +166,7 @@ ___
 
 *Inherited from [Response](response).[strategy](response#strategy)*
 
-*Defined in [Library/Response/Response.ts:12](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L12)*
+*Defined in [Library/Response/Response.ts:12](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L12)*
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 *Inherited from [Response](response).[addHeaders](response#addheaders)*
 
-*Defined in [Library/Response/Response.ts:93](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L93)*
+*Defined in [Library/Response/Response.ts:93](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L93)*
 
 **Parameters:**
 
@@ -199,7 +199,7 @@ ___
 
 *Inherited from [Response](response).[appendHeader](response#appendheader)*
 
-*Defined in [Library/Response/Response.ts:105](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L105)*
+*Defined in [Library/Response/Response.ts:105](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L105)*
 
 **Parameters:**
 
@@ -219,7 +219,7 @@ ___
 
 *Inherited from [Response](response).[apply](response#apply)*
 
-*Defined in [Library/Response/Response.ts:142](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L142)*
+*Defined in [Library/Response/Response.ts:142](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L142)*
 
 **Returns:** `void`
 
@@ -232,7 +232,7 @@ ___
 
 *Inherited from [Response](response).[applyBody](response#applybody)*
 
-*Defined in [Library/Response/Response.ts:79](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L79)*
+*Defined in [Library/Response/Response.ts:79](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L79)*
 
 **Parameters:**
 
@@ -251,7 +251,7 @@ ___
 
 *Inherited from [Response](response).[applyHeaders](response#applyheaders)*
 
-*Defined in [Library/Response/Response.ts:115](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L115)*
+*Defined in [Library/Response/Response.ts:115](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L115)*
 
 **Returns:** `this`
 
@@ -264,7 +264,7 @@ ___
 
 *Inherited from [Response](response).[applyStatusCode](response#applystatuscode)*
 
-*Defined in [Library/Response/Response.ts:63](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L63)*
+*Defined in [Library/Response/Response.ts:63](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L63)*
 
 **Parameters:**
 
@@ -283,7 +283,7 @@ ___
 
 *Inherited from [Response](response).[file](response#file)*
 
-*Defined in [Library/Response/Response.ts:121](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L121)*
+*Defined in [Library/Response/Response.ts:121](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L121)*
 
 **Parameters:**
 
@@ -303,7 +303,7 @@ ___
 
 *Overrides [Response](response).[format](response#format)*
 
-*Defined in [Library/Response/SuccessfulResponse.ts:49](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/SuccessfulResponse.ts#L49)*
+*Defined in [Library/Response/SuccessfulResponse.ts:49](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/SuccessfulResponse.ts#L49)*
 
 **Returns:** `any`
 
@@ -316,7 +316,7 @@ ___
 
 *Inherited from [Response](response).[getStatusCode](response#getstatuscode)*
 
-*Defined in [Library/Response/Response.ts:75](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L75)*
+*Defined in [Library/Response/Response.ts:75](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L75)*
 
 **Returns:** [HttpStatusCodes](../enums/httpstatuscodes)
 
@@ -329,7 +329,7 @@ ___
 
 *Inherited from [Response](response).[html](response#html)*
 
-*Defined in [Library/Response/Response.ts:135](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L135)*
+*Defined in [Library/Response/Response.ts:135](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L135)*
 
 **Parameters:**
 
@@ -348,7 +348,7 @@ ___
 
 *Inherited from [Response](response).[json](response#json)*
 
-*Defined in [Library/Response/Response.ts:128](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L128)*
+*Defined in [Library/Response/Response.ts:128](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L128)*
 
 **Parameters:**
 
@@ -367,7 +367,7 @@ ___
 
 *Inherited from [Response](response).[patchContext](response#patchcontext)*
 
-*Defined in [Library/Response/Response.ts:29](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L29)*
+*Defined in [Library/Response/Response.ts:29](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L29)*
 
 **Parameters:**
 
@@ -386,7 +386,7 @@ ___
 
 *Inherited from [Response](response).[removeHeader](response#removeheader)*
 
-*Defined in [Library/Response/Response.ts:109](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L109)*
+*Defined in [Library/Response/Response.ts:109](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L109)*
 
 **Parameters:**
 
@@ -405,7 +405,7 @@ ___
 
 *Inherited from [Response](response).[sendFile](response#sendfile)*
 
-*Defined in [Library/Response/Response.ts:52](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L52)*
+*Defined in [Library/Response/Response.ts:52](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L52)*
 
 **Returns:** `Promise`<`string`>
 
@@ -418,7 +418,7 @@ ___
 
 *Inherited from [Response](response).[setHeader](response#setheader)*
 
-*Defined in [Library/Response/Response.ts:99](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L99)*
+*Defined in [Library/Response/Response.ts:99](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L99)*
 
 **Parameters:**
 
@@ -438,7 +438,7 @@ ___
 
 *Inherited from [Response](response).[setHeaders](response#setheaders)*
 
-*Defined in [Library/Response/Response.ts:87](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L87)*
+*Defined in [Library/Response/Response.ts:87](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L87)*
 
 **Parameters:**
 
@@ -457,7 +457,7 @@ ___
 
 *Inherited from [Response](response).[setStatusCode](response#setstatuscode)*
 
-*Defined in [Library/Response/Response.ts:69](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/Response.ts#L69)*
+*Defined in [Library/Response/Response.ts:69](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L69)*
 
 **Parameters:**
 
@@ -474,7 +474,7 @@ ___
 
 **accepted**(data?: *`any`*, meta?: *`any`*): [SuccessfulResponse](successfulresponse)
 
-*Defined in [Library/Response/SuccessfulResponse.ts:17](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/SuccessfulResponse.ts#L17)*
+*Defined in [Library/Response/SuccessfulResponse.ts:17](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/SuccessfulResponse.ts#L17)*
 
 **Parameters:**
 
@@ -492,7 +492,7 @@ ___
 
 **alreadyReported**(data?: *`any`*, meta?: *`any`*): [SuccessfulResponse](successfulresponse)
 
-*Defined in [Library/Response/SuccessfulResponse.ts:41](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/SuccessfulResponse.ts#L41)*
+*Defined in [Library/Response/SuccessfulResponse.ts:41](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/SuccessfulResponse.ts#L41)*
 
 **Parameters:**
 
@@ -510,7 +510,7 @@ ___
 
 **create**(statusCode: *[HttpStatusCodes](../enums/httpstatuscodes)*, data?: *`any`*, meta?: *`any`*): [SuccessfulResponse](successfulresponse)
 
-*Defined in [Library/Response/SuccessfulResponse.ts:5](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/SuccessfulResponse.ts#L5)*
+*Defined in [Library/Response/SuccessfulResponse.ts:5](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/SuccessfulResponse.ts#L5)*
 
 **Parameters:**
 
@@ -529,7 +529,7 @@ ___
 
 **created**(data?: *`any`*, meta?: *`any`*): [SuccessfulResponse](successfulresponse)
 
-*Defined in [Library/Response/SuccessfulResponse.ts:13](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/SuccessfulResponse.ts#L13)*
+*Defined in [Library/Response/SuccessfulResponse.ts:13](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/SuccessfulResponse.ts#L13)*
 
 **Parameters:**
 
@@ -547,7 +547,7 @@ ___
 
 **imUsed**(data?: *`any`*, meta?: *`any`*): [SuccessfulResponse](successfulresponse)
 
-*Defined in [Library/Response/SuccessfulResponse.ts:45](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/SuccessfulResponse.ts#L45)*
+*Defined in [Library/Response/SuccessfulResponse.ts:45](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/SuccessfulResponse.ts#L45)*
 
 **Parameters:**
 
@@ -565,7 +565,7 @@ ___
 
 **multiStatus**(data?: *`any`*, meta?: *`any`*): [SuccessfulResponse](successfulresponse)
 
-*Defined in [Library/Response/SuccessfulResponse.ts:37](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/SuccessfulResponse.ts#L37)*
+*Defined in [Library/Response/SuccessfulResponse.ts:37](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/SuccessfulResponse.ts#L37)*
 
 **Parameters:**
 
@@ -583,7 +583,7 @@ ___
 
 **noContent**(data?: *`any`*, meta?: *`any`*): [SuccessfulResponse](successfulresponse)
 
-*Defined in [Library/Response/SuccessfulResponse.ts:25](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/SuccessfulResponse.ts#L25)*
+*Defined in [Library/Response/SuccessfulResponse.ts:25](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/SuccessfulResponse.ts#L25)*
 
 **Parameters:**
 
@@ -601,7 +601,7 @@ ___
 
 **nonAuthoritativeInformation**(data?: *`any`*, meta?: *`any`*): [SuccessfulResponse](successfulresponse)
 
-*Defined in [Library/Response/SuccessfulResponse.ts:21](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/SuccessfulResponse.ts#L21)*
+*Defined in [Library/Response/SuccessfulResponse.ts:21](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/SuccessfulResponse.ts#L21)*
 
 **Parameters:**
 
@@ -619,7 +619,7 @@ ___
 
 **ok**(data?: *`any`*, meta?: *`any`*): [SuccessfulResponse](successfulresponse)
 
-*Defined in [Library/Response/SuccessfulResponse.ts:9](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/SuccessfulResponse.ts#L9)*
+*Defined in [Library/Response/SuccessfulResponse.ts:9](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/SuccessfulResponse.ts#L9)*
 
 **Parameters:**
 
@@ -637,7 +637,7 @@ ___
 
 **partialContent**(data?: *`any`*, meta?: *`any`*): [SuccessfulResponse](successfulresponse)
 
-*Defined in [Library/Response/SuccessfulResponse.ts:33](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/SuccessfulResponse.ts#L33)*
+*Defined in [Library/Response/SuccessfulResponse.ts:33](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/SuccessfulResponse.ts#L33)*
 
 **Parameters:**
 
@@ -655,7 +655,7 @@ ___
 
 **resetContent**(data?: *`any`*, meta?: *`any`*): [SuccessfulResponse](successfulresponse)
 
-*Defined in [Library/Response/SuccessfulResponse.ts:29](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Response/SuccessfulResponse.ts#L29)*
+*Defined in [Library/Response/SuccessfulResponse.ts:29](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/SuccessfulResponse.ts#L29)*
 
 **Parameters:**
 

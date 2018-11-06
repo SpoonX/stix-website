@@ -20,7 +20,7 @@ title: ApplicationEvents
 
 **Ready**:  = "Application.Ready"
 
-*Defined in [Library/Application/ApplicationEvents.ts:2](https://github.com/SpoonX/stix/blob/88d2215/src/Library/Application/ApplicationEvents.ts#L2)*
+*Defined in [Library/Application/ApplicationEvents.ts:2](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Application/ApplicationEvents.ts#L2)*
 
 ___
 

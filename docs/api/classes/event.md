@@ -38,7 +38,7 @@ title: Event
 
 **new Event**(event: *`string`*, target: *`any`*, payload: *`any`*): [Event](event)
 
-*Defined in [Library/EventManager/Event.ts:1](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/Event.ts#L1)*
+*Defined in [Library/EventManager/Event.ts:1](https://github.com/SpoonX/stix/blob/55983b2/src/Library/EventManager/Event.ts#L1)*
 
 **Parameters:**
 
@@ -60,7 +60,7 @@ ___
 
 **event**: *`string`*
 
-*Defined in [Library/EventManager/Event.ts:2](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/Event.ts#L2)*
+*Defined in [Library/EventManager/Event.ts:2](https://github.com/SpoonX/stix/blob/55983b2/src/Library/EventManager/Event.ts#L2)*
 
 ___
 <a id="payload"></a>
@@ -69,7 +69,7 @@ ___
 
 **payload**: *`any`*
 
-*Defined in [Library/EventManager/Event.ts:2](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/Event.ts#L2)*
+*Defined in [Library/EventManager/Event.ts:2](https://github.com/SpoonX/stix/blob/55983b2/src/Library/EventManager/Event.ts#L2)*
 
 ___
 <a id="target"></a>
@@ -78,7 +78,7 @@ ___
 
 **target**: *`any`*
 
-*Defined in [Library/EventManager/Event.ts:2](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/Event.ts#L2)*
+*Defined in [Library/EventManager/Event.ts:2](https://github.com/SpoonX/stix/blob/55983b2/src/Library/EventManager/Event.ts#L2)*
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 **getEvent**(): `string`
 
-*Defined in [Library/EventManager/Event.ts:4](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/Event.ts#L4)*
+*Defined in [Library/EventManager/Event.ts:4](https://github.com/SpoonX/stix/blob/55983b2/src/Library/EventManager/Event.ts#L4)*
 
 **Returns:** `string`
 
@@ -101,7 +101,7 @@ ___
 
 **getPayload**(): `any`
 
-*Defined in [Library/EventManager/Event.ts:12](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/Event.ts#L12)*
+*Defined in [Library/EventManager/Event.ts:12](https://github.com/SpoonX/stix/blob/55983b2/src/Library/EventManager/Event.ts#L12)*
 
 **Returns:** `any`
 
@@ -112,7 +112,7 @@ ___
 
 **getTarget**(): `T`
 
-*Defined in [Library/EventManager/Event.ts:8](https://github.com/SpoonX/stix/blob/88d2215/src/Library/EventManager/Event.ts#L8)*
+*Defined in [Library/EventManager/Event.ts:8](https://github.com/SpoonX/stix/blob/55983b2/src/Library/EventManager/Event.ts#L8)*
 
 **Returns:** `T`
 
