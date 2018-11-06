@@ -60,6 +60,6 @@ The methods exposed are:
 - internalServerErrorResponse
 - permanentRedirectResponse
 
-You can find the methods and their arguments [in the api docs](../api/classes/abstractactioncontroller.md).
+You can find the methods and their arguments [in the api docs](../api/classes/abstractactioncontroller).
 
 These methods simply make it easier to return a response.
