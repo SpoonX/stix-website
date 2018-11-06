@@ -24,7 +24,7 @@ title: MiddlewareInterface
 
 **pass**(ctx?: *[ContextInterface](contextinterface)*, next?: *`Function`*): `any`
 
-*Defined in [Library/Middleware/MiddlewareInterface.ts:4](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Middleware/MiddlewareInterface.ts#L4)*
+*Defined in [Library/Middleware/MiddlewareInterface.ts:4](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Middleware/MiddlewareInterface.ts#L4)*
 
 **Parameters:**
 

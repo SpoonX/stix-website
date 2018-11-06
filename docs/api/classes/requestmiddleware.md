@@ -29,7 +29,7 @@ title: RequestMiddleware
 
 *Inherited from [AbstractMiddleware](abstractmiddleware).[asCallback](abstractmiddleware#ascallback)*
 
-*Defined in [Library/Middleware/AbstractMiddleware.ts:7](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Middleware/AbstractMiddleware.ts#L7)*
+*Defined in [Library/Middleware/AbstractMiddleware.ts:7](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Middleware/AbstractMiddleware.ts#L7)*
 
 **Returns:** [RegisteredMiddlewareType]()
 
@@ -42,7 +42,7 @@ ___
 
 *Overrides [AbstractMiddleware](abstractmiddleware).[pass](abstractmiddleware#pass)*
 
-*Defined in [Library/Middleware/RequestMiddleware.ts:11](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Middleware/RequestMiddleware.ts#L11)*
+*Defined in [Library/Middleware/RequestMiddleware.ts:11](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Middleware/RequestMiddleware.ts#L11)*
 
 **Parameters:**
 

@@ -25,7 +25,7 @@ title: Cli
 
 **command**(commandLine: *`string`*, Command: *[AbstractCommand](abstractcommand)*, action: *`string`*, config?: *[CliCommandConfigType]()*): [CliCommandType]()
 
-*Defined in [Library/Cli/Cli.ts:27](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Cli/Cli.ts#L27)*
+*Defined in [Library/Cli/Cli.ts:27](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Cli/Cli.ts#L27)*
 
 Convenience method to help format a command.
 
@@ -57,7 +57,7 @@ ___
 
 **program**(program: *`string`*, config?: *[CliProgramConfigType]()*): [CliProgramType]()
 
-*Defined in [Library/Cli/Cli.ts:31](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Cli/Cli.ts#L31)*
+*Defined in [Library/Cli/Cli.ts:31](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Cli/Cli.ts#L31)*
 
 **Parameters:**
 

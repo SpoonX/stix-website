@@ -64,7 +64,7 @@ title: Response
 
 **new Response**(__namedParameters: *`object`*): [Response](response)
 
-*Defined in [Library/Response/Response.ts:20](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L20)*
+*Defined in [Library/Response/Response.ts:20](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L20)*
 
 **Parameters:**
 
@@ -89,7 +89,7 @@ ___
 
 **ctx**: *[ContextInterface](../interfaces/contextinterface)*
 
-*Defined in [Library/Response/Response.ts:8](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L8)*
+*Defined in [Library/Response/Response.ts:8](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L8)*
 
 ___
 <a id="data"></a>
@@ -98,7 +98,7 @@ ___
 
 **data**: *`any`*
 
-*Defined in [Library/Response/Response.ts:18](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L18)*
+*Defined in [Library/Response/Response.ts:18](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L18)*
 
 ___
 <a id="headers"></a>
@@ -107,7 +107,7 @@ ___
 
 **headers**: *`object`*
 
-*Defined in [Library/Response/Response.ts:10](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L10)*
+*Defined in [Library/Response/Response.ts:10](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L10)*
 
 #### Type declaration
 
@@ -120,7 +120,7 @@ ___
 
 **message**: *`string`*
 
-*Defined in [Library/Response/Response.ts:20](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L20)*
+*Defined in [Library/Response/Response.ts:20](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L20)*
 
 ___
 <a id="meta"></a>
@@ -129,7 +129,7 @@ ___
 
 **meta**: *`any`*
 
-*Defined in [Library/Response/Response.ts:16](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L16)*
+*Defined in [Library/Response/Response.ts:16](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L16)*
 
 ___
 <a id="statuscode"></a>
@@ -138,7 +138,7 @@ ___
 
 **statusCode**: *[HttpStatusCodes](../enums/httpstatuscodes)*
 
-*Defined in [Library/Response/Response.ts:14](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L14)*
+*Defined in [Library/Response/Response.ts:14](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L14)*
 
 ___
 <a id="strategy"></a>
@@ -147,7 +147,7 @@ ___
 
 **strategy**: *`string`* =  ResponseStrategies.Json
 
-*Defined in [Library/Response/Response.ts:12](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L12)*
+*Defined in [Library/Response/Response.ts:12](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L12)*
 
 ___
 
@@ -159,7 +159,7 @@ ___
 
 **addHeaders**(headers: *`object`*): `this`
 
-*Defined in [Library/Response/Response.ts:93](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L93)*
+*Defined in [Library/Response/Response.ts:93](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L93)*
 
 **Parameters:**
 
@@ -176,7 +176,7 @@ ___
 
 **appendHeader**(header: *`string`*, value: * `string` &#124; `Array`<`string`>*): `void`
 
-*Defined in [Library/Response/Response.ts:105](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L105)*
+*Defined in [Library/Response/Response.ts:105](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L105)*
 
 **Parameters:**
 
@@ -194,7 +194,7 @@ ___
 
 **apply**(): `void`
 
-*Defined in [Library/Response/Response.ts:142](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L142)*
+*Defined in [Library/Response/Response.ts:142](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L142)*
 
 **Returns:** `void`
 
@@ -205,7 +205,7 @@ ___
 
 **applyBody**(body: *`any`*): `this`
 
-*Defined in [Library/Response/Response.ts:79](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L79)*
+*Defined in [Library/Response/Response.ts:79](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L79)*
 
 **Parameters:**
 
@@ -222,7 +222,7 @@ ___
 
 **applyHeaders**(): `this`
 
-*Defined in [Library/Response/Response.ts:115](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L115)*
+*Defined in [Library/Response/Response.ts:115](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L115)*
 
 **Returns:** `this`
 
@@ -233,7 +233,7 @@ ___
 
 **applyStatusCode**(statusCode: *[HttpStatusCodes](../enums/httpstatuscodes)*): `this`
 
-*Defined in [Library/Response/Response.ts:63](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L63)*
+*Defined in [Library/Response/Response.ts:63](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L63)*
 
 **Parameters:**
 
@@ -250,7 +250,7 @@ ___
 
 **file**(location: *`string`*, options?: *`SendOptions`*): `this`
 
-*Defined in [Library/Response/Response.ts:121](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L121)*
+*Defined in [Library/Response/Response.ts:121](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L121)*
 
 **Parameters:**
 
@@ -268,7 +268,7 @@ ___
 
 **format**(): `any`
 
-*Defined in [Library/Response/Response.ts:146](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L146)*
+*Defined in [Library/Response/Response.ts:146](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L146)*
 
 **Returns:** `any`
 
@@ -279,7 +279,7 @@ ___
 
 **getStatusCode**(): [HttpStatusCodes](../enums/httpstatuscodes)
 
-*Defined in [Library/Response/Response.ts:75](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L75)*
+*Defined in [Library/Response/Response.ts:75](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L75)*
 
 **Returns:** [HttpStatusCodes](../enums/httpstatuscodes)
 
@@ -290,7 +290,7 @@ ___
 
 **html**(data: *`any`*): `this`
 
-*Defined in [Library/Response/Response.ts:135](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L135)*
+*Defined in [Library/Response/Response.ts:135](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L135)*
 
 **Parameters:**
 
@@ -307,7 +307,7 @@ ___
 
 **json**(data: *`any`*): `this`
 
-*Defined in [Library/Response/Response.ts:128](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L128)*
+*Defined in [Library/Response/Response.ts:128](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L128)*
 
 **Parameters:**
 
@@ -324,7 +324,7 @@ ___
 
 **patchContext**(ctx: *[ContextInterface](../interfaces/contextinterface)*): `Promise`<`void`>
 
-*Defined in [Library/Response/Response.ts:29](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L29)*
+*Defined in [Library/Response/Response.ts:29](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L29)*
 
 **Parameters:**
 
@@ -341,7 +341,7 @@ ___
 
 **removeHeader**(header: *`string`*): `this`
 
-*Defined in [Library/Response/Response.ts:109](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L109)*
+*Defined in [Library/Response/Response.ts:109](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L109)*
 
 **Parameters:**
 
@@ -358,7 +358,7 @@ ___
 
 **sendFile**(): `Promise`<`string`>
 
-*Defined in [Library/Response/Response.ts:52](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L52)*
+*Defined in [Library/Response/Response.ts:52](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L52)*
 
 **Returns:** `Promise`<`string`>
 
@@ -369,7 +369,7 @@ ___
 
 **setHeader**(header: *`string`*, value: * `string` &#124; `Array`<`string`>*): `this`
 
-*Defined in [Library/Response/Response.ts:99](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L99)*
+*Defined in [Library/Response/Response.ts:99](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L99)*
 
 **Parameters:**
 
@@ -387,7 +387,7 @@ ___
 
 **setHeaders**(headers: *`object`*): `this`
 
-*Defined in [Library/Response/Response.ts:87](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L87)*
+*Defined in [Library/Response/Response.ts:87](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L87)*
 
 **Parameters:**
 
@@ -404,7 +404,7 @@ ___
 
 **setStatusCode**(statusCode: *[HttpStatusCodes](../enums/httpstatuscodes)*): `this`
 
-*Defined in [Library/Response/Response.ts:69](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L69)*
+*Defined in [Library/Response/Response.ts:69](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L69)*
 
 **Parameters:**
 

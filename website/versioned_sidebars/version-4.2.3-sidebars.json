@@ -1,0 +1,104 @@
+{
+  "version-4.2.3-Introduction": {
+    "The basics": [
+      "version-4.2.3-the-basics/about-stix",
+      "version-4.2.3-the-basics/quick-start",
+      "version-4.2.3-the-basics/learn-the-basics",
+      "version-4.2.3-the-basics/modules",
+      "version-4.2.3-the-basics/generators",
+      "version-4.2.3-the-basics/config",
+      "version-4.2.3-the-basics/controllers-and-actions",
+      "version-4.2.3-the-basics/responses",
+      "version-4.2.3-the-basics/database",
+      "version-4.2.3-the-basics/gates"
+    ],
+    "Changelog": [
+      "version-4.2.3-changelog"
+    ]
+  },
+  "version-4.2.3-Modules": {
+    "stix-gates": [
+      "version-4.2.3-modules/stix-gates/gates-about",
+      "version-4.2.3-modules/stix-gates/gates-setup",
+      "version-4.2.3-modules/stix-gates/gates-usage",
+      "version-4.2.3-modules/stix-gates/gates-helpers"
+    ],
+    "stix-wetland": [
+      "version-4.2.3-modules/stix-wetland/wetland-about",
+      "version-4.2.3-modules/stix-wetland/wetland-setup",
+      "version-4.2.3-modules/stix-wetland/wetland-decorators",
+      "version-4.2.3-modules/stix-wetland/wetland-db-route"
+    ]
+  },
+  "version-4.2.3-API": {
+    "API": [
+      "version-4.2.3-api"
+    ],
+    "Classes": [
+      "version-4.2.3-api/classes/abstractactioncontroller",
+      "version-4.2.3-api/classes/abstractcommand",
+      "version-4.2.3-api/classes/abstractfilebasedpluginmanager",
+      "version-4.2.3-api/classes/abstractmiddleware",
+      "version-4.2.3-api/classes/abstractpluginmanager",
+      "version-4.2.3-api/classes/abstractresponsehelper",
+      "version-4.2.3-api/classes/application",
+      "version-4.2.3-api/classes/cli",
+      "version-4.2.3-api/classes/clienterrorresponse",
+      "version-4.2.3-api/classes/cliservice",
+      "version-4.2.3-api/classes/commandmanager",
+      "version-4.2.3-api/classes/config",
+      "version-4.2.3-api/classes/controllermanager",
+      "version-4.2.3-api/classes/dispatchmiddleware",
+      "version-4.2.3-api/classes/event",
+      "version-4.2.3-api/classes/eventmanager",
+      "version-4.2.3-api/classes/helpcommand",
+      "version-4.2.3-api/classes/informationalresponse",
+      "version-4.2.3-api/classes/invalidactionresulterror",
+      "version-4.2.3-api/classes/invalidargumenterror",
+      "version-4.2.3-api/classes/loggerservice",
+      "version-4.2.3-api/classes/modulemanager",
+      "version-4.2.3-api/classes/notfounderror",
+      "version-4.2.3-api/classes/output",
+      "version-4.2.3-api/classes/redirectionresponse",
+      "version-4.2.3-api/classes/requestmiddleware",
+      "version-4.2.3-api/classes/response",
+      "version-4.2.3-api/classes/responseservice",
+      "version-4.2.3-api/classes/route",
+      "version-4.2.3-api/classes/routermiddleware",
+      "version-4.2.3-api/classes/routerservice",
+      "version-4.2.3-api/classes/servererrorresponse",
+      "version-4.2.3-api/classes/serverservice",
+      "version-4.2.3-api/classes/servicemanager",
+      "version-4.2.3-api/classes/sharedeventmanager",
+      "version-4.2.3-api/classes/successfulresponse"
+    ],
+    "Enums": [
+      "version-4.2.3-api/enums/applicationevents",
+      "version-4.2.3-api/enums/applicationmodes",
+      "version-4.2.3-api/enums/httpstatuscodes",
+      "version-4.2.3-api/enums/modulemanagerevents",
+      "version-4.2.3-api/enums/requestmethods",
+      "version-4.2.3-api/enums/responsestrategies",
+      "version-4.2.3-api/enums/responsetypes"
+    ],
+    "Interfaces": [
+      "version-4.2.3-api/interfaces/configdata",
+      "version-4.2.3-api/interfaces/contextinterface",
+      "version-4.2.3-api/interfaces/factoryinterface",
+      "version-4.2.3-api/interfaces/loggerconfiginterface",
+      "version-4.2.3-api/interfaces/middlewareinterface",
+      "version-4.2.3-api/interfaces/moduleclassinterface",
+      "version-4.2.3-api/interfaces/moduleinterface",
+      "version-4.2.3-api/interfaces/modulemanagerconfiginterface",
+      "version-4.2.3-api/interfaces/registeredrouteinterface",
+      "version-4.2.3-api/interfaces/responseargumentsinterface",
+      "version-4.2.3-api/interfaces/responseconfiginterface",
+      "version-4.2.3-api/interfaces/routeinterface",
+      "version-4.2.3-api/interfaces/routerconfiginterface",
+      "version-4.2.3-api/interfaces/selfdestructingcallbackinterface",
+      "version-4.2.3-api/interfaces/serverconfiginterface",
+      "version-4.2.3-api/interfaces/servicefactorytype",
+      "version-4.2.3-api/interfaces/servicemanagerinterface"
+    ]
+  }
+}

@@ -41,7 +41,7 @@ title: Output
 
 **data**: *`any`[]* =  []
 
-*Defined in [Library/Output/Output.ts:9](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Output/Output.ts#L9)*
+*Defined in [Library/Output/Output.ts:9](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Output/Output.ts#L9)*
 
 ___
 <a id="exitcode"></a>
@@ -50,7 +50,7 @@ ___
 
 **exitCode**: *`number`* = 0
 
-*Defined in [Library/Output/Output.ts:7](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Output/Output.ts#L7)*
+*Defined in [Library/Output/Output.ts:7](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Output/Output.ts#L7)*
 
 ___
 <a id="prettyerror"></a>
@@ -59,7 +59,7 @@ ___
 
 **prettyError**: *`PrettyError`* =  new PrettyError()
 
-*Defined in [Library/Output/Output.ts:11](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Output/Output.ts#L11)*
+*Defined in [Library/Output/Output.ts:11](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Output/Output.ts#L11)*
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 **addCrossTable**(head: *`string`[]*, data: *`object`[]*, options?: *`any`*): `this`
 
-*Defined in [Library/Output/Output.ts:99](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Output/Output.ts#L99)*
+*Defined in [Library/Output/Output.ts:99](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Output/Output.ts#L99)*
 
 **Parameters:**
 
@@ -90,7 +90,7 @@ ___
 
 **addData**(...data: *`any`[]*): `this`
 
-*Defined in [Library/Output/Output.ts:53](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Output/Output.ts#L53)*
+*Defined in [Library/Output/Output.ts:53](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Output/Output.ts#L53)*
 
 **Parameters:**
 
@@ -107,7 +107,7 @@ ___
 
 **addHorizontalTable**(head: *`string`[]*, data: *`Array`<`string`>[]*, options?: *`any`*): `this`
 
-*Defined in [Library/Output/Output.ts:79](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Output/Output.ts#L79)*
+*Defined in [Library/Output/Output.ts:79](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Output/Output.ts#L79)*
 
 **Parameters:**
 
@@ -126,7 +126,7 @@ ___
 
 **addVerticalTable**(data: *`object`[]*, options?: *`any`*): `this`
 
-*Defined in [Library/Output/Output.ts:89](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Output/Output.ts#L89)*
+*Defined in [Library/Output/Output.ts:89](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Output/Output.ts#L89)*
 
 **Parameters:**
 
@@ -144,7 +144,7 @@ ___
 
 **error**(error?: * `Error` &#124; `string`*, exitCode?: *`number`*, clear?: *`boolean`*): `this`
 
-*Defined in [Library/Output/Output.ts:118](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Output/Output.ts#L118)*
+*Defined in [Library/Output/Output.ts:118](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Output/Output.ts#L118)*
 
 Add/set an error to output.
 
@@ -165,7 +165,7 @@ ___
 
 **flush**(): `void`
 
-*Defined in [Library/Output/Output.ts:139](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Output/Output.ts#L139)*
+*Defined in [Library/Output/Output.ts:139](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Output/Output.ts#L139)*
 
 Write the output to the console.
 
@@ -178,7 +178,7 @@ ___
 
 **resetData**(): `this`
 
-*Defined in [Library/Output/Output.ts:73](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Output/Output.ts#L73)*
+*Defined in [Library/Output/Output.ts:73](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Output/Output.ts#L73)*
 
 **Returns:** `this`
 
@@ -189,7 +189,7 @@ ___
 
 **send**(): `void`
 
-*Defined in [Library/Output/Output.ts:143](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Output/Output.ts#L143)*
+*Defined in [Library/Output/Output.ts:143](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Output/Output.ts#L143)*
 
 **Returns:** `void`
 
@@ -200,7 +200,7 @@ ___
 
 **setExitCode**(exitCode: *`number`*): `this`
 
-*Defined in [Library/Output/Output.ts:47](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Output/Output.ts#L47)*
+*Defined in [Library/Output/Output.ts:47](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Output/Output.ts#L47)*
 
 Exit code to use upon send.
 
@@ -224,7 +224,7 @@ ___
 
 **success**(message: *`string`*, data?: *`any`*): `void`
 
-*Defined in [Library/Output/Output.ts:69](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Output/Output.ts#L69)*
+*Defined in [Library/Output/Output.ts:69](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Output/Output.ts#L69)*
 
 **Parameters:**
 
@@ -242,7 +242,7 @@ ___
 
 **create**(): [Output](output)
 
-*Defined in [Library/Output/Output.ts:13](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Output/Output.ts#L13)*
+*Defined in [Library/Output/Output.ts:13](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Output/Output.ts#L13)*
 
 **Returns:** [Output](output)
 
@@ -253,7 +253,7 @@ ___
 
 **errorOutput**(error?: * `string` &#124; `Error`*, exitCode?: *`number`*): [Output](output)
 
-*Defined in [Library/Output/Output.ts:17](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Output/Output.ts#L17)*
+*Defined in [Library/Output/Output.ts:17](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Output/Output.ts#L17)*
 
 **Parameters:**
 

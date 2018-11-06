@@ -58,7 +58,7 @@ title: AbstractFileBasedPluginManager
 
 *Overrides [AbstractPluginManager](abstractpluginmanager).[constructor](abstractpluginmanager#constructor)*
 
-*Defined in [Library/ServiceManager/AbstractFileBasedPluginManager.ts:10](https://github.com/SpoonX/stix/blob/55983b2/src/Library/ServiceManager/AbstractFileBasedPluginManager.ts#L10)*
+*Defined in [Library/ServiceManager/AbstractFileBasedPluginManager.ts:10](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/ServiceManager/AbstractFileBasedPluginManager.ts#L10)*
 
 **Parameters:**
 
@@ -84,7 +84,7 @@ ___
 
 *Overrides [ServiceManager](servicemanager).[creationContext](servicemanager#creationcontext)*
 
-*Defined in [Library/ServiceManager/AbstractPluginManager.ts:5](https://github.com/SpoonX/stix/blob/55983b2/src/Library/ServiceManager/AbstractPluginManager.ts#L5)*
+*Defined in [Library/ServiceManager/AbstractPluginManager.ts:5](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/ServiceManager/AbstractPluginManager.ts#L5)*
 
 ___
 
@@ -98,7 +98,7 @@ ___
 
 *Inherited from [ServiceManager](servicemanager).[configure](servicemanager#configure)*
 
-*Defined in [Library/ServiceManager/ServiceManager.ts:85](https://github.com/SpoonX/stix/blob/55983b2/src/Library/ServiceManager/ServiceManager.ts#L85)*
+*Defined in [Library/ServiceManager/ServiceManager.ts:85](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/ServiceManager/ServiceManager.ts#L85)*
 
 **Parameters:**
 
@@ -117,7 +117,7 @@ ___
 
 *Inherited from [ServiceManager](servicemanager).[get](servicemanager#get)*
 
-*Defined in [Library/ServiceManager/ServiceManager.ts:34](https://github.com/SpoonX/stix/blob/55983b2/src/Library/ServiceManager/ServiceManager.ts#L34)*
+*Defined in [Library/ServiceManager/ServiceManager.ts:34](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/ServiceManager/ServiceManager.ts#L34)*
 
 **Type parameters:**
 
@@ -138,7 +138,7 @@ ___
 
 **getPlugin**(plugin: *[Instantiable]()<`Object`>*): `Object`
 
-*Defined in [Library/ServiceManager/AbstractFileBasedPluginManager.ts:78](https://github.com/SpoonX/stix/blob/55983b2/src/Library/ServiceManager/AbstractFileBasedPluginManager.ts#L78)*
+*Defined in [Library/ServiceManager/AbstractFileBasedPluginManager.ts:78](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/ServiceManager/AbstractFileBasedPluginManager.ts#L78)*
 
 **Parameters:**
 
@@ -157,7 +157,7 @@ ___
 
 *Inherited from [ServiceManager](servicemanager).[has](servicemanager#has)*
 
-*Defined in [Library/ServiceManager/ServiceManager.ts:59](https://github.com/SpoonX/stix/blob/55983b2/src/Library/ServiceManager/ServiceManager.ts#L59)*
+*Defined in [Library/ServiceManager/ServiceManager.ts:59](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/ServiceManager/ServiceManager.ts#L59)*
 
 **Type parameters:**
 
@@ -177,7 +177,7 @@ ___
 
 **loadDirectory**(pluginDirectory: *`string`*): `void`
 
-*Defined in [Library/ServiceManager/AbstractFileBasedPluginManager.ts:35](https://github.com/SpoonX/stix/blob/55983b2/src/Library/ServiceManager/AbstractFileBasedPluginManager.ts#L35)*
+*Defined in [Library/ServiceManager/AbstractFileBasedPluginManager.ts:35](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/ServiceManager/AbstractFileBasedPluginManager.ts#L35)*
 
 **Parameters:**
 
@@ -194,7 +194,7 @@ ___
 
 **loadFromLocations**(pluginDirectories?: *`string`[]*): `this`
 
-*Defined in [Library/ServiceManager/AbstractFileBasedPluginManager.ts:27](https://github.com/SpoonX/stix/blob/55983b2/src/Library/ServiceManager/AbstractFileBasedPluginManager.ts#L27)*
+*Defined in [Library/ServiceManager/AbstractFileBasedPluginManager.ts:27](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/ServiceManager/AbstractFileBasedPluginManager.ts#L27)*
 
 **Parameters:**
 
@@ -213,7 +213,7 @@ ___
 
 *Inherited from [ServiceManager](servicemanager).[registerAlias](servicemanager#registeralias)*
 
-*Defined in [Library/ServiceManager/ServiceManager.ts:125](https://github.com/SpoonX/stix/blob/55983b2/src/Library/ServiceManager/ServiceManager.ts#L125)*
+*Defined in [Library/ServiceManager/ServiceManager.ts:125](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/ServiceManager/ServiceManager.ts#L125)*
 
 **Parameters:**
 
@@ -233,7 +233,7 @@ ___
 
 *Inherited from [ServiceManager](servicemanager).[registerAliases](servicemanager#registeraliases)*
 
-*Defined in [Library/ServiceManager/ServiceManager.ts:119](https://github.com/SpoonX/stix/blob/55983b2/src/Library/ServiceManager/ServiceManager.ts#L119)*
+*Defined in [Library/ServiceManager/ServiceManager.ts:119](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/ServiceManager/ServiceManager.ts#L119)*
 
 **Parameters:**
 
@@ -252,7 +252,7 @@ ___
 
 *Inherited from [ServiceManager](servicemanager).[registerFactories](servicemanager#registerfactories)*
 
-*Defined in [Library/ServiceManager/ServiceManager.ts:71](https://github.com/SpoonX/stix/blob/55983b2/src/Library/ServiceManager/ServiceManager.ts#L71)*
+*Defined in [Library/ServiceManager/ServiceManager.ts:71](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/ServiceManager/ServiceManager.ts#L71)*
 
 **Parameters:**
 
@@ -271,7 +271,7 @@ ___
 
 *Inherited from [ServiceManager](servicemanager).[registerFactory](servicemanager#registerfactory)*
 
-*Defined in [Library/ServiceManager/ServiceManager.ts:65](https://github.com/SpoonX/stix/blob/55983b2/src/Library/ServiceManager/ServiceManager.ts#L65)*
+*Defined in [Library/ServiceManager/ServiceManager.ts:65](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/ServiceManager/ServiceManager.ts#L65)*
 
 **Parameters:**
 
@@ -291,7 +291,7 @@ ___
 
 *Inherited from [ServiceManager](servicemanager).[registerInvokable](servicemanager#registerinvokable)*
 
-*Defined in [Library/ServiceManager/ServiceManager.ts:115](https://github.com/SpoonX/stix/blob/55983b2/src/Library/ServiceManager/ServiceManager.ts#L115)*
+*Defined in [Library/ServiceManager/ServiceManager.ts:115](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/ServiceManager/ServiceManager.ts#L115)*
 
 **Parameters:**
 
@@ -309,7 +309,7 @@ ___
 
 **registerPlugin**(Plugin: *[Instantiable]()<`Object`>*): `this`
 
-*Defined in [Library/ServiceManager/AbstractFileBasedPluginManager.ts:88](https://github.com/SpoonX/stix/blob/55983b2/src/Library/ServiceManager/AbstractFileBasedPluginManager.ts#L88)*
+*Defined in [Library/ServiceManager/AbstractFileBasedPluginManager.ts:88](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/ServiceManager/AbstractFileBasedPluginManager.ts#L88)*
 
 **Parameters:**
 
@@ -326,7 +326,7 @@ ___
 
 **registerPlugins**(plugins: *`Array`<[Instantiable]()<`Object`>>*): `this`
 
-*Defined in [Library/ServiceManager/AbstractFileBasedPluginManager.ts:82](https://github.com/SpoonX/stix/blob/55983b2/src/Library/ServiceManager/AbstractFileBasedPluginManager.ts#L82)*
+*Defined in [Library/ServiceManager/AbstractFileBasedPluginManager.ts:82](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/ServiceManager/AbstractFileBasedPluginManager.ts#L82)*
 
 **Parameters:**
 
@@ -345,7 +345,7 @@ ___
 
 *Inherited from [ServiceManager](servicemanager).[registerService](servicemanager#registerservice)*
 
-*Defined in [Library/ServiceManager/ServiceManager.ts:79](https://github.com/SpoonX/stix/blob/55983b2/src/Library/ServiceManager/ServiceManager.ts#L79)*
+*Defined in [Library/ServiceManager/ServiceManager.ts:79](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/ServiceManager/ServiceManager.ts#L79)*
 
 **Parameters:**
 
@@ -363,7 +363,7 @@ ___
 
 **getPluginName**(plugin: *[FileBasedPluginType]()*): `string`
 
-*Defined in [Library/ServiceManager/AbstractFileBasedPluginManager.ts:19](https://github.com/SpoonX/stix/blob/55983b2/src/Library/ServiceManager/AbstractFileBasedPluginManager.ts#L19)*
+*Defined in [Library/ServiceManager/AbstractFileBasedPluginManager.ts:19](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/ServiceManager/AbstractFileBasedPluginManager.ts#L19)*
 
 **Parameters:**
 

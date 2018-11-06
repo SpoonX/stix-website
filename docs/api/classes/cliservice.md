@@ -46,7 +46,7 @@ title: CliService
 
 **new CliService**(commandManager: *[CommandManager](commandmanager)*, config?: *[CliConfigType]()*): [CliService](cliservice)
 
-*Defined in [Library/Cli/CliService.ts:23](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Cli/CliService.ts#L23)*
+*Defined in [Library/Cli/CliService.ts:23](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Cli/CliService.ts#L23)*
 
 **Parameters:**
 
@@ -67,7 +67,7 @@ ___
 
 **commandManager**: *[CommandManager](commandmanager)*
 
-*Defined in [Library/Cli/CliService.ts:23](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Cli/CliService.ts#L23)*
+*Defined in [Library/Cli/CliService.ts:23](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Cli/CliService.ts#L23)*
 
 ___
 <a id="commands"></a>
@@ -76,7 +76,7 @@ ___
 
 **commands**: *`object`*
 
-*Defined in [Library/Cli/CliService.ts:21](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Cli/CliService.ts#L21)*
+*Defined in [Library/Cli/CliService.ts:21](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Cli/CliService.ts#L21)*
 
 Lookup index linking to commands in programs.
 
@@ -91,7 +91,7 @@ ___
 
 **config**: *[CliConfigType]()*
 
-*Defined in [Library/Cli/CliService.ts:14](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Cli/CliService.ts#L14)*
+*Defined in [Library/Cli/CliService.ts:14](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Cli/CliService.ts#L14)*
 
 ___
 <a id="programs"></a>
@@ -100,7 +100,7 @@ ___
 
 **programs**: *`object`*
 
-*Defined in [Library/Cli/CliService.ts:16](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Cli/CliService.ts#L16)*
+*Defined in [Library/Cli/CliService.ts:16](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Cli/CliService.ts#L16)*
 
 #### Type declaration
 
@@ -116,7 +116,7 @@ ___
 
 **collectAliases**(__namedParameters: *`object`*): `object`
 
-*Defined in [Library/Cli/CliService.ts:107](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Cli/CliService.ts#L107)*
+*Defined in [Library/Cli/CliService.ts:107](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Cli/CliService.ts#L107)*
 
 **Parameters:**
 
@@ -135,7 +135,7 @@ ___
 
 **execute**(argv: *`string`[]*): `Promise`<`void`>
 
-*Defined in [Library/Cli/CliService.ts:42](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Cli/CliService.ts#L42)*
+*Defined in [Library/Cli/CliService.ts:42](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Cli/CliService.ts#L42)*
 
 **Parameters:**
 
@@ -152,7 +152,7 @@ ___
 
 **getCommand**(command: *`string`*): [CliCommandType]()
 
-*Defined in [Library/Cli/CliService.ts:129](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Cli/CliService.ts#L129)*
+*Defined in [Library/Cli/CliService.ts:129](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Cli/CliService.ts#L129)*
 
 **Parameters:**
 
@@ -169,7 +169,7 @@ ___
 
 **getCommands**(): `object`
 
-*Defined in [Library/Cli/CliService.ts:125](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Cli/CliService.ts#L125)*
+*Defined in [Library/Cli/CliService.ts:125](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Cli/CliService.ts#L125)*
 
 **Returns:** `object`
 
@@ -180,7 +180,7 @@ ___
 
 **getConfig**(): [CliConfigType]()
 
-*Defined in [Library/Cli/CliService.ts:133](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Cli/CliService.ts#L133)*
+*Defined in [Library/Cli/CliService.ts:133](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Cli/CliService.ts#L133)*
 
 **Returns:** [CliConfigType]()
 
@@ -191,7 +191,7 @@ ___
 
 **getPrograms**(): `object`
 
-*Defined in [Library/Cli/CliService.ts:121](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Cli/CliService.ts#L121)*
+*Defined in [Library/Cli/CliService.ts:121](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Cli/CliService.ts#L121)*
 
 **Returns:** `object`
 
@@ -202,7 +202,7 @@ ___
 
 **queParser**(commandLine: *`string`*): [ParsedCommandType]()
 
-*Defined in [Library/Cli/CliService.ts:162](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Cli/CliService.ts#L162)*
+*Defined in [Library/Cli/CliService.ts:162](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Cli/CliService.ts#L162)*
 
 **Parameters:**
 
@@ -219,7 +219,7 @@ ___
 
 **registerProgram**(program: *`string`*, __namedParameters: *`object`*): `void`
 
-*Defined in [Library/Cli/CliService.ts:146](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Cli/CliService.ts#L146)*
+*Defined in [Library/Cli/CliService.ts:146](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Cli/CliService.ts#L146)*
 
 **Parameters:**
 
@@ -241,7 +241,7 @@ ___
 
 **registerPrograms**(programs: *`Array`< [CliProgramType]() &#124; [CliCommandType]()>*): `void`
 
-*Defined in [Library/Cli/CliService.ts:137](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Cli/CliService.ts#L137)*
+*Defined in [Library/Cli/CliService.ts:137](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Cli/CliService.ts#L137)*
 
 **Parameters:**
 
@@ -258,7 +258,7 @@ ___
 
 **resolve**(argv: *`string`[]*): `Promise`<[Output](output)>
 
-*Defined in [Library/Cli/CliService.ts:48](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Cli/CliService.ts#L48)*
+*Defined in [Library/Cli/CliService.ts:48](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Cli/CliService.ts#L48)*
 
 **Parameters:**
 
@@ -275,7 +275,7 @@ ___
 
 **resolveToken**(args: *`object`*): `string`
 
-*Defined in [Library/Cli/CliService.ts:34](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Cli/CliService.ts#L34)*
+*Defined in [Library/Cli/CliService.ts:34](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Cli/CliService.ts#L34)*
 
 **Parameters:**
 
@@ -294,7 +294,7 @@ ___
 
 **validate**(argv: *`string`[]*, command: *[CliCommandType]()*): `object`
 
-*Defined in [Library/Cli/CliService.ts:74](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Cli/CliService.ts#L74)*
+*Defined in [Library/Cli/CliService.ts:74](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Cli/CliService.ts#L74)*
 
 **Parameters:**
 

@@ -243,6 +243,9 @@
       "the-basics/database": {
         "title": "Database"
       },
+      "the-basics/gates": {
+        "title": "Gates"
+      },
       "the-basics/generators": {
         "title": "Generators"
       },

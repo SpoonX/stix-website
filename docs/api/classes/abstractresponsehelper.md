@@ -39,7 +39,7 @@ title: AbstractResponseHelper
 
 **responseService**: *[ResponseService](responseservice)*
 
-*Defined in [Library/Response/AbstractResponseHelper.ts:10](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/AbstractResponseHelper.ts#L10)*
+*Defined in [Library/Response/AbstractResponseHelper.ts:10](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/AbstractResponseHelper.ts#L10)*
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 **badRequestResponse**(message?: *`string`*, data?: *`any`*, meta?: *`Object`*): [ClientErrorResponse](clienterrorresponse)
 
-*Defined in [Library/Response/AbstractResponseHelper.ts:36](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/AbstractResponseHelper.ts#L36)*
+*Defined in [Library/Response/AbstractResponseHelper.ts:36](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/AbstractResponseHelper.ts#L36)*
 
 **Parameters:**
 
@@ -70,7 +70,7 @@ ___
 
 **createdResponse**(data?: *`any`*, meta?: *`any`*): [SuccessfulResponse](successfulresponse)
 
-*Defined in [Library/Response/AbstractResponseHelper.ts:20](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/AbstractResponseHelper.ts#L20)*
+*Defined in [Library/Response/AbstractResponseHelper.ts:20](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/AbstractResponseHelper.ts#L20)*
 
 **Parameters:**
 
@@ -88,7 +88,7 @@ ___
 
 **forbiddenResponse**(message?: *`string`*, data?: *`any`*, meta?: *`any`*): [ClientErrorResponse](clienterrorresponse)
 
-*Defined in [Library/Response/AbstractResponseHelper.ts:32](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/AbstractResponseHelper.ts#L32)*
+*Defined in [Library/Response/AbstractResponseHelper.ts:32](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/AbstractResponseHelper.ts#L32)*
 
 **Parameters:**
 
@@ -107,7 +107,7 @@ ___
 
 **getResponseService**(): [ResponseService](responseservice)
 
-*Defined in [Library/Response/AbstractResponseHelper.ts:12](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/AbstractResponseHelper.ts#L12)*
+*Defined in [Library/Response/AbstractResponseHelper.ts:12](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/AbstractResponseHelper.ts#L12)*
 
 **Returns:** [ResponseService](responseservice)
 
@@ -118,7 +118,7 @@ ___
 
 **internalServerErrorResponse**(message?: *`string`*, data?: *`any`*, meta?: *`Object`*): [ServerErrorResponse](servererrorresponse)
 
-*Defined in [Library/Response/AbstractResponseHelper.ts:44](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/AbstractResponseHelper.ts#L44)*
+*Defined in [Library/Response/AbstractResponseHelper.ts:44](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/AbstractResponseHelper.ts#L44)*
 
 **Parameters:**
 
@@ -137,7 +137,7 @@ ___
 
 **notFoundResponse**(message?: *`string`*, data?: *`any`*, meta?: *`any`*): [ClientErrorResponse](clienterrorresponse)
 
-*Defined in [Library/Response/AbstractResponseHelper.ts:24](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/AbstractResponseHelper.ts#L24)*
+*Defined in [Library/Response/AbstractResponseHelper.ts:24](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/AbstractResponseHelper.ts#L24)*
 
 **Parameters:**
 
@@ -156,7 +156,7 @@ ___
 
 **okResponse**(data?: *`any`*, meta?: *`any`*): [SuccessfulResponse](successfulresponse)
 
-*Defined in [Library/Response/AbstractResponseHelper.ts:16](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/AbstractResponseHelper.ts#L16)*
+*Defined in [Library/Response/AbstractResponseHelper.ts:16](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/AbstractResponseHelper.ts#L16)*
 
 **Parameters:**
 
@@ -174,7 +174,7 @@ ___
 
 **permanentRedirectResponse**(location: *`string`*, alt?: *`string`*, meta?: *`any`*): [RedirectionResponse](redirectionresponse)
 
-*Defined in [Library/Response/AbstractResponseHelper.ts:48](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/AbstractResponseHelper.ts#L48)*
+*Defined in [Library/Response/AbstractResponseHelper.ts:48](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/AbstractResponseHelper.ts#L48)*
 
 **Parameters:**
 
@@ -193,7 +193,7 @@ ___
 
 **requestTimeoutResponse**(message?: *`string`*, data?: *`any`*, meta?: *`any`*): [ClientErrorResponse](clienterrorresponse)
 
-*Defined in [Library/Response/AbstractResponseHelper.ts:28](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/AbstractResponseHelper.ts#L28)*
+*Defined in [Library/Response/AbstractResponseHelper.ts:28](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/AbstractResponseHelper.ts#L28)*
 
 **Parameters:**
 
@@ -212,7 +212,7 @@ ___
 
 **unauthorizedResponse**(message?: *`string`*, data?: *`any`*, meta?: *`Object`*): [ClientErrorResponse](clienterrorresponse)
 
-*Defined in [Library/Response/AbstractResponseHelper.ts:40](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/AbstractResponseHelper.ts#L40)*
+*Defined in [Library/Response/AbstractResponseHelper.ts:40](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/AbstractResponseHelper.ts#L40)*
 
 **Parameters:**
 
