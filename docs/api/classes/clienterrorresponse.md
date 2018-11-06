@@ -87,7 +87,7 @@ title: ClientErrorResponse
 
 *Inherited from [Response](response).[constructor](response#constructor)*
 
-*Defined in [Library/Response/Response.ts:20](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L20)*
+*Defined in [Library/Response/Response.ts:20](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L20)*
 
 **Parameters:**
 
@@ -114,7 +114,7 @@ ___
 
 *Inherited from [Response](response).[ctx](response#ctx)*
 
-*Defined in [Library/Response/Response.ts:8](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L8)*
+*Defined in [Library/Response/Response.ts:8](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L8)*
 
 ___
 <a id="data"></a>
@@ -125,7 +125,7 @@ ___
 
 *Inherited from [Response](response).[data](response#data)*
 
-*Defined in [Library/Response/Response.ts:18](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L18)*
+*Defined in [Library/Response/Response.ts:18](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L18)*
 
 ___
 <a id="headers"></a>
@@ -136,7 +136,7 @@ ___
 
 *Inherited from [Response](response).[headers](response#headers)*
 
-*Defined in [Library/Response/Response.ts:10](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L10)*
+*Defined in [Library/Response/Response.ts:10](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L10)*
 
 #### Type declaration
 
@@ -151,7 +151,7 @@ ___
 
 *Inherited from [Response](response).[message](response#message)*
 
-*Defined in [Library/Response/Response.ts:20](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L20)*
+*Defined in [Library/Response/Response.ts:20](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L20)*
 
 ___
 <a id="meta"></a>
@@ -162,7 +162,7 @@ ___
 
 *Inherited from [Response](response).[meta](response#meta)*
 
-*Defined in [Library/Response/Response.ts:16](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L16)*
+*Defined in [Library/Response/Response.ts:16](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L16)*
 
 ___
 <a id="statuscode"></a>
@@ -173,7 +173,7 @@ ___
 
 *Inherited from [Response](response).[statusCode](response#statuscode)*
 
-*Defined in [Library/Response/Response.ts:14](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L14)*
+*Defined in [Library/Response/Response.ts:14](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L14)*
 
 ___
 <a id="strategy"></a>
@@ -184,7 +184,7 @@ ___
 
 *Inherited from [Response](response).[strategy](response#strategy)*
 
-*Defined in [Library/Response/Response.ts:12](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L12)*
+*Defined in [Library/Response/Response.ts:12](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L12)*
 
 ___
 
@@ -198,7 +198,7 @@ ___
 
 *Inherited from [Response](response).[addHeaders](response#addheaders)*
 
-*Defined in [Library/Response/Response.ts:93](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L93)*
+*Defined in [Library/Response/Response.ts:93](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L93)*
 
 **Parameters:**
 
@@ -217,7 +217,7 @@ ___
 
 *Inherited from [Response](response).[appendHeader](response#appendheader)*
 
-*Defined in [Library/Response/Response.ts:105](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L105)*
+*Defined in [Library/Response/Response.ts:105](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L105)*
 
 **Parameters:**
 
@@ -237,7 +237,7 @@ ___
 
 *Inherited from [Response](response).[apply](response#apply)*
 
-*Defined in [Library/Response/Response.ts:142](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L142)*
+*Defined in [Library/Response/Response.ts:142](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L142)*
 
 **Returns:** `void`
 
@@ -250,7 +250,7 @@ ___
 
 *Inherited from [Response](response).[applyBody](response#applybody)*
 
-*Defined in [Library/Response/Response.ts:79](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L79)*
+*Defined in [Library/Response/Response.ts:79](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L79)*
 
 **Parameters:**
 
@@ -269,7 +269,7 @@ ___
 
 *Inherited from [Response](response).[applyHeaders](response#applyheaders)*
 
-*Defined in [Library/Response/Response.ts:115](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L115)*
+*Defined in [Library/Response/Response.ts:115](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L115)*
 
 **Returns:** `this`
 
@@ -282,7 +282,7 @@ ___
 
 *Inherited from [Response](response).[applyStatusCode](response#applystatuscode)*
 
-*Defined in [Library/Response/Response.ts:63](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L63)*
+*Defined in [Library/Response/Response.ts:63](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L63)*
 
 **Parameters:**
 
@@ -301,7 +301,7 @@ ___
 
 *Inherited from [Response](response).[file](response#file)*
 
-*Defined in [Library/Response/Response.ts:121](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L121)*
+*Defined in [Library/Response/Response.ts:121](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L121)*
 
 **Parameters:**
 
@@ -321,7 +321,7 @@ ___
 
 *Overrides [Response](response).[format](response#format)*
 
-*Defined in [Library/Response/ClientErrorResponse.ts:121](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/ClientErrorResponse.ts#L121)*
+*Defined in [Library/Response/ClientErrorResponse.ts:121](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/ClientErrorResponse.ts#L121)*
 
 **Returns:** `object`
 
@@ -334,7 +334,7 @@ ___
 
 *Inherited from [Response](response).[getStatusCode](response#getstatuscode)*
 
-*Defined in [Library/Response/Response.ts:75](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L75)*
+*Defined in [Library/Response/Response.ts:75](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L75)*
 
 **Returns:** [HttpStatusCodes](../enums/httpstatuscodes)
 
@@ -347,7 +347,7 @@ ___
 
 *Inherited from [Response](response).[html](response#html)*
 
-*Defined in [Library/Response/Response.ts:135](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L135)*
+*Defined in [Library/Response/Response.ts:135](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L135)*
 
 **Parameters:**
 
@@ -366,7 +366,7 @@ ___
 
 *Inherited from [Response](response).[json](response#json)*
 
-*Defined in [Library/Response/Response.ts:128](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L128)*
+*Defined in [Library/Response/Response.ts:128](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L128)*
 
 **Parameters:**
 
@@ -385,7 +385,7 @@ ___
 
 *Inherited from [Response](response).[patchContext](response#patchcontext)*
 
-*Defined in [Library/Response/Response.ts:29](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L29)*
+*Defined in [Library/Response/Response.ts:29](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L29)*
 
 **Parameters:**
 
@@ -404,7 +404,7 @@ ___
 
 *Inherited from [Response](response).[removeHeader](response#removeheader)*
 
-*Defined in [Library/Response/Response.ts:109](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L109)*
+*Defined in [Library/Response/Response.ts:109](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L109)*
 
 **Parameters:**
 
@@ -423,7 +423,7 @@ ___
 
 *Inherited from [Response](response).[sendFile](response#sendfile)*
 
-*Defined in [Library/Response/Response.ts:52](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L52)*
+*Defined in [Library/Response/Response.ts:52](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L52)*
 
 **Returns:** `Promise`<`string`>
 
@@ -436,7 +436,7 @@ ___
 
 *Inherited from [Response](response).[setHeader](response#setheader)*
 
-*Defined in [Library/Response/Response.ts:99](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L99)*
+*Defined in [Library/Response/Response.ts:99](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L99)*
 
 **Parameters:**
 
@@ -456,7 +456,7 @@ ___
 
 *Inherited from [Response](response).[setHeaders](response#setheaders)*
 
-*Defined in [Library/Response/Response.ts:87](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L87)*
+*Defined in [Library/Response/Response.ts:87](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L87)*
 
 **Parameters:**
 
@@ -475,7 +475,7 @@ ___
 
 *Inherited from [Response](response).[setStatusCode](response#setstatuscode)*
 
-*Defined in [Library/Response/Response.ts:69](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/Response.ts#L69)*
+*Defined in [Library/Response/Response.ts:69](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/Response.ts#L69)*
 
 **Parameters:**
 
@@ -492,7 +492,7 @@ ___
 
 **badRequest**(message?: *`string`*, data?: *`any`*, meta?: *`any`*): [ClientErrorResponse](clienterrorresponse)
 
-*Defined in [Library/Response/ClientErrorResponse.ts:9](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/ClientErrorResponse.ts#L9)*
+*Defined in [Library/Response/ClientErrorResponse.ts:9](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/ClientErrorResponse.ts#L9)*
 
 **Parameters:**
 
@@ -511,7 +511,7 @@ ___
 
 **conflict**(message?: *`string`*, data?: *`any`*, meta?: *`any`*): [ClientErrorResponse](clienterrorresponse)
 
-*Defined in [Library/Response/ClientErrorResponse.ts:45](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/ClientErrorResponse.ts#L45)*
+*Defined in [Library/Response/ClientErrorResponse.ts:45](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/ClientErrorResponse.ts#L45)*
 
 **Parameters:**
 
@@ -530,7 +530,7 @@ ___
 
 **create**(statusCode: *[HttpStatusCodes](../enums/httpstatuscodes)*, message?: *`string`*, data?: *`any`*, meta?: *`any`*): [ClientErrorResponse](clienterrorresponse)
 
-*Defined in [Library/Response/ClientErrorResponse.ts:5](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/ClientErrorResponse.ts#L5)*
+*Defined in [Library/Response/ClientErrorResponse.ts:5](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/ClientErrorResponse.ts#L5)*
 
 **Parameters:**
 
@@ -550,7 +550,7 @@ ___
 
 **expectationFailed**(message?: *`string`*, data?: *`any`*, meta?: *`any`*): [ClientErrorResponse](clienterrorresponse)
 
-*Defined in [Library/Response/ClientErrorResponse.ts:77](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/ClientErrorResponse.ts#L77)*
+*Defined in [Library/Response/ClientErrorResponse.ts:77](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/ClientErrorResponse.ts#L77)*
 
 **Parameters:**
 
@@ -569,7 +569,7 @@ ___
 
 **failedDependency**(message?: *`string`*, data?: *`any`*, meta?: *`any`*): [ClientErrorResponse](clienterrorresponse)
 
-*Defined in [Library/Response/ClientErrorResponse.ts:97](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/ClientErrorResponse.ts#L97)*
+*Defined in [Library/Response/ClientErrorResponse.ts:97](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/ClientErrorResponse.ts#L97)*
 
 **Parameters:**
 
@@ -588,7 +588,7 @@ ___
 
 **forbidden**(message?: *`string`*, data?: *`any`*, meta?: *`any`*): [ClientErrorResponse](clienterrorresponse)
 
-*Defined in [Library/Response/ClientErrorResponse.ts:21](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/ClientErrorResponse.ts#L21)*
+*Defined in [Library/Response/ClientErrorResponse.ts:21](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/ClientErrorResponse.ts#L21)*
 
 **Parameters:**
 
@@ -607,7 +607,7 @@ ___
 
 **gone**(message?: *`string`*, data?: *`any`*, meta?: *`any`*): [ClientErrorResponse](clienterrorresponse)
 
-*Defined in [Library/Response/ClientErrorResponse.ts:49](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/ClientErrorResponse.ts#L49)*
+*Defined in [Library/Response/ClientErrorResponse.ts:49](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/ClientErrorResponse.ts#L49)*
 
 **Parameters:**
 
@@ -626,7 +626,7 @@ ___
 
 **iAmATeapot**(message?: *`string`*, data?: *`any`*, meta?: *`any`*): [ClientErrorResponse](clienterrorresponse)
 
-*Defined in [Library/Response/ClientErrorResponse.ts:81](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/ClientErrorResponse.ts#L81)*
+*Defined in [Library/Response/ClientErrorResponse.ts:81](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/ClientErrorResponse.ts#L81)*
 
 **Parameters:**
 
@@ -645,7 +645,7 @@ ___
 
 **lengthRequired**(message?: *`string`*, data?: *`any`*, meta?: *`any`*): [ClientErrorResponse](clienterrorresponse)
 
-*Defined in [Library/Response/ClientErrorResponse.ts:53](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/ClientErrorResponse.ts#L53)*
+*Defined in [Library/Response/ClientErrorResponse.ts:53](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/ClientErrorResponse.ts#L53)*
 
 **Parameters:**
 
@@ -664,7 +664,7 @@ ___
 
 **locked**(message?: *`string`*, data?: *`any`*, meta?: *`any`*): [ClientErrorResponse](clienterrorresponse)
 
-*Defined in [Library/Response/ClientErrorResponse.ts:93](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/ClientErrorResponse.ts#L93)*
+*Defined in [Library/Response/ClientErrorResponse.ts:93](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/ClientErrorResponse.ts#L93)*
 
 **Parameters:**
 
@@ -683,7 +683,7 @@ ___
 
 **methodNotAllowed**(message?: *`string`*, data?: *`any`*, meta?: *`any`*): [ClientErrorResponse](clienterrorresponse)
 
-*Defined in [Library/Response/ClientErrorResponse.ts:29](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/ClientErrorResponse.ts#L29)*
+*Defined in [Library/Response/ClientErrorResponse.ts:29](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/ClientErrorResponse.ts#L29)*
 
 **Parameters:**
 
@@ -702,7 +702,7 @@ ___
 
 **misdirectedRequest**(message?: *`string`*, data?: *`any`*, meta?: *`any`*): [ClientErrorResponse](clienterrorresponse)
 
-*Defined in [Library/Response/ClientErrorResponse.ts:85](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/ClientErrorResponse.ts#L85)*
+*Defined in [Library/Response/ClientErrorResponse.ts:85](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/ClientErrorResponse.ts#L85)*
 
 **Parameters:**
 
@@ -721,7 +721,7 @@ ___
 
 **notAcceptable**(message?: *`string`*, data?: *`any`*, meta?: *`any`*): [ClientErrorResponse](clienterrorresponse)
 
-*Defined in [Library/Response/ClientErrorResponse.ts:33](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/ClientErrorResponse.ts#L33)*
+*Defined in [Library/Response/ClientErrorResponse.ts:33](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/ClientErrorResponse.ts#L33)*
 
 **Parameters:**
 
@@ -740,7 +740,7 @@ ___
 
 **notFound**(message?: *`string`*, data?: *`any`*, meta?: *`any`*): [ClientErrorResponse](clienterrorresponse)
 
-*Defined in [Library/Response/ClientErrorResponse.ts:25](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/ClientErrorResponse.ts#L25)*
+*Defined in [Library/Response/ClientErrorResponse.ts:25](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/ClientErrorResponse.ts#L25)*
 
 **Parameters:**
 
@@ -759,7 +759,7 @@ ___
 
 **payloadTooLarge**(message?: *`string`*, data?: *`any`*, meta?: *`any`*): [ClientErrorResponse](clienterrorresponse)
 
-*Defined in [Library/Response/ClientErrorResponse.ts:61](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/ClientErrorResponse.ts#L61)*
+*Defined in [Library/Response/ClientErrorResponse.ts:61](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/ClientErrorResponse.ts#L61)*
 
 **Parameters:**
 
@@ -778,7 +778,7 @@ ___
 
 **paymentRequired**(message?: *`string`*, data?: *`any`*, meta?: *`any`*): [ClientErrorResponse](clienterrorresponse)
 
-*Defined in [Library/Response/ClientErrorResponse.ts:17](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/ClientErrorResponse.ts#L17)*
+*Defined in [Library/Response/ClientErrorResponse.ts:17](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/ClientErrorResponse.ts#L17)*
 
 **Parameters:**
 
@@ -797,7 +797,7 @@ ___
 
 **preconditionFailed**(message?: *`string`*, data?: *`any`*, meta?: *`any`*): [ClientErrorResponse](clienterrorresponse)
 
-*Defined in [Library/Response/ClientErrorResponse.ts:57](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/ClientErrorResponse.ts#L57)*
+*Defined in [Library/Response/ClientErrorResponse.ts:57](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/ClientErrorResponse.ts#L57)*
 
 **Parameters:**
 
@@ -816,7 +816,7 @@ ___
 
 **preconditionRequired**(message?: *`string`*, data?: *`any`*, meta?: *`any`*): [ClientErrorResponse](clienterrorresponse)
 
-*Defined in [Library/Response/ClientErrorResponse.ts:105](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/ClientErrorResponse.ts#L105)*
+*Defined in [Library/Response/ClientErrorResponse.ts:105](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/ClientErrorResponse.ts#L105)*
 
 **Parameters:**
 
@@ -835,7 +835,7 @@ ___
 
 **proxyAuthenticationRequired**(message?: *`string`*, data?: *`any`*, meta?: *`any`*): [ClientErrorResponse](clienterrorresponse)
 
-*Defined in [Library/Response/ClientErrorResponse.ts:37](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/ClientErrorResponse.ts#L37)*
+*Defined in [Library/Response/ClientErrorResponse.ts:37](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/ClientErrorResponse.ts#L37)*
 
 **Parameters:**
 
@@ -854,7 +854,7 @@ ___
 
 **rangeNotSatisfiable**(message?: *`string`*, data?: *`any`*, meta?: *`any`*): [ClientErrorResponse](clienterrorresponse)
 
-*Defined in [Library/Response/ClientErrorResponse.ts:73](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/ClientErrorResponse.ts#L73)*
+*Defined in [Library/Response/ClientErrorResponse.ts:73](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/ClientErrorResponse.ts#L73)*
 
 **Parameters:**
 
@@ -873,7 +873,7 @@ ___
 
 **requestHeaderFieldsTooLarge**(message?: *`string`*, data?: *`any`*, meta?: *`any`*): [ClientErrorResponse](clienterrorresponse)
 
-*Defined in [Library/Response/ClientErrorResponse.ts:113](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/ClientErrorResponse.ts#L113)*
+*Defined in [Library/Response/ClientErrorResponse.ts:113](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/ClientErrorResponse.ts#L113)*
 
 **Parameters:**
 
@@ -892,7 +892,7 @@ ___
 
 **requestTimeout**(message?: *`string`*, data?: *`any`*, meta?: *`any`*): [ClientErrorResponse](clienterrorresponse)
 
-*Defined in [Library/Response/ClientErrorResponse.ts:41](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/ClientErrorResponse.ts#L41)*
+*Defined in [Library/Response/ClientErrorResponse.ts:41](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/ClientErrorResponse.ts#L41)*
 
 **Parameters:**
 
@@ -911,7 +911,7 @@ ___
 
 **tooManyRequests**(message?: *`string`*, data?: *`any`*, meta?: *`any`*): [ClientErrorResponse](clienterrorresponse)
 
-*Defined in [Library/Response/ClientErrorResponse.ts:109](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/ClientErrorResponse.ts#L109)*
+*Defined in [Library/Response/ClientErrorResponse.ts:109](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/ClientErrorResponse.ts#L109)*
 
 **Parameters:**
 
@@ -930,7 +930,7 @@ ___
 
 **unauthorized**(message?: *`string`*, data?: *`any`*, meta?: *`any`*): [ClientErrorResponse](clienterrorresponse)
 
-*Defined in [Library/Response/ClientErrorResponse.ts:13](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/ClientErrorResponse.ts#L13)*
+*Defined in [Library/Response/ClientErrorResponse.ts:13](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/ClientErrorResponse.ts#L13)*
 
 **Parameters:**
 
@@ -949,7 +949,7 @@ ___
 
 **unavailableForLegalReasons**(message?: *`string`*, data?: *`any`*, meta?: *`any`*): [ClientErrorResponse](clienterrorresponse)
 
-*Defined in [Library/Response/ClientErrorResponse.ts:117](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/ClientErrorResponse.ts#L117)*
+*Defined in [Library/Response/ClientErrorResponse.ts:117](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/ClientErrorResponse.ts#L117)*
 
 **Parameters:**
 
@@ -968,7 +968,7 @@ ___
 
 **unprocessableEntity**(message?: *`string`*, data?: *`any`*, meta?: *`any`*): [ClientErrorResponse](clienterrorresponse)
 
-*Defined in [Library/Response/ClientErrorResponse.ts:89](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/ClientErrorResponse.ts#L89)*
+*Defined in [Library/Response/ClientErrorResponse.ts:89](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/ClientErrorResponse.ts#L89)*
 
 **Parameters:**
 
@@ -987,7 +987,7 @@ ___
 
 **unsupportedMediaType**(message?: *`string`*, data?: *`any`*, meta?: *`any`*): [ClientErrorResponse](clienterrorresponse)
 
-*Defined in [Library/Response/ClientErrorResponse.ts:69](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/ClientErrorResponse.ts#L69)*
+*Defined in [Library/Response/ClientErrorResponse.ts:69](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/ClientErrorResponse.ts#L69)*
 
 **Parameters:**
 
@@ -1006,7 +1006,7 @@ ___
 
 **upgradeRequired**(message?: *`string`*, data?: *`any`*, meta?: *`any`*): [ClientErrorResponse](clienterrorresponse)
 
-*Defined in [Library/Response/ClientErrorResponse.ts:101](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/ClientErrorResponse.ts#L101)*
+*Defined in [Library/Response/ClientErrorResponse.ts:101](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/ClientErrorResponse.ts#L101)*
 
 **Parameters:**
 
@@ -1025,7 +1025,7 @@ ___
 
 **uriTooLong**(message?: *`string`*, data?: *`any`*, meta?: *`any`*): [ClientErrorResponse](clienterrorresponse)
 
-*Defined in [Library/Response/ClientErrorResponse.ts:65](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/ClientErrorResponse.ts#L65)*
+*Defined in [Library/Response/ClientErrorResponse.ts:65](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/ClientErrorResponse.ts#L65)*
 
 **Parameters:**
 

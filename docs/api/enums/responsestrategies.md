@@ -22,7 +22,7 @@ title: ResponseStrategies
 
 **File**:  = "File"
 
-*Defined in [Library/Response/ResponseStrategies.ts:3](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/ResponseStrategies.ts#L3)*
+*Defined in [Library/Response/ResponseStrategies.ts:3](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/ResponseStrategies.ts#L3)*
 
 ___
 <a id="html"></a>
@@ -31,7 +31,7 @@ ___
 
 **Html**:  = "Html"
 
-*Defined in [Library/Response/ResponseStrategies.ts:4](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/ResponseStrategies.ts#L4)*
+*Defined in [Library/Response/ResponseStrategies.ts:4](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/ResponseStrategies.ts#L4)*
 
 ___
 <a id="json"></a>
@@ -40,7 +40,7 @@ ___
 
 **Json**:  = "Json"
 
-*Defined in [Library/Response/ResponseStrategies.ts:2](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Response/ResponseStrategies.ts#L2)*
+*Defined in [Library/Response/ResponseStrategies.ts:2](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Response/ResponseStrategies.ts#L2)*
 
 ___
 

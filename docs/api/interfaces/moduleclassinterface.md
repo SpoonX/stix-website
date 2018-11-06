@@ -28,7 +28,7 @@ title: ModuleClassInterface
 
 *Inherited from [__type]().[constructor]()*
 
-*Defined in [Library/Core/Types.ts:1](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Core/Types.ts#L1)*
+*Defined in [Library/Core/Types.ts:1](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Core/Types.ts#L1)*
 
 **Parameters:**
 

@@ -32,7 +32,7 @@ title: DispatchMiddleware
 
 **logger**: *[LoggerService](loggerservice)*
 
-*Defined in [Library/Middleware/DispatchMiddleware.ts:16](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Middleware/DispatchMiddleware.ts#L16)*
+*Defined in [Library/Middleware/DispatchMiddleware.ts:16](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Middleware/DispatchMiddleware.ts#L16)*
 
 ___
 <a id="responseservice"></a>
@@ -41,7 +41,7 @@ ___
 
 **responseService**: *[ResponseService](responseservice)*
 
-*Defined in [Library/Middleware/DispatchMiddleware.ts:13](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Middleware/DispatchMiddleware.ts#L13)*
+*Defined in [Library/Middleware/DispatchMiddleware.ts:13](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Middleware/DispatchMiddleware.ts#L13)*
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 *Inherited from [AbstractMiddleware](abstractmiddleware).[asCallback](abstractmiddleware#ascallback)*
 
-*Defined in [Library/Middleware/AbstractMiddleware.ts:7](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Middleware/AbstractMiddleware.ts#L7)*
+*Defined in [Library/Middleware/AbstractMiddleware.ts:7](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Middleware/AbstractMiddleware.ts#L7)*
 
 **Returns:** [RegisteredMiddlewareType]()
 
@@ -68,7 +68,7 @@ ___
 
 *Overrides [AbstractMiddleware](abstractmiddleware).[pass](abstractmiddleware#pass)*
 
-*Defined in [Library/Middleware/DispatchMiddleware.ts:18](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Middleware/DispatchMiddleware.ts#L18)*
+*Defined in [Library/Middleware/DispatchMiddleware.ts:18](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Middleware/DispatchMiddleware.ts#L18)*
 
 **Parameters:**
 

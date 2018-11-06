@@ -29,7 +29,7 @@ title: Route
 
 **delete**(route: *`string`*, controller: * `string` &#124; [AbstractActionController](abstractactioncontroller)*, action: *`string`*): [RouteInterface](../interfaces/routeinterface)
 
-*Defined in [Library/Router/Route.ts:26](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Router/Route.ts#L26)*
+*Defined in [Library/Router/Route.ts:26](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Router/Route.ts#L26)*
 
 **Parameters:**
 
@@ -48,7 +48,7 @@ ___
 
 **get**(route: *`string`*, controller: * `string` &#124; [AbstractActionController](abstractactioncontroller)*, action: *`string`*): [RouteInterface](../interfaces/routeinterface)
 
-*Defined in [Library/Router/Route.ts:10](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Router/Route.ts#L10)*
+*Defined in [Library/Router/Route.ts:10](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Router/Route.ts#L10)*
 
 **Parameters:**
 
@@ -67,7 +67,7 @@ ___
 
 **method**(method: *[RequestMethods](../enums/requestmethods)*, route: *`string`*, controller: * `string` &#124; [AbstractActionController](abstractactioncontroller)*, action: *`string`*): [RouteInterface](../interfaces/routeinterface)
 
-*Defined in [Library/Router/Route.ts:6](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Router/Route.ts#L6)*
+*Defined in [Library/Router/Route.ts:6](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Router/Route.ts#L6)*
 
 **Parameters:**
 
@@ -87,7 +87,7 @@ ___
 
 **patch**(route: *`string`*, controller: * `string` &#124; [AbstractActionController](abstractactioncontroller)*, action: *`string`*): [RouteInterface](../interfaces/routeinterface)
 
-*Defined in [Library/Router/Route.ts:22](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Router/Route.ts#L22)*
+*Defined in [Library/Router/Route.ts:22](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Router/Route.ts#L22)*
 
 **Parameters:**
 
@@ -106,7 +106,7 @@ ___
 
 **post**(route: *`string`*, controller: * `string` &#124; [AbstractActionController](abstractactioncontroller)*, action: *`string`*): [RouteInterface](../interfaces/routeinterface)
 
-*Defined in [Library/Router/Route.ts:14](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Router/Route.ts#L14)*
+*Defined in [Library/Router/Route.ts:14](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Router/Route.ts#L14)*
 
 **Parameters:**
 
@@ -125,7 +125,7 @@ ___
 
 **put**(route: *`string`*, controller: * `string` &#124; [AbstractActionController](abstractactioncontroller)*, action: *`string`*): [RouteInterface](../interfaces/routeinterface)
 
-*Defined in [Library/Router/Route.ts:18](https://github.com/SpoonX/stix/blob/55983b2/src/Library/Router/Route.ts#L18)*
+*Defined in [Library/Router/Route.ts:18](https://github.com/SpoonX/stix/blob/cb15ad1/src/Library/Router/Route.ts#L18)*
 
 **Parameters:**
 
