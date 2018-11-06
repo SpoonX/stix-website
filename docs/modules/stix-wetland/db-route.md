@@ -111,3 +111,34 @@ export const router = {
   ],
 };
 ```
+
+## DbRoute.all()
+
+This method applies all of the routes mentioned above in one go, providing crud functionality mounted to an endpoint.
+
+This is a synonym for:
+
+```ts
+[
+  Route.get('/user/:id', UserController, 'findOne')
+  Route.get('/user', UserController, 'find'),
+  Route.post('/user', UserController, 'create')
+  Route.patch('/user/:id', UserController, 'modify'),
+  Route.delete('/user/:id', UserController, 'destroy'),
+]
+```
+
+### Example
+
+**config/router.ts:**
+
+```ts
+import { UserController }  from '../src/Controller';
+import { DbRoute } from 'stix-wetland';
+
+export const router = {
+  routes: [
+    DbRoute.all('/user', UserController),
+  ],
+};
+```
