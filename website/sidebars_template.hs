@@ -9,7 +9,8 @@
       "the-basics/config",
       "the-basics/controllers-and-actions",
       "the-basics/responses",
-      "the-basics/database"
+      "the-basics/database",
+      "the-basics/gates"
     ],
     "Changelog": [
       "changelog"
