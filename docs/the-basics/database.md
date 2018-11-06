@@ -71,7 +71,7 @@ For most common operations (CRUD) you don't want to have to write boilerplate co
 
 Stix's service manager allows you to create injectable methods. This is a pretty powerful but foreign concept that helps you write reusable methods. Think of these as [traits](https://en.wikipedia.org/wiki/Trait_(computer_programming)). Now built on top of those traits, stix-wetland offers a couple of convenience methods that implement these basic features.
 
-We'll be looking at two of them, to hopefully give you an idea of how powerful they are. For more information you can take a look at the [documentation for stix-wetland](../modules/stix-wetland/decorators).
+We'll be looking at two of them, to hopefully give you an idea of how powerful they are. For more information you can take a look at the [documentation for stix-wetland](../modules/stix-wetland/wetland-decorators).
 
 ### find
 
@@ -105,7 +105,7 @@ export class UserController extends AbstractActionController {
 }
 ```
 
-Combined with the `DbRoute.all()` helper ([docs here](../modules/stix-wetland/wetland-db-route#dbroutedestroy)) you'll have very powerful controllers with almost no code.
+Combined with the `DbRoute.all()` helper ([docs here](../modules/stix-wetland/wetland-db-route#dbrouteall)) you'll have very powerful controllers with almost no code.
 
 ## Migrations
 
