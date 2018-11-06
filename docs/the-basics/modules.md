@@ -97,7 +97,7 @@ This method would be used basically the same as init(), except you'd use it when
 
 I'm sorry for that. But now that you understand the module file, you can get started making something yourself.
 
-The rest of this document will be based on the work we did in [learn the basics](learn-the-basics.md).
+The rest of this document will be based on the work we did in [learn the basics](learn-the-basics).
 If you did not follow that first, do that now and return here afterwards.
 
 1. Create a new directory `module` with `MyModule` in it at `app/module/MyModule` (`mkdir -p app/module/MyModule`)

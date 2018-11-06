@@ -24,7 +24,7 @@ There are 5 classes of response:
 
 Each class has the methods (with response codes that belong to it) belonging to that class. For example, `notFound` can be found on the `ClientErrorResponse`, `movedPermanently` on the `movedPermanently` and so on.
 
-I won't list every single method here because they're already documented in the [API docs](../api/classes/response.md).
+I won't list every single method here because they're already documented in the [API docs](../api/classes/response).
 
 ## Overriding responses
 
