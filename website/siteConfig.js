@@ -12,7 +12,7 @@ const users = [
 const siteConfig = {
   title: 'Stix',
   tagline: 'A module-based, TypeScript-first Node.js® framework.',
-  url: 'https://your-docusaurus-test-site.com', // Your website URL
+  url: 'https://stixjs.io', // Your website URL
   baseUrl: '/', // Base URL for your project */
   projectName: 'stix',
   organizationName: 'SpoonX',
