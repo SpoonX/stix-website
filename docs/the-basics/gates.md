@@ -81,7 +81,7 @@ Another great example of where gates would be useful is validation. You can catc
 import { ContextInterface } from 'stix';
 import { AbstractGate } from 'stix-gates';
 
-export class IsAuthenticated extends AbstractGate {
+export class ValidateNameLength extends AbstractGate {
   public passThrough (ctx: ContextInterface) {
     if (ctx.body.name.length < 3) {
       return this.badRequestResponse('Name needs to be at least three characters');
