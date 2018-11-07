@@ -44,10 +44,11 @@ const siteConfig = {
   highlight: { // Highlight.js theme to use for syntax highlighting in code blocks.
     theme: 'obsidian',
   },
+  gaTrackingId: 'UA-127345876-2',
   onPageNav: 'separate',
   cleanUrl: true,
   ogImage: 'img/stix.png',
-  twitterImage: 'img/logo.png',
+  twitterImage: 'img/stix.png',
   repoUrl: 'https://github.com/SpoonX/stix',
   stylesheets: ['https://fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:400,500,700'],
   scripts: ['js/nav.js']
