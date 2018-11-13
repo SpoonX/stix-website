@@ -26,7 +26,7 @@ Generate a new Wetland entity for provided module name.
 
 #### Command
 
-> `stix generate:crud <module> <name>`
+> `stix generate:entity <module> <name>`
 
 | Param       | Description                   | Required | Default |
 |-------------|-------------------------------|----------|---------|
